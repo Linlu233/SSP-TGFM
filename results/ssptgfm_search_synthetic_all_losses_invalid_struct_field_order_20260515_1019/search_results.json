@@ -1,0 +1,104 @@
+{
+  "best_candidate": {
+    "model": {
+      "adapter_rank": 24,
+      "hidden_dim": 192,
+      "relation_rank": 24,
+      "temporal_layers": 2
+    },
+    "name": "all_losses_meta_001_ood_001",
+    "train": {
+      "lambda_align": 0.05,
+      "lambda_kl": 0.0005,
+      "lambda_meta": 0.01,
+      "lambda_ood": 0.001,
+      "lr": 0.0007
+    }
+  },
+  "best_validation_mean": 0.7418421296296297,
+  "dataset": "synthetic",
+  "environment": {
+    "cuda_available": true,
+    "cuda_capability": [
+      7,
+      0
+    ],
+    "cuda_device": "Tesla V100-PCIE-32GB",
+    "python": "3.10.8",
+    "torch": "2.5.1+cu121"
+  },
+  "leakage_control": {
+    "selection_uses": "validation metrics only",
+    "temporal_split": "strict train < validation < test",
+    "test_usage": "not evaluated by this script"
+  },
+  "rows": [
+    {
+      "candidate": "all_losses_meta_001_ood_001",
+      "seed": 1,
+      "val_ap": 0.13692778472144665,
+      "val_auc": 0.7515361111111111,
+      "val_ndcg": 0.6637223342652009
+    },
+    {
+      "candidate": "all_losses_meta_001_ood_001",
+      "seed": 2,
+      "val_ap": 0.16863763590914518,
+      "val_auc": 0.7647597222222222,
+      "val_ndcg": 0.7133359922255261
+    },
+    {
+      "candidate": "all_losses_meta_001_ood_001",
+      "seed": 3,
+      "val_ap": 0.13304171947024712,
+      "val_auc": 0.7092305555555557,
+      "val_ndcg": 0.6754935415528243
+    },
+    {
+      "candidate": "all_losses_meta_001_ood_01",
+      "seed": 1,
+      "val_ap": 0.13690727550319476,
+      "val_auc": 0.7515201388888888,
+      "val_ndcg": 0.6637088116840885
+    },
+    {
+      "candidate": "all_losses_meta_001_ood_01",
+      "seed": 2,
+      "val_ap": 0.16862562347784202,
+      "val_auc": 0.7647909722222223,
+      "val_ndcg": 0.7132680829002608
+    },
+    {
+      "candidate": "all_losses_meta_001_ood_01",
+      "seed": 3,
+      "val_ap": 0.13298541083455168,
+      "val_auc": 0.7091680555555556,
+      "val_ndcg": 0.675450796539605
+    },
+    {
+      "candidate": "all_losses_meta_005_ood_001",
+      "seed": 1,
+      "val_ap": 0.13670894866002706,
+      "val_auc": 0.7514298611111111,
+      "val_ndcg": 0.6635163857624619
+    },
+    {
+      "candidate": "all_losses_meta_005_ood_001",
+      "seed": 2,
+      "val_ap": 0.16885067400574433,
+      "val_auc": 0.7647493055555555,
+      "val_ndcg": 0.7136718748269816
+    },
+    {
+      "candidate": "all_losses_meta_005_ood_001",
+      "seed": 3,
+      "val_ap": 0.13327915455673114,
+      "val_auc": 0.709198611111111,
+      "val_ndcg": 0.6757221439578982
+    }
+  ],
+  "scenario": {
+    "name": "standard"
+  },
+  "selection_metric": "val_auc"
+}

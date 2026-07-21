@@ -1,0 +1,198 @@
+{
+  "best_candidate": {
+    "model": {},
+    "name": "tgbdst_cr010_size128_q64",
+    "train": {
+      "candidate_rank_queries": 64,
+      "lambda_candidate_rank": 0.1
+    }
+  },
+  "best_candidate_passes_minima": true,
+  "best_validation_mean": 0.04800357582651123,
+  "candidate_summaries": [
+    {
+      "candidate": "tgbdst_cr002_size128_q32",
+      "means": {
+        "val_ap": 0.16828857942370423,
+        "val_auc": 0.559197998046875,
+        "val_ndcg": 0.7026817511365867,
+        "val_tgb_hits@10": 0.046875,
+        "val_tgb_mrr": 0.0362915111469385
+      },
+      "passes_metric_minima": true,
+      "score": 0.0362915111469385,
+      "seeds_completed": 1
+    },
+    {
+      "candidate": "tgbdst_cr005_size128_q32",
+      "means": {
+        "val_ap": 0.17580257396844223,
+        "val_auc": 0.5714111328125,
+        "val_ndcg": 0.7089419127978227,
+        "val_tgb_hits@10": 0.0625,
+        "val_tgb_mrr": 0.04499791662315418
+      },
+      "passes_metric_minima": true,
+      "score": 0.04499791662315418,
+      "seeds_completed": 1
+    },
+    {
+      "candidate": "tgbdst_cr005_size256_q32",
+      "means": {
+        "val_ap": 0.16561294944720029,
+        "val_auc": 0.577056884765625,
+        "val_ndcg": 0.6987148767992566,
+        "val_tgb_hits@10": 0.046875,
+        "val_tgb_mrr": 0.040226478109022565
+      },
+      "passes_metric_minima": true,
+      "score": 0.040226478109022565,
+      "seeds_completed": 1
+    },
+    {
+      "candidate": "tgbdst_cr010_size128_q64",
+      "means": {
+        "val_ap": 0.19346982614276992,
+        "val_auc": 0.5730712890625,
+        "val_ndcg": 0.7222507593425214,
+        "val_tgb_hits@10": 0.046875,
+        "val_tgb_mrr": 0.04800357582651123
+      },
+      "passes_metric_minima": true,
+      "score": 0.04800357582651123,
+      "seeds_completed": 1
+    }
+  ],
+  "dataset": "tkgl-smallpedia",
+  "environment": {
+    "cuda_available": true,
+    "cuda_capability": [
+      7,
+      0
+    ],
+    "cuda_device": "Tesla V100-PCIE-32GB",
+    "python": "3.10.8",
+    "torch": "2.5.1+cu121"
+  },
+  "formal_allowed": true,
+  "leakage_control": {
+    "selection_uses": "validation metrics only",
+    "temporal_split": "strict train < validation < test",
+    "test_usage": "not evaluated by this script"
+  },
+  "metric_minima": {},
+  "metric_weights": {},
+  "rows": [
+    {
+      "candidate": "tgbdst_cr002_size128_q32",
+      "seed": 1,
+      "train_align": 4065.8198590959823,
+      "train_candidate_rank": 4.173989617094701,
+      "train_kl": 6094.918668785874,
+      "train_loss": 41.749525615147185,
+      "train_lp": 0.477497792669705,
+      "train_meta": 0.8213612662286175,
+      "train_ood_reg": 0.2312974646991613,
+      "train_rank": 0.556209859191155,
+      "train_struct_aux": 0.0,
+      "train_weighted_align": 40.65819781167166,
+      "train_weighted_candidate_rank": 0.08347979028310094,
+      "train_weighted_kl": 0.6094918500403969,
+      "train_weighted_meta": 0.004106806232403888,
+      "train_weighted_ood_reg": 0.00023129747509932603,
+      "train_weighted_rank": 0.005562098468748891,
+      "train_weighted_struct_aux": 0.0,
+      "val_ap": 0.16828857942370423,
+      "val_auc": 0.559197998046875,
+      "val_ndcg": 0.7026817511365867,
+      "val_tgb_hits@10": 0.046875,
+      "val_tgb_mrr": 0.0362915111469385
+    },
+    {
+      "candidate": "tgbdst_cr005_size128_q32",
+      "seed": 1,
+      "train_align": 3898.0036172672194,
+      "train_candidate_rank": 3.758578424551049,
+      "train_kl": 7017.64691535794,
+      "train_loss": 40.15373745743109,
+      "train_lp": 0.46738910249301363,
+      "train_meta": 0.86357787281883,
+      "train_ood_reg": 0.2305450339098366,
+      "train_rank": 0.5233595596284283,
+      "train_struct_aux": 0.0,
+      "train_weighted_align": 38.980035353680044,
+      "train_weighted_candidate_rank": 0.18792892399491096,
+      "train_weighted_kl": 0.7017646736028244,
+      "train_weighted_meta": 0.004317889252573023,
+      "train_weighted_ood_reg": 0.00023054504456421438,
+      "train_weighted_rank": 0.005233595494599063,
+      "train_weighted_struct_aux": 0.0,
+      "val_ap": 0.17580257396844223,
+      "val_auc": 0.5714111328125,
+      "val_ndcg": 0.7089419127978227,
+      "val_tgb_hits@10": 0.0625,
+      "val_tgb_mrr": 0.04499791662315418
+    },
+    {
+      "candidate": "tgbdst_cr005_size256_q32",
+      "seed": 1,
+      "train_align": 4071.295088787468,
+      "train_candidate_rank": 4.718446249864539,
+      "train_kl": 6194.04150390625,
+      "train_loss": 41.819967114195535,
+      "train_lp": 0.48325493171507,
+      "train_meta": 0.8253418900528733,
+      "train_ood_reg": 0.2311947540361054,
+      "train_rank": 0.5549930534800704,
+      "train_struct_aux": 0.0,
+      "train_weighted_align": 40.71295002528599,
+      "train_weighted_candidate_rank": 0.23592231605125932,
+      "train_weighted_kl": 0.6194041365263413,
+      "train_weighted_meta": 0.004126709354898835,
+      "train_weighted_ood_reg": 0.00023119476530582132,
+      "train_weighted_rank": 0.005549930397193043,
+      "train_weighted_struct_aux": 0.0,
+      "val_ap": 0.16561294944720029,
+      "val_auc": 0.577056884765625,
+      "val_ndcg": 0.6987148767992566,
+      "val_tgb_hits@10": 0.046875,
+      "val_tgb_mrr": 0.040226478109022565
+    },
+    {
+      "candidate": "tgbdst_cr010_size128_q64",
+      "seed": 1,
+      "train_align": 4057.6055011360013,
+      "train_candidate_rank": 3.939976137511584,
+      "train_kl": 6125.643014090402,
+      "train_loss": 41.683413933734506,
+      "train_lp": 0.4904070219823292,
+      "train_meta": 0.8314698149963301,
+      "train_ood_reg": 0.2312593987705756,
+      "train_rank": 0.5533898083531127,
+      "train_struct_aux": 0.0,
+      "train_weighted_align": 40.57605408649055,
+      "train_weighted_candidate_rank": 0.3939976199549072,
+      "train_weighted_kl": 0.6125642836702113,
+      "train_weighted_meta": 0.004157348977858011,
+      "train_weighted_ood_reg": 0.00023125940921944472,
+      "train_weighted_rank": 0.005533897964169784,
+      "train_weighted_struct_aux": 0.0,
+      "val_ap": 0.19346982614276992,
+      "val_auc": 0.5730712890625,
+      "val_ndcg": 0.7222507593425214,
+      "val_tgb_hits@10": 0.046875,
+      "val_tgb_mrr": 0.04800357582651123
+    }
+  ],
+  "scenario": {
+    "name": "label_split"
+  },
+  "selection_metric": "val_tgb_mrr",
+  "selection_metrics": [
+    "val_tgb_mrr",
+    "val_tgb_hits@10",
+    "val_auc",
+    "val_ap",
+    "val_ndcg"
+  ]
+}

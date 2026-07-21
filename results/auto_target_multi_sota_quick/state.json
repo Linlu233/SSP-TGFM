@@ -1,0 +1,77 @@
+{
+  "datasets": {
+    "icews05_15": {
+      "existing": {
+        "detail": {
+          "ap": {
+            "baseline": 0.8371196732003561,
+            "value": 0.7864356950333944,
+            "win": false
+          },
+          "auc": {
+            "baseline": 0.9380577301948596,
+            "value": 0.9258579718357051,
+            "win": false
+          },
+          "hits@10": {
+            "baseline": 0.634,
+            "value": 0.412,
+            "win": false
+          },
+          "mrr": {
+            "baseline": 0.3679325888535817,
+            "value": 0.21431230048721953,
+            "win": false
+          },
+          "ndcg": {
+            "baseline": 0.9794725824770751,
+            "value": 0.9730121001652587,
+            "win": false
+          }
+        },
+        "path": "results/ssptgfm_icews05_15_best/all_results.json",
+        "wins": 0
+      }
+    },
+    "icews14": {
+      "existing": {
+        "detail": {
+          "ap": {
+            "baseline": 0.6395419317158659,
+            "value": 0.44147111002253875,
+            "win": false
+          },
+          "auc": {
+            "baseline": 0.9098328388870797,
+            "value": 0.8898559839174086,
+            "win": false
+          },
+          "hits@10": {
+            "baseline": 0.5549999999999999,
+            "value": 0.23049999999999998,
+            "win": false
+          },
+          "mrr": {
+            "baseline": 0.3121606555171064,
+            "value": 0.13286738860028183,
+            "win": false
+          },
+          "ndcg": {
+            "baseline": 0.9302301758904522,
+            "value": 0.905249244966055,
+            "win": false
+          }
+        },
+        "path": "results/optimization_attempts/ssptgfm_icews14_formula_rank_best/all_results.json",
+        "wins": 0
+      },
+      "searches": {
+        "history_popularity_quickscan": {
+          "best_candidate": "history_popularity_quickscan_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp0p5_freq40_rl0p05_m0_bpr",
+          "score": 0.5183882124363247,
+          "search_results": "results/auto_target_multi_sota_quick/search_icews14_history_popularity_quickscan/search_results.json"
+        }
+      }
+    }
+  }
+}

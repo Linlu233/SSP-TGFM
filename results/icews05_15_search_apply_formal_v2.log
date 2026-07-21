@@ -1,0 +1,28 @@
+runtime_device=cuda
+cuda_device=Tesla V100-PCIE-32GB
+{'event': 'candidate_seed_start', 'candidate': 'h96_lr1e3_meta005_ood001', 'seed': 1, 'device': 'cuda', 'node_text_device': 'cuda:0'}
+{'event': 'epoch_start', 'epoch': 1, 'epochs': 8, 'batches': 3529}
+{'candidate': 'h96_lr1e3_meta005_ood001', 'seed': 1, 'val_auc': nan, 'status': 'failed', 'error_type': 'ValueError', 'error': 'Input contains NaN.'}
+{'event': 'candidate_seed_start', 'candidate': 'h96_lr1e3_meta005_ood001', 'seed': 2, 'device': 'cuda', 'node_text_device': 'cuda:0'}
+{'event': 'epoch_start', 'epoch': 1, 'epochs': 8, 'batches': 3529}
+{'candidate': 'h96_lr1e3_meta005_ood001', 'seed': 2, 'val_auc': nan, 'status': 'failed', 'error_type': 'ValueError', 'error': 'Input contains NaN.'}
+{'event': 'candidate_seed_start', 'candidate': 'h96_lr7e4_meta01_ood001', 'seed': 1, 'device': 'cuda', 'node_text_device': 'cuda:0'}
+{'event': 'epoch_start', 'epoch': 1, 'epochs': 8, 'batches': 3529}
+{'candidate': 'h96_lr7e4_meta01_ood001', 'seed': 1, 'val_auc': nan, 'status': 'failed', 'error_type': 'ValueError', 'error': 'Input contains NaN.'}
+{'event': 'candidate_seed_start', 'candidate': 'h96_lr7e4_meta01_ood001', 'seed': 2, 'device': 'cuda', 'node_text_device': 'cuda:0'}
+{'event': 'epoch_start', 'epoch': 1, 'epochs': 8, 'batches': 3529}
+{'candidate': 'h96_lr7e4_meta01_ood001', 'seed': 2, 'val_auc': nan, 'status': 'failed', 'error_type': 'ValueError', 'error': 'Input contains NaN.'}
+{'event': 'candidate_seed_start', 'candidate': 'h128_lr7e4_meta01_ood001', 'seed': 1, 'device': 'cuda', 'node_text_device': 'cuda:0'}
+{'event': 'epoch_start', 'epoch': 1, 'epochs': 8, 'batches': 3529}
+{'candidate': 'h128_lr7e4_meta01_ood001', 'seed': 1, 'val_auc': nan, 'status': 'failed', 'error_type': 'ValueError', 'error': 'Input contains NaN.'}
+{'event': 'candidate_seed_start', 'candidate': 'h128_lr7e4_meta01_ood001', 'seed': 2, 'device': 'cuda', 'node_text_device': 'cuda:0'}
+{'event': 'epoch_start', 'epoch': 1, 'epochs': 8, 'batches': 3529}
+{'candidate': 'h128_lr7e4_meta01_ood001', 'seed': 2, 'val_auc': nan, 'status': 'failed', 'error_type': 'ValueError', 'error': 'Input contains NaN.'}
+{'event': 'candidate_seed_start', 'candidate': 'h128_lr5e4_align01_meta005_ood005', 'seed': 1, 'device': 'cuda', 'node_text_device': 'cuda:0'}
+{'event': 'epoch_start', 'epoch': 1, 'epochs': 8, 'batches': 3529}
+{'candidate': 'h128_lr5e4_align01_meta005_ood005', 'seed': 1, 'val_auc': nan, 'status': 'failed', 'error_type': 'ValueError', 'error': 'Input contains NaN.'}
+{'event': 'candidate_seed_start', 'candidate': 'h128_lr5e4_align01_meta005_ood005', 'seed': 2, 'device': 'cuda', 'node_text_device': 'cuda:0'}
+{'event': 'epoch_start', 'epoch': 1, 'epochs': 8, 'batches': 3529}
+{'candidate': 'h128_lr5e4_align01_meta005_ood005', 'seed': 2, 'val_auc': nan, 'status': 'failed', 'error_type': 'ValueError', 'error': 'Input contains NaN.'}
+no finite validation score found
+2026-05-21_05:45:57 icews05_search_exit rc=1

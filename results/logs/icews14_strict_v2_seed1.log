@@ -1,0 +1,1078 @@
+runtime_device=cuda
+cuda_device=Tesla V100-PCIE-32GB
+{'event': 'seed_start', 'dataset': 'icews14', 'ablation': 'full', 'seed': 1, 'device': 'cuda', 'node_text_device': 'cuda:0'}
+{'event': 'train_seed_start', 'seed': 1, 'train_edges': 61760, 'val_edges': 14592, 'test_edges': 14378, 'num_nodes': 7128, 'num_relations': 230}
+{'event': 'train_seed_tensors_ready', 'seed': 1, 'elapsed_sec': 0.013902723789215088, 'cuda_allocated_mb': 21, 'cuda_reserved_mb': 24, 'cuda_max_allocated_mb': 21}
+{'event': 'train_known_facts_ready', 'seed': 1, 'scope': 'train', 'edges': 61760, 'elapsed_sec': 0.021029092371463776}
+{'event': 'train_known_facts_ready', 'seed': 1, 'scope': 'train_val', 'edges': 76352, 'elapsed_sec': 0.027683250606060028}
+{'event': 'train_sampler_ready', 'seed': 1, 'elapsed_sec': 0.03516918420791626}
+{'event': 'val_sampler_ready', 'seed': 1, 'elapsed_sec': 0.04182664304971695}
+{'event': 'epoch_start', 'epoch': 1, 'epochs': 20, 'batches': 255, 'time_groups': 255}
+{'event': 'train_time_group', 'epoch': 1, 'time_group': 1, 'time_groups': 255, 'batch': 0, 'batches': 255, 'time_value': 1388534400.0, 'group_batches': 1, 'history_edges': 0, 'elapsed_sec': 0.02484559640288353, 'cuda_allocated_mb': 23, 'cuda_reserved_mb': 26, 'cuda_max_allocated_mb': 23}
+{'event': 'train_progress', 'epoch': 1, 'batch': 1, 'batches': 255, 'time_group': 1, 'time_groups': 255, 'history_edges': 0, 'pos_edges': 113, 'neg_edges': 113, 'loss_recent': 71.92257690429688, 'elapsed_sec': 1.4804179146885872, 'avg_sec_per_batch': 1.4804179146885872, 'cuda_allocated_mb': 90, 'cuda_reserved_mb': 174, 'cuda_max_allocated_mb': 160}
+{'event': 'train_progress', 'epoch': 1, 'batch': 100, 'batches': 255, 'time_group': 100, 'time_groups': 255, 'history_edges': 23816, 'pos_edges': 259, 'neg_edges': 259, 'loss_recent': 141.46375141143798, 'elapsed_sec': 59.47010216116905, 'avg_sec_per_batch': 0.5947010216116905, 'cuda_allocated_mb': 97, 'cuda_reserved_mb': 750, 'cuda_max_allocated_mb': 657}
+{'event': 'train_progress', 'epoch': 1, 'batch': 197, 'batches': 255, 'time_group': 197, 'time_groups': 255, 'history_edges': 47905, 'pos_edges': 283, 'neg_edges': 283, 'loss_recent': 134.0978957748413, 'elapsed_sec': 119.51756646484137, 'avg_sec_per_batch': 0.6066881546438648, 'cuda_allocated_mb': 98, 'cuda_reserved_mb': 1190, 'cuda_max_allocated_mb': 1056}
+{'event': 'train_progress', 'epoch': 1, 'batch': 200, 'batches': 255, 'time_group': 200, 'time_groups': 255, 'history_edges': 48751, 'pos_edges': 162, 'neg_edges': 162, 'loss_recent': 132.5761845779419, 'elapsed_sec': 121.43374955281615, 'avg_sec_per_batch': 0.6071687477640808, 'cuda_allocated_mb': 94, 'cuda_reserved_mb': 1190, 'cuda_max_allocated_mb': 1064}
+{'event': 'train_time_group', 'epoch': 1, 'time_group': 255, 'time_groups': 255, 'batch': 254, 'batches': 255, 'time_value': 1410480000.0, 'group_batches': 1, 'history_edges': 61439, 'elapsed_sec': 154.87982059270144, 'cuda_allocated_mb': 87, 'cuda_reserved_mb': 1430, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 1, 'batch': 255, 'batches': 255, 'time_group': 255, 'time_groups': 255, 'history_edges': 61439, 'pos_edges': 321, 'neg_edges': 321, 'loss_recent': 124.39959297180175, 'elapsed_sec': 155.33811317011714, 'avg_sec_per_batch': 0.6091690712553613, 'cuda_allocated_mb': 98, 'cuda_reserved_mb': 1430, 'cuda_max_allocated_mb': 1288}
+{'event': 'validation_start', 'epoch': 1}
+{'event': 'epoch_end', 'epoch': 1, 'early_stop_metric': 'val_auc', 'val_score': 0.8682487767232165, 'val_auc': 0.8682487767232165, 'val_ap': 0.22714207547352178, 'val_ndcg': 0.8466186038115824, 'elapsed_sec': 297.94688272848725}
+{'event': 'epoch_start', 'epoch': 2, 'epochs': 20, 'batches': 255, 'time_groups': 255}
+{'event': 'train_time_group', 'epoch': 2, 'time_group': 1, 'time_groups': 255, 'batch': 0, 'batches': 255, 'time_value': 1388534400.0, 'group_batches': 1, 'history_edges': 0, 'elapsed_sec': 0.021444033831357956, 'cuda_allocated_mb': 87, 'cuda_reserved_mb': 1520, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 2, 'batch': 1, 'batches': 255, 'time_group': 1, 'time_groups': 255, 'history_edges': 0, 'pos_edges': 113, 'neg_edges': 113, 'loss_recent': 68.09013366699219, 'elapsed_sec': 0.36550304666161537, 'avg_sec_per_batch': 0.36550304666161537, 'cuda_allocated_mb': 91, 'cuda_reserved_mb': 1520, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 2, 'batch': 100, 'batches': 255, 'time_group': 100, 'time_groups': 255, 'history_edges': 23816, 'pos_edges': 259, 'neg_edges': 259, 'loss_recent': 120.72618202209473, 'elapsed_sec': 57.714082304388285, 'avg_sec_per_batch': 0.5771408230438828, 'cuda_allocated_mb': 97, 'cuda_reserved_mb': 1520, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 2, 'batch': 196, 'batches': 255, 'time_group': 196, 'time_groups': 255, 'history_edges': 47593, 'pos_edges': 312, 'neg_edges': 312, 'loss_recent': 115.75643161773682, 'elapsed_sec': 118.28354509547353, 'avg_sec_per_batch': 0.6034874749769058, 'cuda_allocated_mb': 98, 'cuda_reserved_mb': 1520, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 2, 'batch': 200, 'batches': 255, 'time_group': 200, 'time_groups': 255, 'history_edges': 48751, 'pos_edges': 162, 'neg_edges': 162, 'loss_recent': 114.2838815689087, 'elapsed_sec': 120.82006165385246, 'avg_sec_per_batch': 0.6041003082692623, 'cuda_allocated_mb': 94, 'cuda_reserved_mb': 1520, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_time_group', 'epoch': 2, 'time_group': 255, 'time_groups': 255, 'batch': 254, 'batches': 255, 'time_value': 1410480000.0, 'group_batches': 1, 'history_edges': 61439, 'elapsed_sec': 153.71782007440925, 'cuda_allocated_mb': 87, 'cuda_reserved_mb': 1520, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 2, 'batch': 255, 'batches': 255, 'time_group': 255, 'time_groups': 255, 'history_edges': 61439, 'pos_edges': 321, 'neg_edges': 321, 'loss_recent': 108.44632503509521, 'elapsed_sec': 154.39784153550863, 'avg_sec_per_batch': 0.6054817315117985, 'cuda_allocated_mb': 98, 'cuda_reserved_mb': 1520, 'cuda_max_allocated_mb': 1288}
+{'event': 'validation_start', 'epoch': 2}
+{'event': 'epoch_end', 'epoch': 2, 'early_stop_metric': 'val_auc', 'val_score': 0.8914874201827725, 'val_auc': 0.8914874201827725, 'val_ap': 0.3184208252114379, 'val_ndcg': 0.8771583795418861, 'elapsed_sec': 299.5589792393148}
+{'event': 'epoch_start', 'epoch': 3, 'epochs': 20, 'batches': 255, 'time_groups': 255}
+{'event': 'train_time_group', 'epoch': 3, 'time_group': 1, 'time_groups': 255, 'batch': 0, 'batches': 255, 'time_value': 1388534400.0, 'group_batches': 1, 'history_edges': 0, 'elapsed_sec': 0.02881791815161705, 'cuda_allocated_mb': 87, 'cuda_reserved_mb': 1520, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 3, 'batch': 1, 'batches': 255, 'time_group': 1, 'time_groups': 255, 'history_edges': 0, 'pos_edges': 113, 'neg_edges': 113, 'loss_recent': 65.97225952148438, 'elapsed_sec': 0.38607553392648697, 'avg_sec_per_batch': 0.38607553392648697, 'cuda_allocated_mb': 92, 'cuda_reserved_mb': 1520, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 3, 'batch': 100, 'batches': 255, 'time_group': 100, 'time_groups': 255, 'history_edges': 23816, 'pos_edges': 259, 'neg_edges': 259, 'loss_recent': 109.25308376312256, 'elapsed_sec': 58.22467190772295, 'avg_sec_per_batch': 0.5822467190772295, 'cuda_allocated_mb': 97, 'cuda_reserved_mb': 1520, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 3, 'batch': 196, 'batches': 255, 'time_group': 196, 'time_groups': 255, 'history_edges': 47593, 'pos_edges': 312, 'neg_edges': 312, 'loss_recent': 103.00322971343994, 'elapsed_sec': 118.5631945580244, 'avg_sec_per_batch': 0.6049142579491041, 'cuda_allocated_mb': 99, 'cuda_reserved_mb': 1520, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 3, 'batch': 200, 'batches': 255, 'time_group': 200, 'time_groups': 255, 'history_edges': 48751, 'pos_edges': 162, 'neg_edges': 162, 'loss_recent': 101.78397624969483, 'elapsed_sec': 121.15257742255926, 'avg_sec_per_batch': 0.6057628871127964, 'cuda_allocated_mb': 94, 'cuda_reserved_mb': 1520, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_time_group', 'epoch': 3, 'time_group': 255, 'time_groups': 255, 'batch': 254, 'batches': 255, 'time_value': 1410480000.0, 'group_batches': 1, 'history_edges': 61439, 'elapsed_sec': 153.58261715993285, 'cuda_allocated_mb': 87, 'cuda_reserved_mb': 1520, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 3, 'batch': 255, 'batches': 255, 'time_group': 255, 'time_groups': 255, 'history_edges': 61439, 'pos_edges': 321, 'neg_edges': 321, 'loss_recent': 96.53888278961182, 'elapsed_sec': 154.27119717374444, 'avg_sec_per_batch': 0.6049850869558605, 'cuda_allocated_mb': 98, 'cuda_reserved_mb': 1520, 'cuda_max_allocated_mb': 1288}
+{'event': 'validation_start', 'epoch': 3}
+{'event': 'epoch_end', 'epoch': 3, 'early_stop_metric': 'val_auc', 'val_score': 0.8915012000574998, 'val_auc': 0.8915012000574998, 'val_ap': 0.3526881169716036, 'val_ndcg': 0.8863472876791185, 'elapsed_sec': 298.14321073144674}
+{'event': 'epoch_start', 'epoch': 4, 'epochs': 20, 'batches': 255, 'time_groups': 255}
+{'event': 'train_time_group', 'epoch': 4, 'time_group': 1, 'time_groups': 255, 'batch': 0, 'batches': 255, 'time_value': 1388534400.0, 'group_batches': 1, 'history_edges': 0, 'elapsed_sec': 0.021037790924310684, 'cuda_allocated_mb': 87, 'cuda_reserved_mb': 1522, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 4, 'batch': 1, 'batches': 255, 'time_group': 1, 'time_groups': 255, 'history_edges': 0, 'pos_edges': 113, 'neg_edges': 113, 'loss_recent': 66.95829010009766, 'elapsed_sec': 0.3871578760445118, 'avg_sec_per_batch': 0.3871578760445118, 'cuda_allocated_mb': 91, 'cuda_reserved_mb': 1522, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 4, 'batch': 100, 'batches': 255, 'time_group': 100, 'time_groups': 255, 'history_edges': 23816, 'pos_edges': 259, 'neg_edges': 259, 'loss_recent': 98.92346412658691, 'elapsed_sec': 58.238980270922184, 'avg_sec_per_batch': 0.5823898027092218, 'cuda_allocated_mb': 97, 'cuda_reserved_mb': 1522, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 4, 'batch': 197, 'batches': 255, 'time_group': 197, 'time_groups': 255, 'history_edges': 47905, 'pos_edges': 283, 'neg_edges': 283, 'loss_recent': 92.20775825500488, 'elapsed_sec': 118.8958296328783, 'avg_sec_per_batch': 0.6035321301161335, 'cuda_allocated_mb': 98, 'cuda_reserved_mb': 1522, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 4, 'batch': 200, 'batches': 255, 'time_group': 200, 'time_groups': 255, 'history_edges': 48751, 'pos_edges': 162, 'neg_edges': 162, 'loss_recent': 91.16639556884766, 'elapsed_sec': 120.92215551435947, 'avg_sec_per_batch': 0.6046107775717974, 'cuda_allocated_mb': 94, 'cuda_reserved_mb': 1522, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_time_group', 'epoch': 4, 'time_group': 255, 'time_groups': 255, 'batch': 254, 'batches': 255, 'time_value': 1410480000.0, 'group_batches': 1, 'history_edges': 61439, 'elapsed_sec': 153.26466843113303, 'cuda_allocated_mb': 87, 'cuda_reserved_mb': 1522, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 4, 'batch': 255, 'batches': 255, 'time_group': 255, 'time_groups': 255, 'history_edges': 61439, 'pos_edges': 321, 'neg_edges': 321, 'loss_recent': 86.93388145446778, 'elapsed_sec': 153.9838931709528, 'avg_sec_per_batch': 0.6038584045919717, 'cuda_allocated_mb': 99, 'cuda_reserved_mb': 1522, 'cuda_max_allocated_mb': 1288}
+{'event': 'validation_start', 'epoch': 4}
+{'event': 'epoch_end', 'epoch': 4, 'early_stop_metric': 'val_auc', 'val_score': 0.8932305972074941, 'val_auc': 0.8932305972074941, 'val_ap': 0.3647431239202859, 'val_ndcg': 0.8899888160937997, 'elapsed_sec': 300.1417250111699}
+{'event': 'epoch_start', 'epoch': 5, 'epochs': 20, 'batches': 255, 'time_groups': 255}
+{'event': 'train_time_group', 'epoch': 5, 'time_group': 1, 'time_groups': 255, 'batch': 0, 'batches': 255, 'time_value': 1388534400.0, 'group_batches': 1, 'history_edges': 0, 'elapsed_sec': 0.021501604467630386, 'cuda_allocated_mb': 87, 'cuda_reserved_mb': 1522, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 5, 'batch': 1, 'batches': 255, 'time_group': 1, 'time_groups': 255, 'history_edges': 0, 'pos_edges': 113, 'neg_edges': 113, 'loss_recent': 68.56473541259766, 'elapsed_sec': 0.38557757809758186, 'avg_sec_per_batch': 0.38557757809758186, 'cuda_allocated_mb': 91, 'cuda_reserved_mb': 1522, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 5, 'batch': 100, 'batches': 255, 'time_group': 100, 'time_groups': 255, 'history_edges': 23816, 'pos_edges': 259, 'neg_edges': 259, 'loss_recent': 90.20916324615479, 'elapsed_sec': 58.02476868405938, 'avg_sec_per_batch': 0.5802476868405938, 'cuda_allocated_mb': 97, 'cuda_reserved_mb': 1522, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 5, 'batch': 197, 'batches': 255, 'time_group': 197, 'time_groups': 255, 'history_edges': 47905, 'pos_edges': 283, 'neg_edges': 283, 'loss_recent': 83.97543649673462, 'elapsed_sec': 118.13042727857828, 'avg_sec_per_batch': 0.5996468389775548, 'cuda_allocated_mb': 98, 'cuda_reserved_mb': 1522, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 5, 'batch': 200, 'batches': 255, 'time_group': 200, 'time_groups': 255, 'history_edges': 48751, 'pos_edges': 162, 'neg_edges': 162, 'loss_recent': 83.04259675979614, 'elapsed_sec': 120.00629647821188, 'avg_sec_per_batch': 0.6000314823910594, 'cuda_allocated_mb': 94, 'cuda_reserved_mb': 1522, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_time_group', 'epoch': 5, 'time_group': 255, 'time_groups': 255, 'batch': 254, 'batches': 255, 'time_value': 1410480000.0, 'group_batches': 1, 'history_edges': 61439, 'elapsed_sec': 151.35029372945428, 'cuda_allocated_mb': 87, 'cuda_reserved_mb': 1522, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 5, 'batch': 255, 'batches': 255, 'time_group': 255, 'time_groups': 255, 'history_edges': 61439, 'pos_edges': 321, 'neg_edges': 321, 'loss_recent': 79.1860520362854, 'elapsed_sec': 152.05618293210864, 'avg_sec_per_batch': 0.5962987565965044, 'cuda_allocated_mb': 99, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'validation_start', 'epoch': 5}
+{'event': 'epoch_end', 'epoch': 5, 'early_stop_metric': 'val_auc', 'val_score': 0.8925529109430006, 'val_auc': 0.8925529109430006, 'val_ap': 0.3618358452373926, 'val_ndcg': 0.8896352343832657, 'elapsed_sec': 295.6413508988917}
+{'event': 'epoch_start', 'epoch': 6, 'epochs': 20, 'batches': 255, 'time_groups': 255}
+{'event': 'train_time_group', 'epoch': 6, 'time_group': 1, 'time_groups': 255, 'batch': 0, 'batches': 255, 'time_value': 1388534400.0, 'group_batches': 1, 'history_edges': 0, 'elapsed_sec': 0.021118227392435074, 'cuda_allocated_mb': 87, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 6, 'batch': 1, 'batches': 255, 'time_group': 1, 'time_groups': 255, 'history_edges': 0, 'pos_edges': 113, 'neg_edges': 113, 'loss_recent': 70.51677703857422, 'elapsed_sec': 0.42865942418575287, 'avg_sec_per_batch': 0.42865942418575287, 'cuda_allocated_mb': 92, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 6, 'batch': 100, 'batches': 255, 'time_group': 100, 'time_groups': 255, 'history_edges': 23816, 'pos_edges': 259, 'neg_edges': 259, 'loss_recent': 83.21717588424683, 'elapsed_sec': 57.2674348577857, 'avg_sec_per_batch': 0.572674348577857, 'cuda_allocated_mb': 97, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 6, 'batch': 198, 'batches': 255, 'time_group': 198, 'time_groups': 255, 'history_edges': 48188, 'pos_edges': 281, 'neg_edges': 281, 'loss_recent': 77.27267566680908, 'elapsed_sec': 117.45291031524539, 'avg_sec_per_batch': 0.5931965167436636, 'cuda_allocated_mb': 98, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 6, 'batch': 200, 'batches': 255, 'time_group': 200, 'time_groups': 255, 'history_edges': 48751, 'pos_edges': 162, 'neg_edges': 162, 'loss_recent': 76.63449131011963, 'elapsed_sec': 118.63603086769581, 'avg_sec_per_batch': 0.593180154338479, 'cuda_allocated_mb': 94, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_time_group', 'epoch': 6, 'time_group': 255, 'time_groups': 255, 'batch': 254, 'batches': 255, 'time_value': 1410480000.0, 'group_batches': 1, 'history_edges': 61439, 'elapsed_sec': 150.38829217851162, 'cuda_allocated_mb': 87, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 6, 'batch': 255, 'batches': 255, 'time_group': 255, 'time_groups': 255, 'history_edges': 61439, 'pos_edges': 321, 'neg_edges': 321, 'loss_recent': 73.43195692062378, 'elapsed_sec': 151.08824092522264, 'avg_sec_per_batch': 0.5925029055891083, 'cuda_allocated_mb': 99, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'validation_start', 'epoch': 6}
+{'event': 'epoch_end', 'epoch': 6, 'early_stop_metric': 'val_auc', 'val_score': 0.8932902718001272, 'val_auc': 0.8932902718001272, 'val_ap': 0.356961470461284, 'val_ndcg': 0.886364745414363, 'elapsed_sec': 294.43182761222124}
+{'event': 'epoch_start', 'epoch': 7, 'epochs': 20, 'batches': 255, 'time_groups': 255}
+{'event': 'train_time_group', 'epoch': 7, 'time_group': 1, 'time_groups': 255, 'batch': 0, 'batches': 255, 'time_value': 1388534400.0, 'group_batches': 1, 'history_edges': 0, 'elapsed_sec': 0.02326168119907379, 'cuda_allocated_mb': 87, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 7, 'batch': 1, 'batches': 255, 'time_group': 1, 'time_groups': 255, 'history_edges': 0, 'pos_edges': 113, 'neg_edges': 113, 'loss_recent': 73.71019744873047, 'elapsed_sec': 0.3955238610506058, 'avg_sec_per_batch': 0.3955238610506058, 'cuda_allocated_mb': 91, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 7, 'batch': 100, 'batches': 255, 'time_group': 100, 'time_groups': 255, 'history_edges': 23816, 'pos_edges': 259, 'neg_edges': 259, 'loss_recent': 77.69921802520751, 'elapsed_sec': 56.7627095580101, 'avg_sec_per_batch': 0.567627095580101, 'cuda_allocated_mb': 97, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 7, 'batch': 197, 'batches': 255, 'time_group': 197, 'time_groups': 255, 'history_edges': 47905, 'pos_edges': 283, 'neg_edges': 283, 'loss_recent': 72.73876415252685, 'elapsed_sec': 116.85195699334145, 'avg_sec_per_batch': 0.5931571420981799, 'cuda_allocated_mb': 98, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 7, 'batch': 200, 'batches': 255, 'time_group': 200, 'time_groups': 255, 'history_edges': 48751, 'pos_edges': 162, 'neg_edges': 162, 'loss_recent': 71.90630336761474, 'elapsed_sec': 118.73285415023565, 'avg_sec_per_batch': 0.5936642707511782, 'cuda_allocated_mb': 94, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_time_group', 'epoch': 7, 'time_group': 255, 'time_groups': 255, 'batch': 254, 'batches': 255, 'time_value': 1410480000.0, 'group_batches': 1, 'history_edges': 61439, 'elapsed_sec': 150.04223055765033, 'cuda_allocated_mb': 87, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 7, 'batch': 255, 'batches': 255, 'time_group': 255, 'time_groups': 255, 'history_edges': 61439, 'pos_edges': 321, 'neg_edges': 321, 'loss_recent': 69.0926487159729, 'elapsed_sec': 150.8082785755396, 'avg_sec_per_batch': 0.5914050140217239, 'cuda_allocated_mb': 99, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'validation_start', 'epoch': 7}
+{'event': 'epoch_end', 'epoch': 7, 'early_stop_metric': 'val_auc', 'val_score': 0.891000673547089, 'val_auc': 0.891000673547089, 'val_ap': 0.3579405634639156, 'val_ndcg': 0.8882629612138806, 'elapsed_sec': 296.6649721264839}
+{'event': 'epoch_start', 'epoch': 8, 'epochs': 20, 'batches': 255, 'time_groups': 255}
+{'event': 'train_time_group', 'epoch': 8, 'time_group': 1, 'time_groups': 255, 'batch': 0, 'batches': 255, 'time_value': 1388534400.0, 'group_batches': 1, 'history_edges': 0, 'elapsed_sec': 0.020235836505889893, 'cuda_allocated_mb': 87, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 8, 'batch': 1, 'batches': 255, 'time_group': 1, 'time_groups': 255, 'history_edges': 0, 'pos_edges': 113, 'neg_edges': 113, 'loss_recent': 79.94622039794922, 'elapsed_sec': 0.3041592799127102, 'avg_sec_per_batch': 0.3041592799127102, 'cuda_allocated_mb': 91, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 8, 'batch': 100, 'batches': 255, 'time_group': 100, 'time_groups': 255, 'history_edges': 23816, 'pos_edges': 259, 'neg_edges': 259, 'loss_recent': 73.68590059280396, 'elapsed_sec': 56.32972468063235, 'avg_sec_per_batch': 0.5632972468063235, 'cuda_allocated_mb': 97, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 8, 'batch': 198, 'batches': 255, 'time_group': 198, 'time_groups': 255, 'history_edges': 48188, 'pos_edges': 281, 'neg_edges': 281, 'loss_recent': 69.08682199478149, 'elapsed_sec': 116.96686122193933, 'avg_sec_per_batch': 0.5907417233431279, 'cuda_allocated_mb': 98, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 8, 'batch': 200, 'batches': 255, 'time_group': 200, 'time_groups': 255, 'history_edges': 48751, 'pos_edges': 162, 'neg_edges': 162, 'loss_recent': 68.57537477493287, 'elapsed_sec': 118.12601915001869, 'avg_sec_per_batch': 0.5906300957500935, 'cuda_allocated_mb': 94, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_time_group', 'epoch': 8, 'time_group': 255, 'time_groups': 255, 'batch': 254, 'batches': 255, 'time_value': 1410480000.0, 'group_batches': 1, 'history_edges': 61439, 'elapsed_sec': 149.69541946053505, 'cuda_allocated_mb': 87, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 8, 'batch': 255, 'batches': 255, 'time_group': 255, 'time_groups': 255, 'history_edges': 61439, 'pos_edges': 321, 'neg_edges': 321, 'loss_recent': 65.99918481826782, 'elapsed_sec': 150.40939377993345, 'avg_sec_per_batch': 0.5898407599213077, 'cuda_allocated_mb': 99, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'validation_start', 'epoch': 8}
+{'event': 'epoch_end', 'epoch': 8, 'early_stop_metric': 'val_auc', 'val_score': 0.8931991036116582, 'val_auc': 0.8931991036116582, 'val_ap': 0.38203200692305905, 'val_ndcg': 0.8944473017187621, 'elapsed_sec': 298.5917553268373}
+{'event': 'epoch_start', 'epoch': 9, 'epochs': 20, 'batches': 255, 'time_groups': 255}
+{'event': 'train_time_group', 'epoch': 9, 'time_group': 1, 'time_groups': 255, 'batch': 0, 'batches': 255, 'time_value': 1388534400.0, 'group_batches': 1, 'history_edges': 0, 'elapsed_sec': 0.020238298922777176, 'cuda_allocated_mb': 87, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 9, 'batch': 1, 'batches': 255, 'time_group': 1, 'time_groups': 255, 'history_edges': 0, 'pos_edges': 113, 'neg_edges': 113, 'loss_recent': 85.22966003417969, 'elapsed_sec': 0.27913060411810875, 'avg_sec_per_batch': 0.27913060411810875, 'cuda_allocated_mb': 91, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 9, 'batch': 100, 'batches': 255, 'time_group': 100, 'time_groups': 255, 'history_edges': 23816, 'pos_edges': 259, 'neg_edges': 259, 'loss_recent': 70.25923625946045, 'elapsed_sec': 56.36251172423363, 'avg_sec_per_batch': 0.5636251172423363, 'cuda_allocated_mb': 97, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 9, 'batch': 197, 'batches': 255, 'time_group': 197, 'time_groups': 255, 'history_edges': 47905, 'pos_edges': 283, 'neg_edges': 283, 'loss_recent': 66.81233695983887, 'elapsed_sec': 116.48745996877551, 'avg_sec_per_batch': 0.5913069033947995, 'cuda_allocated_mb': 98, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 9, 'batch': 200, 'batches': 255, 'time_group': 200, 'time_groups': 255, 'history_edges': 48751, 'pos_edges': 162, 'neg_edges': 162, 'loss_recent': 66.05190334320068, 'elapsed_sec': 118.30540757626295, 'avg_sec_per_batch': 0.5915270378813148, 'cuda_allocated_mb': 94, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_time_group', 'epoch': 9, 'time_group': 255, 'time_groups': 255, 'batch': 254, 'batches': 255, 'time_value': 1410480000.0, 'group_batches': 1, 'history_edges': 61439, 'elapsed_sec': 149.49401939287782, 'cuda_allocated_mb': 87, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 9, 'batch': 255, 'batches': 255, 'time_group': 255, 'time_groups': 255, 'history_edges': 61439, 'pos_edges': 321, 'neg_edges': 321, 'loss_recent': 63.724703006744384, 'elapsed_sec': 150.19007969275117, 'avg_sec_per_batch': 0.5889807046774556, 'cuda_allocated_mb': 99, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'validation_start', 'epoch': 9}
+{'event': 'epoch_end', 'epoch': 9, 'early_stop_metric': 'val_auc', 'val_score': 0.8956947483991469, 'val_auc': 0.8956947483991469, 'val_ap': 0.38576150948120114, 'val_ndcg': 0.8942828068709258, 'elapsed_sec': 295.6480157338083}
+{'event': 'epoch_start', 'epoch': 10, 'epochs': 20, 'batches': 255, 'time_groups': 255}
+{'event': 'train_time_group', 'epoch': 10, 'time_group': 1, 'time_groups': 255, 'batch': 0, 'batches': 255, 'time_value': 1388534400.0, 'group_batches': 1, 'history_edges': 0, 'elapsed_sec': 0.02032357081770897, 'cuda_allocated_mb': 87, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 10, 'batch': 1, 'batches': 255, 'time_group': 1, 'time_groups': 255, 'history_edges': 0, 'pos_edges': 113, 'neg_edges': 113, 'loss_recent': 92.98748016357422, 'elapsed_sec': 0.35838519781827927, 'avg_sec_per_batch': 0.35838519781827927, 'cuda_allocated_mb': 91, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 10, 'batch': 100, 'batches': 255, 'time_group': 100, 'time_groups': 255, 'history_edges': 23816, 'pos_edges': 259, 'neg_edges': 259, 'loss_recent': 67.4927606010437, 'elapsed_sec': 57.11114722490311, 'avg_sec_per_batch': 0.571111472249031, 'cuda_allocated_mb': 97, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 10, 'batch': 197, 'batches': 255, 'time_group': 197, 'time_groups': 255, 'history_edges': 47905, 'pos_edges': 283, 'neg_edges': 283, 'loss_recent': 64.90908777236939, 'elapsed_sec': 117.31923016160727, 'avg_sec_per_batch': 0.5955290871147577, 'cuda_allocated_mb': 98, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 10, 'batch': 200, 'batches': 255, 'time_group': 200, 'time_groups': 255, 'history_edges': 48751, 'pos_edges': 162, 'neg_edges': 162, 'loss_recent': 64.18464849472046, 'elapsed_sec': 119.19399227574468, 'avg_sec_per_batch': 0.5959699613787234, 'cuda_allocated_mb': 94, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_time_group', 'epoch': 10, 'time_group': 255, 'time_groups': 255, 'batch': 254, 'batches': 255, 'time_value': 1410480000.0, 'group_batches': 1, 'history_edges': 61439, 'elapsed_sec': 150.45452945306897, 'cuda_allocated_mb': 87, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 10, 'batch': 255, 'batches': 255, 'time_group': 255, 'time_groups': 255, 'history_edges': 61439, 'pos_edges': 321, 'neg_edges': 321, 'loss_recent': 62.02550136566162, 'elapsed_sec': 151.14993488788605, 'avg_sec_per_batch': 0.5927448426975923, 'cuda_allocated_mb': 99, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'validation_start', 'epoch': 10}
+{'event': 'epoch_end', 'epoch': 10, 'early_stop_metric': 'val_auc', 'val_score': 0.8952481817384617, 'val_auc': 0.8952481817384617, 'val_ap': 0.39819344245073085, 'val_ndcg': 0.8979364778293002, 'elapsed_sec': 295.4648392088711}
+{'event': 'epoch_start', 'epoch': 11, 'epochs': 20, 'batches': 255, 'time_groups': 255}
+{'event': 'train_time_group', 'epoch': 11, 'time_group': 1, 'time_groups': 255, 'batch': 0, 'batches': 255, 'time_value': 1388534400.0, 'group_batches': 1, 'history_edges': 0, 'elapsed_sec': 0.023647796362638474, 'cuda_allocated_mb': 87, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 11, 'batch': 1, 'batches': 255, 'time_group': 1, 'time_groups': 255, 'history_edges': 0, 'pos_edges': 113, 'neg_edges': 113, 'loss_recent': 100.87139892578125, 'elapsed_sec': 0.3991936817765236, 'avg_sec_per_batch': 0.3991936817765236, 'cuda_allocated_mb': 91, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 11, 'batch': 100, 'batches': 255, 'time_group': 100, 'time_groups': 255, 'history_edges': 23816, 'pos_edges': 259, 'neg_edges': 259, 'loss_recent': 65.68333288192748, 'elapsed_sec': 57.26087075099349, 'avg_sec_per_batch': 0.5726087075099349, 'cuda_allocated_mb': 97, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 11, 'batch': 198, 'batches': 255, 'time_group': 198, 'time_groups': 255, 'history_edges': 48188, 'pos_edges': 281, 'neg_edges': 281, 'loss_recent': 63.36554531097412, 'elapsed_sec': 117.3984307423234, 'avg_sec_per_batch': 0.5929213673854717, 'cuda_allocated_mb': 97, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 11, 'batch': 200, 'batches': 255, 'time_group': 200, 'time_groups': 255, 'history_edges': 48751, 'pos_edges': 162, 'neg_edges': 162, 'loss_recent': 62.8902624130249, 'elapsed_sec': 118.5553632043302, 'avg_sec_per_batch': 0.592776816021651, 'cuda_allocated_mb': 94, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_time_group', 'epoch': 11, 'time_group': 255, 'time_groups': 255, 'batch': 254, 'batches': 255, 'time_value': 1410480000.0, 'group_batches': 1, 'history_edges': 61439, 'elapsed_sec': 150.41283086687326, 'cuda_allocated_mb': 87, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 11, 'batch': 255, 'batches': 255, 'time_group': 255, 'time_groups': 255, 'history_edges': 61439, 'pos_edges': 321, 'neg_edges': 321, 'loss_recent': 60.91755313873291, 'elapsed_sec': 151.08029717206955, 'avg_sec_per_batch': 0.592471753615959, 'cuda_allocated_mb': 98, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'validation_start', 'epoch': 11}
+{'event': 'epoch_end', 'epoch': 11, 'early_stop_metric': 'val_auc', 'val_score': 0.8957929447417113, 'val_auc': 0.8957929447417113, 'val_ap': 0.3924016084286612, 'val_ndcg': 0.8957429924677548, 'elapsed_sec': 295.30027501285076}
+{'event': 'epoch_start', 'epoch': 12, 'epochs': 20, 'batches': 255, 'time_groups': 255}
+{'event': 'train_time_group', 'epoch': 12, 'time_group': 1, 'time_groups': 255, 'batch': 0, 'batches': 255, 'time_value': 1388534400.0, 'group_batches': 1, 'history_edges': 0, 'elapsed_sec': 0.02092824876308441, 'cuda_allocated_mb': 87, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 12, 'batch': 1, 'batches': 255, 'time_group': 1, 'time_groups': 255, 'history_edges': 0, 'pos_edges': 113, 'neg_edges': 113, 'loss_recent': 111.95499420166016, 'elapsed_sec': 0.3664850480854511, 'avg_sec_per_batch': 0.3664850480854511, 'cuda_allocated_mb': 92, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 12, 'batch': 100, 'batches': 255, 'time_group': 100, 'time_groups': 255, 'history_edges': 23816, 'pos_edges': 259, 'neg_edges': 259, 'loss_recent': 64.0383218383789, 'elapsed_sec': 56.30806850269437, 'avg_sec_per_batch': 0.5630806850269436, 'cuda_allocated_mb': 97, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 12, 'batch': 198, 'batches': 255, 'time_group': 198, 'time_groups': 255, 'history_edges': 48188, 'pos_edges': 281, 'neg_edges': 281, 'loss_recent': 62.27497074127197, 'elapsed_sec': 116.75343090295792, 'avg_sec_per_batch': 0.5896637924391814, 'cuda_allocated_mb': 98, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 12, 'batch': 200, 'batches': 255, 'time_group': 200, 'time_groups': 255, 'history_edges': 48751, 'pos_edges': 162, 'neg_edges': 162, 'loss_recent': 61.80395950317383, 'elapsed_sec': 117.9200417585671, 'avg_sec_per_batch': 0.5896002087928355, 'cuda_allocated_mb': 94, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_time_group', 'epoch': 12, 'time_group': 255, 'time_groups': 255, 'batch': 254, 'batches': 255, 'time_value': 1410480000.0, 'group_batches': 1, 'history_edges': 61439, 'elapsed_sec': 149.5372436903417, 'cuda_allocated_mb': 87, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 12, 'batch': 255, 'batches': 255, 'time_group': 255, 'time_groups': 255, 'history_edges': 61439, 'pos_edges': 321, 'neg_edges': 321, 'loss_recent': 60.069944801330564, 'elapsed_sec': 150.24657944962382, 'avg_sec_per_batch': 0.5892022723514659, 'cuda_allocated_mb': 99, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'validation_start', 'epoch': 12}
+{'event': 'epoch_end', 'epoch': 12, 'early_stop_metric': 'val_auc', 'val_score': 0.8943318987347669, 'val_auc': 0.8943318987347669, 'val_ap': 0.40535545948655693, 'val_ndcg': 0.8994193586071538, 'elapsed_sec': 292.6851521283388}
+{'event': 'epoch_start', 'epoch': 13, 'epochs': 20, 'batches': 255, 'time_groups': 255}
+{'event': 'train_time_group', 'epoch': 13, 'time_group': 1, 'time_groups': 255, 'batch': 0, 'batches': 255, 'time_value': 1388534400.0, 'group_batches': 1, 'history_edges': 0, 'elapsed_sec': 0.022264879196882248, 'cuda_allocated_mb': 87, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 13, 'batch': 1, 'batches': 255, 'time_group': 1, 'time_groups': 255, 'history_edges': 0, 'pos_edges': 113, 'neg_edges': 113, 'loss_recent': 121.67695617675781, 'elapsed_sec': 0.3911212347447872, 'avg_sec_per_batch': 0.3911212347447872, 'cuda_allocated_mb': 92, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 13, 'batch': 100, 'batches': 255, 'time_group': 100, 'time_groups': 255, 'history_edges': 23816, 'pos_edges': 259, 'neg_edges': 259, 'loss_recent': 62.871796875, 'elapsed_sec': 56.11718524619937, 'avg_sec_per_batch': 0.5611718524619937, 'cuda_allocated_mb': 97, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 13, 'batch': 197, 'batches': 255, 'time_group': 197, 'time_groups': 255, 'history_edges': 47905, 'pos_edges': 283, 'neg_edges': 283, 'loss_recent': 61.808948364257816, 'elapsed_sec': 116.21679797023535, 'avg_sec_per_batch': 0.589932984620484, 'cuda_allocated_mb': 98, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 13, 'batch': 200, 'batches': 255, 'time_group': 200, 'time_groups': 255, 'history_edges': 48751, 'pos_edges': 162, 'neg_edges': 162, 'loss_recent': 61.140434417724606, 'elapsed_sec': 118.03823988512158, 'avg_sec_per_batch': 0.5901911994256079, 'cuda_allocated_mb': 94, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_time_group', 'epoch': 13, 'time_group': 255, 'time_groups': 255, 'batch': 254, 'batches': 255, 'time_value': 1410480000.0, 'group_batches': 1, 'history_edges': 61439, 'elapsed_sec': 150.09039580076933, 'cuda_allocated_mb': 87, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 13, 'batch': 255, 'batches': 255, 'time_group': 255, 'time_groups': 255, 'history_edges': 61439, 'pos_edges': 321, 'neg_edges': 321, 'loss_recent': 59.46422292709351, 'elapsed_sec': 150.80915704369545, 'avg_sec_per_batch': 0.5914084589948841, 'cuda_allocated_mb': 99, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'validation_start', 'epoch': 13}
+{'event': 'epoch_end', 'epoch': 13, 'early_stop_metric': 'val_auc', 'val_score': 0.8949515681620486, 'val_auc': 0.8949515681620486, 'val_ap': 0.4181109989028592, 'val_ndcg': 0.9022740699959559, 'elapsed_sec': 293.7875656373799}
+{'event': 'epoch_start', 'epoch': 14, 'epochs': 20, 'batches': 255, 'time_groups': 255}
+{'event': 'train_time_group', 'epoch': 14, 'time_group': 1, 'time_groups': 255, 'batch': 0, 'batches': 255, 'time_value': 1388534400.0, 'group_batches': 1, 'history_edges': 0, 'elapsed_sec': 0.021423891186714172, 'cuda_allocated_mb': 87, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 14, 'batch': 1, 'batches': 255, 'time_group': 1, 'time_groups': 255, 'history_edges': 0, 'pos_edges': 113, 'neg_edges': 113, 'loss_recent': 139.8619842529297, 'elapsed_sec': 0.3746075667440891, 'avg_sec_per_batch': 0.3746075667440891, 'cuda_allocated_mb': 92, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 14, 'batch': 100, 'batches': 255, 'time_group': 100, 'time_groups': 255, 'history_edges': 23816, 'pos_edges': 259, 'neg_edges': 259, 'loss_recent': 61.91148233413696, 'elapsed_sec': 55.7870920561254, 'avg_sec_per_batch': 0.557870920561254, 'cuda_allocated_mb': 97, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 14, 'batch': 198, 'batches': 255, 'time_group': 198, 'time_groups': 255, 'history_edges': 48188, 'pos_edges': 281, 'neg_edges': 281, 'loss_recent': 61.139035339355466, 'elapsed_sec': 116.41671423986554, 'avg_sec_per_batch': 0.5879632032316442, 'cuda_allocated_mb': 98, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 14, 'batch': 200, 'batches': 255, 'time_group': 200, 'time_groups': 255, 'history_edges': 48751, 'pos_edges': 162, 'neg_edges': 162, 'loss_recent': 60.68427244186401, 'elapsed_sec': 117.58021952956915, 'avg_sec_per_batch': 0.5879010976478457, 'cuda_allocated_mb': 94, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_time_group', 'epoch': 14, 'time_group': 255, 'time_groups': 255, 'batch': 254, 'batches': 255, 'time_value': 1410480000.0, 'group_batches': 1, 'history_edges': 61439, 'elapsed_sec': 150.05836221203208, 'cuda_allocated_mb': 87, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 14, 'batch': 255, 'batches': 255, 'time_group': 255, 'time_groups': 255, 'history_edges': 61439, 'pos_edges': 321, 'neg_edges': 321, 'loss_recent': 58.92698205947876, 'elapsed_sec': 150.71736941486597, 'avg_sec_per_batch': 0.5910485075092783, 'cuda_allocated_mb': 99, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'validation_start', 'epoch': 14}
+{'event': 'epoch_end', 'epoch': 14, 'early_stop_metric': 'val_auc', 'val_score': 0.8944113007014478, 'val_auc': 0.8944113007014478, 'val_ap': 0.43286088227299213, 'val_ndcg': 0.905385128948957, 'elapsed_sec': 296.54546374827623}
+{'event': 'epoch_start', 'epoch': 15, 'epochs': 20, 'batches': 255, 'time_groups': 255}
+{'event': 'train_time_group', 'epoch': 15, 'time_group': 1, 'time_groups': 255, 'batch': 0, 'batches': 255, 'time_value': 1388534400.0, 'group_batches': 1, 'history_edges': 0, 'elapsed_sec': 0.020085863769054413, 'cuda_allocated_mb': 87, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 15, 'batch': 1, 'batches': 255, 'time_group': 1, 'time_groups': 255, 'history_edges': 0, 'pos_edges': 113, 'neg_edges': 113, 'loss_recent': 147.66217041015625, 'elapsed_sec': 0.3853907436132431, 'avg_sec_per_batch': 0.3853907436132431, 'cuda_allocated_mb': 91, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 15, 'batch': 100, 'batches': 255, 'time_group': 100, 'time_groups': 255, 'history_edges': 23816, 'pos_edges': 259, 'neg_edges': 259, 'loss_recent': 61.31565628051758, 'elapsed_sec': 56.03330445662141, 'avg_sec_per_batch': 0.5603330445662141, 'cuda_allocated_mb': 97, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 15, 'batch': 199, 'batches': 255, 'time_group': 199, 'time_groups': 255, 'history_edges': 48469, 'pos_edges': 282, 'neg_edges': 282, 'loss_recent': 60.67649005889893, 'elapsed_sec': 116.66949857771397, 'avg_sec_per_batch': 0.5862788873251958, 'cuda_allocated_mb': 98, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 15, 'batch': 200, 'batches': 255, 'time_group': 200, 'time_groups': 255, 'history_edges': 48751, 'pos_edges': 162, 'neg_edges': 162, 'loss_recent': 60.338660430908206, 'elapsed_sec': 117.14605623483658, 'avg_sec_per_batch': 0.5857302811741829, 'cuda_allocated_mb': 94, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_time_group', 'epoch': 15, 'time_group': 255, 'time_groups': 255, 'batch': 254, 'batches': 255, 'time_value': 1410480000.0, 'group_batches': 1, 'history_edges': 61439, 'elapsed_sec': 148.74902641028166, 'cuda_allocated_mb': 87, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 15, 'batch': 255, 'batches': 255, 'time_group': 255, 'time_groups': 255, 'history_edges': 61439, 'pos_edges': 321, 'neg_edges': 321, 'loss_recent': 58.75054391860962, 'elapsed_sec': 149.47413504123688, 'avg_sec_per_batch': 0.5861730785930858, 'cuda_allocated_mb': 99, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'validation_start', 'epoch': 15}
+{'event': 'epoch_end', 'epoch': 15, 'early_stop_metric': 'val_auc', 'val_score': 0.893050645127888, 'val_auc': 0.893050645127888, 'val_ap': 0.42426820606651616, 'val_ndcg': 0.9031929110714675, 'elapsed_sec': 296.31405449286103}
+{'event': 'epoch_start', 'epoch': 16, 'epochs': 20, 'batches': 255, 'time_groups': 255}
+{'event': 'train_time_group', 'epoch': 16, 'time_group': 1, 'time_groups': 255, 'batch': 0, 'batches': 255, 'time_value': 1388534400.0, 'group_batches': 1, 'history_edges': 0, 'elapsed_sec': 0.020508360117673874, 'cuda_allocated_mb': 87, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 16, 'batch': 1, 'batches': 255, 'time_group': 1, 'time_groups': 255, 'history_edges': 0, 'pos_edges': 113, 'neg_edges': 113, 'loss_recent': 170.79910278320312, 'elapsed_sec': 0.4026288650929928, 'avg_sec_per_batch': 0.4026288650929928, 'cuda_allocated_mb': 92, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 16, 'batch': 100, 'batches': 255, 'time_group': 100, 'time_groups': 255, 'history_edges': 23816, 'pos_edges': 259, 'neg_edges': 259, 'loss_recent': 60.82380086898804, 'elapsed_sec': 55.86376021057367, 'avg_sec_per_batch': 0.5586376021057368, 'cuda_allocated_mb': 97, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 16, 'batch': 198, 'batches': 255, 'time_group': 198, 'time_groups': 255, 'history_edges': 48188, 'pos_edges': 281, 'neg_edges': 281, 'loss_recent': 60.40777460098266, 'elapsed_sec': 116.41054632887244, 'avg_sec_per_batch': 0.5879320521660224, 'cuda_allocated_mb': 98, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 16, 'batch': 200, 'batches': 255, 'time_group': 200, 'time_groups': 255, 'history_edges': 48751, 'pos_edges': 162, 'neg_edges': 162, 'loss_recent': 59.99635536193848, 'elapsed_sec': 117.5378821529448, 'avg_sec_per_batch': 0.587689410764724, 'cuda_allocated_mb': 94, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_time_group', 'epoch': 16, 'time_group': 255, 'time_groups': 255, 'batch': 254, 'batches': 255, 'time_value': 1410480000.0, 'group_batches': 1, 'history_edges': 61439, 'elapsed_sec': 149.53322429582477, 'cuda_allocated_mb': 87, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'train_progress', 'epoch': 16, 'batch': 255, 'batches': 255, 'time_group': 255, 'time_groups': 255, 'history_edges': 61439, 'pos_edges': 321, 'neg_edges': 321, 'loss_recent': 58.32837015151978, 'elapsed_sec': 150.22703681141138, 'avg_sec_per_batch': 0.5891256345545545, 'cuda_allocated_mb': 99, 'cuda_reserved_mb': 1542, 'cuda_max_allocated_mb': 1288}
+{'event': 'validation_start', 'epoch': 16}
+{'event': 'epoch_end', 'epoch': 16, 'early_stop_metric': 'val_auc', 'val_score': 0.8928401976374342, 'val_auc': 0.8928401976374342, 'val_ap': 0.41849363262808603, 'val_ndcg': 0.9019483279290409, 'elapsed_sec': 295.41199065744877}
+{'dataset': 'icews14', 'method': 'ssptgfm', 'scenario': 'standard', 'ablation': 'full', 'few_shot_ratio': 1.0, 'seed': 1, 'train_edges': 61760, 'val_edges': 14592, 'test_edges': 14378, 'params_trainable': 2819632, 'params_total': 2819632, 'rough_forward_flops': 2792030208, 'train_eval_time_sec': 6388.975176751614, 'allocated_mb': 48.5595703125, 'reserved_mb': 1542.0, 'max_allocated_mb': 1288.884765625, 'val_auc': 0.8957929444599241, 'val_ap': 0.39240159235049354, 'val_ndcg': 0.8957429861400342, 'train_loss': 63.006014820173675, 'train_lp': 0.3590611880900813, 'train_align': 1208.6288029689415, 'train_kl': 4423.517614746093, 'train_ood_reg': 0.19993793745251262, 'train_meta': 0.3553649457938531, 'train_weighted_align': 60.43144119861079, 'train_weighted_kl': 2.2117589126614963, 'train_weighted_ood_reg': 0.00019993794700769963, 'train_weighted_meta': 0.0035536493745395074, 'test_auc': 0.8991793443759352, 'test_ap': 0.3606252936819971, 'test_ndcg': 0.8888051493123167, 'test_mrr': 0.05089083994395372, 'test_hits@1': 0.0225, 'test_hits@10': 0.0875, 'test_hits@50': 0.26, 'test_hits@100': 0.4075}
+{'event': 'baseline_start', 'method': 'lm_mlp', 'seed': 1}
+{'event': 'baseline_epoch_start', 'model': 'LMMLPBaseline', 'epoch': 1, 'epochs': 20, 'requires_struct_features': False}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 1, 'time_group': 1, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 1, 'time_group': 10, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 1, 'time_group': 20, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 1, 'time_group': 30, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 1, 'time_group': 40, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 1, 'time_group': 50, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 1, 'time_group': 60, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 1, 'time_group': 70, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 1, 'time_group': 80, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 1, 'time_group': 90, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 1, 'time_group': 100, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 1, 'time_group': 110, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 1, 'time_group': 120, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 1, 'time_group': 130, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 1, 'time_group': 140, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 1, 'time_group': 150, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 1, 'time_group': 160, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 1, 'time_group': 170, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 1, 'time_group': 180, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 1, 'time_group': 190, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 1, 'time_group': 200, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 1, 'time_group': 210, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 1, 'time_group': 220, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 1, 'time_group': 230, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 1, 'time_group': 240, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 1, 'time_group': 250, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 1, 'time_group': 255, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'LMMLPBaseline', 'epoch': 1}
+{'event': 'baseline_epoch_end', 'model': 'LMMLPBaseline', 'epoch': 1, 'val_auc': 0.863239025939021, 'elapsed_sec': 15.93950742855668}
+{'event': 'baseline_epoch_start', 'model': 'LMMLPBaseline', 'epoch': 2, 'epochs': 20, 'requires_struct_features': False}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 2, 'time_group': 1, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 2, 'time_group': 10, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 2, 'time_group': 20, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 2, 'time_group': 30, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 2, 'time_group': 40, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 2, 'time_group': 50, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 2, 'time_group': 60, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 2, 'time_group': 70, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 2, 'time_group': 80, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 2, 'time_group': 90, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 2, 'time_group': 100, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 2, 'time_group': 110, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 2, 'time_group': 120, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 2, 'time_group': 130, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 2, 'time_group': 140, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 2, 'time_group': 150, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 2, 'time_group': 160, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 2, 'time_group': 170, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 2, 'time_group': 180, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 2, 'time_group': 190, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 2, 'time_group': 200, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 2, 'time_group': 210, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 2, 'time_group': 220, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 2, 'time_group': 230, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 2, 'time_group': 240, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 2, 'time_group': 250, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 2, 'time_group': 255, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'LMMLPBaseline', 'epoch': 2}
+{'event': 'baseline_epoch_end', 'model': 'LMMLPBaseline', 'epoch': 2, 'val_auc': 0.8865783838875003, 'elapsed_sec': 14.525001049041748}
+{'event': 'baseline_epoch_start', 'model': 'LMMLPBaseline', 'epoch': 3, 'epochs': 20, 'requires_struct_features': False}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 3, 'time_group': 1, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 3, 'time_group': 10, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 3, 'time_group': 20, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 3, 'time_group': 30, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 3, 'time_group': 40, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 3, 'time_group': 50, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 3, 'time_group': 60, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 3, 'time_group': 70, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 3, 'time_group': 80, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 3, 'time_group': 90, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 3, 'time_group': 100, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 3, 'time_group': 110, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 3, 'time_group': 120, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 3, 'time_group': 130, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 3, 'time_group': 140, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 3, 'time_group': 150, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 3, 'time_group': 160, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 3, 'time_group': 170, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 3, 'time_group': 180, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 3, 'time_group': 190, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 3, 'time_group': 200, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 3, 'time_group': 210, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 3, 'time_group': 220, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 3, 'time_group': 230, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 3, 'time_group': 240, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 3, 'time_group': 250, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 3, 'time_group': 255, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'LMMLPBaseline', 'epoch': 3}
+{'event': 'baseline_epoch_end', 'model': 'LMMLPBaseline', 'epoch': 3, 'val_auc': 0.8911207939845373, 'elapsed_sec': 14.463073529303074}
+{'event': 'baseline_epoch_start', 'model': 'LMMLPBaseline', 'epoch': 4, 'epochs': 20, 'requires_struct_features': False}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 4, 'time_group': 1, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 4, 'time_group': 10, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 4, 'time_group': 20, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 4, 'time_group': 30, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 4, 'time_group': 40, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 4, 'time_group': 50, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 4, 'time_group': 60, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 4, 'time_group': 70, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 4, 'time_group': 80, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 4, 'time_group': 90, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 4, 'time_group': 100, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 4, 'time_group': 110, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 4, 'time_group': 120, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 4, 'time_group': 130, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 4, 'time_group': 140, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 4, 'time_group': 150, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 4, 'time_group': 160, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 4, 'time_group': 170, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 4, 'time_group': 180, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 4, 'time_group': 190, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 4, 'time_group': 200, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 4, 'time_group': 210, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 4, 'time_group': 220, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 4, 'time_group': 230, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 4, 'time_group': 240, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 4, 'time_group': 250, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 4, 'time_group': 255, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'LMMLPBaseline', 'epoch': 4}
+{'event': 'baseline_epoch_end', 'model': 'LMMLPBaseline', 'epoch': 4, 'val_auc': 0.8944092596211995, 'elapsed_sec': 14.473194047808647}
+{'event': 'baseline_epoch_start', 'model': 'LMMLPBaseline', 'epoch': 5, 'epochs': 20, 'requires_struct_features': False}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 5, 'time_group': 1, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 5, 'time_group': 10, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 5, 'time_group': 20, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 5, 'time_group': 30, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 5, 'time_group': 40, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 5, 'time_group': 50, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 5, 'time_group': 60, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 5, 'time_group': 70, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 5, 'time_group': 80, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 5, 'time_group': 90, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 5, 'time_group': 100, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 5, 'time_group': 110, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 5, 'time_group': 120, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 5, 'time_group': 130, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 5, 'time_group': 140, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 5, 'time_group': 150, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 5, 'time_group': 160, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 5, 'time_group': 170, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 5, 'time_group': 180, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 5, 'time_group': 190, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 5, 'time_group': 200, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 5, 'time_group': 210, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 5, 'time_group': 220, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 5, 'time_group': 230, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 5, 'time_group': 240, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 5, 'time_group': 250, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 5, 'time_group': 255, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'LMMLPBaseline', 'epoch': 5}
+{'event': 'baseline_epoch_end', 'model': 'LMMLPBaseline', 'epoch': 5, 'val_auc': 0.8966358178943883, 'elapsed_sec': 14.745802469551563}
+{'event': 'baseline_epoch_start', 'model': 'LMMLPBaseline', 'epoch': 6, 'epochs': 20, 'requires_struct_features': False}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 6, 'time_group': 1, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 6, 'time_group': 10, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 6, 'time_group': 20, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 6, 'time_group': 30, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 6, 'time_group': 40, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 6, 'time_group': 50, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 6, 'time_group': 60, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 6, 'time_group': 70, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 6, 'time_group': 80, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 6, 'time_group': 90, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 6, 'time_group': 100, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 6, 'time_group': 110, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 6, 'time_group': 120, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 6, 'time_group': 130, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 6, 'time_group': 140, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 6, 'time_group': 150, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 6, 'time_group': 160, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 6, 'time_group': 170, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 6, 'time_group': 180, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 6, 'time_group': 190, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 6, 'time_group': 200, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 6, 'time_group': 210, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 6, 'time_group': 220, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 6, 'time_group': 230, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 6, 'time_group': 240, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 6, 'time_group': 250, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 6, 'time_group': 255, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'LMMLPBaseline', 'epoch': 6}
+{'event': 'baseline_epoch_end', 'model': 'LMMLPBaseline', 'epoch': 6, 'val_auc': 0.8974128032295694, 'elapsed_sec': 14.55846307054162}
+{'event': 'baseline_epoch_start', 'model': 'LMMLPBaseline', 'epoch': 7, 'epochs': 20, 'requires_struct_features': False}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 7, 'time_group': 1, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 7, 'time_group': 10, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 7, 'time_group': 20, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 7, 'time_group': 30, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 7, 'time_group': 40, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 7, 'time_group': 50, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 7, 'time_group': 60, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 7, 'time_group': 70, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 7, 'time_group': 80, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 7, 'time_group': 90, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 7, 'time_group': 100, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 7, 'time_group': 110, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 7, 'time_group': 120, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 7, 'time_group': 130, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 7, 'time_group': 140, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 7, 'time_group': 150, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 7, 'time_group': 160, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 7, 'time_group': 170, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 7, 'time_group': 180, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 7, 'time_group': 190, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 7, 'time_group': 200, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 7, 'time_group': 210, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 7, 'time_group': 220, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 7, 'time_group': 230, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 7, 'time_group': 240, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 7, 'time_group': 250, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 7, 'time_group': 255, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'LMMLPBaseline', 'epoch': 7}
+{'event': 'baseline_epoch_end', 'model': 'LMMLPBaseline', 'epoch': 7, 'val_auc': 0.9001546915276816, 'elapsed_sec': 14.6366366147995}
+{'event': 'baseline_epoch_start', 'model': 'LMMLPBaseline', 'epoch': 8, 'epochs': 20, 'requires_struct_features': False}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 8, 'time_group': 1, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 8, 'time_group': 10, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 8, 'time_group': 20, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 8, 'time_group': 30, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 8, 'time_group': 40, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 8, 'time_group': 50, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 8, 'time_group': 60, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 8, 'time_group': 70, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 8, 'time_group': 80, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 8, 'time_group': 90, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 8, 'time_group': 100, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 8, 'time_group': 110, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 8, 'time_group': 120, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 8, 'time_group': 130, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 8, 'time_group': 140, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 8, 'time_group': 150, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 8, 'time_group': 160, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 8, 'time_group': 170, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 8, 'time_group': 180, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 8, 'time_group': 190, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 8, 'time_group': 200, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 8, 'time_group': 210, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 8, 'time_group': 220, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 8, 'time_group': 230, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 8, 'time_group': 240, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 8, 'time_group': 250, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 8, 'time_group': 255, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'LMMLPBaseline', 'epoch': 8}
+{'event': 'baseline_epoch_end', 'model': 'LMMLPBaseline', 'epoch': 8, 'val_auc': 0.9006303348934589, 'elapsed_sec': 15.046716015785933}
+{'event': 'baseline_epoch_start', 'model': 'LMMLPBaseline', 'epoch': 9, 'epochs': 20, 'requires_struct_features': False}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 9, 'time_group': 1, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 9, 'time_group': 10, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 9, 'time_group': 20, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 9, 'time_group': 30, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 9, 'time_group': 40, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 9, 'time_group': 50, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 9, 'time_group': 60, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 9, 'time_group': 70, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 9, 'time_group': 80, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 9, 'time_group': 90, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 9, 'time_group': 100, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 9, 'time_group': 110, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 9, 'time_group': 120, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 9, 'time_group': 130, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 9, 'time_group': 140, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 9, 'time_group': 150, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 9, 'time_group': 160, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 9, 'time_group': 170, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 9, 'time_group': 180, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 9, 'time_group': 190, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 9, 'time_group': 200, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 9, 'time_group': 210, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 9, 'time_group': 220, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 9, 'time_group': 230, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 9, 'time_group': 240, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 9, 'time_group': 250, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 9, 'time_group': 255, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'LMMLPBaseline', 'epoch': 9}
+{'event': 'baseline_epoch_end', 'model': 'LMMLPBaseline', 'epoch': 9, 'val_auc': 0.9005680521703494, 'elapsed_sec': 15.146611772477627}
+{'event': 'baseline_epoch_start', 'model': 'LMMLPBaseline', 'epoch': 10, 'epochs': 20, 'requires_struct_features': False}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 10, 'time_group': 1, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 10, 'time_group': 10, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 10, 'time_group': 20, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 10, 'time_group': 30, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 10, 'time_group': 40, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 10, 'time_group': 50, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 10, 'time_group': 60, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 10, 'time_group': 70, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 10, 'time_group': 80, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 10, 'time_group': 90, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 10, 'time_group': 100, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 10, 'time_group': 110, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 10, 'time_group': 120, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 10, 'time_group': 130, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 10, 'time_group': 140, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 10, 'time_group': 150, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 10, 'time_group': 160, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 10, 'time_group': 170, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 10, 'time_group': 180, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 10, 'time_group': 190, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 10, 'time_group': 200, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 10, 'time_group': 210, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 10, 'time_group': 220, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 10, 'time_group': 230, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 10, 'time_group': 240, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 10, 'time_group': 250, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 10, 'time_group': 255, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'LMMLPBaseline', 'epoch': 10}
+{'event': 'baseline_epoch_end', 'model': 'LMMLPBaseline', 'epoch': 10, 'val_auc': 0.9009759917865354, 'elapsed_sec': 14.980457238852978}
+{'event': 'baseline_epoch_start', 'model': 'LMMLPBaseline', 'epoch': 11, 'epochs': 20, 'requires_struct_features': False}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 11, 'time_group': 1, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 11, 'time_group': 10, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 11, 'time_group': 20, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 11, 'time_group': 30, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 11, 'time_group': 40, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 11, 'time_group': 50, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 11, 'time_group': 60, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 11, 'time_group': 70, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 11, 'time_group': 80, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 11, 'time_group': 90, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 11, 'time_group': 100, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 11, 'time_group': 110, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 11, 'time_group': 120, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 11, 'time_group': 130, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 11, 'time_group': 140, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 11, 'time_group': 150, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 11, 'time_group': 160, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 11, 'time_group': 170, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 11, 'time_group': 180, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 11, 'time_group': 190, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 11, 'time_group': 200, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 11, 'time_group': 210, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 11, 'time_group': 220, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 11, 'time_group': 230, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 11, 'time_group': 240, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 11, 'time_group': 250, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 11, 'time_group': 255, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'LMMLPBaseline', 'epoch': 11}
+{'event': 'baseline_epoch_end', 'model': 'LMMLPBaseline', 'epoch': 11, 'val_auc': 0.9020365817937972, 'elapsed_sec': 14.956819768995047}
+{'event': 'baseline_epoch_start', 'model': 'LMMLPBaseline', 'epoch': 12, 'epochs': 20, 'requires_struct_features': False}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 12, 'time_group': 1, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 12, 'time_group': 10, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 12, 'time_group': 20, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 12, 'time_group': 30, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 12, 'time_group': 40, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 12, 'time_group': 50, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 12, 'time_group': 60, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 12, 'time_group': 70, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 12, 'time_group': 80, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 12, 'time_group': 90, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 12, 'time_group': 100, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 12, 'time_group': 110, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 12, 'time_group': 120, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 12, 'time_group': 130, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 12, 'time_group': 140, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 12, 'time_group': 150, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 12, 'time_group': 160, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 12, 'time_group': 170, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 12, 'time_group': 180, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 12, 'time_group': 190, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 12, 'time_group': 200, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 12, 'time_group': 210, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 12, 'time_group': 220, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 12, 'time_group': 230, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 12, 'time_group': 240, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 12, 'time_group': 250, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 12, 'time_group': 255, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'LMMLPBaseline', 'epoch': 12}
+{'event': 'baseline_epoch_end', 'model': 'LMMLPBaseline', 'epoch': 12, 'val_auc': 0.9035871136243545, 'elapsed_sec': 14.71676790714264}
+{'event': 'baseline_epoch_start', 'model': 'LMMLPBaseline', 'epoch': 13, 'epochs': 20, 'requires_struct_features': False}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 13, 'time_group': 1, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 13, 'time_group': 10, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 13, 'time_group': 20, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 13, 'time_group': 30, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 13, 'time_group': 40, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 13, 'time_group': 50, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 13, 'time_group': 60, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 13, 'time_group': 70, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 13, 'time_group': 80, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 13, 'time_group': 90, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 13, 'time_group': 100, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 13, 'time_group': 110, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 13, 'time_group': 120, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 13, 'time_group': 130, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 13, 'time_group': 140, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 13, 'time_group': 150, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 13, 'time_group': 160, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 13, 'time_group': 170, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 13, 'time_group': 180, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 13, 'time_group': 190, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 13, 'time_group': 200, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 13, 'time_group': 210, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 13, 'time_group': 220, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 13, 'time_group': 230, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 13, 'time_group': 240, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 13, 'time_group': 250, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 13, 'time_group': 255, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'LMMLPBaseline', 'epoch': 13}
+{'event': 'baseline_epoch_end', 'model': 'LMMLPBaseline', 'epoch': 13, 'val_auc': 0.9043752166006007, 'elapsed_sec': 14.56542107090354}
+{'event': 'baseline_epoch_start', 'model': 'LMMLPBaseline', 'epoch': 14, 'epochs': 20, 'requires_struct_features': False}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 14, 'time_group': 1, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 14, 'time_group': 10, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 14, 'time_group': 20, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 14, 'time_group': 30, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 14, 'time_group': 40, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 14, 'time_group': 50, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 14, 'time_group': 60, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 14, 'time_group': 70, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 14, 'time_group': 80, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 14, 'time_group': 90, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 14, 'time_group': 100, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 14, 'time_group': 110, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 14, 'time_group': 120, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 14, 'time_group': 130, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 14, 'time_group': 140, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 14, 'time_group': 150, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 14, 'time_group': 160, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 14, 'time_group': 170, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 14, 'time_group': 180, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 14, 'time_group': 190, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 14, 'time_group': 200, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 14, 'time_group': 210, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 14, 'time_group': 220, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 14, 'time_group': 230, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 14, 'time_group': 240, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 14, 'time_group': 250, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 14, 'time_group': 255, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'LMMLPBaseline', 'epoch': 14}
+{'event': 'baseline_epoch_end', 'model': 'LMMLPBaseline', 'epoch': 14, 'val_auc': 0.9060957279598649, 'elapsed_sec': 14.796270817518234}
+{'event': 'baseline_epoch_start', 'model': 'LMMLPBaseline', 'epoch': 15, 'epochs': 20, 'requires_struct_features': False}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 15, 'time_group': 1, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 15, 'time_group': 10, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 15, 'time_group': 20, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 15, 'time_group': 30, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 15, 'time_group': 40, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 15, 'time_group': 50, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 15, 'time_group': 60, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 15, 'time_group': 70, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 15, 'time_group': 80, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 15, 'time_group': 90, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 15, 'time_group': 100, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 15, 'time_group': 110, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 15, 'time_group': 120, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 15, 'time_group': 130, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 15, 'time_group': 140, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 15, 'time_group': 150, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 15, 'time_group': 160, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 15, 'time_group': 170, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 15, 'time_group': 180, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 15, 'time_group': 190, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 15, 'time_group': 200, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 15, 'time_group': 210, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 15, 'time_group': 220, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 15, 'time_group': 230, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 15, 'time_group': 240, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 15, 'time_group': 250, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 15, 'time_group': 255, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'LMMLPBaseline', 'epoch': 15}
+{'event': 'baseline_epoch_end', 'model': 'LMMLPBaseline', 'epoch': 15, 'val_auc': 0.9059694253881002, 'elapsed_sec': 14.464199773967266}
+{'event': 'baseline_epoch_start', 'model': 'LMMLPBaseline', 'epoch': 16, 'epochs': 20, 'requires_struct_features': False}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 16, 'time_group': 1, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 16, 'time_group': 10, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 16, 'time_group': 20, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 16, 'time_group': 30, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 16, 'time_group': 40, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 16, 'time_group': 50, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 16, 'time_group': 60, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 16, 'time_group': 70, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 16, 'time_group': 80, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 16, 'time_group': 90, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 16, 'time_group': 100, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 16, 'time_group': 110, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 16, 'time_group': 120, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 16, 'time_group': 130, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 16, 'time_group': 140, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 16, 'time_group': 150, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 16, 'time_group': 160, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 16, 'time_group': 170, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 16, 'time_group': 180, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 16, 'time_group': 190, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 16, 'time_group': 200, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 16, 'time_group': 210, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 16, 'time_group': 220, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 16, 'time_group': 230, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 16, 'time_group': 240, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 16, 'time_group': 250, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 16, 'time_group': 255, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'LMMLPBaseline', 'epoch': 16}
+{'event': 'baseline_epoch_end', 'model': 'LMMLPBaseline', 'epoch': 16, 'val_auc': 0.9055694055014224, 'elapsed_sec': 14.533205859363079}
+{'event': 'baseline_epoch_start', 'model': 'LMMLPBaseline', 'epoch': 17, 'epochs': 20, 'requires_struct_features': False}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 17, 'time_group': 1, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 17, 'time_group': 10, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 17, 'time_group': 20, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 17, 'time_group': 30, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 17, 'time_group': 40, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 17, 'time_group': 50, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 17, 'time_group': 60, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 17, 'time_group': 70, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 17, 'time_group': 80, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 17, 'time_group': 90, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 17, 'time_group': 100, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 17, 'time_group': 110, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 17, 'time_group': 120, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 17, 'time_group': 130, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 17, 'time_group': 140, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 17, 'time_group': 150, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 17, 'time_group': 160, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 17, 'time_group': 170, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 17, 'time_group': 180, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 17, 'time_group': 190, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 17, 'time_group': 200, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 17, 'time_group': 210, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 17, 'time_group': 220, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 17, 'time_group': 230, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 17, 'time_group': 240, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 17, 'time_group': 250, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 17, 'time_group': 255, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'LMMLPBaseline', 'epoch': 17}
+{'event': 'baseline_epoch_end', 'model': 'LMMLPBaseline', 'epoch': 17, 'val_auc': 0.9083984545951037, 'elapsed_sec': 14.617712665349245}
+{'event': 'baseline_epoch_start', 'model': 'LMMLPBaseline', 'epoch': 18, 'epochs': 20, 'requires_struct_features': False}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 18, 'time_group': 1, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 18, 'time_group': 10, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 18, 'time_group': 20, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 18, 'time_group': 30, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 18, 'time_group': 40, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 18, 'time_group': 50, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 18, 'time_group': 60, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 18, 'time_group': 70, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 18, 'time_group': 80, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 18, 'time_group': 90, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 18, 'time_group': 100, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 18, 'time_group': 110, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 18, 'time_group': 120, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 18, 'time_group': 130, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 18, 'time_group': 140, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 18, 'time_group': 150, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 18, 'time_group': 160, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 18, 'time_group': 170, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 18, 'time_group': 180, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 18, 'time_group': 190, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 18, 'time_group': 200, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 18, 'time_group': 210, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 18, 'time_group': 220, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 18, 'time_group': 230, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 18, 'time_group': 240, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 18, 'time_group': 250, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 18, 'time_group': 255, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'LMMLPBaseline', 'epoch': 18}
+{'event': 'baseline_epoch_end', 'model': 'LMMLPBaseline', 'epoch': 18, 'val_auc': 0.9074445267639443, 'elapsed_sec': 14.681062567979097}
+{'event': 'baseline_epoch_start', 'model': 'LMMLPBaseline', 'epoch': 19, 'epochs': 20, 'requires_struct_features': False}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 19, 'time_group': 1, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 19, 'time_group': 10, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 19, 'time_group': 20, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 19, 'time_group': 30, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 19, 'time_group': 40, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 19, 'time_group': 50, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 19, 'time_group': 60, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 19, 'time_group': 70, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 19, 'time_group': 80, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 19, 'time_group': 90, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 19, 'time_group': 100, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 19, 'time_group': 110, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 19, 'time_group': 120, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 19, 'time_group': 130, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 19, 'time_group': 140, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 19, 'time_group': 150, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 19, 'time_group': 160, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 19, 'time_group': 170, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 19, 'time_group': 180, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 19, 'time_group': 190, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 19, 'time_group': 200, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 19, 'time_group': 210, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 19, 'time_group': 220, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 19, 'time_group': 230, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 19, 'time_group': 240, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 19, 'time_group': 250, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 19, 'time_group': 255, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'LMMLPBaseline', 'epoch': 19}
+{'event': 'baseline_epoch_end', 'model': 'LMMLPBaseline', 'epoch': 19, 'val_auc': 0.9075448831949794, 'elapsed_sec': 14.99215592071414}
+{'event': 'baseline_epoch_start', 'model': 'LMMLPBaseline', 'epoch': 20, 'epochs': 20, 'requires_struct_features': False}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 20, 'time_group': 1, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 20, 'time_group': 10, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 20, 'time_group': 20, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 20, 'time_group': 30, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 20, 'time_group': 40, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 20, 'time_group': 50, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 20, 'time_group': 60, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 20, 'time_group': 70, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 20, 'time_group': 80, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 20, 'time_group': 90, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 20, 'time_group': 100, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 20, 'time_group': 110, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 20, 'time_group': 120, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 20, 'time_group': 130, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 20, 'time_group': 140, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 20, 'time_group': 150, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 20, 'time_group': 160, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 20, 'time_group': 170, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 20, 'time_group': 180, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 20, 'time_group': 190, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 20, 'time_group': 200, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 20, 'time_group': 210, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 20, 'time_group': 220, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 20, 'time_group': 230, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 20, 'time_group': 240, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 20, 'time_group': 250, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 20, 'time_group': 255, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'LMMLPBaseline', 'epoch': 20}
+{'event': 'baseline_epoch_end', 'model': 'LMMLPBaseline', 'epoch': 20, 'val_auc': 0.9054179850560989, 'elapsed_sec': 14.964351188391447}
+{'event': 'baseline_test_binary_start', 'method': 'lm_mlp', 'seed': 1}
+{'event': 'baseline_test_ranking_start', 'method': 'lm_mlp', 'seed': 1}
+{'dataset': 'icews14', 'method': 'lm_mlp', 'scenario': 'standard', 'ablation': 'baseline', 'few_shot_ratio': 1.0, 'seed': 1, 'train_edges': 61760, 'val_edges': 14592, 'test_edges': 14378, 'params_trainable': 96193, 'params_total': 96193, 'train_eval_time_sec': 333.83275689184666, 'val_auc': 0.9082024199678628, 'val_ap': 0.5294825543953404, 'val_ndcg': 0.9214618818463635, 'test_auc': 0.9088925568093988, 'test_ap': 0.5252651446209357, 'test_ndcg': 0.9209459050027837, 'test_mrr': 0.0718371744913091, 'test_hits@1': 0.02, 'test_hits@10': 0.1425, 'test_hits@50': 0.4275, 'test_hits@100': 0.565}
+{'event': 'baseline_start', 'method': 'structure_mlp', 'seed': 1}
+{'event': 'baseline_epoch_start', 'model': 'StructureMLPBaseline', 'epoch': 1, 'epochs': 20, 'requires_struct_features': True}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 1, 'time_group': 1, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 1, 'time_group': 10, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 1, 'time_group': 20, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 1, 'time_group': 30, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 1, 'time_group': 40, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 1, 'time_group': 50, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 1, 'time_group': 60, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 1, 'time_group': 70, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 1, 'time_group': 80, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 1, 'time_group': 90, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 1, 'time_group': 100, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 1, 'time_group': 110, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 1, 'time_group': 120, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 1, 'time_group': 130, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 1, 'time_group': 140, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 1, 'time_group': 150, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 1, 'time_group': 160, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 1, 'time_group': 170, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 1, 'time_group': 180, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 1, 'time_group': 190, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 1, 'time_group': 200, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 1, 'time_group': 210, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 1, 'time_group': 220, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 1, 'time_group': 230, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 1, 'time_group': 240, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 1, 'time_group': 250, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 1, 'time_group': 255, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'StructureMLPBaseline', 'epoch': 1}
+{'event': 'baseline_epoch_end', 'model': 'StructureMLPBaseline', 'epoch': 1, 'val_auc': 0.18216608669178855, 'elapsed_sec': 249.16755975037813}
+{'event': 'baseline_epoch_start', 'model': 'StructureMLPBaseline', 'epoch': 2, 'epochs': 20, 'requires_struct_features': True}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 2, 'time_group': 1, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 2, 'time_group': 10, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 2, 'time_group': 20, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 2, 'time_group': 30, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 2, 'time_group': 40, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 2, 'time_group': 50, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 2, 'time_group': 60, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 2, 'time_group': 70, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 2, 'time_group': 80, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 2, 'time_group': 90, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 2, 'time_group': 100, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 2, 'time_group': 110, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 2, 'time_group': 120, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 2, 'time_group': 130, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 2, 'time_group': 140, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 2, 'time_group': 150, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 2, 'time_group': 160, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 2, 'time_group': 170, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 2, 'time_group': 180, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 2, 'time_group': 190, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 2, 'time_group': 200, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 2, 'time_group': 210, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 2, 'time_group': 220, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 2, 'time_group': 230, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 2, 'time_group': 240, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 2, 'time_group': 250, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 2, 'time_group': 255, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'StructureMLPBaseline', 'epoch': 2}
+{'event': 'baseline_epoch_end', 'model': 'StructureMLPBaseline', 'epoch': 2, 'val_auc': 0.18220666905922975, 'elapsed_sec': 248.4131156951189}
+{'event': 'baseline_epoch_start', 'model': 'StructureMLPBaseline', 'epoch': 3, 'epochs': 20, 'requires_struct_features': True}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 3, 'time_group': 1, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 3, 'time_group': 10, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 3, 'time_group': 20, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 3, 'time_group': 30, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 3, 'time_group': 40, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 3, 'time_group': 50, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 3, 'time_group': 60, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 3, 'time_group': 70, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 3, 'time_group': 80, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 3, 'time_group': 90, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 3, 'time_group': 100, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 3, 'time_group': 110, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 3, 'time_group': 120, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 3, 'time_group': 130, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 3, 'time_group': 140, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 3, 'time_group': 150, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 3, 'time_group': 160, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 3, 'time_group': 170, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 3, 'time_group': 180, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 3, 'time_group': 190, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 3, 'time_group': 200, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 3, 'time_group': 210, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 3, 'time_group': 220, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 3, 'time_group': 230, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 3, 'time_group': 240, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 3, 'time_group': 250, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 3, 'time_group': 255, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'StructureMLPBaseline', 'epoch': 3}
+{'event': 'baseline_epoch_end', 'model': 'StructureMLPBaseline', 'epoch': 3, 'val_auc': 0.8190183347054503, 'elapsed_sec': 225.2001843638718}
+{'event': 'baseline_epoch_start', 'model': 'StructureMLPBaseline', 'epoch': 4, 'epochs': 20, 'requires_struct_features': True}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 4, 'time_group': 1, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 4, 'time_group': 10, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 4, 'time_group': 20, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 4, 'time_group': 30, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 4, 'time_group': 40, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 4, 'time_group': 50, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 4, 'time_group': 60, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 4, 'time_group': 70, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 4, 'time_group': 80, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 4, 'time_group': 90, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 4, 'time_group': 100, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 4, 'time_group': 110, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 4, 'time_group': 120, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 4, 'time_group': 130, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 4, 'time_group': 140, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 4, 'time_group': 150, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 4, 'time_group': 160, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 4, 'time_group': 170, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 4, 'time_group': 180, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 4, 'time_group': 190, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 4, 'time_group': 200, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 4, 'time_group': 210, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 4, 'time_group': 220, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 4, 'time_group': 230, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 4, 'time_group': 240, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 4, 'time_group': 250, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 4, 'time_group': 255, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'StructureMLPBaseline', 'epoch': 4}
+{'event': 'baseline_epoch_end', 'model': 'StructureMLPBaseline', 'epoch': 4, 'val_auc': 0.18210079025216896, 'elapsed_sec': 78.63560621067882}
+{'event': 'baseline_epoch_start', 'model': 'StructureMLPBaseline', 'epoch': 5, 'epochs': 20, 'requires_struct_features': True}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 5, 'time_group': 1, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 5, 'time_group': 10, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 5, 'time_group': 20, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 5, 'time_group': 30, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 5, 'time_group': 40, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 5, 'time_group': 50, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 5, 'time_group': 60, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 5, 'time_group': 70, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 5, 'time_group': 80, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 5, 'time_group': 90, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 5, 'time_group': 100, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 5, 'time_group': 110, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 5, 'time_group': 120, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 5, 'time_group': 130, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 5, 'time_group': 140, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 5, 'time_group': 150, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 5, 'time_group': 160, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 5, 'time_group': 170, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 5, 'time_group': 180, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 5, 'time_group': 190, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 5, 'time_group': 200, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 5, 'time_group': 210, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 5, 'time_group': 220, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 5, 'time_group': 230, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 5, 'time_group': 240, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 5, 'time_group': 250, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 5, 'time_group': 255, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'StructureMLPBaseline', 'epoch': 5}
+{'event': 'baseline_epoch_end', 'model': 'StructureMLPBaseline', 'epoch': 5, 'val_auc': 0.8233114096141662, 'elapsed_sec': 79.56881894171238}
+{'event': 'baseline_epoch_start', 'model': 'StructureMLPBaseline', 'epoch': 6, 'epochs': 20, 'requires_struct_features': True}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 6, 'time_group': 1, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 6, 'time_group': 10, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 6, 'time_group': 20, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 6, 'time_group': 30, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 6, 'time_group': 40, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 6, 'time_group': 50, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 6, 'time_group': 60, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 6, 'time_group': 70, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 6, 'time_group': 80, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 6, 'time_group': 90, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 6, 'time_group': 100, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 6, 'time_group': 110, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 6, 'time_group': 120, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 6, 'time_group': 130, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 6, 'time_group': 140, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 6, 'time_group': 150, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 6, 'time_group': 160, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 6, 'time_group': 170, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 6, 'time_group': 180, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 6, 'time_group': 190, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 6, 'time_group': 200, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 6, 'time_group': 210, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 6, 'time_group': 220, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 6, 'time_group': 230, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 6, 'time_group': 240, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 6, 'time_group': 250, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 6, 'time_group': 255, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'StructureMLPBaseline', 'epoch': 6}
+{'event': 'baseline_epoch_end', 'model': 'StructureMLPBaseline', 'epoch': 6, 'val_auc': 0.8184958255823005, 'elapsed_sec': 79.98104587942362}
+{'event': 'baseline_epoch_start', 'model': 'StructureMLPBaseline', 'epoch': 7, 'epochs': 20, 'requires_struct_features': True}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 7, 'time_group': 1, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 7, 'time_group': 10, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 7, 'time_group': 20, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 7, 'time_group': 30, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 7, 'time_group': 40, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 7, 'time_group': 50, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 7, 'time_group': 60, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 7, 'time_group': 70, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 7, 'time_group': 80, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 7, 'time_group': 90, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 7, 'time_group': 100, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 7, 'time_group': 110, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 7, 'time_group': 120, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 7, 'time_group': 130, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 7, 'time_group': 140, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 7, 'time_group': 150, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 7, 'time_group': 160, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 7, 'time_group': 170, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 7, 'time_group': 180, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 7, 'time_group': 190, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 7, 'time_group': 200, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 7, 'time_group': 210, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 7, 'time_group': 220, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 7, 'time_group': 230, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 7, 'time_group': 240, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 7, 'time_group': 250, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 7, 'time_group': 255, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'StructureMLPBaseline', 'epoch': 7}
+{'event': 'baseline_epoch_end', 'model': 'StructureMLPBaseline', 'epoch': 7, 'val_auc': 0.18106324237836402, 'elapsed_sec': 114.5838601924479}
+{'event': 'baseline_epoch_start', 'model': 'StructureMLPBaseline', 'epoch': 8, 'epochs': 20, 'requires_struct_features': True}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 8, 'time_group': 1, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 8, 'time_group': 10, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 8, 'time_group': 20, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 8, 'time_group': 30, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 8, 'time_group': 40, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 8, 'time_group': 50, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 8, 'time_group': 60, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 8, 'time_group': 70, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 8, 'time_group': 80, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 8, 'time_group': 90, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 8, 'time_group': 100, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 8, 'time_group': 110, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 8, 'time_group': 120, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 8, 'time_group': 130, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 8, 'time_group': 140, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 8, 'time_group': 150, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 8, 'time_group': 160, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 8, 'time_group': 170, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 8, 'time_group': 180, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 8, 'time_group': 190, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 8, 'time_group': 200, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 8, 'time_group': 210, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 8, 'time_group': 220, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 8, 'time_group': 230, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 8, 'time_group': 240, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 8, 'time_group': 250, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 8, 'time_group': 255, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'StructureMLPBaseline', 'epoch': 8}
+{'event': 'baseline_epoch_end', 'model': 'StructureMLPBaseline', 'epoch': 8, 'val_auc': 0.8185237697837315, 'elapsed_sec': 225.41036777198315}
+{'event': 'baseline_epoch_start', 'model': 'StructureMLPBaseline', 'epoch': 9, 'epochs': 20, 'requires_struct_features': True}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 9, 'time_group': 1, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 9, 'time_group': 10, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 9, 'time_group': 20, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 9, 'time_group': 30, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 9, 'time_group': 40, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 9, 'time_group': 50, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 9, 'time_group': 60, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 9, 'time_group': 70, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 9, 'time_group': 80, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 9, 'time_group': 90, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 9, 'time_group': 100, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 9, 'time_group': 110, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 9, 'time_group': 120, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 9, 'time_group': 130, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 9, 'time_group': 140, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 9, 'time_group': 150, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 9, 'time_group': 160, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 9, 'time_group': 170, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 9, 'time_group': 180, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 9, 'time_group': 190, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 9, 'time_group': 200, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 9, 'time_group': 210, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 9, 'time_group': 220, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 9, 'time_group': 230, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 9, 'time_group': 240, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 9, 'time_group': 250, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 9, 'time_group': 255, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'StructureMLPBaseline', 'epoch': 9}
+{'event': 'baseline_epoch_end', 'model': 'StructureMLPBaseline', 'epoch': 9, 'val_auc': 0.18211143110891093, 'elapsed_sec': 224.23988725990057}
+{'event': 'baseline_epoch_start', 'model': 'StructureMLPBaseline', 'epoch': 10, 'epochs': 20, 'requires_struct_features': True}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 10, 'time_group': 1, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 10, 'time_group': 10, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 10, 'time_group': 20, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 10, 'time_group': 30, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 10, 'time_group': 40, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 10, 'time_group': 50, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 10, 'time_group': 60, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 10, 'time_group': 70, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 10, 'time_group': 80, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 10, 'time_group': 90, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 10, 'time_group': 100, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 10, 'time_group': 110, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 10, 'time_group': 120, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 10, 'time_group': 130, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 10, 'time_group': 140, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 10, 'time_group': 150, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 10, 'time_group': 160, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 10, 'time_group': 170, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 10, 'time_group': 180, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 10, 'time_group': 190, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 10, 'time_group': 200, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 10, 'time_group': 210, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 10, 'time_group': 220, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 10, 'time_group': 230, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 10, 'time_group': 240, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 10, 'time_group': 250, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 10, 'time_group': 255, 'time_groups': 255, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'StructureMLPBaseline', 'epoch': 10}
+{'event': 'baseline_epoch_end', 'model': 'StructureMLPBaseline', 'epoch': 10, 'val_auc': 0.8187100510906902, 'elapsed_sec': 225.39143066853285}
+{'event': 'baseline_test_binary_start', 'method': 'structure_mlp', 'seed': 1}
+{'event': 'baseline_test_ranking_start', 'method': 'structure_mlp', 'seed': 1}
+{'dataset': 'icews14', 'method': 'structure_mlp', 'scenario': 'standard', 'ablation': 'baseline', 'few_shot_ratio': 1.0, 'seed': 1, 'train_edges': 61760, 'val_edges': 14592, 'test_edges': 14378, 'params_trainable': 31969, 'params_total': 31969, 'train_eval_time_sec': 3261.0100540816784, 'val_auc': 0.8231853566121307, 'val_ap': 0.555365652329189, 'val_ndcg': 0.9160804095252041, 'test_auc': 0.8354357564834188, 'test_ap': 0.558410344502843, 'test_ndcg': 0.91885082245102, 'test_mrr': 0.3136675102242992, 'test_hits@1': 0.2025, 'test_hits@10': 0.57, 'test_hits@50': 0.76, 'test_hits@100': 0.8075}

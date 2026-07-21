@@ -1,0 +1,62 @@
+{
+  "environment": {
+    "cuda_available": true,
+    "cuda_capability": [
+      7,
+      0
+    ],
+    "cuda_device": "Tesla V100-PCIE-32GB",
+    "python": "3.10.8",
+    "torch": "2.5.1+cu121"
+  },
+  "rows": [
+    {
+      "ablation": "full",
+      "allocated_mb": 44.76611328125,
+      "dataset": "tkgl-yago",
+      "few_shot_ratio": 1.0,
+      "max_allocated_mb": 6390.21728515625,
+      "method": "ssptgfm",
+      "params_total": 1698164,
+      "params_trainable": 1698115,
+      "reserved_mb": 6562.0,
+      "rough_forward_flops": 14125910016,
+      "scenario": "label_split",
+      "seed": 4,
+      "test_ap": 0.9232099344852331,
+      "test_auc": 0.962423225150608,
+      "test_edges": 40052,
+      "test_hits@1": 0.87,
+      "test_hits@10": 0.8966666666666666,
+      "test_hits@100": 0.91,
+      "test_hits@50": 0.9066666666666666,
+      "test_mrr": 0.8822276032272119,
+      "test_ndcg": 0.9892226955589534,
+      "train_align": 10673.716776373447,
+      "train_edges": 323080,
+      "train_eval_time_sec": 11813.249966736883,
+      "train_kl": 15728.14817727896,
+      "train_loss": 55.01014802272503,
+      "train_lp": 0.0678015217399941,
+      "train_meta": 0.06716587829609919,
+      "train_ood_reg": 0.21150291432172824,
+      "train_rank": 0.021886034564933,
+      "train_struct_aux": 0.401237685749164,
+      "train_weighted_align": 53.36858289486322,
+      "train_weighted_kl": 1.5728148222471086,
+      "train_weighted_meta": 0.0003358293861494461,
+      "train_weighted_ood_reg": 0.00021150292401822906,
+      "train_weighted_rank": 2.1886035827743072e-05,
+      "train_weighted_struct_aux": 0.00040123770524634237,
+      "val_ap": 0.9037394635402262,
+      "val_auc": 0.9604224772830681,
+      "val_edges": 39046,
+      "val_hits@1": 0.8933333333333333,
+      "val_hits@10": 0.9133333333333333,
+      "val_hits@100": 0.9133333333333333,
+      "val_hits@50": 0.9133333333333333,
+      "val_mrr": 0.9023115162064855,
+      "val_ndcg": 0.9872214772106314
+    }
+  ]
+}

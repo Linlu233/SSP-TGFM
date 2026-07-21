@@ -1,0 +1,33 @@
+{
+  "dataset": "yago15k_temporal",
+  "detail": {
+    "ap": {
+      "baseline": 0.1540793392408241,
+      "value": 0.1479430430603601,
+      "win": false
+    },
+    "auc": {
+      "baseline": 0.715036886583563,
+      "value": 0.6504532220500986,
+      "win": false
+    },
+    "hits@10": {
+      "baseline": 0.2305,
+      "value": 0.25466666666666665,
+      "win": true
+    },
+    "mrr": {
+      "baseline": 0.1388835393375584,
+      "value": 0.12231718794746012,
+      "win": false
+    },
+    "ndcg": {
+      "baseline": 0.8244092553467314,
+      "value": 0.8237074432148519,
+      "win": false
+    }
+  },
+  "passed": false,
+  "target_wins": 3,
+  "wins": 1
+}

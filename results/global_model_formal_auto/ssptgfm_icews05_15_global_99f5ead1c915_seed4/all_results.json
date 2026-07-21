@@ -1,0 +1,62 @@
+{
+  "environment": {
+    "cuda_available": true,
+    "cuda_capability": [
+      7,
+      0
+    ],
+    "cuda_device": "Tesla V100-PCIE-32GB",
+    "python": "3.10.8",
+    "torch": "2.5.1+cu121"
+  },
+  "rows": [
+    {
+      "ablation": "full",
+      "allocated_mb": 58.61181640625,
+      "dataset": "icews05-15",
+      "few_shot_ratio": 1.0,
+      "max_allocated_mb": 5616.119140625,
+      "method": "ssptgfm",
+      "params_total": 3487252,
+      "params_trainable": 3487203,
+      "reserved_mb": 5982.0,
+      "rough_forward_flops": 14289186816,
+      "scenario": "standard",
+      "seed": 4,
+      "test_ap": 0.8355879524515395,
+      "test_auc": 0.9356316588959149,
+      "test_edges": 74087,
+      "test_hits@1": 0.30333333333333334,
+      "test_hits@10": 0.6766666666666666,
+      "test_hits@100": 0.85,
+      "test_hits@50": 0.8133333333333334,
+      "test_mrr": 0.4221566380771941,
+      "test_ndcg": 0.979039338022419,
+      "train_align": 479.89987399271905,
+      "train_edges": 326918,
+      "train_eval_time_sec": 12652.289746966213,
+      "train_kl": 1168.4507951956973,
+      "train_loss": 2.709045544081165,
+      "train_lp": 0.19033622398193262,
+      "train_meta": 0.19621335176915183,
+      "train_ood_reg": 0.21532253185780775,
+      "train_rank": 0.06668779626012422,
+      "train_struct_aux": 1.1685401144421257,
+      "train_weighted_align": 2.399499314090708,
+      "train_weighted_kl": 0.11684507665670653,
+      "train_weighted_meta": 0.0009810667369003023,
+      "train_weighted_ood_reg": 0.00021532254210587627,
+      "train_weighted_rank": 6.668779938205733e-05,
+      "train_weighted_struct_aux": 0.001168540170124183,
+      "val_ap": 0.87176222235677,
+      "val_auc": 0.955884217217499,
+      "val_edges": 60324,
+      "val_hits@1": 0.32666666666666666,
+      "val_hits@10": 0.6866666666666666,
+      "val_hits@100": 0.8933333333333333,
+      "val_hits@50": 0.8533333333333334,
+      "val_mrr": 0.4470344800665461,
+      "val_ndcg": 0.984232304490455
+    }
+  ]
+}

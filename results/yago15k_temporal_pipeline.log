@@ -1,0 +1,95 @@
+runtime_device=cuda
+cuda_device=Tesla V100-PCIE-32GB
+{'event': 'candidate_seed_start', 'candidate': 'h96_lr1e3_meta005_ood001', 'seed': 1, 'device': 'cuda', 'node_text_device': 'cuda:0'}
+{'event': 'epoch_start', 'epoch': 1, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 1, 'val_auc': 0.6252167953829025, 'elapsed_sec': 33.37886355817318}
+{'event': 'epoch_start', 'epoch': 2, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 2, 'val_auc': 0.6180289171669018, 'elapsed_sec': 31.134167935699224}
+{'event': 'epoch_start', 'epoch': 3, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 3, 'val_auc': 0.6176176917226108, 'elapsed_sec': 30.51531045511365}
+{'event': 'epoch_start', 'epoch': 4, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 4, 'val_auc': 0.6144385517967542, 'elapsed_sec': 30.208860229700804}
+{'event': 'epoch_start', 'epoch': 5, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 5, 'val_auc': 0.6135183864352232, 'elapsed_sec': 31.589489713311195}
+{'candidate': 'h96_lr1e3_meta005_ood001', 'seed': 1, 'val_auc': 0.6260832082029497, 'val_ap': 0.15392463872177697, 'val_ndcg': 0.8030624123914736, 'train_loss': 15.933532458745827, 'train_lp': 0.5152923391532089, 'train_align': 296.308440537776, 'train_kl': 1200.0500956389862, 'train_ood_reg': 0.21809692845001058, 'train_meta': 0.5149256614810329}
+{'event': 'candidate_seed_start', 'candidate': 'h96_lr1e3_meta005_ood001', 'seed': 2, 'device': 'cuda', 'node_text_device': 'cuda:0'}
+{'event': 'epoch_start', 'epoch': 1, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 1, 'val_auc': 0.6944699683114627, 'elapsed_sec': 29.343869045376778}
+{'event': 'epoch_start', 'epoch': 2, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 2, 'val_auc': 0.6485164758896371, 'elapsed_sec': 29.93401835486293}
+{'event': 'epoch_start', 'epoch': 3, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 3, 'val_auc': 0.6655999582296674, 'elapsed_sec': 30.063037548214197}
+{'event': 'epoch_start', 'epoch': 4, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 4, 'val_auc': 0.6467835786646551, 'elapsed_sec': 29.898432545363903}
+{'event': 'epoch_start', 'epoch': 5, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 5, 'val_auc': 0.6037579488960554, 'elapsed_sec': 30.000463537871838}
+{'candidate': 'h96_lr1e3_meta005_ood001', 'seed': 2, 'val_auc': 0.6949033685513359, 'val_ap': 0.16582620682863142, 'val_ndcg': 0.8084948407665976, 'train_loss': 16.17386660939556, 'train_lp': 0.5341697416063083, 'train_align': 301.1118302203841, 'train_kl': 1162.5039459487139, 'train_ood_reg': 0.2320120375035173, 'train_meta': 0.5242337994908882}
+{'event': 'candidate_seed_start', 'candidate': 'h96_lr7e4_meta01_ood001', 'seed': 1, 'device': 'cuda', 'node_text_device': 'cuda:0'}
+{'event': 'epoch_start', 'epoch': 1, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 1, 'val_auc': 0.6226844216130503, 'elapsed_sec': 29.30658846721053}
+{'event': 'epoch_start', 'epoch': 2, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 2, 'val_auc': 0.6229872532204608, 'elapsed_sec': 29.292205691337585}
+{'event': 'epoch_start', 'epoch': 3, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 3, 'val_auc': 0.6198167860790698, 'elapsed_sec': 29.585835177451372}
+{'event': 'epoch_start', 'epoch': 4, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 4, 'val_auc': 0.5989157818994815, 'elapsed_sec': 29.22559668123722}
+{'event': 'epoch_start', 'epoch': 5, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 5, 'val_auc': 0.6076677733910558, 'elapsed_sec': 29.884977489709854}
+{'event': 'epoch_start', 'epoch': 6, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 6, 'val_auc': 0.6204166729441107, 'elapsed_sec': 29.604106597602367}
+{'candidate': 'h96_lr7e4_meta01_ood001', 'seed': 1, 'val_auc': 0.6229771245095113, 'val_ap': 0.1557984711717679, 'val_ndcg': 0.804447961752733, 'train_loss': 14.400686303690328, 'train_lp': 0.42325641694715466, 'train_align': 267.46194791995873, 'train_kl': 1199.8579846721584, 'train_ood_reg': 0.21570907533168793, 'train_meta': 0.418747352941309}
+{'event': 'candidate_seed_start', 'candidate': 'h96_lr7e4_meta01_ood001', 'seed': 2, 'device': 'cuda', 'node_text_device': 'cuda:0'}
+{'event': 'epoch_start', 'epoch': 1, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 1, 'val_auc': 0.6811384757009173, 'elapsed_sec': 29.475713923573494}
+{'event': 'epoch_start', 'epoch': 2, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 2, 'val_auc': 0.6169857601579396, 'elapsed_sec': 29.15890384837985}
+{'event': 'epoch_start', 'epoch': 3, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 3, 'val_auc': 0.6610990385951354, 'elapsed_sec': 29.22454286366701}
+{'event': 'epoch_start', 'epoch': 4, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 4, 'val_auc': 0.6610067557632002, 'elapsed_sec': 29.408307440578938}
+{'event': 'epoch_start', 'epoch': 5, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 5, 'val_auc': 0.6484881238689038, 'elapsed_sec': 29.381480261683464}
+{'candidate': 'h96_lr7e4_meta01_ood001', 'seed': 2, 'val_auc': 0.6822444357837743, 'val_ap': 0.1477097726761465, 'val_ndcg': 0.795754432362918, 'train_loss': 16.562170968722487, 'train_lp': 0.5898554946406412, 'train_align': 307.36923724109846, 'train_kl': 1195.5252624770342, 'train_ood_reg': 0.23164634671756776, 'train_meta': 0.5859068414922488}
+{'event': 'candidate_seed_start', 'candidate': 'h128_lr7e4_meta01_ood001', 'seed': 1, 'device': 'cuda', 'node_text_device': 'cuda:0'}
+{'event': 'epoch_start', 'epoch': 1, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 1, 'val_auc': 0.6633183694486801, 'elapsed_sec': 29.5828203484416}
+{'event': 'epoch_start', 'epoch': 2, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 2, 'val_auc': 0.6633608776562729, 'elapsed_sec': 29.556207552552223}
+{'event': 'epoch_start', 'epoch': 3, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 3, 'val_auc': 0.6632366976997066, 'elapsed_sec': 30.033409144729376}
+{'event': 'epoch_start', 'epoch': 4, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 4, 'val_auc': 0.7041881916917302, 'elapsed_sec': 29.93997011333704}
+{'event': 'epoch_start', 'epoch': 5, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 5, 'val_auc': 0.6840080220007452, 'elapsed_sec': 29.690248992294073}
+{'event': 'epoch_start', 'epoch': 6, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 6, 'val_auc': 0.6519170851409068, 'elapsed_sec': 30.11238883435726}
+{'event': 'epoch_start', 'epoch': 7, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 7, 'val_auc': 0.6511328826084493, 'elapsed_sec': 29.46837940067053}
+{'event': 'epoch_start', 'epoch': 8, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 8, 'val_auc': 0.5950291443002438, 'elapsed_sec': 28.94595555588603}
+{'candidate': 'h128_lr7e4_meta01_ood001', 'seed': 1, 'val_auc': 0.7022358680638979, 'val_ap': 0.17458457593129154, 'val_ndcg': 0.8128343364822658, 'train_loss': 12.20730804841397, 'train_lp': 0.38600216003458443, 'train_align': 218.01926872639334, 'train_kl': 1834.7434728266828, 'train_ood_reg': 0.23616412938651393, 'train_meta': 0.2734482476223355}
+{'event': 'candidate_seed_start', 'candidate': 'h128_lr7e4_meta01_ood001', 'seed': 2, 'device': 'cuda', 'node_text_device': 'cuda:0'}
+{'event': 'epoch_start', 'epoch': 1, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 1, 'val_auc': 0.6693801094539539, 'elapsed_sec': 28.49409396573901}
+{'event': 'epoch_start', 'epoch': 2, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 2, 'val_auc': 0.67763987334629, 'elapsed_sec': 29.68709648400545}
+{'event': 'epoch_start', 'epoch': 3, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 3, 'val_auc': 0.7069992465305117, 'elapsed_sec': 29.650703359395266}
+{'event': 'epoch_start', 'epoch': 4, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 4, 'val_auc': 0.6802283355275753, 'elapsed_sec': 29.351313542574644}
+{'event': 'epoch_start', 'epoch': 5, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 5, 'val_auc': 0.6499609311709323, 'elapsed_sec': 28.757461220026016}
+{'event': 'epoch_start', 'epoch': 6, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 6, 'val_auc': 0.6368185349969926, 'elapsed_sec': 28.669181779026985}
+{'event': 'epoch_start', 'epoch': 7, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 7, 'val_auc': 0.6338975808360781, 'elapsed_sec': 28.786581702530384}
+{'candidate': 'h128_lr7e4_meta01_ood001', 'seed': 2, 'val_auc': 0.7096427486799527, 'val_ap': 0.184151083197614, 'val_ndcg': 0.8205998068648402, 'train_loss': 12.877203782988808, 'train_lp': 0.375014532100946, 'train_align': 232.45449644125114, 'train_kl': 1751.5721504082114, 'train_ood_reg': 0.2343331361978741, 'train_meta': 0.3443785111885518}
+2026-05-27_13:46:34 yago15k_temporal_search_exit rc=0
+updated configs/ssptgfm_yago15k_temporal_best.yaml from results/ssptgfm_search_yago15k_temporal_all_losses/search_results.json: h128_lr7e4_meta01_ood001
+2026-05-27_13:46:38 yago15k_temporal_apply_exit rc=0
+2026-05-27_13:46:38 launched_yago15k_temporal_seed seed=1 pid=866535 out=results/ssptgfm_yago15k_temporal_best_seed1 log=results/logs/yago15k_temporal_seed1.log
+2026-05-27_13:46:38 launched_yago15k_temporal_seed seed=2 pid=866537 out=results/ssptgfm_yago15k_temporal_best_seed2 log=results/logs/yago15k_temporal_seed2.log
+2026-05-27_13:46:38 launched_yago15k_temporal_seed seed=3 pid=866540 out=results/ssptgfm_yago15k_temporal_best_seed3 log=results/logs/yago15k_temporal_seed3.log
+2026-05-27_13:46:38 launched_yago15k_temporal_seed seed=4 pid=866544 out=results/ssptgfm_yago15k_temporal_best_seed4 log=results/logs/yago15k_temporal_seed4.log
+2026-05-27_13:46:38 launched_yago15k_temporal_seed seed=5 pid=866548 out=results/ssptgfm_yago15k_temporal_best_seed5 log=results/logs/yago15k_temporal_seed5.log
+2026-05-27_13:46:38 launched_yago15k_temporal_merge_watchdog pid=866552

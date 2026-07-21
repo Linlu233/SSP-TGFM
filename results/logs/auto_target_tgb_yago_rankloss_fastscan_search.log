@@ -1,0 +1,37 @@
+
+$ /root/miniconda3/bin/python -u scripts/search_hparams.py --config configs/auto_target/ssptgfm_search_tgb_yago_rankloss_fastscan.yaml --output results/auto_target_tgb_yago_rankloss_fastscan/search_tgb_yago_rankloss_fastscan --resume
+runtime_device=cuda
+cuda_device=Tesla V100-PCIE-32GB
+{'event': 'candidate_seed_start', 'candidate': 'rankloss_fastscan_h96_r12_a12_p4x4_l1_neg5_lr0p001_rl0p05_m1', 'seed': 1, 'device': 'cuda', 'node_text_device': 'cuda:0'}
+{'event': 'train_seed_start', 'seed': 1, 'train_edges': 50000, 'val_edges': 39046, 'test_edges': 40052, 'num_nodes': 10585, 'num_relations': 20}
+{'event': 'train_seed_tensors_ready', 'seed': 1, 'elapsed_sec': 0.09927753731608391, 'cuda_allocated_mb': 21, 'cuda_reserved_mb': 22, 'cuda_max_allocated_mb': 21}
+{'event': 'train_known_facts_ready', 'seed': 1, 'scope': 'train', 'edges': 50000, 'elapsed_sec': 0.10416745021939278}
+{'event': 'train_known_facts_ready', 'seed': 1, 'scope': 'train_val', 'edges': 89046, 'elapsed_sec': 0.11475499346852303}
+{'event': 'train_sampler_ready', 'seed': 1, 'elapsed_sec': 0.12186049669981003}
+{'event': 'val_sampler_ready', 'seed': 1, 'elapsed_sec': 0.12696142494678497}
+{'event': 'epoch_start', 'epoch': 1, 'epochs': 1, 'batches': 88, 'time_groups': 88}
+{'event': 'train_time_group', 'epoch': 1, 'time_group': 1, 'time_groups': 88, 'batch': 0, 'batches': 88, 'time_value': 0.0, 'group_batches': 1, 'history_edges': 0, 'elapsed_sec': 0.021878834813833237, 'cuda_allocated_mb': 22, 'cuda_reserved_mb': 24, 'cuda_max_allocated_mb': 22}
+{'event': 'train_progress', 'epoch': 1, 'batch': 1, 'batches': 88, 'time_group': 1, 'time_groups': 88, 'history_edges': 0, 'pos_edges': 942, 'neg_edges': 4710, 'loss_recent': 189.45907592773438, 'elapsed_sec': 27.307694416493177, 'avg_sec_per_batch': 27.307694416493177, 'cuda_allocated_mb': 185, 'cuda_reserved_mb': 862, 'cuda_max_allocated_mb': 835}
+{'event': 'train_progress', 'epoch': 1, 'batch': 12, 'batches': 88, 'time_group': 12, 'time_groups': 88, 'history_edges': 4954, 'pos_edges': 412, 'neg_edges': 2060, 'loss_recent': 93.08414713541667, 'elapsed_sec': 158.3052065782249, 'avg_sec_per_batch': 13.192100548185408, 'cuda_allocated_mb': 131, 'cuda_reserved_mb': 862, 'cuda_max_allocated_mb': 835}
+{'event': 'train_progress', 'epoch': 1, 'batch': 31, 'batches': 88, 'time_group': 31, 'time_groups': 88, 'history_edges': 13336, 'pos_edges': 502, 'neg_edges': 2510, 'loss_recent': 91.29241820304624, 'elapsed_sec': 279.20074835419655, 'avg_sec_per_batch': 9.00647575336118, 'cuda_allocated_mb': 140, 'cuda_reserved_mb': 882, 'cuda_max_allocated_mb': 835}
+{'event': 'train_progress', 'epoch': 1, 'batch': 55, 'batches': 88, 'time_group': 55, 'time_groups': 88, 'history_edges': 25762, 'pos_edges': 536, 'neg_edges': 2680, 'loss_recent': 96.03896193070845, 'elapsed_sec': 403.26671650260687, 'avg_sec_per_batch': 7.332122118229216, 'cuda_allocated_mb': 146, 'cuda_reserved_mb': 1102, 'cuda_max_allocated_mb': 1033}
+
+$ /root/miniconda3/bin/python -u scripts/search_hparams.py --config configs/auto_target/ssptgfm_search_tgb_yago_rankloss_fastscan.yaml --output results/auto_target_tgb_yago_rankloss_fastscan_neg1/search_tgb_yago_rankloss_fastscan --resume
+runtime_device=cuda
+cuda_device=Tesla V100-PCIE-32GB
+{'event': 'candidate_seed_start', 'candidate': 'rankloss_fastscan_h96_r12_a12_p4x4_l1_neg1_lr0p001_rl0p05_m1', 'seed': 1, 'device': 'cuda', 'node_text_device': 'cuda:0'}
+{'event': 'train_seed_start', 'seed': 1, 'train_edges': 50000, 'val_edges': 39046, 'test_edges': 40052, 'num_nodes': 10585, 'num_relations': 20}
+{'event': 'train_seed_tensors_ready', 'seed': 1, 'elapsed_sec': 0.007528439164161682, 'cuda_allocated_mb': 21, 'cuda_reserved_mb': 22, 'cuda_max_allocated_mb': 21}
+{'event': 'train_known_facts_ready', 'seed': 1, 'scope': 'train', 'edges': 50000, 'elapsed_sec': 0.01183943822979927}
+{'event': 'train_known_facts_ready', 'seed': 1, 'scope': 'train_val', 'edges': 89046, 'elapsed_sec': 0.020571909844875336}
+{'event': 'train_sampler_ready', 'seed': 1, 'elapsed_sec': 0.02682473510503769}
+{'event': 'val_sampler_ready', 'seed': 1, 'elapsed_sec': 0.03176155686378479}
+{'event': 'epoch_start', 'epoch': 1, 'epochs': 1, 'batches': 88, 'time_groups': 88}
+{'event': 'train_time_group', 'epoch': 1, 'time_group': 1, 'time_groups': 88, 'batch': 0, 'batches': 88, 'time_value': 0.0, 'group_batches': 1, 'history_edges': 0, 'elapsed_sec': 0.016864672303199768, 'cuda_allocated_mb': 22, 'cuda_reserved_mb': 24, 'cuda_max_allocated_mb': 22}
+{'event': 'train_progress', 'epoch': 1, 'batch': 1, 'batches': 88, 'time_group': 1, 'time_groups': 88, 'history_edges': 0, 'pos_edges': 942, 'neg_edges': 942, 'loss_recent': 62.11015701293945, 'elapsed_sec': 2.6489749774336815, 'avg_sec_per_batch': 2.6489749774336815, 'cuda_allocated_mb': 124, 'cuda_reserved_mb': 388, 'cuda_max_allocated_mb': 351}
+{'event': 'train_progress', 'epoch': 1, 'batch': 70, 'batches': 88, 'time_group': 70, 'time_groups': 88, 'history_edges': 34242, 'pos_edges': 616, 'neg_edges': 616, 'loss_recent': 28.58610123225621, 'elapsed_sec': 123.54069385305047, 'avg_sec_per_batch': 1.764867055043578, 'cuda_allocated_mb': 110, 'cuda_reserved_mb': 1028, 'cuda_max_allocated_mb': 942}
+{'event': 'train_time_group', 'epoch': 1, 'time_group': 88, 'time_groups': 88, 'batch': 87, 'batches': 88, 'time_value': 87.0, 'group_batches': 1, 'history_edges': 48846, 'elapsed_sec': 171.94566224887967, 'cuda_allocated_mb': 79, 'cuda_reserved_mb': 1316, 'cuda_max_allocated_mb': 1237}
+{'event': 'train_progress', 'epoch': 1, 'batch': 88, 'batches': 88, 'time_group': 88, 'time_groups': 88, 'history_edges': 48846, 'pos_edges': 1154, 'neg_edges': 1154, 'loss_recent': 32.46129454265941, 'elapsed_sec': 175.38655205443501, 'avg_sec_per_batch': 1.9930290006185798, 'cuda_allocated_mb': 129, 'cuda_reserved_mb': 1346, 'cuda_max_allocated_mb': 1281}
+{'event': 'validation_start', 'epoch': 1}
+{'event': 'validation_ranking_start', 'epoch': 1, 'max_edges': 5}
+{'event': 'epoch_end', 'epoch': 1, 'early_stop_metric': 'val_composite', 'val_score': 0.29529137207143275, 'val_auc': 0.6244598388671876, 'val_ap': 0.3848776047024315, 'val_ndcg': 0.8436476784856697, 'val_mrr': 0.2006567600634069, 'val_hits@1': 0.2, 'val_hits@10': 0.2, 'val_hits@50': 0.2, 'val_hits@100': 0.2, 'elapsed_sec': 282.4379245787859}

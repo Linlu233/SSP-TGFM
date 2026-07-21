@@ -1,0 +1,51 @@
+{
+  "datasets": {
+    "yago15k_temporal": {
+      "best_search": {
+        "bank": "rankloss_uniform_probe",
+        "note": "best candidate came from a search-only bank; run a formal-capable bank before formal test",
+        "score": 0.12581350583490944,
+        "search_results": "results/auto_target_rankloss_uniform_yago_probe_v1/search_yago15k_temporal_rankloss_uniform_probe/search_results.json"
+      },
+      "existing": {
+        "detail": {
+          "ap": {
+            "baseline": 0.1540793392408241,
+            "value": 0.15016636506567224,
+            "win": false
+          },
+          "auc": {
+            "baseline": 0.715036886583563,
+            "value": 0.673874500759119,
+            "win": false
+          },
+          "hits@10": {
+            "baseline": 0.2305,
+            "value": 0.14666666666666667,
+            "win": false
+          },
+          "mrr": {
+            "baseline": 0.1388835393375584,
+            "value": 0.08554189920100565,
+            "win": false
+          },
+          "ndcg": {
+            "baseline": 0.8244092553467314,
+            "value": 0.8238238994686298,
+            "win": false
+          }
+        },
+        "path": "results/ssptgfm_yago15k_temporal_best/all_results.json",
+        "wins": 0
+      },
+      "searches": {
+        "rankloss_uniform_probe": {
+          "best_candidate": "rankloss_uniform_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_rl0p2_m0p5_hinge",
+          "score": 0.12581350583490944,
+          "search_results": "results/auto_target_rankloss_uniform_yago_probe_v1/search_yago15k_temporal_rankloss_uniform_probe/search_results.json"
+        }
+      },
+      "status": "no_formal_candidate"
+    }
+  }
+}

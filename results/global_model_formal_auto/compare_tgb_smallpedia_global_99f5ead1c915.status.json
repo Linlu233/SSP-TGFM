@@ -1,0 +1,33 @@
+{
+  "dataset": "tgb_smallpedia",
+  "detail": {
+    "ap": {
+      "baseline": 0.44954806601035563,
+      "value": 0.42945288066752113,
+      "win": false
+    },
+    "auc": {
+      "baseline": 0.787086288585407,
+      "value": 0.803438249537685,
+      "win": true
+    },
+    "hits@10": {
+      "baseline": 0.1125,
+      "value": 0.1296,
+      "win": true
+    },
+    "mrr": {
+      "baseline": 0.07911783290821547,
+      "value": 0.09258959018453294,
+      "win": true
+    },
+    "ndcg": {
+      "baseline": 0.9072722036646249,
+      "value": 0.9043628193135024,
+      "win": false
+    }
+  },
+  "passed": true,
+  "target_wins": 3,
+  "wins": 3
+}

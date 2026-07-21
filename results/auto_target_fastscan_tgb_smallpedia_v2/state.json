@@ -1,0 +1,37 @@
+{
+  "datasets": {
+    "tgb_smallpedia": {
+      "existing": {
+        "detail": {
+          "ap": {
+            "baseline": 0.44954806601035563,
+            "value": 0.3044302250368335,
+            "win": false
+          },
+          "auc": {
+            "baseline": 0.787086288585407,
+            "value": 0.7074086620395796,
+            "win": false
+          },
+          "hits@10": {
+            "baseline": 0.1125,
+            "value": 0.05733333333333333,
+            "win": false
+          },
+          "mrr": {
+            "baseline": 0.07911783290821547,
+            "value": 0.03222740548128306,
+            "win": false
+          },
+          "ndcg": {
+            "baseline": 0.9072722036646249,
+            "value": 0.86516432788411,
+            "win": false
+          }
+        },
+        "path": "results/ssptgfm_tgb_smallpedia_best/all_results.json",
+        "wins": 0
+      }
+    }
+  }
+}

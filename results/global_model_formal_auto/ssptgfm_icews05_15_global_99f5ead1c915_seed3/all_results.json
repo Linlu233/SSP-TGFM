@@ -1,0 +1,62 @@
+{
+  "environment": {
+    "cuda_available": true,
+    "cuda_capability": [
+      7,
+      0
+    ],
+    "cuda_device": "Tesla V100-PCIE-32GB",
+    "python": "3.10.8",
+    "torch": "2.5.1+cu121"
+  },
+  "rows": [
+    {
+      "ablation": "full",
+      "allocated_mb": 58.61181640625,
+      "dataset": "icews05-15",
+      "few_shot_ratio": 1.0,
+      "max_allocated_mb": 5616.119140625,
+      "method": "ssptgfm",
+      "params_total": 3487252,
+      "params_trainable": 3487203,
+      "reserved_mb": 5982.0,
+      "rough_forward_flops": 14289186816,
+      "scenario": "standard",
+      "seed": 3,
+      "test_ap": 0.8317085165569613,
+      "test_auc": 0.9310720790313779,
+      "test_edges": 74087,
+      "test_hits@1": 0.2966666666666667,
+      "test_hits@10": 0.6733333333333333,
+      "test_hits@100": 0.8433333333333334,
+      "test_hits@50": 0.8166666666666667,
+      "test_mrr": 0.42000617213238894,
+      "test_ndcg": 0.9782062257903525,
+      "train_align": 431.4419015486102,
+      "train_edges": 326918,
+      "train_eval_time_sec": 14043.679587081075,
+      "train_kl": 611.7459981287981,
+      "train_loss": 2.3956211807145973,
+      "train_lp": 0.17535142683762328,
+      "train_meta": 0.17074221407504117,
+      "train_ood_reg": 0.20926458674821935,
+      "train_rank": 0.05835822544435073,
+      "train_struct_aux": 0.822719998395303,
+      "train_weighted_align": 2.157209459818139,
+      "train_weighted_kl": 0.061174598303900145,
+      "train_weighted_meta": 0.0008537110523410357,
+      "train_weighted_ood_reg": 0.00020926459673471578,
+      "train_weighted_rank": 5.835822823222014e-05,
+      "train_weighted_struct_aux": 0.0008227200378444011,
+      "val_ap": 0.8710696925252943,
+      "val_auc": 0.9550445697415817,
+      "val_edges": 60324,
+      "val_hits@1": 0.32,
+      "val_hits@10": 0.6866666666666666,
+      "val_hits@100": 0.9066666666666666,
+      "val_hits@50": 0.8533333333333334,
+      "val_mrr": 0.4406084895652841,
+      "val_ndcg": 0.984085045157543
+    }
+  ]
+}

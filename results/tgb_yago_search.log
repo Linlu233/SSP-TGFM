@@ -1,0 +1,76 @@
+runtime_device=cuda
+cuda_device=Tesla V100-PCIE-32GB
+{'event': 'candidate_seed_start', 'candidate': 'h96_lr1e3_meta005_ood001', 'seed': 1, 'device': 'cuda', 'node_text_device': 'cuda:0'}
+{'event': 'epoch_start', 'epoch': 1, 'epochs': 8, 'batches': 195}
+{'event': 'epoch_end', 'epoch': 1, 'val_auc': 0.931344262729039, 'elapsed_sec': 509.89587607234716}
+{'event': 'epoch_start', 'epoch': 2, 'epochs': 8, 'batches': 195}
+{'event': 'epoch_end', 'epoch': 2, 'val_auc': 0.9302792551030813, 'elapsed_sec': 445.7211551107466}
+{'event': 'epoch_start', 'epoch': 3, 'epochs': 8, 'batches': 195}
+{'event': 'epoch_end', 'epoch': 3, 'val_auc': 0.9306727323030868, 'elapsed_sec': 439.5342618264258}
+{'event': 'epoch_start', 'epoch': 4, 'epochs': 8, 'batches': 195}
+{'event': 'epoch_end', 'epoch': 4, 'val_auc': 0.9305676944320425, 'elapsed_sec': 281.1521293744445}
+{'candidate': 'h96_lr1e3_meta005_ood001', 'seed': 1, 'val_auc': 0.9313132059226863, 'val_ap': 0.7331164446146952, 'val_ndcg': 0.9565082178776492, 'train_loss': 867.3226274245825, 'train_lp': 0.2740448354146419, 'train_align': 16900.737502191005, 'train_kl': 44020.15169771635, 'train_ood_reg': 0.23566648677373545, 'train_meta': 0.2754803406170163}
+{'event': 'candidate_seed_start', 'candidate': 'h96_lr1e3_meta005_ood001', 'seed': 2, 'device': 'cuda', 'node_text_device': 'cuda:0'}
+{'event': 'epoch_start', 'epoch': 1, 'epochs': 8, 'batches': 195}
+{'event': 'epoch_end', 'epoch': 1, 'val_auc': 0.9318381714472561, 'elapsed_sec': 255.02184008061886}
+{'event': 'epoch_start', 'epoch': 2, 'epochs': 8, 'batches': 195}
+{'event': 'epoch_end', 'epoch': 2, 'val_auc': 0.9327665330673047, 'elapsed_sec': 248.9310417883098}
+{'event': 'epoch_start', 'epoch': 3, 'epochs': 8, 'batches': 195}
+{'event': 'epoch_end', 'epoch': 3, 'val_auc': 0.9323475185444531, 'elapsed_sec': 255.82921800017357}
+{'event': 'epoch_start', 'epoch': 4, 'epochs': 8, 'batches': 195}
+{'event': 'epoch_end', 'epoch': 4, 'val_auc': 0.9324807294303619, 'elapsed_sec': 271.1087100058794}
+{'event': 'epoch_start', 'epoch': 5, 'epochs': 8, 'batches': 195}
+{'event': 'epoch_end', 'epoch': 5, 'val_auc': 0.9319843499497014, 'elapsed_sec': 257.9456865377724}
+{'candidate': 'h96_lr1e3_meta005_ood001', 'seed': 2, 'val_auc': 0.9327401384648619, 'val_ap': 0.7987392883005093, 'val_ndcg': 0.9725980333971008, 'train_loss': 712.0347190954747, 'train_lp': 0.15245530256667197, 'train_align': 13529.301815717648, 'train_kl': 70832.5053886218, 'train_ood_reg': 0.2123947860338749, 'train_meta': 0.13767296217549116}
+{'event': 'candidate_seed_start', 'candidate': 'h96_lr7e4_meta01_ood001', 'seed': 1, 'device': 'cuda', 'node_text_device': 'cuda:0'}
+{'event': 'epoch_start', 'epoch': 1, 'epochs': 8, 'batches': 195}
+{'event': 'epoch_end', 'epoch': 1, 'val_auc': 0.929125583810357, 'elapsed_sec': 219.22807168588042}
+{'event': 'epoch_start', 'epoch': 2, 'epochs': 8, 'batches': 195}
+{'event': 'epoch_end', 'epoch': 2, 'val_auc': 0.9305111543501571, 'elapsed_sec': 219.0127081386745}
+{'event': 'epoch_start', 'epoch': 3, 'epochs': 8, 'batches': 195}
+{'event': 'epoch_end', 'epoch': 3, 'val_auc': 0.9317370645671956, 'elapsed_sec': 222.7051472067833}
+{'event': 'epoch_start', 'epoch': 4, 'epochs': 8, 'batches': 195}
+{'event': 'epoch_end', 'epoch': 4, 'val_auc': 0.9312945249672601, 'elapsed_sec': 221.97827348858118}
+{'event': 'epoch_start', 'epoch': 5, 'epochs': 8, 'batches': 195}
+{'event': 'epoch_end', 'epoch': 5, 'val_auc': 0.9318301857271125, 'elapsed_sec': 222.1204967573285}
+{'event': 'epoch_start', 'epoch': 6, 'epochs': 8, 'batches': 195}
+{'event': 'epoch_end', 'epoch': 6, 'val_auc': 0.9303140260224539, 'elapsed_sec': 221.68932298198342}
+{'event': 'epoch_start', 'epoch': 7, 'epochs': 8, 'batches': 195}
+{'event': 'epoch_end', 'epoch': 7, 'val_auc': 0.9310124918519411, 'elapsed_sec': 216.60467230901122}
+{'event': 'epoch_start', 'epoch': 8, 'epochs': 8, 'batches': 195}
+{'event': 'epoch_end', 'epoch': 8, 'val_auc': 0.9283921879039652, 'elapsed_sec': 216.0643650740385}
+{'candidate': 'h96_lr7e4_meta01_ood001', 'seed': 1, 'val_auc': 0.9318345779896161, 'val_ap': 0.7357333827434644, 'val_ndcg': 0.9579216564006339, 'train_loss': 586.9052121871557, 'train_lp': 0.1580276363171064, 'train_align': 11300.260408528646, 'train_kl': 43464.39413561699, 'train_ood_reg': 0.23701358009607365, 'train_meta': 0.17155043608568704}
+{'event': 'candidate_seed_start', 'candidate': 'h96_lr7e4_meta01_ood001', 'seed': 2, 'device': 'cuda', 'node_text_device': 'cuda:0'}
+{'event': 'epoch_start', 'epoch': 1, 'epochs': 8, 'batches': 195}
+{'event': 'epoch_end', 'epoch': 1, 'val_auc': 0.9329001745935495, 'elapsed_sec': 216.2902833595872}
+{'event': 'epoch_start', 'epoch': 2, 'epochs': 8, 'batches': 195}
+{'event': 'epoch_end', 'epoch': 2, 'val_auc': 0.9334538127098813, 'elapsed_sec': 216.9006149955094}
+{'event': 'epoch_start', 'epoch': 3, 'epochs': 8, 'batches': 195}
+{'event': 'epoch_end', 'epoch': 3, 'val_auc': 0.9329787493191384, 'elapsed_sec': 218.2781409472227}
+{'event': 'epoch_start', 'epoch': 4, 'epochs': 8, 'batches': 195}
+{'event': 'epoch_end', 'epoch': 4, 'val_auc': 0.9321903624357486, 'elapsed_sec': 220.85423793643713}
+{'event': 'epoch_start', 'epoch': 5, 'epochs': 8, 'batches': 195}
+{'event': 'epoch_end', 'epoch': 5, 'val_auc': 0.9334436795601001, 'elapsed_sec': 220.96878166124225}
+{'candidate': 'h96_lr7e4_meta01_ood001', 'seed': 2, 'val_auc': 0.9334656480876727, 'val_ap': 0.7989809904259941, 'val_ndcg': 0.9729170138384035, 'train_loss': 769.9901406606039, 'train_lp': 0.14865170465065883, 'train_align': 14749.685079564804, 'train_kl': 64711.2881260016, 'train_ood_reg': 0.21419235773575612, 'train_meta': 0.13587225320008703}
+{'event': 'candidate_seed_start', 'candidate': 'h128_lr7e4_meta01_ood001', 'seed': 1, 'device': 'cuda', 'node_text_device': 'cuda:0'}
+{'event': 'epoch_start', 'epoch': 1, 'epochs': 8, 'batches': 195}
+{'event': 'epoch_end', 'epoch': 1, 'val_auc': 0.9353854070243757, 'elapsed_sec': 219.79783169925213}
+{'event': 'epoch_start', 'epoch': 2, 'epochs': 8, 'batches': 195}
+{'event': 'epoch_end', 'epoch': 2, 'val_auc': 0.9348851341693993, 'elapsed_sec': 218.94026137515903}
+{'event': 'epoch_start', 'epoch': 3, 'epochs': 8, 'batches': 195}
+{'event': 'epoch_end', 'epoch': 3, 'val_auc': 0.9338973530050093, 'elapsed_sec': 218.55213526636362}
+{'event': 'epoch_start', 'epoch': 4, 'epochs': 8, 'batches': 195}
+{'event': 'epoch_end', 'epoch': 4, 'val_auc': 0.9343480068514363, 'elapsed_sec': 220.892383094877}
+{'candidate': 'h128_lr7e4_meta01_ood001', 'seed': 1, 'val_auc': 0.9353769535063678, 'val_ap': 0.8438065959441123, 'val_ndcg': 0.978255016777361, 'train_loss': 883.426267291338, 'train_lp': 0.15589488856494427, 'train_align': 17188.236279922876, 'train_kl': 47713.84036333133, 'train_ood_reg': 0.21965157122184067, 'train_meta': 0.13958679045108743}
+{'event': 'candidate_seed_start', 'candidate': 'h128_lr7e4_meta01_ood001', 'seed': 2, 'device': 'cuda', 'node_text_device': 'cuda:0'}
+{'event': 'epoch_start', 'epoch': 1, 'epochs': 8, 'batches': 195}
+{'event': 'epoch_end', 'epoch': 1, 'val_auc': 0.9336606402674593, 'elapsed_sec': 217.9952906779945}
+{'event': 'epoch_start', 'epoch': 2, 'epochs': 8, 'batches': 195}
+{'event': 'epoch_end', 'epoch': 2, 'val_auc': 0.9338853441379649, 'elapsed_sec': 218.69023916497827}
+{'event': 'epoch_start', 'epoch': 3, 'epochs': 8, 'batches': 195}
+{'event': 'epoch_end', 'epoch': 3, 'val_auc': 0.9331385498107216, 'elapsed_sec': 220.0605046711862}
+{'event': 'epoch_start', 'epoch': 4, 'epochs': 8, 'batches': 195}
+{'event': 'epoch_end', 'epoch': 4, 'val_auc': 0.9325518640578672, 'elapsed_sec': 219.40326792001724}
+{'event': 'epoch_start', 'epoch': 5, 'epochs': 8, 'batches': 195}
+{'event': 'epoch_end', 'epoch': 5, 'val_auc': 0.9325106050667851, 'elapsed_sec': 221.03231949731708}
+{'candidate': 'h128_lr7e4_meta01_ood001', 'seed': 2, 'val_auc': 0.9337759742829134, 'val_ap': 0.8289973808220992, 'val_ndcg': 0.976704349238056, 'train_loss': 734.3727811960074, 'train_lp': 0.14601707093608685, 'train_align': 13935.643987254607, 'train_kl': 74885.86725260416, 'train_ood_reg': 0.22811690209767757, 'train_meta': 0.13821237300293526}

@@ -1,0 +1,3 @@
+{'event': 'auto_target_start', 'run_root': 'results/auto_target_decay_tgb_smallpedia', 'target_wins': 3, 'metrics': ('auc', 'ap', 'mrr', 'hits@10', 'ndcg')}
+{'event': 'dataset_start', 'dataset': 'tgb_smallpedia', 'existing_wins': 0}
+{'event': 'search_start', 'dataset': 'tgb_smallpedia', 'bank': 'history_decay_rankloss', 'config': 'configs/auto_target/ssptgfm_search_tgb_smallpedia_history_decay_rankloss.yaml', 'max_parallel_searches': 1}

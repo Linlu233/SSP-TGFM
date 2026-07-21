@@ -1,0 +1,239 @@
+{
+  "datasets": {
+    "icews05_15": {
+      "best_dataset_local_formal_candidate": {
+        "bank": "global_relpop_rep_enhanced_probe",
+        "note": "Per-dataset formal selection is disabled. Select one shared candidate across datasets with report_global_candidate_search.py before formal tests.",
+        "score": 0.5574024842337734,
+        "search_results": "results/global_relpop_rep_enhanced_phase1/search_icews05_15_global_relpop_rep_enhanced_probe/search_results.json"
+      },
+      "existing": {
+        "detail": {
+          "ap": {
+            "baseline": 0.8371196732003561,
+            "value": 0.7864356950333944,
+            "win": false
+          },
+          "auc": {
+            "baseline": 0.9380577301948596,
+            "value": 0.9258579718357051,
+            "win": false
+          },
+          "hits@10": {
+            "baseline": 0.634,
+            "value": 0.412,
+            "win": false
+          },
+          "mrr": {
+            "baseline": 0.3679325888535817,
+            "value": 0.21431230048721953,
+            "win": false
+          },
+          "ndcg": {
+            "baseline": 0.9794725824770751,
+            "value": 0.9730121001652587,
+            "win": false
+          }
+        },
+        "path": "results/ssptgfm_icews05_15_best/all_results.json",
+        "wins": 0
+      },
+      "searches": {
+        "global_relpop_rep_enhanced_probe": {
+          "best_candidate": "global_relpop_rep_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp1_relpopfix48_sr0p01_sa0p001_rep8s0p05_rl0p001_m0_bpr",
+          "score": 0.5574024842337734,
+          "search_results": "results/global_relpop_rep_enhanced_phase1/search_icews05_15_global_relpop_rep_enhanced_probe/search_results.json"
+        }
+      },
+      "status": "formal_blocked_global_model_required"
+    },
+    "icews14": {
+      "best_dataset_local_formal_candidate": {
+        "bank": "global_relpop_rep_enhanced_probe",
+        "note": "Per-dataset formal selection is disabled. Select one shared candidate across datasets with report_global_candidate_search.py before formal tests.",
+        "score": 0.5676980509404927,
+        "search_results": "results/global_relpop_rep_enhanced_phase1/search_icews14_global_relpop_rep_enhanced_probe/search_results.json"
+      },
+      "existing": {
+        "detail": {
+          "ap": {
+            "baseline": 0.6395419317158659,
+            "value": 0.44147111002253875,
+            "win": false
+          },
+          "auc": {
+            "baseline": 0.9098328388870797,
+            "value": 0.8898559839174086,
+            "win": false
+          },
+          "hits@10": {
+            "baseline": 0.5549999999999999,
+            "value": 0.23049999999999998,
+            "win": false
+          },
+          "mrr": {
+            "baseline": 0.3121606555171064,
+            "value": 0.13286738860028183,
+            "win": false
+          },
+          "ndcg": {
+            "baseline": 0.9302301758904522,
+            "value": 0.905249244966055,
+            "win": false
+          }
+        },
+        "path": "results/optimization_attempts/ssptgfm_icews14_formula_rank_best/all_results.json",
+        "wins": 0
+      },
+      "searches": {
+        "global_relpop_rep_enhanced_probe": {
+          "best_candidate": "global_relpop_rep_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp1_relpopfix48_sr0p01_sa0p001_rep16s0p02_rl0p001_m0_bpr",
+          "score": 0.5676980509404927,
+          "search_results": "results/global_relpop_rep_enhanced_phase1/search_icews14_global_relpop_rep_enhanced_probe/search_results.json"
+        }
+      },
+      "status": "formal_blocked_global_model_required"
+    },
+    "tgb_smallpedia": {
+      "best_dataset_local_formal_candidate": {
+        "bank": "global_relpop_rep_enhanced_probe",
+        "note": "Per-dataset formal selection is disabled. Select one shared candidate across datasets with report_global_candidate_search.py before formal tests.",
+        "score": 0.3556276967511115,
+        "search_results": "results/global_relpop_rep_enhanced_phase1/search_tgb_smallpedia_global_relpop_rep_enhanced_probe/search_results.json"
+      },
+      "existing": {
+        "detail": {
+          "ap": {
+            "baseline": 0.44954806601035563,
+            "value": 0.3044302250368335,
+            "win": false
+          },
+          "auc": {
+            "baseline": 0.787086288585407,
+            "value": 0.7074086620395796,
+            "win": false
+          },
+          "hits@10": {
+            "baseline": 0.1125,
+            "value": 0.05733333333333333,
+            "win": false
+          },
+          "mrr": {
+            "baseline": 0.07911783290821547,
+            "value": 0.03222740548128306,
+            "win": false
+          },
+          "ndcg": {
+            "baseline": 0.9072722036646249,
+            "value": 0.86516432788411,
+            "win": false
+          }
+        },
+        "path": "results/ssptgfm_tgb_smallpedia_best/all_results.json",
+        "wins": 0
+      },
+      "searches": {
+        "global_relpop_rep_enhanced_probe": {
+          "best_candidate": "global_relpop_rep_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp1_relpopfix48_sr0p01_sa0p001_rep16s0p02_rl0p001_m0_bpr",
+          "score": 0.3556276967511115,
+          "search_results": "results/global_relpop_rep_enhanced_phase1/search_tgb_smallpedia_global_relpop_rep_enhanced_probe/search_results.json"
+        }
+      },
+      "status": "formal_blocked_global_model_required"
+    },
+    "tgb_yago": {
+      "best_dataset_local_formal_candidate": {
+        "bank": "global_relpop_rep_enhanced_probe",
+        "note": "Per-dataset formal selection is disabled. Select one shared candidate across datasets with report_global_candidate_search.py before formal tests.",
+        "score": 0.7653050300036319,
+        "search_results": "results/global_relpop_rep_enhanced_phase1/search_tgb_yago_global_relpop_rep_enhanced_probe/search_results.json"
+      },
+      "existing": {
+        "detail": {
+          "ap": {
+            "baseline": 0.8992711734548288,
+            "value": 0.8767124414415418,
+            "win": false
+          },
+          "auc": {
+            "baseline": 0.9553957891667827,
+            "value": 0.9499166269608023,
+            "win": false
+          },
+          "hits@10": {
+            "baseline": 0.92,
+            "value": 0.787,
+            "win": false
+          },
+          "mrr": {
+            "baseline": 0.8981460575356689,
+            "value": 0.6782567400739631,
+            "win": false
+          },
+          "ndcg": {
+            "baseline": 0.9855335690473936,
+            "value": 0.9830586096639496,
+            "win": false
+          }
+        },
+        "path": "results/optimization_attempts/ssptgfm_tgb_yago_formula_rank_best/all_results.json",
+        "wins": 0
+      },
+      "searches": {
+        "global_relpop_rep_enhanced_probe": {
+          "best_candidate": "global_relpop_rep_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp1_relpopfix48_sr0p01_sa0p001_rep16s0p05_rl0p001_m0_bpr",
+          "score": 0.7653050300036319,
+          "search_results": "results/global_relpop_rep_enhanced_phase1/search_tgb_yago_global_relpop_rep_enhanced_probe/search_results.json"
+        }
+      },
+      "status": "formal_blocked_global_model_required"
+    },
+    "yago15k_temporal": {
+      "best_dataset_local_formal_candidate": {
+        "bank": "global_relpop_rep_enhanced_probe",
+        "note": "Per-dataset formal selection is disabled. Select one shared candidate across datasets with report_global_candidate_search.py before formal tests.",
+        "score": 0.14769566102639323,
+        "search_results": "results/global_relpop_rep_enhanced_phase1/search_yago15k_temporal_global_relpop_rep_enhanced_probe/search_results.json"
+      },
+      "existing": {
+        "detail": {
+          "ap": {
+            "baseline": 0.1540793392408241,
+            "value": 0.15016636506567224,
+            "win": false
+          },
+          "auc": {
+            "baseline": 0.715036886583563,
+            "value": 0.673874500759119,
+            "win": false
+          },
+          "hits@10": {
+            "baseline": 0.2305,
+            "value": 0.14666666666666667,
+            "win": false
+          },
+          "mrr": {
+            "baseline": 0.1388835393375584,
+            "value": 0.08554189920100565,
+            "win": false
+          },
+          "ndcg": {
+            "baseline": 0.8244092553467314,
+            "value": 0.8238238994686298,
+            "win": false
+          }
+        },
+        "path": "results/ssptgfm_yago15k_temporal_best/all_results.json",
+        "wins": 0
+      },
+      "searches": {
+        "global_relpop_rep_enhanced_probe": {
+          "best_candidate": "global_relpop_rep_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp1_relpopfix48_sr0p01_sa0p001_rep8s0p05_rl0p001_m0_bpr",
+          "score": 0.14769566102639323,
+          "search_results": "results/global_relpop_rep_enhanced_phase1/search_yago15k_temporal_global_relpop_rep_enhanced_probe/search_results.json"
+        }
+      },
+      "status": "formal_blocked_global_model_required"
+    }
+  }
+}

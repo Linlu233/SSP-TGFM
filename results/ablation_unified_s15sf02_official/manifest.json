@@ -1,0 +1,57 @@
+{
+  "blocked_ablations": {
+    "mamba_encoder": "mamba_ssm is unavailable in the verified base conda environment; installation was not completed to avoid changing torch/CUDA dependencies."
+  },
+  "prepared": [
+    {
+      "config": "configs/ablation_unified_s15sf02_official/ssptgfm_yago15k_temporal_unified_s15sf02_official_ablation.yaml",
+      "dataset": "yago15k-temporal",
+      "excluded_ablations": [
+        "mamba_encoder"
+      ],
+      "existing_rows_after_prepare": 5,
+      "output_dir": "results/ablation_unified_s15sf02_official/ssptgfm_yago15k_temporal_unified_s15sf02_official",
+      "prepopulated_full_rows": 5
+    },
+    {
+      "config": "configs/ablation_unified_s15sf02_official/ssptgfm_tgb_smallpedia_unified_s15sf02_official_ablation.yaml",
+      "dataset": "tkgl-smallpedia",
+      "excluded_ablations": [
+        "mamba_encoder"
+      ],
+      "existing_rows_after_prepare": 5,
+      "output_dir": "results/ablation_unified_s15sf02_official/ssptgfm_tgb_smallpedia_unified_s15sf02_official",
+      "prepopulated_full_rows": 5
+    },
+    {
+      "config": "configs/ablation_unified_s15sf02_official/ssptgfm_tgb_yago_unified_s15sf02_official_ablation.yaml",
+      "dataset": "tkgl-yago",
+      "excluded_ablations": [
+        "mamba_encoder"
+      ],
+      "existing_rows_after_prepare": 5,
+      "output_dir": "results/ablation_unified_s15sf02_official/ssptgfm_tgb_yago_unified_s15sf02_official",
+      "prepopulated_full_rows": 5
+    },
+    {
+      "config": "configs/ablation_unified_s15sf02_official/ssptgfm_icews14_unified_s15sf02_official_ablation.yaml",
+      "dataset": "icews14",
+      "excluded_ablations": [
+        "mamba_encoder"
+      ],
+      "existing_rows_after_prepare": 5,
+      "output_dir": "results/ablation_unified_s15sf02_official/ssptgfm_icews14_unified_s15sf02_official",
+      "prepopulated_full_rows": 5
+    },
+    {
+      "config": "configs/ablation_unified_s15sf02_official/ssptgfm_icews05_15_unified_s15sf02_official_ablation.yaml",
+      "dataset": "icews05-15",
+      "excluded_ablations": [
+        "mamba_encoder"
+      ],
+      "existing_rows_after_prepare": 5,
+      "output_dir": "results/ablation_unified_s15sf02_official/ssptgfm_icews05_15_unified_s15sf02_official",
+      "prepopulated_full_rows": 5
+    }
+  ]
+}

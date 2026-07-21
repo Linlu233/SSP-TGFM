@@ -1,0 +1,3 @@
+{'event': 'auto_target_start', 'run_root': 'results/auto_target_icews05_15_rankloss_fastscan', 'target_wins': 3, 'metrics': ('auc', 'ap', 'mrr', 'hits@10', 'ndcg')}
+{'event': 'dataset_start', 'dataset': 'icews05_15', 'existing_wins': 0}
+{'event': 'search_start', 'dataset': 'icews05_15', 'bank': 'rankloss_fastscan', 'config': 'configs/auto_target/ssptgfm_search_icews05_15_rankloss_fastscan.yaml', 'max_parallel_searches': 2}

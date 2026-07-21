@@ -1,0 +1,70 @@
+2026-06-16_13:20:43 queued global_relpop_rep_enhanced_probe after current enhanced searches
+2026-06-16_13:20:43 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_13:25:43 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_13:30:43 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_13:35:43 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_13:40:43 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_13:45:43 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_13:50:43 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_13:55:43 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_14:00:43 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_14:05:43 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_14:10:43 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_14:15:43 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_14:20:43 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_14:25:43 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_14:30:43 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_14:35:43 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_14:40:43 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_14:45:43 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_14:50:43 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_14:55:43 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_15:00:43 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_15:05:43 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_15:10:43 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_15:15:43 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_15:20:43 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_15:25:43 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_15:30:43 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_15:35:43 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_15:40:43 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_15:45:43 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_15:50:43 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_15:55:43 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_16:00:43 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_16:05:44 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_16:10:44 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_16:15:44 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_16:20:44 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_16:25:44 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_16:30:44 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_16:35:44 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_16:40:44 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_16:45:44 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_16:50:44 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_16:55:44 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_17:00:44 waiting for current global_relpop_frozen_enhanced_probe jobs
+2026-06-16_17:05:44 starting global_relpop_rep_enhanced_probe queue
+{'event': 'auto_target_start', 'run_root': 'results/global_relpop_rep_enhanced_phase1', 'target_wins': 3, 'metrics': ('auc', 'ap', 'mrr', 'hits@10', 'ndcg')}
+{'event': 'dataset_start', 'dataset': 'icews14', 'existing_wins': 0}
+{'event': 'search_start', 'dataset': 'icews14', 'bank': 'global_relpop_rep_enhanced_probe', 'config': 'configs/auto_target/ssptgfm_search_icews14_global_relpop_rep_enhanced_probe.yaml', 'max_parallel_searches': 3}
+{'event': 'search_done', 'bank': 'global_relpop_rep_enhanced_probe'}
+{'event': 'formal_blocked_global_model_required', 'dataset': 'icews14', 'bank': 'global_relpop_rep_enhanced_probe'}
+{'event': 'dataset_start', 'dataset': 'icews05_15', 'existing_wins': 0}
+{'event': 'search_start', 'dataset': 'icews05_15', 'bank': 'global_relpop_rep_enhanced_probe', 'config': 'configs/auto_target/ssptgfm_search_icews05_15_global_relpop_rep_enhanced_probe.yaml', 'max_parallel_searches': 3}
+{'event': 'search_done', 'bank': 'global_relpop_rep_enhanced_probe'}
+{'event': 'formal_blocked_global_model_required', 'dataset': 'icews05_15', 'bank': 'global_relpop_rep_enhanced_probe'}
+{'event': 'dataset_start', 'dataset': 'tgb_smallpedia', 'existing_wins': 0}
+{'event': 'search_start', 'dataset': 'tgb_smallpedia', 'bank': 'global_relpop_rep_enhanced_probe', 'config': 'configs/auto_target/ssptgfm_search_tgb_smallpedia_global_relpop_rep_enhanced_probe.yaml', 'max_parallel_searches': 3}
+{'event': 'search_done', 'bank': 'global_relpop_rep_enhanced_probe'}
+{'event': 'formal_blocked_global_model_required', 'dataset': 'tgb_smallpedia', 'bank': 'global_relpop_rep_enhanced_probe'}
+{'event': 'dataset_start', 'dataset': 'tgb_yago', 'existing_wins': 0}
+{'event': 'search_start', 'dataset': 'tgb_yago', 'bank': 'global_relpop_rep_enhanced_probe', 'config': 'configs/auto_target/ssptgfm_search_tgb_yago_global_relpop_rep_enhanced_probe.yaml', 'max_parallel_searches': 3}
+{'event': 'search_done', 'bank': 'global_relpop_rep_enhanced_probe'}
+{'event': 'formal_blocked_global_model_required', 'dataset': 'tgb_yago', 'bank': 'global_relpop_rep_enhanced_probe'}
+{'event': 'dataset_start', 'dataset': 'yago15k_temporal', 'existing_wins': 0}
+{'event': 'search_start', 'dataset': 'yago15k_temporal', 'bank': 'global_relpop_rep_enhanced_probe', 'config': 'configs/auto_target/ssptgfm_search_yago15k_temporal_global_relpop_rep_enhanced_probe.yaml', 'max_parallel_searches': 3}
+{'event': 'search_done', 'bank': 'global_relpop_rep_enhanced_probe'}
+{'event': 'formal_blocked_global_model_required', 'dataset': 'yago15k_temporal', 'bank': 'global_relpop_rep_enhanced_probe'}
+{'event': 'auto_target_done', 'state': 'results/global_relpop_rep_enhanced_phase1/state.json'}
+2026-06-16_20:35:26 global_relpop_rep_enhanced_probe queue exited code=0

@@ -1,0 +1,354 @@
+runtime_device=cuda
+cuda_device=Tesla V100-PCIE-32GB
+{'event': 'seed_start', 'dataset': 'yago15k-temporal', 'ablation': 'full', 'seed': 5, 'device': 'cuda', 'node_text_device': 'cuda:0'}
+{'event': 'train_seed_start', 'seed': 5, 'train_edges': 3244, 'val_edges': 6738, 'test_edges': 26719, 'num_nodes': 4197, 'num_relations': 19}
+{'event': 'train_seed_tensors_ready', 'seed': 5, 'elapsed_sec': 0.3096563406288624, 'cuda_allocated_mb': 11, 'cuda_reserved_mb': 24, 'cuda_max_allocated_mb': 11}
+{'event': 'train_known_facts_ready', 'seed': 5, 'scope': 'train', 'edges': 3244, 'elapsed_sec': 0.31235605850815773}
+{'event': 'train_known_facts_ready', 'seed': 5, 'scope': 'train_val', 'edges': 9982, 'elapsed_sec': 0.31398554891347885}
+{'event': 'train_sampler_ready', 'seed': 5, 'elapsed_sec': 0.3159780278801918}
+{'event': 'val_sampler_ready', 'seed': 5, 'elapsed_sec': 0.3174445889890194}
+{'event': 'epoch_start', 'epoch': 1, 'epochs': 20, 'batches': 118, 'time_groups': 118}
+{'event': 'train_time_group', 'epoch': 1, 'time_group': 1, 'time_groups': 118, 'batch': 0, 'batches': 118, 'time_value': 600.0, 'group_batches': 1, 'history_edges': 0, 'elapsed_sec': 0.024709481745958328, 'cuda_allocated_mb': 11, 'cuda_reserved_mb': 24, 'cuda_max_allocated_mb': 11}
+{'event': 'train_progress', 'epoch': 1, 'batch': 1, 'batches': 118, 'time_group': 1, 'time_groups': 118, 'history_edges': 0, 'pos_edges': 1, 'neg_edges': 1, 'loss_recent': 0.9085631966590881, 'elapsed_sec': 1.1764829494059086, 'avg_sec_per_batch': 1.1764829494059086, 'cuda_allocated_mb': 53, 'cuda_reserved_mb': 114, 'cuda_max_allocated_mb': 101}
+{'event': 'train_progress', 'epoch': 1, 'batch': 100, 'batches': 118, 'time_group': 100, 'time_groups': 118, 'history_edges': 2144, 'pos_edges': 38, 'neg_edges': 38, 'loss_recent': 12.698665310740472, 'elapsed_sec': 37.832225240767, 'avg_sec_per_batch': 0.37832225240767003, 'cuda_allocated_mb': 57, 'cuda_reserved_mb': 268, 'cuda_max_allocated_mb': 221}
+{'event': 'train_time_group', 'epoch': 1, 'time_group': 118, 'time_groups': 118, 'batch': 117, 'batches': 118, 'time_value': 1966.0, 'group_batches': 1, 'history_edges': 3153, 'elapsed_sec': 46.614876713603735, 'cuda_allocated_mb': 56, 'cuda_reserved_mb': 288, 'cuda_max_allocated_mb': 248}
+{'event': 'train_progress', 'epoch': 1, 'batch': 118, 'batches': 118, 'time_group': 118, 'time_groups': 118, 'history_edges': 3153, 'pos_edges': 91, 'neg_edges': 91, 'loss_recent': 18.76958811700344, 'elapsed_sec': 47.57300092279911, 'avg_sec_per_batch': 0.403161024769484, 'cuda_allocated_mb': 58, 'cuda_reserved_mb': 288, 'cuda_max_allocated_mb': 252}
+{'event': 'validation_start', 'epoch': 1}
+{'event': 'epoch_end', 'epoch': 1, 'early_stop_metric': 'val_auc', 'val_score': 0.6477331521993388, 'val_auc': 0.6477331521993388, 'val_ap': 0.15906774325819809, 'val_ndcg': 0.8081336284700009, 'elapsed_sec': 137.7508828341961}
+{'event': 'epoch_start', 'epoch': 2, 'epochs': 20, 'batches': 118, 'time_groups': 118}
+{'event': 'train_time_group', 'epoch': 2, 'time_group': 1, 'time_groups': 118, 'batch': 0, 'batches': 118, 'time_value': 600.0, 'group_batches': 1, 'history_edges': 0, 'elapsed_sec': 0.008037250488996506, 'cuda_allocated_mb': 56, 'cuda_reserved_mb': 354, 'cuda_max_allocated_mb': 260}
+{'event': 'train_progress', 'epoch': 2, 'batch': 1, 'batches': 118, 'time_group': 1, 'time_groups': 118, 'history_edges': 0, 'pos_edges': 1, 'neg_edges': 1, 'loss_recent': 1.7633066177368164, 'elapsed_sec': 0.2511824145913124, 'avg_sec_per_batch': 0.2511824145913124, 'cuda_allocated_mb': 55, 'cuda_reserved_mb': 354, 'cuda_max_allocated_mb': 260}
+{'event': 'train_progress', 'epoch': 2, 'batch': 100, 'batches': 118, 'time_group': 100, 'time_groups': 118, 'history_edges': 2144, 'pos_edges': 38, 'neg_edges': 38, 'loss_recent': 10.778323236107827, 'elapsed_sec': 35.363822128623724, 'avg_sec_per_batch': 0.35363822128623723, 'cuda_allocated_mb': 57, 'cuda_reserved_mb': 354, 'cuda_max_allocated_mb': 260}
+{'event': 'train_time_group', 'epoch': 2, 'time_group': 118, 'time_groups': 118, 'batch': 117, 'batches': 118, 'time_value': 1966.0, 'group_batches': 1, 'history_edges': 3153, 'elapsed_sec': 45.01617294177413, 'cuda_allocated_mb': 56, 'cuda_reserved_mb': 354, 'cuda_max_allocated_mb': 260}
+{'event': 'train_progress', 'epoch': 2, 'batch': 118, 'batches': 118, 'time_group': 118, 'time_groups': 118, 'history_edges': 3153, 'pos_edges': 91, 'neg_edges': 91, 'loss_recent': 16.257511033415796, 'elapsed_sec': 45.87413113191724, 'avg_sec_per_batch': 0.388763823151841, 'cuda_allocated_mb': 58, 'cuda_reserved_mb': 354, 'cuda_max_allocated_mb': 260}
+{'event': 'validation_start', 'epoch': 2}
+{'event': 'epoch_end', 'epoch': 2, 'early_stop_metric': 'val_auc', 'val_score': 0.6092596241586353, 'val_auc': 0.6092596241586353, 'val_ap': 0.15479246510612785, 'val_ndcg': 0.8061186046840119, 'elapsed_sec': 136.2772568538785}
+{'event': 'epoch_start', 'epoch': 3, 'epochs': 20, 'batches': 118, 'time_groups': 118}
+{'event': 'train_time_group', 'epoch': 3, 'time_group': 1, 'time_groups': 118, 'batch': 0, 'batches': 118, 'time_value': 600.0, 'group_batches': 1, 'history_edges': 0, 'elapsed_sec': 0.010643593966960907, 'cuda_allocated_mb': 56, 'cuda_reserved_mb': 354, 'cuda_max_allocated_mb': 260}
+{'event': 'train_progress', 'epoch': 3, 'batch': 1, 'batches': 118, 'time_group': 1, 'time_groups': 118, 'history_edges': 0, 'pos_edges': 1, 'neg_edges': 1, 'loss_recent': 2.0735421180725098, 'elapsed_sec': 0.15636682510375977, 'avg_sec_per_batch': 0.15636682510375977, 'cuda_allocated_mb': 55, 'cuda_reserved_mb': 354, 'cuda_max_allocated_mb': 260}
+{'event': 'train_progress', 'epoch': 3, 'batch': 100, 'batches': 118, 'time_group': 100, 'time_groups': 118, 'history_edges': 2144, 'pos_edges': 38, 'neg_edges': 38, 'loss_recent': 9.842565072178841, 'elapsed_sec': 35.240471463650465, 'avg_sec_per_batch': 0.35240471463650463, 'cuda_allocated_mb': 57, 'cuda_reserved_mb': 354, 'cuda_max_allocated_mb': 260}
+{'event': 'train_time_group', 'epoch': 3, 'time_group': 118, 'time_groups': 118, 'batch': 117, 'batches': 118, 'time_value': 1966.0, 'group_batches': 1, 'history_edges': 3153, 'elapsed_sec': 44.02204233780503, 'cuda_allocated_mb': 56, 'cuda_reserved_mb': 354, 'cuda_max_allocated_mb': 260}
+{'event': 'train_progress', 'epoch': 3, 'batch': 118, 'batches': 118, 'time_group': 118, 'time_groups': 118, 'history_edges': 3153, 'pos_edges': 91, 'neg_edges': 91, 'loss_recent': 14.892297850847244, 'elapsed_sec': 44.53786984086037, 'avg_sec_per_batch': 0.3774395749225455, 'cuda_allocated_mb': 58, 'cuda_reserved_mb': 354, 'cuda_max_allocated_mb': 260}
+{'event': 'validation_start', 'epoch': 3}
+{'event': 'epoch_end', 'epoch': 3, 'early_stop_metric': 'val_auc', 'val_score': 0.6229888864572053, 'val_auc': 0.6229888864572053, 'val_ap': 0.15657037370316068, 'val_ndcg': 0.8074117117910379, 'elapsed_sec': 135.36909260973334}
+{'event': 'epoch_start', 'epoch': 4, 'epochs': 20, 'batches': 118, 'time_groups': 118}
+{'event': 'train_time_group', 'epoch': 4, 'time_group': 1, 'time_groups': 118, 'batch': 0, 'batches': 118, 'time_value': 600.0, 'group_batches': 1, 'history_edges': 0, 'elapsed_sec': 0.007143177092075348, 'cuda_allocated_mb': 56, 'cuda_reserved_mb': 354, 'cuda_max_allocated_mb': 261}
+{'event': 'train_progress', 'epoch': 4, 'batch': 1, 'batches': 118, 'time_group': 1, 'time_groups': 118, 'history_edges': 0, 'pos_edges': 1, 'neg_edges': 1, 'loss_recent': 0.47725772857666016, 'elapsed_sec': 0.14166367426514626, 'avg_sec_per_batch': 0.14166367426514626, 'cuda_allocated_mb': 55, 'cuda_reserved_mb': 354, 'cuda_max_allocated_mb': 261}
+{'event': 'train_progress', 'epoch': 4, 'batch': 100, 'batches': 118, 'time_group': 100, 'time_groups': 118, 'history_edges': 2144, 'pos_edges': 38, 'neg_edges': 38, 'loss_recent': 9.11004062563181, 'elapsed_sec': 36.068904764950275, 'avg_sec_per_batch': 0.36068904764950277, 'cuda_allocated_mb': 57, 'cuda_reserved_mb': 354, 'cuda_max_allocated_mb': 261}
+{'event': 'train_time_group', 'epoch': 4, 'time_group': 118, 'time_groups': 118, 'batch': 117, 'batches': 118, 'time_value': 1966.0, 'group_batches': 1, 'history_edges': 3153, 'elapsed_sec': 44.965826600790024, 'cuda_allocated_mb': 56, 'cuda_reserved_mb': 354, 'cuda_max_allocated_mb': 261}
+{'event': 'train_progress', 'epoch': 4, 'batch': 118, 'batches': 118, 'time_group': 118, 'time_groups': 118, 'history_edges': 3153, 'pos_edges': 91, 'neg_edges': 91, 'loss_recent': 13.892535410374403, 'elapsed_sec': 46.35500068590045, 'avg_sec_per_batch': 0.3928389888635631, 'cuda_allocated_mb': 58, 'cuda_reserved_mb': 354, 'cuda_max_allocated_mb': 261}
+{'event': 'validation_start', 'epoch': 4}
+{'event': 'epoch_end', 'epoch': 4, 'early_stop_metric': 'val_auc', 'val_score': 0.6041995692836427, 'val_auc': 0.6041995692836427, 'val_ap': 0.14258942317103052, 'val_ndcg': 0.7987052470666723, 'elapsed_sec': 129.54695491865277}
+{'event': 'epoch_start', 'epoch': 5, 'epochs': 20, 'batches': 118, 'time_groups': 118}
+{'event': 'train_time_group', 'epoch': 5, 'time_group': 1, 'time_groups': 118, 'batch': 0, 'batches': 118, 'time_value': 600.0, 'group_batches': 1, 'history_edges': 0, 'elapsed_sec': 0.013322845101356506, 'cuda_allocated_mb': 56, 'cuda_reserved_mb': 354, 'cuda_max_allocated_mb': 261}
+{'event': 'train_progress', 'epoch': 5, 'batch': 1, 'batches': 118, 'time_group': 1, 'time_groups': 118, 'history_edges': 0, 'pos_edges': 1, 'neg_edges': 1, 'loss_recent': 0.6594874262809753, 'elapsed_sec': 0.17425547912716866, 'avg_sec_per_batch': 0.17425547912716866, 'cuda_allocated_mb': 55, 'cuda_reserved_mb': 354, 'cuda_max_allocated_mb': 261}
+{'event': 'train_progress', 'epoch': 5, 'batch': 100, 'batches': 118, 'time_group': 100, 'time_groups': 118, 'history_edges': 2144, 'pos_edges': 38, 'neg_edges': 38, 'loss_recent': 8.54233296506107, 'elapsed_sec': 35.3164607770741, 'avg_sec_per_batch': 0.353164607770741, 'cuda_allocated_mb': 57, 'cuda_reserved_mb': 354, 'cuda_max_allocated_mb': 261}
+{'event': 'train_time_group', 'epoch': 5, 'time_group': 118, 'time_groups': 118, 'batch': 117, 'batches': 118, 'time_value': 1966.0, 'group_batches': 1, 'history_edges': 3153, 'elapsed_sec': 44.019043032079935, 'cuda_allocated_mb': 56, 'cuda_reserved_mb': 354, 'cuda_max_allocated_mb': 261}
+{'event': 'train_progress', 'epoch': 5, 'batch': 118, 'batches': 118, 'time_group': 118, 'time_groups': 118, 'history_edges': 3153, 'pos_edges': 91, 'neg_edges': 91, 'loss_recent': 13.085551000908017, 'elapsed_sec': 44.46589744091034, 'avg_sec_per_batch': 0.3768296393297486, 'cuda_allocated_mb': 58, 'cuda_reserved_mb': 354, 'cuda_max_allocated_mb': 261}
+{'event': 'validation_start', 'epoch': 5}
+{'event': 'epoch_end', 'epoch': 5, 'early_stop_metric': 'val_auc', 'val_score': 0.5994976150558569, 'val_auc': 0.5994976150558569, 'val_ap': 0.14809539742895073, 'val_ndcg': 0.8012965420419709, 'elapsed_sec': 122.3461136110127}
+{'event': 'epoch_start', 'epoch': 6, 'epochs': 20, 'batches': 118, 'time_groups': 118}
+{'event': 'train_time_group', 'epoch': 6, 'time_group': 1, 'time_groups': 118, 'batch': 0, 'batches': 118, 'time_value': 600.0, 'group_batches': 1, 'history_edges': 0, 'elapsed_sec': 0.016497395932674408, 'cuda_allocated_mb': 56, 'cuda_reserved_mb': 354, 'cuda_max_allocated_mb': 261}
+{'event': 'train_progress', 'epoch': 6, 'batch': 1, 'batches': 118, 'time_group': 1, 'time_groups': 118, 'history_edges': 0, 'pos_edges': 1, 'neg_edges': 1, 'loss_recent': 1.2352795600891113, 'elapsed_sec': 0.16357720270752907, 'avg_sec_per_batch': 0.16357720270752907, 'cuda_allocated_mb': 55, 'cuda_reserved_mb': 354, 'cuda_max_allocated_mb': 261}
+{'event': 'train_progress', 'epoch': 6, 'batch': 100, 'batches': 118, 'time_group': 100, 'time_groups': 118, 'history_edges': 2144, 'pos_edges': 38, 'neg_edges': 38, 'loss_recent': 8.135179841592908, 'elapsed_sec': 34.2511482052505, 'avg_sec_per_batch': 0.34251148205250503, 'cuda_allocated_mb': 57, 'cuda_reserved_mb': 354, 'cuda_max_allocated_mb': 261}
+{'event': 'train_time_group', 'epoch': 6, 'time_group': 118, 'time_groups': 118, 'batch': 117, 'batches': 118, 'time_value': 1966.0, 'group_batches': 1, 'history_edges': 3153, 'elapsed_sec': 42.91640779003501, 'cuda_allocated_mb': 56, 'cuda_reserved_mb': 354, 'cuda_max_allocated_mb': 261}
+{'event': 'train_progress', 'epoch': 6, 'batch': 118, 'batches': 118, 'time_group': 118, 'time_groups': 118, 'history_edges': 3153, 'pos_edges': 91, 'neg_edges': 91, 'loss_recent': 12.467820061594248, 'elapsed_sec': 43.340535786002874, 'avg_sec_per_batch': 0.3672926761525667, 'cuda_allocated_mb': 58, 'cuda_reserved_mb': 354, 'cuda_max_allocated_mb': 261}
+{'event': 'validation_start', 'epoch': 6}
+{'event': 'epoch_end', 'epoch': 6, 'early_stop_metric': 'val_auc', 'val_score': 0.611509545987938, 'val_auc': 0.611509545987938, 'val_ap': 0.14845769528498087, 'val_ndcg': 0.8023982026637533, 'elapsed_sec': 118.26995427161455}
+{'dataset': 'yago15k-temporal', 'method': 'ssptgfm', 'scenario': 'standard', 'ablation': 'full', 'few_shot_ratio': 1.0, 'seed': 5, 'train_edges': 3244, 'val_edges': 6738, 'test_edges': 26719, 'params_trainable': 1399440, 'params_total': 1399440, 'rough_forward_flops': 384237568, 'train_eval_time_sec': 2880.882520671934, 'allocated_mb': 33.1123046875, 'reserved_mb': 354.0, 'max_allocated_mb': 261.0283203125, 'val_auc': 0.6477331499967269, 'val_ap': 0.15906774310159144, 'val_ndcg': 0.8081336288373191, 'train_loss': 16.06814477958922, 'train_lp': 0.5299873828130254, 'train_align': 294.8407486899424, 'train_kl': 1581.3241577148438, 'train_ood_reg': 0.2251064092931101, 'train_meta': 0.523256839331934, 'train_weighted_align': 14.74203769761627, 'train_weighted_kl': 0.7906621168288639, 'train_weighted_ood_reg': 0.00022510641984053556, 'train_weighted_meta': 0.00523256827678563, 'test_auc': 0.632970026314189, 'test_ap': 0.15072287301256238, 'test_ndcg': 0.8268725318224476, 'test_mrr': 0.1547054333801513, 'test_hits@1': 0.0875, 'test_hits@10': 0.265, 'test_hits@50': 0.43, 'test_hits@100': 0.535}
+{'event': 'baseline_start', 'method': 'lm_mlp', 'seed': 5}
+{'event': 'baseline_epoch_start', 'model': 'LMMLPBaseline', 'epoch': 1, 'epochs': 20, 'requires_struct_features': False}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 1, 'time_group': 1, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 1, 'time_group': 10, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 1, 'time_group': 20, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 1, 'time_group': 30, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 1, 'time_group': 40, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 1, 'time_group': 50, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 1, 'time_group': 60, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 1, 'time_group': 70, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 1, 'time_group': 80, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 1, 'time_group': 90, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 1, 'time_group': 100, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 1, 'time_group': 110, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 1, 'time_group': 118, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'LMMLPBaseline', 'epoch': 1}
+{'event': 'baseline_epoch_end', 'model': 'LMMLPBaseline', 'epoch': 1, 'val_auc': 0.7670175647728699, 'elapsed_sec': 3.7218467593193054}
+{'event': 'baseline_epoch_start', 'model': 'LMMLPBaseline', 'epoch': 2, 'epochs': 20, 'requires_struct_features': False}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 2, 'time_group': 1, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 2, 'time_group': 10, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 2, 'time_group': 20, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 2, 'time_group': 30, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 2, 'time_group': 40, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 2, 'time_group': 50, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 2, 'time_group': 60, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 2, 'time_group': 70, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 2, 'time_group': 80, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 2, 'time_group': 90, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 2, 'time_group': 100, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 2, 'time_group': 110, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 2, 'time_group': 118, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'LMMLPBaseline', 'epoch': 2}
+{'event': 'baseline_epoch_end', 'model': 'LMMLPBaseline', 'epoch': 2, 'val_auc': 0.7493845858221746, 'elapsed_sec': 3.5645333267748356}
+{'event': 'baseline_epoch_start', 'model': 'LMMLPBaseline', 'epoch': 3, 'epochs': 20, 'requires_struct_features': False}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 3, 'time_group': 1, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 3, 'time_group': 10, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 3, 'time_group': 20, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 3, 'time_group': 30, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 3, 'time_group': 40, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 3, 'time_group': 50, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 3, 'time_group': 60, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 3, 'time_group': 70, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 3, 'time_group': 80, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 3, 'time_group': 90, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 3, 'time_group': 100, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 3, 'time_group': 110, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 3, 'time_group': 118, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'LMMLPBaseline', 'epoch': 3}
+{'event': 'baseline_epoch_end', 'model': 'LMMLPBaseline', 'epoch': 3, 'val_auc': 0.753253834901549, 'elapsed_sec': 3.8634645715355873}
+{'event': 'baseline_epoch_start', 'model': 'LMMLPBaseline', 'epoch': 4, 'epochs': 20, 'requires_struct_features': False}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 4, 'time_group': 1, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 4, 'time_group': 10, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 4, 'time_group': 20, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 4, 'time_group': 30, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 4, 'time_group': 40, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 4, 'time_group': 50, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 4, 'time_group': 60, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 4, 'time_group': 70, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 4, 'time_group': 80, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 4, 'time_group': 90, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 4, 'time_group': 100, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 4, 'time_group': 110, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 4, 'time_group': 118, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'LMMLPBaseline', 'epoch': 4}
+{'event': 'baseline_epoch_end', 'model': 'LMMLPBaseline', 'epoch': 4, 'val_auc': 0.7535794734541651, 'elapsed_sec': 3.442364279180765}
+{'event': 'baseline_epoch_start', 'model': 'LMMLPBaseline', 'epoch': 5, 'epochs': 20, 'requires_struct_features': False}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 5, 'time_group': 1, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 5, 'time_group': 10, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 5, 'time_group': 20, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 5, 'time_group': 30, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 5, 'time_group': 40, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 5, 'time_group': 50, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 5, 'time_group': 60, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 5, 'time_group': 70, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 5, 'time_group': 80, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 5, 'time_group': 90, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 5, 'time_group': 100, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 5, 'time_group': 110, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 5, 'time_group': 118, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'LMMLPBaseline', 'epoch': 5}
+{'event': 'baseline_epoch_end', 'model': 'LMMLPBaseline', 'epoch': 5, 'val_auc': 0.7505894817262946, 'elapsed_sec': 3.630118206143379}
+{'event': 'baseline_epoch_start', 'model': 'LMMLPBaseline', 'epoch': 6, 'epochs': 20, 'requires_struct_features': False}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 6, 'time_group': 1, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 6, 'time_group': 10, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 6, 'time_group': 20, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 6, 'time_group': 30, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 6, 'time_group': 40, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 6, 'time_group': 50, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 6, 'time_group': 60, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 6, 'time_group': 70, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 6, 'time_group': 80, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 6, 'time_group': 90, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 6, 'time_group': 100, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 6, 'time_group': 110, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'LMMLPBaseline', 'epoch': 6, 'time_group': 118, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'LMMLPBaseline', 'epoch': 6}
+{'event': 'baseline_epoch_end', 'model': 'LMMLPBaseline', 'epoch': 6, 'val_auc': 0.7515220158551055, 'elapsed_sec': 3.47525143250823}
+{'event': 'baseline_test_binary_start', 'method': 'lm_mlp', 'seed': 5}
+{'event': 'baseline_test_ranking_start', 'method': 'lm_mlp', 'seed': 5}
+{'dataset': 'yago15k-temporal', 'method': 'lm_mlp', 'scenario': 'standard', 'ablation': 'baseline', 'few_shot_ratio': 1.0, 'seed': 5, 'train_edges': 3244, 'val_edges': 6738, 'test_edges': 26719, 'params_trainable': 117633, 'params_total': 117633, 'train_eval_time_sec': 51.51304620504379, 'val_auc': 0.7705300006317091, 'val_ap': 0.2110541872277765, 'val_ndcg': 0.8287338087439905, 'test_auc': 0.7206242600266788, 'test_ap': 0.15738768083345983, 'test_ndcg': 0.826493570110971, 'test_mrr': 0.01941781227039778, 'test_hits@1': 0.0025, 'test_hits@10': 0.025, 'test_hits@50': 0.135, 'test_hits@100': 0.3025}
+{'event': 'baseline_start', 'method': 'structure_mlp', 'seed': 5}
+{'event': 'baseline_epoch_start', 'model': 'StructureMLPBaseline', 'epoch': 1, 'epochs': 20, 'requires_struct_features': True}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 1, 'time_group': 1, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 1, 'time_group': 10, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 1, 'time_group': 20, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 1, 'time_group': 30, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 1, 'time_group': 40, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 1, 'time_group': 50, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 1, 'time_group': 60, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 1, 'time_group': 70, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 1, 'time_group': 80, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 1, 'time_group': 90, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 1, 'time_group': 100, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 1, 'time_group': 110, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 1, 'time_group': 118, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'StructureMLPBaseline', 'epoch': 1}
+{'event': 'baseline_epoch_end', 'model': 'StructureMLPBaseline', 'epoch': 1, 'val_auc': 0.6089196477036757, 'elapsed_sec': 87.24361322820187}
+{'event': 'baseline_epoch_start', 'model': 'StructureMLPBaseline', 'epoch': 2, 'epochs': 20, 'requires_struct_features': True}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 2, 'time_group': 1, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 2, 'time_group': 10, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 2, 'time_group': 20, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 2, 'time_group': 30, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 2, 'time_group': 40, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 2, 'time_group': 50, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 2, 'time_group': 60, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 2, 'time_group': 70, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 2, 'time_group': 80, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 2, 'time_group': 90, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 2, 'time_group': 100, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 2, 'time_group': 110, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 2, 'time_group': 118, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'StructureMLPBaseline', 'epoch': 2}
+{'event': 'baseline_epoch_end', 'model': 'StructureMLPBaseline', 'epoch': 2, 'val_auc': 0.6093234437379347, 'elapsed_sec': 86.809819791466}
+{'event': 'baseline_epoch_start', 'model': 'StructureMLPBaseline', 'epoch': 3, 'epochs': 20, 'requires_struct_features': True}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 3, 'time_group': 1, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 3, 'time_group': 10, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 3, 'time_group': 20, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 3, 'time_group': 30, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 3, 'time_group': 40, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 3, 'time_group': 50, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 3, 'time_group': 60, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 3, 'time_group': 70, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 3, 'time_group': 80, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 3, 'time_group': 90, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 3, 'time_group': 100, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 3, 'time_group': 110, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 3, 'time_group': 118, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'StructureMLPBaseline', 'epoch': 3}
+{'event': 'baseline_epoch_end', 'model': 'StructureMLPBaseline', 'epoch': 3, 'val_auc': 0.6106865984103662, 'elapsed_sec': 86.58495136722922}
+{'event': 'baseline_epoch_start', 'model': 'StructureMLPBaseline', 'epoch': 4, 'epochs': 20, 'requires_struct_features': True}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 4, 'time_group': 1, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 4, 'time_group': 10, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 4, 'time_group': 20, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 4, 'time_group': 30, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 4, 'time_group': 40, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 4, 'time_group': 50, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 4, 'time_group': 60, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 4, 'time_group': 70, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 4, 'time_group': 80, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 4, 'time_group': 90, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 4, 'time_group': 100, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 4, 'time_group': 110, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 4, 'time_group': 118, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'StructureMLPBaseline', 'epoch': 4}
+{'event': 'baseline_epoch_end', 'model': 'StructureMLPBaseline', 'epoch': 4, 'val_auc': 0.6116282843917369, 'elapsed_sec': 86.92265447601676}
+{'event': 'baseline_epoch_start', 'model': 'StructureMLPBaseline', 'epoch': 5, 'epochs': 20, 'requires_struct_features': True}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 5, 'time_group': 1, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 5, 'time_group': 10, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 5, 'time_group': 20, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 5, 'time_group': 30, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 5, 'time_group': 40, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 5, 'time_group': 50, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 5, 'time_group': 60, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 5, 'time_group': 70, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 5, 'time_group': 80, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 5, 'time_group': 90, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 5, 'time_group': 100, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 5, 'time_group': 110, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 5, 'time_group': 118, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'StructureMLPBaseline', 'epoch': 5}
+{'event': 'baseline_epoch_end', 'model': 'StructureMLPBaseline', 'epoch': 5, 'val_auc': 0.6123969078500296, 'elapsed_sec': 86.64960138872266}
+{'event': 'baseline_epoch_start', 'model': 'StructureMLPBaseline', 'epoch': 6, 'epochs': 20, 'requires_struct_features': True}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 6, 'time_group': 1, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 6, 'time_group': 10, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 6, 'time_group': 20, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 6, 'time_group': 30, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 6, 'time_group': 40, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 6, 'time_group': 50, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 6, 'time_group': 60, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 6, 'time_group': 70, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 6, 'time_group': 80, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 6, 'time_group': 90, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 6, 'time_group': 100, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 6, 'time_group': 110, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 6, 'time_group': 118, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'StructureMLPBaseline', 'epoch': 6}
+{'event': 'baseline_epoch_end', 'model': 'StructureMLPBaseline', 'epoch': 6, 'val_auc': 0.612838652685191, 'elapsed_sec': 88.55922551453114}
+{'event': 'baseline_epoch_start', 'model': 'StructureMLPBaseline', 'epoch': 7, 'epochs': 20, 'requires_struct_features': True}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 7, 'time_group': 1, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 7, 'time_group': 10, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 7, 'time_group': 20, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 7, 'time_group': 30, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 7, 'time_group': 40, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 7, 'time_group': 50, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 7, 'time_group': 60, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 7, 'time_group': 70, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 7, 'time_group': 80, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 7, 'time_group': 90, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 7, 'time_group': 100, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 7, 'time_group': 110, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 7, 'time_group': 118, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'StructureMLPBaseline', 'epoch': 7}
+{'event': 'baseline_epoch_end', 'model': 'StructureMLPBaseline', 'epoch': 7, 'val_auc': 0.6150335466607038, 'elapsed_sec': 87.9344380684197}
+{'event': 'baseline_epoch_start', 'model': 'StructureMLPBaseline', 'epoch': 8, 'epochs': 20, 'requires_struct_features': True}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 8, 'time_group': 1, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 8, 'time_group': 10, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 8, 'time_group': 20, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 8, 'time_group': 30, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 8, 'time_group': 40, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 8, 'time_group': 50, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 8, 'time_group': 60, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 8, 'time_group': 70, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 8, 'time_group': 80, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 8, 'time_group': 90, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 8, 'time_group': 100, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 8, 'time_group': 110, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 8, 'time_group': 118, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'StructureMLPBaseline', 'epoch': 8}
+{'event': 'baseline_epoch_end', 'model': 'StructureMLPBaseline', 'epoch': 8, 'val_auc': 0.6110578365364158, 'elapsed_sec': 88.804571993649}
+{'event': 'baseline_epoch_start', 'model': 'StructureMLPBaseline', 'epoch': 9, 'epochs': 20, 'requires_struct_features': True}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 9, 'time_group': 1, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 9, 'time_group': 10, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 9, 'time_group': 20, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 9, 'time_group': 30, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 9, 'time_group': 40, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 9, 'time_group': 50, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 9, 'time_group': 60, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 9, 'time_group': 70, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 9, 'time_group': 80, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 9, 'time_group': 90, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 9, 'time_group': 100, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 9, 'time_group': 110, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 9, 'time_group': 118, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'StructureMLPBaseline', 'epoch': 9}
+{'event': 'baseline_epoch_end', 'model': 'StructureMLPBaseline', 'epoch': 9, 'val_auc': 0.6116210168736813, 'elapsed_sec': 87.80177458375692}
+{'event': 'baseline_epoch_start', 'model': 'StructureMLPBaseline', 'epoch': 10, 'epochs': 20, 'requires_struct_features': True}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 10, 'time_group': 1, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 10, 'time_group': 10, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 10, 'time_group': 20, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 10, 'time_group': 30, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 10, 'time_group': 40, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 10, 'time_group': 50, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 10, 'time_group': 60, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 10, 'time_group': 70, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 10, 'time_group': 80, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 10, 'time_group': 90, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 10, 'time_group': 100, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 10, 'time_group': 110, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 10, 'time_group': 118, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'StructureMLPBaseline', 'epoch': 10}
+{'event': 'baseline_epoch_end', 'model': 'StructureMLPBaseline', 'epoch': 10, 'val_auc': 0.6125970856272436, 'elapsed_sec': 86.84105161204934}
+{'event': 'baseline_epoch_start', 'model': 'StructureMLPBaseline', 'epoch': 11, 'epochs': 20, 'requires_struct_features': True}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 11, 'time_group': 1, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 11, 'time_group': 10, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 11, 'time_group': 20, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 11, 'time_group': 30, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 11, 'time_group': 40, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 11, 'time_group': 50, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 11, 'time_group': 60, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 11, 'time_group': 70, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 11, 'time_group': 80, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 11, 'time_group': 90, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 11, 'time_group': 100, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 11, 'time_group': 110, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 11, 'time_group': 118, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'StructureMLPBaseline', 'epoch': 11}
+{'event': 'baseline_epoch_end', 'model': 'StructureMLPBaseline', 'epoch': 11, 'val_auc': 0.6139098588557467, 'elapsed_sec': 87.5772087611258}
+{'event': 'baseline_epoch_start', 'model': 'StructureMLPBaseline', 'epoch': 12, 'epochs': 20, 'requires_struct_features': True}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 12, 'time_group': 1, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 12, 'time_group': 10, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 12, 'time_group': 20, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 12, 'time_group': 30, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 12, 'time_group': 40, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 12, 'time_group': 50, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 12, 'time_group': 60, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 12, 'time_group': 70, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 12, 'time_group': 80, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 12, 'time_group': 90, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 12, 'time_group': 100, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 12, 'time_group': 110, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 12, 'time_group': 118, 'time_groups': 118, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'StructureMLPBaseline', 'epoch': 12}
+{'event': 'baseline_epoch_end', 'model': 'StructureMLPBaseline', 'epoch': 12, 'val_auc': 0.6136765978473785, 'elapsed_sec': 87.63195557892323}
+{'event': 'baseline_test_binary_start', 'method': 'structure_mlp', 'seed': 5}
+{'event': 'baseline_test_ranking_start', 'method': 'structure_mlp', 'seed': 5}
+{'dataset': 'yago15k-temporal', 'method': 'structure_mlp', 'scenario': 'standard', 'ablation': 'baseline', 'few_shot_ratio': 1.0, 'seed': 5, 'train_edges': 3244, 'val_edges': 6738, 'test_edges': 26719, 'params_trainable': 19713, 'params_total': 19713, 'train_eval_time_sec': 3171.523009479046, 'val_auc': 0.6146721850465381, 'val_ap': 0.14339101173463353, 'val_ndcg': 0.796666410424071, 'test_auc': 0.6443222718408872, 'test_ap': 0.13862490930662055, 'test_ndcg': 0.8171643077498444, 'test_mrr': 0.14595392794765005, 'test_hits@1': 0.0825, 'test_hits@10': 0.22, 'test_hits@50': 0.4275, 'test_hits@100': 0.6075}

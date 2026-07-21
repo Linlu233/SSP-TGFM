@@ -1,0 +1,12 @@
+2026-06-25_21:00:29 trainable_baselines_queue_start max_parallel=2
+2026-06-25_21:00:29 tgb_smallpedia_trainable_baselines_start config=configs/ssptgfm_tgb_smallpedia_best.yaml baselines=distmult,complex,temporal_distmult
+2026-06-25_21:00:29 yago15k_temporal_trainable_baselines_start config=configs/ssptgfm_yago15k_temporal_best.yaml baselines=distmult,complex,temporal_distmult
+2026-06-25_21:06:51 yago15k_temporal_trainable_baselines_done rows=15
+2026-06-25_21:06:51 icews14_trainable_baselines_start config=configs/ssptgfm_icews14_best.yaml baselines=distmult,complex,temporal_distmult
+2026-06-25_22:12:18 icews14_trainable_baselines_done rows=15
+2026-06-25_22:12:18 icews05_15_trainable_baselines_start config=configs/ssptgfm_icews05_15_best.yaml baselines=distmult,complex,temporal_distmult
+2026-06-26_00:28:36 icews05_15_trainable_baselines_done rows=15
+2026-06-26_00:28:36 tgb_yago_trainable_baselines_start config=configs/ssptgfm_tgb_yago_best.yaml baselines=distmult,complex,temporal_distmult
+2026-06-26_01:59:13 tgb_smallpedia_trainable_baselines_done rows=15
+2026-06-26_02:45:12 tgb_yago_trainable_baselines_done rows=15
+2026-06-26_02:45:12 trainable_baselines_queue_done

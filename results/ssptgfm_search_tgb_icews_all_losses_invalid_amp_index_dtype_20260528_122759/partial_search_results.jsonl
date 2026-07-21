@@ -1,0 +1,3 @@
+{"candidate": "compact_lr1e3_meta005_ood001", "error": "index_add_(): self (Float) and source (Half) must have the same scalar type", "error_type": "RuntimeError", "seed": 1, "status": "failed", "val_auc": NaN}
+{"candidate": "compact_lr1e3_meta005_ood001", "error": "index_add_(): self (Float) and source (Half) must have the same scalar type", "error_type": "RuntimeError", "seed": 2, "status": "failed", "val_auc": NaN}
+{"candidate": "compact_lr7e4_meta01_ood001", "error": "index_add_(): self (Float) and source (Half) must have the same scalar type", "error_type": "RuntimeError", "seed": 1, "status": "failed", "val_auc": NaN}

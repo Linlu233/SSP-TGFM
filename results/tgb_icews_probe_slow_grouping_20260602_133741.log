@@ -1,0 +1,9 @@
+runtime_device=cuda
+cuda_device=Tesla V100-PCIE-32GB
+{'event': 'candidate_seed_start', 'candidate': 'compact_lr1e3_meta005_ood001', 'seed': 1, 'device': 'cuda', 'node_text_device': 'cuda:0'}
+{'event': 'train_seed_start', 'seed': 1, 'train_edges': 21723200, 'val_edges': 4652314, 'test_edges': 4651378, 'num_nodes': 87856, 'num_relations': 782}
+{'event': 'train_seed_tensors_ready', 'seed': 1, 'elapsed_sec': 0.047441285103559494, 'cuda_allocated_mb': 162, 'cuda_reserved_mb': 184, 'cuda_max_allocated_mb': 162}
+{'event': 'train_known_facts_ready', 'seed': 1, 'scope': 'train', 'edges': 21723200, 'elapsed_sec': 5.001121256500483}
+{'event': 'train_known_facts_ready', 'seed': 1, 'scope': 'train_val', 'edges': 26375514, 'elapsed_sec': 11.333337850868702}
+{'event': 'train_sampler_ready', 'seed': 1, 'elapsed_sec': 13.558985706418753}
+{'event': 'val_sampler_ready', 'seed': 1, 'elapsed_sec': 15.426368549466133}

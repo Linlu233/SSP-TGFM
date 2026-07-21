@@ -1,0 +1,12 @@
+{'event': 'download_start', 'name': 'tkgl-wikidata'}
+Traceback (most recent call last):
+  File "<stdin>", line 4, in <module>
+  File "/root/miniconda3/lib/python3.10/site-packages/tgb/linkproppred/dataset.py", line 125, in __init__
+    self.download()
+  File "/root/miniconda3/lib/python3.10/site-packages/tgb/linkproppred/dataset.py", line 238, in download
+    with zipfile.ZipFile(path_download, "r") as zip_ref:
+  File "/root/miniconda3/lib/python3.10/zipfile.py", line 1267, in __init__
+    self._RealGetContents()
+  File "/root/miniconda3/lib/python3.10/zipfile.py", line 1334, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file

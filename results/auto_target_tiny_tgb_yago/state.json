@@ -1,0 +1,51 @@
+{
+  "datasets": {
+    "tgb_yago": {
+      "best_search": {
+        "bank": "history_popularity_tinysearch",
+        "note": "best candidate came from a search-only bank; run a formal-capable bank before formal test",
+        "score": 0.4435599465190372,
+        "search_results": "results/auto_target_tiny_tgb_yago/search_tgb_yago_history_popularity_tinysearch/search_results.json"
+      },
+      "existing": {
+        "detail": {
+          "ap": {
+            "baseline": 0.8992711734548288,
+            "value": 0.8767124414415418,
+            "win": false
+          },
+          "auc": {
+            "baseline": 0.9553957891667827,
+            "value": 0.9499166269608023,
+            "win": false
+          },
+          "hits@10": {
+            "baseline": 0.92,
+            "value": 0.787,
+            "win": false
+          },
+          "mrr": {
+            "baseline": 0.8981460575356689,
+            "value": 0.6782567400739631,
+            "win": false
+          },
+          "ndcg": {
+            "baseline": 0.9855335690473936,
+            "value": 0.9830586096639496,
+            "win": false
+          }
+        },
+        "path": "results/optimization_attempts/ssptgfm_tgb_yago_formula_rank_best/all_results.json",
+        "wins": 0
+      },
+      "searches": {
+        "history_popularity_tinysearch": {
+          "best_candidate": "history_popularity_tinysearch_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp0p8_freq40_rl0_m1_hinge",
+          "score": 0.4435599465190372,
+          "search_results": "results/auto_target_tiny_tgb_yago/search_tgb_yago_history_popularity_tinysearch/search_results.json"
+        }
+      },
+      "status": "no_formal_candidate"
+    }
+  }
+}

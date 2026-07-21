@@ -1,0 +1,107 @@
+device: cuda
+require_cuda: true
+strict_full_formula: true
+output_dir: results/ssptgfm_search_synthetic_rankgate
+seeds: [1, 2]
+few_shot_ratios: [1.0]
+baselines: []
+
+data:
+  name: synthetic
+  seed: 1
+  num_nodes: 256
+  num_relations: 4
+  num_edges: 1600
+  num_topics: 8
+
+scenario:
+  name: standard
+
+split:
+  val_ratio: 0.15
+  test_ratio: 0.15
+
+text:
+  backend: hashing
+  dim: 384
+  cache_dir: data/processed/text_cache
+
+model:
+  hidden_dim: 128
+  time_dim: 32
+  prompt_tokens: 4
+  prompt_heads: 4
+  relation_rank: 16
+  adapter_rank: 16
+  temporal_layers: 2
+  temporal_encoder: mlp
+  time_encoder: fourier
+  use_struct: true
+  use_sem: true
+  use_cross: true
+  use_gate: true
+  use_variational: true
+
+train:
+  epochs: 14
+  batch_size: 256
+  lr: 0.001
+  weight_decay: 0.0001
+  num_neg_train: 4
+  num_neg_eval: 25
+  negative_mode_train: filtered
+  negative_mode_eval: filtered
+  filter_scope: exact
+  lambda_align: 1.0e-04
+  lambda_kl: 1.0e-06
+  lambda_meta: 0.005
+  meta_lr: 0.01
+  meta_support_size: 16
+  meta_query_size: 16
+  lambda_ood: 0.001
+  align_temperature: 0.2
+  patience: 4
+  early_stop_metric: val_mrr
+  val_rank_edges: 100
+  grad_clip: 1.0
+
+eval:
+  filtered_rank_edges: 100
+
+ablation:
+  enabled: false
+
+search:
+  metric: all_minima_margin
+  metrics: [val_auc, val_ap, val_mrr, "val_hits@10", "val_hits@50", "val_hits@100"]
+  metric_minima:
+    val_auc: 0.8783
+    val_ap: 0.2082
+    val_mrr: 0.1011
+    "val_hits@10": 0.253
+  strict_full_formula: true
+  candidates:
+    - name: oldloss_valauc_neg1_h192
+      model: {hidden_dim: 192, relation_rank: 24, adapter_rank: 24, temporal_layers: 2}
+      train: {epochs: 14, lr: 0.0007, num_neg_train: 1, lambda_align: 0.05, lambda_kl: 0.0005, lambda_meta: 0.01, lambda_ood: 0.001, early_stop_metric: val_auc, val_rank_edges: 100}
+    - name: oldloss_valmrr_neg1_h192
+      model: {hidden_dim: 192, relation_rank: 24, adapter_rank: 24, temporal_layers: 2}
+      train: {epochs: 14, lr: 0.0007, num_neg_train: 1, lambda_align: 0.05, lambda_kl: 0.0005, lambda_meta: 0.01, lambda_ood: 0.001, early_stop_metric: val_mrr, val_rank_edges: 100}
+    - name: oldloss_valmrr_neg4_h192
+      model: {hidden_dim: 192, relation_rank: 24, adapter_rank: 24, temporal_layers: 2}
+      train: {epochs: 14, lr: 0.0007, num_neg_train: 4, lambda_align: 0.05, lambda_kl: 0.0005, lambda_meta: 0.01, lambda_ood: 0.001, early_stop_metric: val_mrr, val_rank_edges: 100}
+    - name: midloss_neg4_h192
+      model: {hidden_dim: 192, relation_rank: 24, adapter_rank: 24, temporal_layers: 2}
+      train: {epochs: 14, lr: 0.0007, num_neg_train: 4, lambda_align: 0.001, lambda_kl: 1.0e-05, lambda_meta: 0.005, lambda_ood: 0.001, early_stop_metric: val_mrr, val_rank_edges: 100}
+    - name: lowloss_neg4_h128
+      model: {hidden_dim: 128, relation_rank: 16, adapter_rank: 16, temporal_layers: 2}
+      train: {epochs: 14, lr: 0.001, num_neg_train: 4, lambda_align: 1.0e-04, lambda_kl: 1.0e-06, lambda_meta: 0.005, lambda_ood: 0.001, early_stop_metric: val_mrr, val_rank_edges: 100}
+    - name: lowloss_neg4_h192
+      model: {hidden_dim: 192, relation_rank: 24, adapter_rank: 24, temporal_layers: 2}
+      train: {epochs: 14, lr: 0.0007, num_neg_train: 4, lambda_align: 5.0e-05, lambda_kl: 1.0e-06, lambda_meta: 0.005, lambda_ood: 0.001, early_stop_metric: val_mrr, val_rank_edges: 100}
+    - name: lowloss_neg8_h192
+      model: {hidden_dim: 192, relation_rank: 24, adapter_rank: 24, temporal_layers: 2}
+      train: {epochs: 14, lr: 0.0007, num_neg_train: 8, lambda_align: 1.0e-05, lambda_kl: 5.0e-07, lambda_meta: 0.001, lambda_ood: 0.005, early_stop_metric: val_mrr, val_rank_edges: 100}
+    - name: lowloss_neg8_h256
+      model: {hidden_dim: 256, relation_rank: 32, adapter_rank: 32, temporal_layers: 2}
+      train: {epochs: 14, lr: 0.0005, num_neg_train: 8, lambda_align: 1.0e-05, lambda_kl: 5.0e-07, lambda_meta: 0.001, lambda_ood: 0.005, early_stop_metric: val_mrr, val_rank_edges: 100}

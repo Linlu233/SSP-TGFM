@@ -1,0 +1,11 @@
+{
+  "reason": "stopped heavy probe/search before results; validation/eval stage too slow for multi-dataset optimization",
+  "stopped_pids": [
+    791353,
+    791357,
+    792019,
+    792024,
+    792026
+  ],
+  "next": "restart with micro validation-only banks across all retained datasets; no test-set tuning"
+}

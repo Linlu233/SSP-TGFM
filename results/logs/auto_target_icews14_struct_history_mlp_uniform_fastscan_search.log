@@ -1,0 +1,36 @@
+
+$ /root/miniconda3/bin/python -u scripts/search_hparams.py --config configs/auto_target/ssptgfm_search_icews14_struct_history_mlp_uniform_fastscan.yaml --output results/auto_target_unified_mlp_uniform_v1/search_icews14_struct_history_mlp_uniform_fastscan --resume
+runtime_device=cuda
+cuda_device=Tesla V100-PCIE-32GB
+{'event': 'candidate_seed_start', 'candidate': 'struct_history_mlp_uniform_fastscan_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp0p25_sr0p25_sa0p05_rl0p05_m0_bpr', 'seed': 1, 'device': 'cuda', 'node_text_device': 'cuda:0'}
+{'event': 'train_seed_start', 'seed': 1, 'train_edges': 20000, 'val_edges': 14592, 'test_edges': 14378, 'num_nodes': 7128, 'num_relations': 230}
+{'event': 'train_seed_tensors_ready', 'seed': 1, 'elapsed_sec': 0.008940141648054123, 'cuda_allocated_mb': 21, 'cuda_reserved_mb': 24, 'cuda_max_allocated_mb': 21}
+{'event': 'train_known_facts_ready', 'seed': 1, 'scope': 'train', 'edges': 20000, 'elapsed_sec': 0.014042399823665619}
+{'event': 'train_known_facts_ready', 'seed': 1, 'scope': 'train_val', 'edges': 34592, 'elapsed_sec': 0.018016282469034195}
+{'event': 'train_sampler_ready', 'seed': 1, 'elapsed_sec': 0.02229202166199684}
+{'event': 'val_sampler_ready', 'seed': 1, 'elapsed_sec': 0.02548372745513916}
+{'event': 'epoch_start', 'epoch': 1, 'epochs': 2, 'batches': 255, 'time_groups': 255}
+{'event': 'train_time_group', 'epoch': 1, 'time_group': 1, 'time_groups': 255, 'batch': 0, 'batches': 255, 'time_value': 1388534400.0, 'group_batches': 1, 'history_edges': 0, 'elapsed_sec': 0.02384086325764656, 'cuda_allocated_mb': 22, 'cuda_reserved_mb': 24, 'cuda_max_allocated_mb': 22}
+{'event': 'train_progress', 'epoch': 1, 'batch': 1, 'batches': 255, 'time_group': 1, 'time_groups': 255, 'history_edges': 0, 'pos_edges': 37, 'neg_edges': 37, 'loss_recent': 3.131758213043213, 'elapsed_sec': 1.2033342309296131, 'avg_sec_per_batch': 1.2033342309296131, 'cuda_allocated_mb': 87, 'cuda_reserved_mb': 162, 'cuda_max_allocated_mb': 147}
+{'event': 'train_progress', 'epoch': 1, 'batch': 100, 'batches': 255, 'time_group': 100, 'time_groups': 255, 'history_edges': 7713, 'pos_edges': 83, 'neg_edges': 83, 'loss_recent': 5.422318818569184, 'elapsed_sec': 21.26774974912405, 'avg_sec_per_batch': 0.2126774974912405, 'cuda_allocated_mb': 91, 'cuda_reserved_mb': 412, 'cuda_max_allocated_mb': 368}
+{'event': 'train_progress', 'epoch': 1, 'batch': 200, 'batches': 255, 'time_group': 200, 'time_groups': 255, 'history_edges': 15787, 'pos_edges': 53, 'neg_edges': 53, 'loss_recent': 4.8969815373420715, 'elapsed_sec': 42.183707889169455, 'avg_sec_per_batch': 0.21091853944584726, 'cuda_allocated_mb': 90, 'cuda_reserved_mb': 572, 'cuda_max_allocated_mb': 496}
+{'event': 'train_time_group', 'epoch': 1, 'time_group': 255, 'time_groups': 255, 'batch': 254, 'batches': 255, 'time_value': 1410480000.0, 'group_batches': 1, 'history_edges': 19896, 'elapsed_sec': 53.82558621093631, 'cuda_allocated_mb': 86, 'cuda_reserved_mb': 652, 'cuda_max_allocated_mb': 566}
+{'event': 'train_progress', 'epoch': 1, 'batch': 255, 'batches': 255, 'time_group': 255, 'time_groups': 255, 'history_edges': 19896, 'pos_edges': 104, 'neg_edges': 104, 'loss_recent': 4.589836958646774, 'elapsed_sec': 54.06044986471534, 'avg_sec_per_batch': 0.21200176417535427, 'cuda_allocated_mb': 92, 'cuda_reserved_mb': 652, 'cuda_max_allocated_mb': 566}
+{'event': 'validation_start', 'epoch': 1}
+{'event': 'validation_ranking_start', 'epoch': 1, 'max_edges': 8}
+Traceback (most recent call last):
+  File "/root/autodl-tmp/data/scripts/search_hparams.py", line 286, in <module>
+    main()
+  File "/root/autodl-tmp/data/scripts/search_hparams.py", line 203, in main
+    model, val_metrics = train_one_seed(
+  File "/root/autodl-tmp/data/ssptgfm/training.py", line 842, in train_one_seed
+    val_rank = filtered_ranking_eval(
+  File "/root/autodl-tmp/data/ssptgfm/training.py", line 525, in filtered_ranking_eval
+    sf, ood_s = hist_index.features_for_candidates_sparse_ppr(chunk, device)
+  File "/root/autodl-tmp/data/ssptgfm/features.py", line 478, in features_for_candidates_sparse_ppr
+    return self.features_for_edges_sparse_ppr(batch, device)
+  File "/root/autodl-tmp/data/ssptgfm/features.py", line 413, in features_for_edges_sparse_ppr
+    for s_t, d_t, t_t in zip(edges_cpu.src, edges_cpu.dst, edges_cpu.time):
+  File "/root/miniconda3/lib/python3.10/site-packages/torch/_tensor.py", line 1119, in __iter__
+    return iter(self.unbind(0))
+KeyboardInterrupt

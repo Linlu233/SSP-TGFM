@@ -1,0 +1,728 @@
+{
+  "complete_signatures": [
+    {
+      "datasets": {
+        "icews05_15": {
+          "bank": "global_relpop_rep_enhanced_probe",
+          "candidate": "global_relpop_rep_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp1_relpopfix48_sr0p01_sa0p001_rep8s0p02_rl0p001_m0_bpr",
+          "dataset": "icews05_15",
+          "metrics": {
+            "val_ap": 0.857855574709465,
+            "val_auc": 0.9448417663574218,
+            "val_hits@10": 0.5333333333333333,
+            "val_mrr": 0.35165635333374934,
+            "val_ndcg": 0.973485960396037
+          },
+          "run_root": "results/global_relpop_rep_enhanced_phase1",
+          "score": 0.5557638638974359,
+          "search_results": "results/global_relpop_rep_enhanced_phase1/search_icews05_15_global_relpop_rep_enhanced_probe/search_results.json"
+        },
+        "icews14": {
+          "bank": "global_relpop_rep_enhanced_probe",
+          "candidate": "global_relpop_rep_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp1_relpopfix48_sr0p01_sa0p001_rep8s0p02_rl0p001_m0_bpr",
+          "dataset": "icews14",
+          "metrics": {
+            "val_ap": 0.7962542941320971,
+            "val_auc": 0.9207279205322266,
+            "val_hits@10": 0.5833333333333334,
+            "val_mrr": 0.3759147040461263,
+            "val_ndcg": 0.9608563540965938
+          },
+          "run_root": "results/global_relpop_rep_enhanced_phase1",
+          "score": 0.5661841942458151,
+          "search_results": "results/global_relpop_rep_enhanced_phase1/search_icews14_global_relpop_rep_enhanced_probe/search_results.json"
+        },
+        "tgb_smallpedia": {
+          "bank": "global_relpop_rep_enhanced_probe",
+          "candidate": "global_relpop_rep_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp1_relpopfix48_sr0p01_sa0p001_rep8s0p02_rl0p001_m0_bpr",
+          "dataset": "tgb_smallpedia",
+          "metrics": {
+            "val_ap": 0.41858075773596065,
+            "val_auc": 0.7375991821289062,
+            "val_hits@10": 0.2833333333333333,
+            "val_mrr": 0.22499697306600228,
+            "val_ndcg": 0.861516514850886
+          },
+          "run_root": "results/global_relpop_rep_enhanced_phase1",
+          "score": 0.3549838774515958,
+          "search_results": "results/global_relpop_rep_enhanced_phase1/search_tgb_smallpedia_global_relpop_rep_enhanced_probe/search_results.json"
+        },
+        "tgb_yago": {
+          "bank": "global_relpop_rep_enhanced_probe",
+          "candidate": "global_relpop_rep_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp1_relpopfix48_sr0p01_sa0p001_rep8s0p02_rl0p001_m0_bpr",
+          "dataset": "tgb_yago",
+          "metrics": {
+            "val_ap": 0.7563740458290299,
+            "val_auc": 0.8816364288330079,
+            "val_hits@10": 0.8,
+            "val_mrr": 0.7053634113600358,
+            "val_ndcg": 0.9494712408771361
+          },
+          "run_root": "results/global_relpop_rep_enhanced_phase1",
+          "score": 0.7651667580837364,
+          "search_results": "results/global_relpop_rep_enhanced_phase1/search_tgb_yago_global_relpop_rep_enhanced_probe/search_results.json"
+        },
+        "yago15k_temporal": {
+          "bank": "global_relpop_rep_enhanced_probe",
+          "candidate": "global_relpop_rep_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp1_relpopfix48_sr0p01_sa0p001_rep8s0p02_rl0p001_m0_bpr",
+          "dataset": "yago15k_temporal",
+          "metrics": {
+            "val_ap": 0.14142064033604032,
+            "val_auc": 0.6089984893798828,
+            "val_hits@10": 0.05,
+            "val_mrr": 0.028615379892675243,
+            "val_ndcg": 0.7172051566043297
+          },
+          "run_root": "results/global_relpop_rep_enhanced_phase1",
+          "score": 0.14769122612617078,
+          "search_results": "results/global_relpop_rep_enhanced_phase1/search_yago15k_temporal_global_relpop_rep_enhanced_probe/search_results.json"
+        }
+      },
+      "mean_score": 0.4779579839609508,
+      "metric_means": {
+        "val_ap": 0.5940970625485187,
+        "val_auc": 0.8187607574462892,
+        "val_hits@10": 0.45,
+        "val_mrr": 0.33730936433971775,
+        "val_ndcg": 0.8925070453649964
+      },
+      "model_signature": "99f5ead1c915"
+    },
+    {
+      "datasets": {
+        "icews05_15": {
+          "bank": "global_relpop_frozen_enhanced_probe",
+          "candidate": "global_relpop_frozen_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp2_relpopfix48_sr0p01_sa0p001_rl0p005_m0_bpr",
+          "dataset": "icews05_15",
+          "metrics": {
+            "val_ap": 0.844563757796697,
+            "val_auc": 0.9414669036865235,
+            "val_hits@10": 0.55,
+            "val_mrr": 0.3581778082045245,
+            "val_ndcg": 0.9708302293232766
+          },
+          "run_root": "results/global_relpop_enhanced_phase1",
+          "score": 0.5599298358884206,
+          "search_results": "results/global_relpop_enhanced_phase1/search_icews05_15_global_relpop_frozen_enhanced_probe/search_results.json"
+        },
+        "icews14": {
+          "bank": "global_relpop_frozen_enhanced_probe",
+          "candidate": "global_relpop_frozen_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp2_relpopfix48_sr0p01_sa0p001_rl0p001_m0_bpr",
+          "dataset": "icews14",
+          "metrics": {
+            "val_ap": 0.7911000087697546,
+            "val_auc": 0.9167041778564453,
+            "val_hits@10": 0.5666666666666667,
+            "val_mrr": 0.3785290219598533,
+            "val_ndcg": 0.9595522074441665
+          },
+          "run_root": "results/global_relpop_enhanced_phase1",
+          "score": 0.563053275265962,
+          "search_results": "results/global_relpop_enhanced_phase1/search_icews14_global_relpop_frozen_enhanced_probe/search_results.json"
+        },
+        "tgb_smallpedia": {
+          "bank": "global_relpop_frozen_enhanced_probe",
+          "candidate": "global_relpop_frozen_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp2_relpopfix48_sr0p01_sa0p001_rl0p001_m0_bpr",
+          "dataset": "tgb_smallpedia",
+          "metrics": {
+            "val_ap": 0.4205479598161497,
+            "val_auc": 0.7362270355224609,
+            "val_hits@10": 0.2833333333333333,
+            "val_mrr": 0.20239832649723571,
+            "val_ndcg": 0.8619075705532205
+          },
+          "run_root": "results/global_relpop_enhanced_phase1",
+          "score": 0.3439501327191521,
+          "search_results": "results/global_relpop_enhanced_phase1/search_tgb_smallpedia_global_relpop_frozen_enhanced_probe/search_results.json"
+        },
+        "tgb_yago": {
+          "bank": "global_relpop_frozen_enhanced_probe",
+          "candidate": "global_relpop_frozen_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp2_relpopfix48_sr0p01_sa0p001_rl0p005_m0_bpr",
+          "dataset": "tgb_yago",
+          "metrics": {
+            "val_ap": 0.7567826298323364,
+            "val_auc": 0.8766204833984375,
+            "val_hits@10": 0.8,
+            "val_mrr": 0.7057734678064888,
+            "val_ndcg": 0.9492535384629753
+          },
+          "run_root": "results/global_relpop_enhanced_phase1",
+          "score": 0.7651605063943142,
+          "search_results": "results/global_relpop_enhanced_phase1/search_tgb_yago_global_relpop_frozen_enhanced_probe/search_results.json"
+        },
+        "yago15k_temporal": {
+          "bank": "global_relpop_frozen_epsilon_probe",
+          "candidate": "global_relpop_frozen_epsilon_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp2_relpopfix48_sr0p01_sa0p001_rl0p001_m0_bpr",
+          "dataset": "yago15k_temporal",
+          "metrics": {
+            "val_ap": 0.2672441793468069,
+            "val_auc": 0.6219757080078124,
+            "val_hits@10": 0.0,
+            "val_mrr": 0.01573769109311099,
+            "val_ndcg": 0.7862674039795925
+          },
+          "run_root": "results/global_relpop_frozen_phase1",
+          "score": 0.1576809982469264,
+          "search_results": "results/global_relpop_frozen_phase1/search_yago15k_temporal_global_relpop_frozen_epsilon_probe/search_results.json"
+        }
+      },
+      "mean_score": 0.4779549497029551,
+      "metric_means": {
+        "val_ap": 0.6160477071123489,
+        "val_auc": 0.8185988616943358,
+        "val_hits@10": 0.44000000000000006,
+        "val_mrr": 0.3321232631122427,
+        "val_ndcg": 0.9055621899526463
+      },
+      "model_signature": "a39a8f432e4d"
+    },
+    {
+      "datasets": {
+        "icews05_15": {
+          "bank": "global_relpop_frozen_enhanced_probe",
+          "candidate": "global_relpop_frozen_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp2_relpopfix48_sr0p05_sa0p001_rl0p001_m0_bpr",
+          "dataset": "icews05_15",
+          "metrics": {
+            "val_ap": 0.8433399058353188,
+            "val_auc": 0.9401859283447266,
+            "val_hits@10": 0.5166666666666667,
+            "val_mrr": 0.3704797995376314,
+            "val_ndcg": 0.9705560303660388
+          },
+          "run_root": "results/global_relpop_enhanced_phase1",
+          "score": 0.559139118431287,
+          "search_results": "results/global_relpop_enhanced_phase1/search_icews05_15_global_relpop_frozen_enhanced_probe/search_results.json"
+        },
+        "icews14": {
+          "bank": "global_relpop_frozen_enhanced_probe",
+          "candidate": "global_relpop_frozen_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp2_relpopfix48_sr0p05_sa0p001_rl0p001_m0_bpr",
+          "dataset": "icews14",
+          "metrics": {
+            "val_ap": 0.7892022101154587,
+            "val_auc": 0.9152900695800781,
+            "val_hits@10": 0.5666666666666667,
+            "val_mrr": 0.3784670601566616,
+            "val_ndcg": 0.959106924388285
+          },
+          "run_root": "results/global_relpop_enhanced_phase1",
+          "score": 0.5626223908468153,
+          "search_results": "results/global_relpop_enhanced_phase1/search_icews14_global_relpop_frozen_enhanced_probe/search_results.json"
+        },
+        "tgb_smallpedia": {
+          "bank": "global_relpop_frozen_enhanced_probe",
+          "candidate": "global_relpop_frozen_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp2_relpopfix48_sr0p05_sa0p001_rl0p001_m0_bpr",
+          "dataset": "tgb_smallpedia",
+          "metrics": {
+            "val_ap": 0.42098173719570137,
+            "val_auc": 0.735181427001953,
+            "val_hits@10": 0.2833333333333333,
+            "val_mrr": 0.20218220358528263,
+            "val_ndcg": 0.8619182733376997
+          },
+          "run_root": "results/global_relpop_enhanced_phase1",
+          "score": 0.3438559277225308,
+          "search_results": "results/global_relpop_enhanced_phase1/search_tgb_smallpedia_global_relpop_frozen_enhanced_probe/search_results.json"
+        },
+        "tgb_yago": {
+          "bank": "global_relpop_frozen_enhanced_probe",
+          "candidate": "global_relpop_frozen_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp2_relpopfix48_sr0p05_sa0p001_rl0p005_m0_bpr",
+          "dataset": "tgb_yago",
+          "metrics": {
+            "val_ap": 0.7547860581811285,
+            "val_auc": 0.8761825561523438,
+            "val_hits@10": 0.8,
+            "val_mrr": 0.705830406612364,
+            "val_ndcg": 0.9488384570255035
+          },
+          "run_root": "results/global_relpop_enhanced_phase1",
+          "score": 0.7648260855435188,
+          "search_results": "results/global_relpop_enhanced_phase1/search_tgb_yago_global_relpop_frozen_enhanced_probe/search_results.json"
+        },
+        "yago15k_temporal": {
+          "bank": "global_relpop_frozen_epsilon_probe",
+          "candidate": "global_relpop_frozen_epsilon_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp2_relpopfix48_sr0p05_sa0p001_rl0p001_m0_bpr",
+          "dataset": "yago15k_temporal",
+          "metrics": {
+            "val_ap": 0.2666851041380378,
+            "val_auc": 0.6219940185546874,
+            "val_hits@10": 0.0,
+            "val_mrr": 0.015678867523565117,
+            "val_ndcg": 0.7859122341314869
+          },
+          "run_root": "results/global_relpop_frozen_phase1",
+          "score": 0.1575331237233713,
+          "search_results": "results/global_relpop_frozen_phase1/search_yago15k_temporal_global_relpop_frozen_epsilon_probe/search_results.json"
+        }
+      },
+      "mean_score": 0.47759532925350473,
+      "metric_means": {
+        "val_ap": 0.614999003093129,
+        "val_auc": 0.8177667999267578,
+        "val_hits@10": 0.4333333333333334,
+        "val_mrr": 0.3345276674831009,
+        "val_ndcg": 0.9052663838498027
+      },
+      "model_signature": "abbd9d64a8a6"
+    },
+    {
+      "datasets": {
+        "icews05_15": {
+          "bank": "global_relpop_frozen_enhanced_probe",
+          "candidate": "global_relpop_frozen_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp1_relpopfix48_sr0p01_sa0p001_rl0p001_m0_bpr",
+          "dataset": "icews05_15",
+          "metrics": {
+            "val_ap": 0.8586126961208304,
+            "val_auc": 0.9509731292724609,
+            "val_hits@10": 0.5166666666666667,
+            "val_mrr": 0.35667140509848866,
+            "val_ndcg": 0.9743617329393874
+          },
+          "run_root": "results/global_relpop_enhanced_phase1",
+          "score": 0.555445770058264,
+          "search_results": "results/global_relpop_enhanced_phase1/search_icews05_15_global_relpop_frozen_enhanced_probe/search_results.json"
+        },
+        "icews14": {
+          "bank": "global_relpop_frozen_enhanced_probe",
+          "candidate": "global_relpop_frozen_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp1_relpopfix48_sr0p01_sa0p001_rl0p005_m0_bpr",
+          "dataset": "icews14",
+          "metrics": {
+            "val_ap": 0.7655775770043742,
+            "val_auc": 0.9076229095458984,
+            "val_hits@10": 0.5666666666666667,
+            "val_mrr": 0.3915344811677081,
+            "val_ndcg": 0.9543494396881099
+          },
+          "run_root": "results/global_relpop_enhanced_phase1",
+          "score": 0.5647532999139494,
+          "search_results": "results/global_relpop_enhanced_phase1/search_icews14_global_relpop_frozen_enhanced_probe/search_results.json"
+        },
+        "tgb_smallpedia": {
+          "bank": "global_relpop_frozen_enhanced_probe",
+          "candidate": "global_relpop_frozen_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp1_relpopfix48_sr0p01_sa0p001_rl0p005_m0_bpr",
+          "dataset": "tgb_smallpedia",
+          "metrics": {
+            "val_ap": 0.41500604926476486,
+            "val_auc": 0.7328662872314453,
+            "val_hits@10": 0.2833333333333333,
+            "val_mrr": 0.21369883799316874,
+            "val_ndcg": 0.8599466070131638
+          },
+          "run_root": "results/global_relpop_enhanced_phase1",
+          "score": 0.3484049681158544,
+          "search_results": "results/global_relpop_enhanced_phase1/search_tgb_smallpedia_global_relpop_frozen_enhanced_probe/search_results.json"
+        },
+        "tgb_yago": {
+          "bank": "global_relpop_frozen_enhanced_probe",
+          "candidate": "global_relpop_frozen_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp1_relpopfix48_sr0p01_sa0p001_rl0p005_m0_bpr",
+          "dataset": "tgb_yago",
+          "metrics": {
+            "val_ap": 0.7558785592552955,
+            "val_auc": 0.8812412261962891,
+            "val_hits@10": 0.8,
+            "val_mrr": 0.7054059599563577,
+            "val_ndcg": 0.9493351603096303
+          },
+          "run_root": "results/global_relpop_enhanced_phase1",
+          "score": 0.7650803412072507,
+          "search_results": "results/global_relpop_enhanced_phase1/search_tgb_yago_global_relpop_frozen_enhanced_probe/search_results.json"
+        },
+        "yago15k_temporal": {
+          "bank": "global_relpop_frozen_epsilon_probe",
+          "candidate": "global_relpop_frozen_epsilon_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp1_relpopfix48_sr0p01_sa0p001_rl0p005_m0_bpr",
+          "dataset": "yago15k_temporal",
+          "metrics": {
+            "val_ap": 0.2631212974919741,
+            "val_auc": 0.6177581787109375,
+            "val_hits@10": 0.0,
+            "val_mrr": 0.010039294199507446,
+            "val_ndcg": 0.7841442158049527
+          },
+          "run_root": "results/global_relpop_frozen_phase1",
+          "score": 0.153790172239592,
+          "search_results": "results/global_relpop_frozen_phase1/search_yago15k_temporal_global_relpop_frozen_epsilon_probe/search_results.json"
+        }
+      },
+      "mean_score": 0.47749491030698205,
+      "metric_means": {
+        "val_ap": 0.6116392358274478,
+        "val_auc": 0.8180923461914062,
+        "val_hits@10": 0.4333333333333334,
+        "val_mrr": 0.33546999568304614,
+        "val_ndcg": 0.9044274311510488
+      },
+      "model_signature": "d3565274c126"
+    },
+    {
+      "datasets": {
+        "icews05_15": {
+          "bank": "global_relpop_rep_enhanced_probe",
+          "candidate": "global_relpop_rep_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp1_relpopfix48_sr0p01_sa0p001_rep8s0p05_rl0p001_m0_bpr",
+          "dataset": "icews05_15",
+          "metrics": {
+            "val_ap": 0.8587904012294605,
+            "val_auc": 0.945656967163086,
+            "val_hits@10": 0.5333333333333333,
+            "val_mrr": 0.35451360651981795,
+            "val_ndcg": 0.9737760576462431
+          },
+          "run_root": "results/global_relpop_rep_enhanced_phase1",
+          "score": 0.5574024842337734,
+          "search_results": "results/global_relpop_rep_enhanced_phase1/search_icews05_15_global_relpop_rep_enhanced_probe/search_results.json"
+        },
+        "icews14": {
+          "bank": "global_relpop_rep_enhanced_probe",
+          "candidate": "global_relpop_rep_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp1_relpopfix48_sr0p01_sa0p001_rep8s0p05_rl0p001_m0_bpr",
+          "dataset": "icews14",
+          "metrics": {
+            "val_ap": 0.7961859956847098,
+            "val_auc": 0.9207324981689452,
+            "val_hits@10": 0.5833333333333334,
+            "val_mrr": 0.37584966012695725,
+            "val_ndcg": 0.9608426962819447
+          },
+          "run_root": "results/global_relpop_rep_enhanced_phase1",
+          "score": 0.5661402906194936,
+          "search_results": "results/global_relpop_rep_enhanced_phase1/search_icews14_global_relpop_rep_enhanced_probe/search_results.json"
+        },
+        "tgb_smallpedia": {
+          "bank": "global_relpop_rep_enhanced_probe",
+          "candidate": "global_relpop_rep_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp1_relpopfix48_sr0p01_sa0p001_rep8s0p05_rl0p001_m0_bpr",
+          "dataset": "tgb_smallpedia",
+          "metrics": {
+            "val_ap": 0.4188875276450434,
+            "val_auc": 0.7382118225097656,
+            "val_hits@10": 0.2833333333333333,
+            "val_mrr": 0.21392391488235205,
+            "val_ndcg": 0.8616897140286617
+          },
+          "run_root": "results/global_relpop_rep_enhanced_phase1",
+          "score": 0.3495413157829536,
+          "search_results": "results/global_relpop_rep_enhanced_phase1/search_tgb_smallpedia_global_relpop_rep_enhanced_probe/search_results.json"
+        },
+        "tgb_yago": {
+          "bank": "global_relpop_rep_enhanced_probe",
+          "candidate": "global_relpop_rep_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp1_relpopfix48_sr0p01_sa0p001_rep8s0p05_rl0p001_m0_bpr",
+          "dataset": "tgb_yago",
+          "metrics": {
+            "val_ap": 0.7564252860510838,
+            "val_auc": 0.8816665649414062,
+            "val_hits@10": 0.8,
+            "val_mrr": 0.7053635455366607,
+            "val_ndcg": 0.949485617705632
+          },
+          "run_root": "results/global_relpop_rep_enhanced_phase1",
+          "score": 0.7651774556936264,
+          "search_results": "results/global_relpop_rep_enhanced_phase1/search_tgb_yago_global_relpop_rep_enhanced_probe/search_results.json"
+        },
+        "yago15k_temporal": {
+          "bank": "global_relpop_rep_enhanced_probe",
+          "candidate": "global_relpop_rep_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp1_relpopfix48_sr0p01_sa0p001_rep8s0p05_rl0p001_m0_bpr",
+          "dataset": "yago15k_temporal",
+          "metrics": {
+            "val_ap": 0.14143671948210032,
+            "val_auc": 0.6089962005615233,
+            "val_hits@10": 0.05,
+            "val_mrr": 0.028615122152009547,
+            "val_ndcg": 0.7172278199999722
+          },
+          "run_root": "results/global_relpop_rep_enhanced_phase1",
+          "score": 0.14769566102639323,
+          "search_results": "results/global_relpop_rep_enhanced_phase1/search_yago15k_temporal_global_relpop_rep_enhanced_probe/search_results.json"
+        }
+      },
+      "mean_score": 0.47719144147124803,
+      "metric_means": {
+        "val_ap": 0.5943451860184796,
+        "val_auc": 0.8190528106689452,
+        "val_hits@10": 0.45,
+        "val_mrr": 0.3356531698435595,
+        "val_ndcg": 0.8926043811324907
+      },
+      "model_signature": "128924c0aad0"
+    },
+    {
+      "datasets": {
+        "icews05_15": {
+          "bank": "global_relpop_rep_enhanced_probe",
+          "candidate": "global_relpop_rep_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp1_relpopfix48_sr0p01_sa0p001_rep16s0p05_rl0p001_m0_bpr",
+          "dataset": "icews05_15",
+          "metrics": {
+            "val_ap": 0.8581867169577512,
+            "val_auc": 0.9470909118652344,
+            "val_hits@10": 0.55,
+            "val_mrr": 0.3296801044899788,
+            "val_ndcg": 0.9738215358623425
+          },
+          "run_root": "results/global_relpop_rep_enhanced_phase1",
+          "score": 0.548304758968148,
+          "search_results": "results/global_relpop_rep_enhanced_phase1/search_icews05_15_global_relpop_rep_enhanced_probe/search_results.json"
+        },
+        "icews14": {
+          "bank": "global_relpop_rep_enhanced_probe",
+          "candidate": "global_relpop_rep_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp1_relpopfix48_sr0p01_sa0p001_rep16s0p05_rl0p001_m0_bpr",
+          "dataset": "icews14",
+          "metrics": {
+            "val_ap": 0.7670950704556031,
+            "val_auc": 0.9080615997314455,
+            "val_hits@10": 0.5833333333333334,
+            "val_mrr": 0.3901412883715239,
+            "val_ndcg": 0.9546541588502262
+          },
+          "run_root": "results/global_relpop_rep_enhanced_phase1",
+          "score": 0.567670067292364,
+          "search_results": "results/global_relpop_rep_enhanced_phase1/search_icews14_global_relpop_rep_enhanced_probe/search_results.json"
+        },
+        "tgb_smallpedia": {
+          "bank": "global_relpop_rep_enhanced_probe",
+          "candidate": "global_relpop_rep_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp1_relpopfix48_sr0p01_sa0p001_rep16s0p05_rl0p001_m0_bpr",
+          "dataset": "tgb_smallpedia",
+          "metrics": {
+            "val_ap": 0.42094486644446466,
+            "val_auc": 0.7399963378906249,
+            "val_hits@10": 0.2833333333333333,
+            "val_mrr": 0.22422240405888477,
+            "val_ndcg": 0.8624350387773364
+          },
+          "run_root": "results/global_relpop_rep_enhanced_phase1",
+          "score": 0.35516291943504363,
+          "search_results": "results/global_relpop_rep_enhanced_phase1/search_tgb_smallpedia_global_relpop_rep_enhanced_probe/search_results.json"
+        },
+        "tgb_yago": {
+          "bank": "global_relpop_rep_enhanced_probe",
+          "candidate": "global_relpop_rep_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp1_relpopfix48_sr0p01_sa0p001_rep16s0p05_rl0p001_m0_bpr",
+          "dataset": "tgb_yago",
+          "metrics": {
+            "val_ap": 0.7569972417464776,
+            "val_auc": 0.882174301147461,
+            "val_hits@10": 0.8,
+            "val_mrr": 0.7053662754633606,
+            "val_ndcg": 0.9496359095260701
+          },
+          "run_root": "results/global_relpop_rep_enhanced_phase1",
+          "score": 0.7653050300036319,
+          "search_results": "results/global_relpop_rep_enhanced_phase1/search_tgb_yago_global_relpop_rep_enhanced_probe/search_results.json"
+        },
+        "yago15k_temporal": {
+          "bank": "global_relpop_rep_enhanced_probe",
+          "candidate": "global_relpop_rep_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp1_relpopfix48_sr0p01_sa0p001_rep16s0p05_rl0p001_m0_bpr",
+          "dataset": "yago15k_temporal",
+          "metrics": {
+            "val_ap": 0.14141496520579752,
+            "val_auc": 0.6090080261230469,
+            "val_hits@10": 0.05,
+            "val_mrr": 0.028612522458661218,
+            "val_ndcg": 0.7171992260601512
+          },
+          "run_root": "results/global_relpop_rep_enhanced_phase1",
+          "score": 0.1476888299223677,
+          "search_results": "results/global_relpop_rep_enhanced_phase1/search_yago15k_temporal_global_relpop_rep_enhanced_probe/search_results.json"
+        }
+      },
+      "mean_score": 0.4768263211243111,
+      "metric_means": {
+        "val_ap": 0.5889277721620189,
+        "val_auc": 0.8172662353515626,
+        "val_hits@10": 0.4533333333333333,
+        "val_mrr": 0.33560451896848187,
+        "val_ndcg": 0.8915491738152254
+      },
+      "model_signature": "7ee37d5f3fb4"
+    },
+    {
+      "datasets": {
+        "icews05_15": {
+          "bank": "global_relpop_rep_enhanced_probe",
+          "candidate": "global_relpop_rep_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp1_relpopfix48_sr0p01_sa0p001_rep16s0p02_rl0p001_m0_bpr",
+          "dataset": "icews05_15",
+          "metrics": {
+            "val_ap": 0.861057206350767,
+            "val_auc": 0.9465671539306642,
+            "val_hits@10": 0.5166666666666667,
+            "val_mrr": 0.3365453808032706,
+            "val_ndcg": 0.9742292088206611
+          },
+          "run_root": "results/global_relpop_rep_enhanced_phase1",
+          "score": 0.545515883266183,
+          "search_results": "results/global_relpop_rep_enhanced_phase1/search_icews05_15_global_relpop_rep_enhanced_probe/search_results.json"
+        },
+        "icews14": {
+          "bank": "global_relpop_rep_enhanced_probe",
+          "candidate": "global_relpop_rep_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp1_relpopfix48_sr0p01_sa0p001_rep16s0p02_rl0p001_m0_bpr",
+          "dataset": "icews14",
+          "metrics": {
+            "val_ap": 0.7671854233642499,
+            "val_auc": 0.9080776214599608,
+            "val_hits@10": 0.5833333333333334,
+            "val_mrr": 0.3901651309122297,
+            "val_ndcg": 0.9546712424007566
+          },
+          "run_root": "results/global_relpop_rep_enhanced_phase1",
+          "score": 0.5676980509404927,
+          "search_results": "results/global_relpop_rep_enhanced_phase1/search_icews14_global_relpop_rep_enhanced_probe/search_results.json"
+        },
+        "tgb_smallpedia": {
+          "bank": "global_relpop_rep_enhanced_probe",
+          "candidate": "global_relpop_rep_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp1_relpopfix48_sr0p01_sa0p001_rep16s0p02_rl0p001_m0_bpr",
+          "dataset": "tgb_smallpedia",
+          "metrics": {
+            "val_ap": 0.42101972785114294,
+            "val_auc": 0.7400230407714844,
+            "val_hits@10": 0.2833333333333333,
+            "val_mrr": 0.22512364390961806,
+            "val_ndcg": 0.8624509691339007
+          },
+          "run_root": "results/global_relpop_rep_enhanced_phase1",
+          "score": 0.3556276967511115,
+          "search_results": "results/global_relpop_rep_enhanced_phase1/search_tgb_smallpedia_global_relpop_rep_enhanced_probe/search_results.json"
+        },
+        "tgb_yago": {
+          "bank": "global_relpop_rep_enhanced_probe",
+          "candidate": "global_relpop_rep_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp1_relpopfix48_sr0p01_sa0p001_rep16s0p02_rl0p001_m0_bpr",
+          "dataset": "tgb_yago",
+          "metrics": {
+            "val_ap": 0.7569836641986173,
+            "val_auc": 0.8821758270263673,
+            "val_hits@10": 0.8,
+            "val_mrr": 0.7053657821095847,
+            "val_ndcg": 0.949634422498421
+          },
+          "run_root": "results/global_relpop_rep_enhanced_phase1",
+          "score": 0.7653026742857455,
+          "search_results": "results/global_relpop_rep_enhanced_phase1/search_tgb_yago_global_relpop_rep_enhanced_probe/search_results.json"
+        },
+        "yago15k_temporal": {
+          "bank": "global_relpop_rep_enhanced_probe",
+          "candidate": "global_relpop_rep_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp1_relpopfix48_sr0p01_sa0p001_rep16s0p02_rl0p001_m0_bpr",
+          "dataset": "yago15k_temporal",
+          "metrics": {
+            "val_ap": 0.1414164660290428,
+            "val_auc": 0.6090019226074219,
+            "val_hits@10": 0.05,
+            "val_mrr": 0.028612530524762727,
+            "val_ndcg": 0.7172004999244277
+          },
+          "run_root": "results/global_relpop_rep_enhanced_phase1",
+          "score": 0.14768888128955165,
+          "search_results": "results/global_relpop_rep_enhanced_phase1/search_yago15k_temporal_global_relpop_rep_enhanced_probe/search_results.json"
+        }
+      },
+      "mean_score": 0.4763666373066169,
+      "metric_means": {
+        "val_ap": 0.5895324975587639,
+        "val_auc": 0.8171691131591796,
+        "val_hits@10": 0.44666666666666666,
+        "val_mrr": 0.33716249365189316,
+        "val_ndcg": 0.8916372685556333
+      },
+      "model_signature": "89f011199771"
+    },
+    {
+      "datasets": {
+        "icews05_15": {
+          "bank": "global_relpop_frozen_enhanced_probe",
+          "candidate": "global_relpop_frozen_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp1_relpopfix48_sr0p05_sa0p001_rl0p005_m0_bpr",
+          "dataset": "icews05_15",
+          "metrics": {
+            "val_ap": 0.8458322254267909,
+            "val_auc": 0.9440654754638672,
+            "val_hits@10": 0.48333333333333334,
+            "val_mrr": 0.35789474604611066,
+            "val_ndcg": 0.9713965888768028
+          },
+          "run_root": "results/global_relpop_enhanced_phase1",
+          "score": 0.5468318061646142,
+          "search_results": "results/global_relpop_enhanced_phase1/search_icews05_15_global_relpop_frozen_enhanced_probe/search_results.json"
+        },
+        "icews14": {
+          "bank": "global_relpop_frozen_enhanced_probe",
+          "candidate": "global_relpop_frozen_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp1_relpopfix48_sr0p05_sa0p001_rl0p001_m0_bpr",
+          "dataset": "icews14",
+          "metrics": {
+            "val_ap": 0.7928595236189546,
+            "val_auc": 0.9192546844482421,
+            "val_hits@10": 0.5666666666666667,
+            "val_mrr": 0.37584488085729223,
+            "val_ndcg": 0.9601166131093698
+          },
+          "run_root": "results/global_relpop_enhanced_phase1",
+          "score": 0.5621590978381718,
+          "search_results": "results/global_relpop_enhanced_phase1/search_icews14_global_relpop_frozen_enhanced_probe/search_results.json"
+        },
+        "tgb_smallpedia": {
+          "bank": "global_relpop_frozen_enhanced_probe",
+          "candidate": "global_relpop_frozen_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp1_relpopfix48_sr0p05_sa0p001_rl0p001_m0_bpr",
+          "dataset": "tgb_smallpedia",
+          "metrics": {
+            "val_ap": 0.4147228009772739,
+            "val_auc": 0.732424545288086,
+            "val_hits@10": 0.2833333333333333,
+            "val_mrr": 0.213708882487759,
+            "val_ndcg": 0.8598391309414813
+          },
+          "run_root": "results/global_relpop_enhanced_phase1",
+          "score": 0.3483346684156897,
+          "search_results": "results/global_relpop_enhanced_phase1/search_tgb_smallpedia_global_relpop_frozen_enhanced_probe/search_results.json"
+        },
+        "tgb_yago": {
+          "bank": "global_relpop_frozen_enhanced_probe",
+          "candidate": "global_relpop_frozen_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp1_relpopfix48_sr0p05_sa0p001_rl0p005_m0_bpr",
+          "dataset": "tgb_yago",
+          "metrics": {
+            "val_ap": 0.752797898042894,
+            "val_auc": 0.8792297363281251,
+            "val_hits@10": 0.8,
+            "val_mrr": 0.7054664713477564,
+            "val_ndcg": 0.9485420072217122
+          },
+          "run_root": "results/global_relpop_enhanced_phase1",
+          "score": 0.7644686079188898,
+          "search_results": "results/global_relpop_enhanced_phase1/search_tgb_yago_global_relpop_frozen_enhanced_probe/search_results.json"
+        },
+        "yago15k_temporal": {
+          "bank": "global_relpop_frozen_epsilon_probe",
+          "candidate": "global_relpop_frozen_epsilon_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp1_relpopfix48_sr0p05_sa0p001_rl0p005_m0_bpr",
+          "dataset": "yago15k_temporal",
+          "metrics": {
+            "val_ap": 0.263970506942305,
+            "val_auc": 0.6231170654296875,
+            "val_hits@10": 0.0,
+            "val_mrr": 0.010662205140997708,
+            "val_ndcg": 0.7837780299453858
+          },
+          "run_root": "results/global_relpop_frozen_phase1",
+          "score": 0.15446033487786756,
+          "search_results": "results/global_relpop_frozen_phase1/search_yago15k_temporal_global_relpop_frozen_epsilon_probe/search_results.json"
+        }
+      },
+      "mean_score": 0.4752509030430466,
+      "metric_means": {
+        "val_ap": 0.6140365910016437,
+        "val_auc": 0.8196183013916014,
+        "val_hits@10": 0.42666666666666675,
+        "val_mrr": 0.3327154371759832,
+        "val_ndcg": 0.9047344740189504
+      },
+      "model_signature": "c703ef12326b"
+    }
+  ],
+  "expected_datasets": [
+    "icews05_15",
+    "icews14",
+    "tgb_smallpedia",
+    "tgb_yago",
+    "yago15k_temporal"
+  ],
+  "incomplete_required_roots": [],
+  "required_complete_roots": [
+    "results/global_relpop_rep_enhanced_phase1"
+  ],
+  "search_run_roots": [
+    "results/global_relpop_enhanced_phase1",
+    "results/global_relpop_rep_enhanced_phase1",
+    "results/global_relpop_frozen_phase1",
+    "results/global_relpop_residual_phase1"
+  ],
+  "selected_model_signature": "99f5ead1c915",
+  "selection_uses": "validation metrics only",
+  "test_usage": "not used before this selection"
+}

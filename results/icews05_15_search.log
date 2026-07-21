@@ -1,0 +1,24 @@
+runtime_device=cuda
+cuda_device=Tesla V100-PCIE-32GB
+{'event': 'candidate_seed_start', 'candidate': 'h96_lr1e3_meta005_ood001', 'seed': 1, 'device': 'cuda', 'node_text_device': 'cuda:0'}
+{'event': 'epoch_start', 'epoch': 1, 'epochs': 8, 'batches': 3529}
+Traceback (most recent call last):
+  File "/root/autodl-tmp/data/scripts/search_hparams.py", line 182, in <module>
+    main()
+  File "/root/autodl-tmp/data/scripts/search_hparams.py", line 135, in main
+    model, val_metrics = train_one_seed(
+  File "/root/autodl-tmp/data/ssptgfm/training.py", line 520, in train_one_seed
+    val = binary_metrics(val_labels, val_scores)
+  File "/root/autodl-tmp/data/ssptgfm/metrics.py", line 13, in binary_metrics
+    out["auc"] = float(roc_auc_score(labels, scores))
+  File "/root/miniconda3/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 218, in wrapper
+    return func(*args, **kwargs)
+  File "/root/miniconda3/lib/python3.10/site-packages/sklearn/metrics/_ranking.py", line 665, in roc_auc_score
+    y_score = check_array(y_score, ensure_2d=False)
+  File "/root/miniconda3/lib/python3.10/site-packages/sklearn/utils/validation.py", line 1105, in check_array
+    _assert_all_finite(
+  File "/root/miniconda3/lib/python3.10/site-packages/sklearn/utils/validation.py", line 120, in _assert_all_finite
+    _assert_all_finite_element_wise(
+  File "/root/miniconda3/lib/python3.10/site-packages/sklearn/utils/validation.py", line 169, in _assert_all_finite_element_wise
+    raise ValueError(msg_err)
+ValueError: Input contains NaN.

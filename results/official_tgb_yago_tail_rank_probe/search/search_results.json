@@ -1,0 +1,199 @@
+{
+  "best_candidate": {
+    "model": {},
+    "name": "tailrank_lr7e4_cr005_n4_q64",
+    "train": {
+      "candidate_rank_queries": 64,
+      "lambda_candidate_rank": 0.05,
+      "lr": 0.0007
+    }
+  },
+  "best_candidate_passes_minima": true,
+  "best_validation_mean": 0.42555307568644074,
+  "candidate_summaries": [
+    {
+      "candidate": "tailrank_lr1e3_cr002_n4_q32",
+      "means": {
+        "val_ap": 0.6147748893989037,
+        "val_auc": 0.8323913574218749,
+        "val_ndcg": 0.9042219783377378,
+        "val_tgb_hits@10": 0.484375,
+        "val_tgb_mrr": 0.39952869077579756
+      },
+      "passes_metric_minima": true,
+      "score": 0.39952869077579756,
+      "seeds_completed": 1
+    },
+    {
+      "candidate": "tailrank_lr7e4_cr002_n4_q32",
+      "means": {
+        "val_ap": 0.6147748893989037,
+        "val_auc": 0.8323913574218749,
+        "val_ndcg": 0.9042219783377378,
+        "val_tgb_hits@10": 0.484375,
+        "val_tgb_mrr": 0.39952869036288513
+      },
+      "passes_metric_minima": true,
+      "score": 0.39952869036288513,
+      "seeds_completed": 1
+    },
+    {
+      "candidate": "tailrank_lr1e3_cr005_n4_q64",
+      "means": {
+        "val_ap": 0.6183112507101269,
+        "val_auc": 0.83668212890625,
+        "val_ndcg": 0.9053871520027056,
+        "val_tgb_hits@10": 0.484375,
+        "val_tgb_mrr": 0.4255530754759147
+      },
+      "passes_metric_minima": true,
+      "score": 0.4255530754759147,
+      "seeds_completed": 1
+    },
+    {
+      "candidate": "tailrank_lr7e4_cr005_n4_q64",
+      "means": {
+        "val_ap": 0.6183112507101269,
+        "val_auc": 0.83668212890625,
+        "val_ndcg": 0.9053871520027056,
+        "val_tgb_hits@10": 0.484375,
+        "val_tgb_mrr": 0.42555307568644074
+      },
+      "passes_metric_minima": true,
+      "score": 0.42555307568644074,
+      "seeds_completed": 1
+    }
+  ],
+  "dataset": "tkgl-yago",
+  "environment": {
+    "cuda_available": true,
+    "cuda_capability": [
+      7,
+      0
+    ],
+    "cuda_device": "Tesla V100-PCIE-32GB",
+    "python": "3.10.8",
+    "torch": "2.5.1+cu121"
+  },
+  "formal_allowed": true,
+  "leakage_control": {
+    "selection_uses": "validation metrics only",
+    "temporal_split": "strict train < validation < test",
+    "test_usage": "not evaluated by this script"
+  },
+  "metric_minima": {},
+  "metric_weights": {},
+  "rows": [
+    {
+      "candidate": "tailrank_lr1e3_cr002_n4_q32",
+      "seed": 1,
+      "train_align": 1957.8708278355973,
+      "train_candidate_rank": 1.930464733099,
+      "train_kl": 7748.120693935437,
+      "train_loss": 20.62780994779608,
+      "train_lp": 0.2715977926142095,
+      "train_meta": 0.49153542202593903,
+      "train_ood_reg": 0.23467576696296757,
+      "train_rank": 0.2502838567349264,
+      "train_struct_aux": 0.0,
+      "train_weighted_align": 19.57870779680402,
+      "train_weighted_candidate_rank": 0.03860929379700107,
+      "train_weighted_kl": 0.7748120530100351,
+      "train_weighted_meta": 0.0024576770543778743,
+      "train_weighted_ood_reg": 0.00023467577802569324,
+      "train_weighted_rank": 0.0025028385187785686,
+      "train_weighted_struct_aux": 0.0,
+      "val_ap": 0.6147748893989037,
+      "val_auc": 0.8323913574218749,
+      "val_ndcg": 0.9042219783377378,
+      "val_tgb_hits@10": 0.484375,
+      "val_tgb_mrr": 0.39952869077579756
+    },
+    {
+      "candidate": "tailrank_lr7e4_cr002_n4_q32",
+      "seed": 1,
+      "train_align": 1957.8708273212562,
+      "train_candidate_rank": 1.930464719788412,
+      "train_kl": 7748.120482712649,
+      "train_loss": 20.62780988886115,
+      "train_lp": 0.27159779541864154,
+      "train_meta": 0.49153541931568573,
+      "train_ood_reg": 0.23467576662811002,
+      "train_rank": 0.25028385923066165,
+      "train_struct_aux": 0.0,
+      "train_weighted_align": 19.57870784636294,
+      "train_weighted_candidate_rank": 0.038609293556322206,
+      "train_weighted_kl": 0.7748120298211494,
+      "train_weighted_meta": 0.0024576770439953283,
+      "train_weighted_ood_reg": 0.0002346757776986839,
+      "train_weighted_rank": 0.0025028385482502844,
+      "train_weighted_struct_aux": 0.0,
+      "val_ap": 0.6147748893989037,
+      "val_auc": 0.8323913574218749,
+      "val_ndcg": 0.9042219783377378,
+      "val_tgb_hits@10": 0.484375,
+      "val_tgb_mrr": 0.39952869036288513
+    },
+    {
+      "candidate": "tailrank_lr1e3_cr005_n4_q64",
+      "seed": 1,
+      "train_align": 1950.3514582601827,
+      "train_candidate_rank": 1.8711588525872551,
+      "train_kl": 7508.065280185657,
+      "train_loss": 20.52959217114395,
+      "train_lp": 0.2725275240712956,
+      "train_meta": 0.5018542354790431,
+      "train_ood_reg": 0.234660505578759,
+      "train_rank": 0.25064659828655,
+      "train_struct_aux": 0.0,
+      "train_weighted_align": 19.503514169307238,
+      "train_weighted_candidate_rank": 0.09355794389083395,
+      "train_weighted_kl": 0.7508065096950263,
+      "train_weighted_meta": 0.0025092711158128185,
+      "train_weighted_ood_reg": 0.00023466051633671197,
+      "train_weighted_rank": 0.0025064659237389432,
+      "train_weighted_struct_aux": 0.0,
+      "val_ap": 0.6183112507101269,
+      "val_auc": 0.83668212890625,
+      "val_ndcg": 0.9053871520027056,
+      "val_tgb_hits@10": 0.484375,
+      "val_tgb_mrr": 0.4255530754759147
+    },
+    {
+      "candidate": "tailrank_lr7e4_cr005_n4_q64",
+      "seed": 1,
+      "train_align": 1950.3514551741353,
+      "train_candidate_rank": 1.8711588473132488,
+      "train_kl": 7508.065266469891,
+      "train_loss": 20.52959211488788,
+      "train_lp": 0.2725275212668636,
+      "train_meta": 0.5018542237328679,
+      "train_ood_reg": 0.23466050599733096,
+      "train_rank": 0.2506465993800692,
+      "train_struct_aux": 0.0,
+      "train_weighted_align": 19.503514102335725,
+      "train_weighted_candidate_rank": 0.09355794389345003,
+      "train_weighted_kl": 0.7508065077695953,
+      "train_weighted_meta": 0.0025092710637570205,
+      "train_weighted_ood_reg": 0.00023466051674547365,
+      "train_weighted_rank": 0.0025064659394353913,
+      "train_weighted_struct_aux": 0.0,
+      "val_ap": 0.6183112507101269,
+      "val_auc": 0.83668212890625,
+      "val_ndcg": 0.9053871520027056,
+      "val_tgb_hits@10": 0.484375,
+      "val_tgb_mrr": 0.42555307568644074
+    }
+  ],
+  "scenario": {
+    "name": "label_split"
+  },
+  "selection_metric": "val_tgb_mrr",
+  "selection_metrics": [
+    "val_tgb_mrr",
+    "val_tgb_hits@10",
+    "val_auc",
+    "val_ap",
+    "val_ndcg"
+  ]
+}

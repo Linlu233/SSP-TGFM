@@ -1,0 +1,279 @@
+runtime_device=cuda
+cuda_device=Tesla V100-PCIE-32GB
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'full', 'seed': 1}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'full', 'seed': 2}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'full', 'seed': 3}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'full', 'seed': 4}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'full', 'seed': 5}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'no_gate', 'seed': 1}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'no_gate', 'seed': 2}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'no_gate', 'seed': 3}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'no_gate', 'seed': 4}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'no_gate', 'seed': 5}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'no_theory_loss', 'seed': 1}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'no_theory_loss', 'seed': 2}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'no_theory_loss', 'seed': 3}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'no_theory_loss', 'seed': 4}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'no_theory_loss', 'seed': 5}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'struct_only', 'seed': 1}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'struct_only', 'seed': 2}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'struct_only', 'seed': 3}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'struct_only', 'seed': 4}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'struct_only', 'seed': 5}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'sem_only', 'seed': 1}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'sem_only', 'seed': 2}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'sem_only', 'seed': 3}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'sem_only', 'seed': 4}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'sem_only', 'seed': 5}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'no_cross', 'seed': 1}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'no_cross', 'seed': 2}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'no_cross', 'seed': 3}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'no_cross', 'seed': 4}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'no_cross', 'seed': 5}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'lstm_encoder', 'seed': 1}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'lstm_encoder', 'seed': 2}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'lstm_encoder', 'seed': 3}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'lstm_encoder', 'seed': 4}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'lstm_encoder', 'seed': 5}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'transformer_encoder', 'seed': 1}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'transformer_encoder', 'seed': 2}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'transformer_encoder', 'seed': 3}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'transformer_encoder', 'seed': 4}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'transformer_encoder', 'seed': 5}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'identity_time', 'seed': 1}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'identity_time', 'seed': 2}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'identity_time', 'seed': 3}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'identity_time', 'seed': 4}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'identity_time', 'seed': 5}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'wavelet_time', 'seed': 1}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'wavelet_time', 'seed': 2}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'wavelet_time', 'seed': 3}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'wavelet_time', 'seed': 4}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'wavelet_time', 'seed': 5}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'random_fourier_time', 'seed': 1}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'random_fourier_time', 'seed': 2}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'random_fourier_time', 'seed': 3}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'random_fourier_time', 'seed': 4}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'random_fourier_time', 'seed': 5}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'random_negative', 'seed': 1}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'random_negative', 'seed': 2}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'random_negative', 'seed': 3}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'random_negative', 'seed': 4}
+{'event': 'resume_skip', 'method': 'ssptgfm', 'ablation': 'random_negative', 'seed': 5}
+                                                              test_ap                            test_auc                           test_edges                     test_hits@1                         test_hits@10                         test_hits@100                         test_hits@50                          test_mrr                           test_ndcg                              val_ap                             val_auc                           val_edges                     val_hits@1                        val_hits@10                        val_hits@100                        val_hits@50                          val_mrr                            val_ndcg                          
+                                                                 ci95 count      mean       std      ci95 count      mean       std       ci95 count     mean  std        ci95 count    mean       std         ci95 count    mean       std          ci95 count    mean       std         ci95 count    mean       std      ci95 count      mean       std      ci95 count      mean       std      ci95 count      mean       std      ci95 count      mean       std      ci95 count     mean  std       ci95 count   mean       std        ci95 count   mean       std         ci95 count   mean       std        ci95 count   mean       std      ci95 count      mean       std      ci95 count      mean       std
+dataset method  ablation            scenario few_shot_ratio                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+icews14 ssptgfm full                standard 1.0             0.006139     5  0.716987  0.007004  0.002821     5  0.928828  0.003219        0.0     5  14378.0  0.0    0.007078     5  0.3152  0.008075     0.006629     5  0.6472  0.007563      0.007375     5  0.8356  0.008414     0.010040     5  0.7912  0.011454  0.004441     5  0.427741  0.005066  0.001310     5  0.955013  0.001494  0.006625     5  0.699187  0.007558  0.002527     5  0.916589  0.002883       0.0     5  14592.0  0.0   0.012778     5  0.245  0.014577    0.007201     5  0.566  0.008216     0.008543     5  0.812  0.009747    0.007840     5  0.766  0.008944  0.005582     5  0.344044  0.006369  0.001343     5  0.950664  0.001533
+                identity_time       standard 1.0             0.030046     5  0.616178  0.034277  0.005055     5  0.903448  0.005767        0.0     5  14378.0  0.0    0.006744     5  0.3492  0.007694     0.015363     5  0.6408  0.017527      0.004801     5  0.8480  0.005477     0.005814     5  0.8060  0.006633  0.006801     5  0.447757  0.007759  0.005401     5  0.937101  0.006162  0.030122     5  0.603864  0.034365  0.005067     5  0.889829  0.005781       0.0     5  14592.0  0.0   0.010555     5  0.263  0.012042    0.012778     5  0.560  0.014577     0.005368     5  0.840  0.006124    0.004997     5  0.797  0.005701  0.007342     5  0.363030  0.008376  0.005243     5  0.933702  0.005981
+                lstm_encoder        standard 1.0             0.011260     5  0.708556  0.012846  0.004469     5  0.925343  0.005098        0.0     5  14378.0  0.0    0.009326     5  0.3232  0.010640     0.004036     5  0.6412  0.004604      0.006272     5  0.8368  0.007155     0.007601     5  0.7872  0.008672  0.005877     5  0.433831  0.006705  0.002306     5  0.953148  0.002631  0.010953     5  0.692220  0.012496  0.005140     5  0.912855  0.005864       0.0     5  14592.0  0.0   0.006501     5  0.244  0.007416    0.004997     5  0.563  0.005701     0.011344     5  0.821  0.012942    0.006930     5  0.775  0.007906  0.005709     5  0.340537  0.006513  0.002402     5  0.949025  0.002740
+                no_cross            standard 1.0             0.003455     5  0.715402  0.003942  0.001717     5  0.928330  0.001959        0.0     5  14378.0  0.0    0.011321     5  0.3164  0.012915     0.007995     5  0.6508  0.009121      0.005051     5  0.8372  0.005762     0.006022     5  0.7948  0.006870  0.008085     5  0.429653  0.009224  0.000754     5  0.954680  0.000860  0.004867     5  0.698612  0.005552  0.001732     5  0.917500  0.001976       0.0     5  14592.0  0.0   0.011760     5  0.244  0.013416    0.011344     5  0.569  0.012942     0.005368     5  0.820  0.006124    0.006930     5  0.780  0.007906  0.006884     5  0.342509  0.007853  0.000930     5  0.950657  0.001061
+                no_gate             standard 1.0             0.010564     5  0.705506  0.012052  0.006930     5  0.920699  0.007906        0.0     5  14378.0  0.0    0.007937     5  0.3260  0.009055     0.007271     5  0.6496  0.008295      0.019188     5  0.8332  0.021891     0.017114     5  0.7968  0.019524  0.004179     5  0.436259  0.004767  0.002560     5  0.952141  0.002920  0.009686     5  0.685997  0.011051  0.006970     5  0.906116  0.007952       0.0     5  14592.0  0.0   0.003920     5  0.248  0.004472    0.007201     5  0.576  0.008216     0.007962     5  0.817  0.009083    0.010464     5  0.774  0.011937  0.003420     5  0.345132  0.003901  0.002499     5  0.947222  0.002851
+                no_theory_loss      standard 1.0             0.005330     5  0.715778  0.006081  0.003802     5  0.931154  0.004338        0.0     5  14378.0  0.0    0.016191     5  0.3232  0.018472     0.005460     5  0.6524  0.006229      0.010835     5  0.8396  0.012361     0.009473     5  0.7936  0.010807  0.011084     5  0.436308  0.012645  0.001337     5  0.954891  0.001525  0.006614     5  0.699779  0.007545  0.005224     5  0.920832  0.005960       0.0     5  14592.0  0.0   0.008543     5  0.248  0.009747    0.012626     5  0.573  0.014405     0.014066     5  0.818  0.016047    0.011596     5  0.780  0.013229  0.007285     5  0.347390  0.008311  0.001624     5  0.951117  0.001852
+                random_fourier_time standard 1.0             0.009430     5  0.708846  0.010758  0.004930     5  0.925413  0.005624        0.0     5  14378.0  0.0    0.006369     5  0.3164  0.007266     0.010252     5  0.6564  0.011696      0.007121     5  0.8360  0.008124     0.005111     5  0.7940  0.005831  0.004218     5  0.432651  0.004812  0.002168     5  0.953280  0.002474  0.009352     5  0.691968  0.010669  0.004610     5  0.911498  0.005259       0.0     5  14592.0  0.0   0.014733     5  0.243  0.016808    0.010090     5  0.557  0.011511     0.019746     5  0.827  0.022528    0.020179     5  0.774  0.023022  0.012260     5  0.339693  0.013987  0.002055     5  0.948748  0.002344
+                random_negative     standard 1.0             0.009222     5  0.711791  0.010521  0.003319     5  0.926323  0.003786        0.0     5  14378.0  0.0    0.006247     5  0.3116  0.007127     0.005051     5  0.6472  0.005762      0.008853     5  0.8380  0.010100     0.006272     5  0.7928  0.007155  0.006155     5  0.427961  0.007022  0.001906     5  0.953916  0.002175  0.008014     5  0.694011  0.009142  0.003344     5  0.914986  0.003815       0.0     5  14592.0  0.0   0.016861     5  0.248  0.019235    0.008543     5  0.573  0.009747     0.008765     5  0.810  0.010000    0.010090     5  0.768  0.011511  0.009939     5  0.345607  0.011339  0.001695     5  0.949647  0.001934
+                sem_only            standard 1.0             0.009426     5  0.720950  0.010754  0.008829     5  0.927718  0.010073        0.0     5  14378.0  0.0    0.008588     5  0.3260  0.009798     0.005171     5  0.6644  0.005899      0.003841     5  0.8508  0.004382     0.008462     5  0.8088  0.009654  0.005933     5  0.439934  0.006769  0.002487     5  0.955428  0.002837  0.009035     5  0.702086  0.010308  0.009197     5  0.915187  0.010492       0.0     5  14592.0  0.0   0.005714     5  0.251  0.006519    0.003920     5  0.592  0.004472     0.009088     5  0.848  0.010368    0.015371     5  0.807  0.017536  0.009019     5  0.349455  0.010289  0.002481     5  0.950786  0.002830
+                struct_only         standard 1.0             0.000508     5  0.698002  0.000580  0.002755     5  0.906093  0.003143        0.0     5  14378.0  0.0    0.005200     5  0.3308  0.005933     0.009025     5  0.6560  0.010296      0.004036     5  0.8332  0.004604     0.003920     5  0.7920  0.004472  0.004370     5  0.440254  0.004985  0.000333     5  0.949152  0.000380  0.001815     5  0.677509  0.002071  0.002687     5  0.892198  0.003066       0.0     5  14592.0  0.0   0.004997     5  0.263  0.005701    0.011841     5  0.582  0.013509     0.012396     5  0.820  0.014142    0.011344     5  0.784  0.012942  0.003843     5  0.356765  0.004385  0.000544     5  0.944074  0.000621
+                transformer_encoder standard 1.0             0.013542     5  0.713218  0.015449  0.004694     5  0.928102  0.005355        0.0     5  14378.0  0.0    0.011293     5  0.3160  0.012884     0.004400     5  0.6488  0.005020      0.008462     5  0.8372  0.009654     0.010101     5  0.7984  0.011524  0.006610     5  0.430074  0.007540  0.002775     5  0.954248  0.003166  0.012629     5  0.696726  0.014408  0.005403     5  0.917053  0.006164       0.0     5  14592.0  0.0   0.010278     5  0.245  0.011726    0.009088     5  0.557  0.010368     0.016399     5  0.805  0.018708    0.007334     5  0.763  0.008367  0.006409     5  0.341674  0.007311  0.002757     5  0.950169  0.003146
+                wavelet_time        standard 1.0             0.009460     5  0.714704  0.010793  0.004110     5  0.927968  0.004688        0.0     5  14378.0  0.0    0.007801     5  0.3172  0.008899     0.003841     5  0.6472  0.004382      0.009075     5  0.8328  0.010354     0.008444     5  0.7896  0.009633  0.005289     5  0.430439  0.006034  0.001984     5  0.954524  0.002263  0.009348     5  0.696724  0.010665  0.003846     5  0.915041  0.004388       0.0     5  14592.0  0.0   0.009501     5  0.241  0.010840    0.010090     5  0.567  0.011511     0.010090     5  0.813  0.011511    0.009501     5  0.766  0.010840  0.005470     5  0.341983  0.006240  0.001923     5  0.950032  0.002194
+paired test_ap: ssptgfm/full vs ssptgfm/identity_time: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': 2.734039279346167}
+paired test_ap: ssptgfm/full vs ssptgfm/lstm_encoder: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': 0.8732999698866395}
+paired test_ap: ssptgfm/full vs ssptgfm/no_cross: {'n': 5.0, 'wilcoxon_p': 0.625, 'cohens_dz': 0.18814255304404498}
+paired test_ap: ssptgfm/full vs ssptgfm/no_gate: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': 0.7547748147186993}
+paired test_ap: ssptgfm/full vs ssptgfm/no_theory_loss: {'n': 5.0, 'wilcoxon_p': 0.625, 'cohens_dz': 0.17464718074458332}
+paired test_ap: ssptgfm/full vs ssptgfm/random_fourier_time: {'n': 5.0, 'wilcoxon_p': 0.125, 'cohens_dz': 1.209340656898382}
+paired test_ap: ssptgfm/full vs ssptgfm/random_negative: {'n': 5.0, 'wilcoxon_p': 0.625, 'cohens_dz': 0.3490742600936167}
+paired test_ap: ssptgfm/full vs ssptgfm/sem_only: {'n': 5.0, 'wilcoxon_p': 0.3125, 'cohens_dz': -0.4983109213553398}
+paired test_ap: ssptgfm/full vs ssptgfm/struct_only: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': 2.816541201943328}
+paired test_ap: ssptgfm/full vs ssptgfm/transformer_encoder: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': 0.1800414014287422}
+paired test_ap: ssptgfm/full vs ssptgfm/wavelet_time: {'n': 5.0, 'wilcoxon_p': 0.625, 'cohens_dz': 0.2060475400336039}
+paired test_auc: ssptgfm/full vs ssptgfm/identity_time: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': 4.380742270023601}
+paired test_auc: ssptgfm/full vs ssptgfm/lstm_encoder: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': 0.9826942347862723}
+paired test_auc: ssptgfm/full vs ssptgfm/no_cross: {'n': 5.0, 'wilcoxon_p': 0.625, 'cohens_dz': 0.16760611171965084}
+paired test_auc: ssptgfm/full vs ssptgfm/no_gate: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': 0.8585143895547833}
+paired test_auc: ssptgfm/full vs ssptgfm/no_theory_loss: {'n': 5.0, 'wilcoxon_p': 0.1875, 'cohens_dz': -0.8786324883062558}
+paired test_auc: ssptgfm/full vs ssptgfm/random_fourier_time: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': 1.262400442978234}
+paired test_auc: ssptgfm/full vs ssptgfm/random_negative: {'n': 5.0, 'wilcoxon_p': 0.4375, 'cohens_dz': 0.47405173247891447}
+paired test_auc: ssptgfm/full vs ssptgfm/sem_only: {'n': 5.0, 'wilcoxon_p': 0.8125, 'cohens_dz': 0.1193968685999876}
+paired test_auc: ssptgfm/full vs ssptgfm/struct_only: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': 9.213465313989353}
+paired test_auc: ssptgfm/full vs ssptgfm/transformer_encoder: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': 0.09032703333297322}
+paired test_auc: ssptgfm/full vs ssptgfm/wavelet_time: {'n': 5.0, 'wilcoxon_p': 0.625, 'cohens_dz': 0.209344256413951}
+/root/miniconda3/lib/python3.10/site-packages/scipy/stats/_wilcoxon.py:172: RuntimeWarning: invalid value encountered in scalar divide
+  z = (r_plus - mn) / se
+paired test_edges: ssptgfm/full vs ssptgfm/identity_time: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': 0.0}
+paired test_edges: ssptgfm/full vs ssptgfm/lstm_encoder: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': 0.0}
+paired test_edges: ssptgfm/full vs ssptgfm/no_cross: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': 0.0}
+paired test_edges: ssptgfm/full vs ssptgfm/no_gate: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': 0.0}
+paired test_edges: ssptgfm/full vs ssptgfm/no_theory_loss: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': 0.0}
+paired test_edges: ssptgfm/full vs ssptgfm/random_fourier_time: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': 0.0}
+paired test_edges: ssptgfm/full vs ssptgfm/random_negative: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': 0.0}
+paired test_edges: ssptgfm/full vs ssptgfm/sem_only: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': 0.0}
+paired test_edges: ssptgfm/full vs ssptgfm/struct_only: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': 0.0}
+paired test_edges: ssptgfm/full vs ssptgfm/transformer_encoder: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': 0.0}
+paired test_edges: ssptgfm/full vs ssptgfm/wavelet_time: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': 0.0}
+paired test_hits@1: ssptgfm/full vs ssptgfm/identity_time: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': -2.493000955363006}
+paired test_hits@1: ssptgfm/full vs ssptgfm/lstm_encoder: {'n': 5.0, 'wilcoxon_p': 0.25, 'cohens_dz': -0.7302967433402214}
+paired test_hits@1: ssptgfm/full vs ssptgfm/no_cross: {'n': 5.0, 'wilcoxon_p': 0.75, 'cohens_dz': -0.12565617248750865}
+paired test_hits@1: ssptgfm/full vs ssptgfm/no_gate: {'n': 5.0, 'wilcoxon_p': 0.1875, 'cohens_dz': -0.9730124597112035}
+paired test_hits@1: ssptgfm/full vs ssptgfm/no_theory_loss: {'n': 5.0, 'wilcoxon_p': 0.375, 'cohens_dz': -0.42519520276218714}
+paired test_hits@1: ssptgfm/full vs ssptgfm/random_fourier_time: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': -0.09118161963803474}
+paired test_hits@1: ssptgfm/full vs ssptgfm/random_negative: {'n': 5.0, 'wilcoxon_p': 0.625, 'cohens_dz': 0.28214691138993464}
+paired test_hits@1: ssptgfm/full vs ssptgfm/sem_only: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': -1.6825777726943407}
+paired test_hits@1: ssptgfm/full vs ssptgfm/struct_only: {'n': 5.0, 'wilcoxon_p': 0.125, 'cohens_dz': -1.2875424915609317}
+paired test_hits@1: ssptgfm/full vs ssptgfm/transformer_encoder: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': -0.053074489243427524}
+paired test_hits@1: ssptgfm/full vs ssptgfm/wavelet_time: {'n': 5.0, 'wilcoxon_p': 0.875, 'cohens_dz': -0.17407765595569782}
+paired test_hits@10: ssptgfm/full vs ssptgfm/identity_time: {'n': 5.0, 'wilcoxon_p': 0.5, 'cohens_dz': 0.32291947253670056}
+paired test_hits@10: ssptgfm/full vs ssptgfm/lstm_encoder: {'n': 5.0, 'wilcoxon_p': 0.3125, 'cohens_dz': 0.6469966392206306}
+paired test_hits@10: ssptgfm/full vs ssptgfm/no_cross: {'n': 5.0, 'wilcoxon_p': 0.5, 'cohens_dz': -0.35506342941861224}
+paired test_hits@10: ssptgfm/full vs ssptgfm/no_gate: {'n': 5.0, 'wilcoxon_p': 0.75, 'cohens_dz': -0.20826304035018697}
+paired test_hits@10: ssptgfm/full vs ssptgfm/no_theory_loss: {'n': 5.0, 'wilcoxon_p': 0.375, 'cohens_dz': -0.46848748060169065}
+paired test_hits@10: ssptgfm/full vs ssptgfm/random_fourier_time: {'n': 5.0, 'wilcoxon_p': 0.3125, 'cohens_dz': -0.49806189439143317}
+paired test_hits@10: ssptgfm/full vs ssptgfm/random_negative: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': 0.0}
+paired test_hits@10: ssptgfm/full vs ssptgfm/sem_only: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': -1.562345701952433}
+paired test_hits@10: ssptgfm/full vs ssptgfm/struct_only: {'n': 5.0, 'wilcoxon_p': 0.25, 'cohens_dz': -0.8499341502148814}
+paired test_hits@10: ssptgfm/full vs ssptgfm/transformer_encoder: {'n': 5.0, 'wilcoxon_p': 0.8125, 'cohens_dz': -0.14208896666507756}
+paired test_hits@10: ssptgfm/full vs ssptgfm/wavelet_time: {'n': 5.0, 'wilcoxon_p': 0.875, 'cohens_dz': 0.0}
+paired test_hits@100: ssptgfm/full vs ssptgfm/identity_time: {'n': 5.0, 'wilcoxon_p': 0.125, 'cohens_dz': -1.1780176703975849}
+paired test_hits@100: ssptgfm/full vs ssptgfm/lstm_encoder: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': -0.09336330661342156}
+paired test_hits@100: ssptgfm/full vs ssptgfm/no_cross: {'n': 5.0, 'wilcoxon_p': 0.5, 'cohens_dz': -0.48686449556014766}
+paired test_hits@100: ssptgfm/full vs ssptgfm/no_gate: {'n': 5.0, 'wilcoxon_p': 0.8125, 'cohens_dz': 0.10263535498859808}
+paired test_hits@100: ssptgfm/full vs ssptgfm/no_theory_loss: {'n': 5.0, 'wilcoxon_p': 0.75, 'cohens_dz': -0.32025630761017426}
+paired test_hits@100: ssptgfm/full vs ssptgfm/random_fourier_time: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': -0.04688072309384955}
+paired test_hits@100: ssptgfm/full vs ssptgfm/random_negative: {'n': 5.0, 'wilcoxon_p': 0.6875, 'cohens_dz': -0.23670895294574146}
+paired test_hits@100: ssptgfm/full vs ssptgfm/sem_only: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': -3.0279124769804637}
+paired test_hits@100: ssptgfm/full vs ssptgfm/struct_only: {'n': 5.0, 'wilcoxon_p': 0.6875, 'cohens_dz': 0.19674775073518588}
+paired test_hits@100: ssptgfm/full vs ssptgfm/transformer_encoder: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': -0.10486450101861526}
+paired test_hits@100: ssptgfm/full vs ssptgfm/wavelet_time: {'n': 5.0, 'wilcoxon_p': 0.75, 'cohens_dz': 0.2679456508228335}
+paired test_hits@50: ssptgfm/full vs ssptgfm/identity_time: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': -1.485955758469621}
+paired test_hits@50: ssptgfm/full vs ssptgfm/lstm_encoder: {'n': 5.0, 'wilcoxon_p': 0.75, 'cohens_dz': 0.23249527748763857}
+paired test_hits@50: ssptgfm/full vs ssptgfm/no_cross: {'n': 5.0, 'wilcoxon_p': 0.625, 'cohens_dz': -0.3516590993240536}
+paired test_hits@50: ssptgfm/full vs ssptgfm/no_gate: {'n': 5.0, 'wilcoxon_p': 0.5, 'cohens_dz': -0.31363814071700696}
+paired test_hits@50: ssptgfm/full vs ssptgfm/no_theory_loss: {'n': 5.0, 'wilcoxon_p': 0.5625, 'cohens_dz': -0.16299774747724835}
+paired test_hits@50: ssptgfm/full vs ssptgfm/random_fourier_time: {'n': 5.0, 'wilcoxon_p': 0.6875, 'cohens_dz': -0.3272672075485291}
+paired test_hits@50: ssptgfm/full vs ssptgfm/random_negative: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': -0.18257418583505539}
+paired test_hits@50: ssptgfm/full vs ssptgfm/sem_only: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': -1.9826659998610672}
+paired test_hits@50: ssptgfm/full vs ssptgfm/struct_only: {'n': 5.0, 'wilcoxon_p': 0.875, 'cohens_dz': -0.05847053462046861}
+paired test_hits@50: ssptgfm/full vs ssptgfm/transformer_encoder: {'n': 5.0, 'wilcoxon_p': 0.5, 'cohens_dz': -0.4616902584383183}
+paired test_hits@50: ssptgfm/full vs ssptgfm/wavelet_time: {'n': 5.0, 'wilcoxon_p': 0.75, 'cohens_dz': 0.2201927530252721}
+paired test_mrr: ssptgfm/full vs ssptgfm/identity_time: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': -2.3287606746439145}
+paired test_mrr: ssptgfm/full vs ssptgfm/lstm_encoder: {'n': 5.0, 'wilcoxon_p': 0.125, 'cohens_dz': -0.8701701421784835}
+paired test_mrr: ssptgfm/full vs ssptgfm/no_cross: {'n': 5.0, 'wilcoxon_p': 0.4375, 'cohens_dz': -0.3188523120344233}
+paired test_mrr: ssptgfm/full vs ssptgfm/no_gate: {'n': 5.0, 'wilcoxon_p': 0.125, 'cohens_dz': -1.1454830489133534}
+paired test_mrr: ssptgfm/full vs ssptgfm/no_theory_loss: {'n': 5.0, 'wilcoxon_p': 0.3125, 'cohens_dz': -0.8077871976159475}
+paired test_mrr: ssptgfm/full vs ssptgfm/random_fourier_time: {'n': 5.0, 'wilcoxon_p': 0.3125, 'cohens_dz': -0.5735509569986644}
+paired test_mrr: ssptgfm/full vs ssptgfm/random_negative: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': -0.026164223485602975}
+paired test_mrr: ssptgfm/full vs ssptgfm/sem_only: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': -3.8277927803268135}
+paired test_mrr: ssptgfm/full vs ssptgfm/struct_only: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': -1.3830079386135723}
+paired test_mrr: ssptgfm/full vs ssptgfm/transformer_encoder: {'n': 5.0, 'wilcoxon_p': 0.625, 'cohens_dz': -0.21892628350348037}
+paired test_mrr: ssptgfm/full vs ssptgfm/wavelet_time: {'n': 5.0, 'wilcoxon_p': 0.4375, 'cohens_dz': -0.4339655059460144}
+paired test_ndcg: ssptgfm/full vs ssptgfm/identity_time: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': 2.726857457626962}
+paired test_ndcg: ssptgfm/full vs ssptgfm/lstm_encoder: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': 0.951093126145407}
+paired test_ndcg: ssptgfm/full vs ssptgfm/no_cross: {'n': 5.0, 'wilcoxon_p': 0.625, 'cohens_dz': 0.19650315393786216}
+paired test_ndcg: ssptgfm/full vs ssptgfm/no_gate: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': 0.7931915703432899}
+paired test_ndcg: ssptgfm/full vs ssptgfm/no_theory_loss: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': 0.09193161694886821}
+paired test_ndcg: ssptgfm/full vs ssptgfm/random_fourier_time: {'n': 5.0, 'wilcoxon_p': 0.125, 'cohens_dz': 1.234326359428767}
+paired test_ndcg: ssptgfm/full vs ssptgfm/random_negative: {'n': 5.0, 'wilcoxon_p': 0.8125, 'cohens_dz': 0.3611238463922699}
+paired test_ndcg: ssptgfm/full vs ssptgfm/sem_only: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': -0.18097675544715036}
+paired test_ndcg: ssptgfm/full vs ssptgfm/struct_only: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': 4.8816719233168175}
+paired test_ndcg: ssptgfm/full vs ssptgfm/transformer_encoder: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': 0.1741736157251578}
+paired test_ndcg: ssptgfm/full vs ssptgfm/wavelet_time: {'n': 5.0, 'wilcoxon_p': 0.625, 'cohens_dz': 0.21807549556461076}
+paired val_ap: ssptgfm/full vs ssptgfm/identity_time: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': 2.5538675015207213}
+paired val_ap: ssptgfm/full vs ssptgfm/lstm_encoder: {'n': 5.0, 'wilcoxon_p': 0.3125, 'cohens_dz': 0.694979741739512}
+paired val_ap: ssptgfm/full vs ssptgfm/no_cross: {'n': 5.0, 'wilcoxon_p': 0.4375, 'cohens_dz': 0.07044077462432254}
+paired val_ap: ssptgfm/full vs ssptgfm/no_gate: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': 0.9322664200931731}
+paired val_ap: ssptgfm/full vs ssptgfm/no_theory_loss: {'n': 5.0, 'wilcoxon_p': 0.8125, 'cohens_dz': -0.10533442228185864}
+paired val_ap: ssptgfm/full vs ssptgfm/random_fourier_time: {'n': 5.0, 'wilcoxon_p': 0.125, 'cohens_dz': 0.8403368479163098}
+paired val_ap: ssptgfm/full vs ssptgfm/random_negative: {'n': 5.0, 'wilcoxon_p': 0.8125, 'cohens_dz': 0.341771758919134}
+paired val_ap: ssptgfm/full vs ssptgfm/sem_only: {'n': 5.0, 'wilcoxon_p': 0.3125, 'cohens_dz': -0.42077849772989045}
+paired val_ap: ssptgfm/full vs ssptgfm/struct_only: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': 3.4540097632383024}
+paired val_ap: ssptgfm/full vs ssptgfm/transformer_encoder: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': 0.11623796320898415}
+paired val_ap: ssptgfm/full vs ssptgfm/wavelet_time: {'n': 5.0, 'wilcoxon_p': 0.625, 'cohens_dz': 0.20987668701483844}
+paired val_auc: ssptgfm/full vs ssptgfm/identity_time: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': 4.424771251583966}
+paired val_auc: ssptgfm/full vs ssptgfm/lstm_encoder: {'n': 5.0, 'wilcoxon_p': 0.125, 'cohens_dz': 0.8909999109508857}
+paired val_auc: ssptgfm/full vs ssptgfm/no_cross: {'n': 5.0, 'wilcoxon_p': 0.625, 'cohens_dz': -0.2766852360596715}
+paired val_auc: ssptgfm/full vs ssptgfm/no_gate: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': 1.1893871126485978}
+paired val_auc: ssptgfm/full vs ssptgfm/no_theory_loss: {'n': 5.0, 'wilcoxon_p': 0.125, 'cohens_dz': -1.1715646893493064}
+paired val_auc: ssptgfm/full vs ssptgfm/random_fourier_time: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': 1.2525308793027725}
+paired val_auc: ssptgfm/full vs ssptgfm/random_negative: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': 0.2704662381299272}
+paired val_auc: ssptgfm/full vs ssptgfm/sem_only: {'n': 5.0, 'wilcoxon_p': 0.8125, 'cohens_dz': 0.14610274608475607}
+paired val_auc: ssptgfm/full vs ssptgfm/struct_only: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': 12.368414614015572}
+paired val_auc: ssptgfm/full vs ssptgfm/transformer_encoder: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': -0.054116900201494886}
+paired val_auc: ssptgfm/full vs ssptgfm/wavelet_time: {'n': 5.0, 'wilcoxon_p': 0.625, 'cohens_dz': 0.2977641123783776}
+/root/miniconda3/lib/python3.10/site-packages/scipy/stats/_wilcoxon.py:172: RuntimeWarning: invalid value encountered in scalar divide
+  z = (r_plus - mn) / se
+paired val_edges: ssptgfm/full vs ssptgfm/identity_time: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': 0.0}
+paired val_edges: ssptgfm/full vs ssptgfm/lstm_encoder: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': 0.0}
+paired val_edges: ssptgfm/full vs ssptgfm/no_cross: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': 0.0}
+paired val_edges: ssptgfm/full vs ssptgfm/no_gate: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': 0.0}
+paired val_edges: ssptgfm/full vs ssptgfm/no_theory_loss: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': 0.0}
+paired val_edges: ssptgfm/full vs ssptgfm/random_fourier_time: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': 0.0}
+paired val_edges: ssptgfm/full vs ssptgfm/random_negative: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': 0.0}
+paired val_edges: ssptgfm/full vs ssptgfm/sem_only: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': 0.0}
+paired val_edges: ssptgfm/full vs ssptgfm/struct_only: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': 0.0}
+paired val_edges: ssptgfm/full vs ssptgfm/transformer_encoder: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': 0.0}
+paired val_edges: ssptgfm/full vs ssptgfm/wavelet_time: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': 0.0}
+paired val_hits@1: ssptgfm/full vs ssptgfm/identity_time: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': -1.095445115010332}
+paired val_hits@1: ssptgfm/full vs ssptgfm/lstm_encoder: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': 0.06780635036208145}
+paired val_hits@1: ssptgfm/full vs ssptgfm/no_cross: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': 0.13483997249264842}
+paired val_hits@1: ssptgfm/full vs ssptgfm/no_gate: {'n': 5.0, 'wilcoxon_p': 0.6875, 'cohens_dz': -0.17848923519261864}
+paired val_hits@1: ssptgfm/full vs ssptgfm/no_theory_loss: {'n': 5.0, 'wilcoxon_p': 0.5625, 'cohens_dz': -0.23008949665421077}
+paired val_hits@1: ssptgfm/full vs ssptgfm/random_fourier_time: {'n': 5.0, 'wilcoxon_p': 0.5625, 'cohens_dz': 0.07327433054473123}
+paired val_hits@1: ssptgfm/full vs ssptgfm/random_negative: {'n': 5.0, 'wilcoxon_p': 0.75, 'cohens_dz': -0.14638501094228012}
+paired val_hits@1: ssptgfm/full vs ssptgfm/sem_only: {'n': 5.0, 'wilcoxon_p': 0.375, 'cohens_dz': -0.5026246899500346}
+paired val_hits@1: ssptgfm/full vs ssptgfm/struct_only: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': -1.56374007394705}
+paired val_hits@1: ssptgfm/full vs ssptgfm/transformer_encoder: {'n': 5.0, 'wilcoxon_p': 0.875, 'cohens_dz': 3.5108334685766997e-16}
+paired val_hits@1: ssptgfm/full vs ssptgfm/wavelet_time: {'n': 5.0, 'wilcoxon_p': 0.75, 'cohens_dz': 0.3090669637145023}
+paired val_hits@10: ssptgfm/full vs ssptgfm/identity_time: {'n': 5.0, 'wilcoxon_p': 0.625, 'cohens_dz': 0.33028912953790746}
+paired val_hits@10: ssptgfm/full vs ssptgfm/lstm_encoder: {'n': 5.0, 'wilcoxon_p': 0.5625, 'cohens_dz': 0.2738612787525849}
+paired val_hits@10: ssptgfm/full vs ssptgfm/no_cross: {'n': 5.0, 'wilcoxon_p': 0.8125, 'cohens_dz': -0.3585685828003157}
+paired val_hits@10: ssptgfm/full vs ssptgfm/no_gate: {'n': 5.0, 'wilcoxon_p': 0.125, 'cohens_dz': -0.9428090415820625}
+paired val_hits@10: ssptgfm/full vs ssptgfm/no_theory_loss: {'n': 5.0, 'wilcoxon_p': 0.3125, 'cohens_dz': -0.6081211398682962}
+paired val_hits@10: ssptgfm/full vs ssptgfm/random_fourier_time: {'n': 5.0, 'wilcoxon_p': 0.25, 'cohens_dz': 0.5050921799396826}
+paired val_hits@10: ssptgfm/full vs ssptgfm/random_negative: {'n': 5.0, 'wilcoxon_p': 0.125, 'cohens_dz': -1.565247584249854}
+paired val_hits@10: ssptgfm/full vs ssptgfm/sem_only: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': -2.1780403231168224}
+paired val_hits@10: ssptgfm/full vs ssptgfm/struct_only: {'n': 5.0, 'wilcoxon_p': 0.1875, 'cohens_dz': -1.0274580785086962}
+paired val_hits@10: ssptgfm/full vs ssptgfm/transformer_encoder: {'n': 5.0, 'wilcoxon_p': 0.25, 'cohens_dz': 0.6954006683576308}
+paired val_hits@10: ssptgfm/full vs ssptgfm/wavelet_time: {'n': 5.0, 'wilcoxon_p': 0.5625, 'cohens_dz': -0.06593804733957902}
+paired val_hits@100: ssptgfm/full vs ssptgfm/identity_time: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': -1.9437883766017496}
+paired val_hits@100: ssptgfm/full vs ssptgfm/lstm_encoder: {'n': 5.0, 'wilcoxon_p': 0.25, 'cohens_dz': -0.7893522173763262}
+paired val_hits@100: ssptgfm/full vs ssptgfm/no_cross: {'n': 5.0, 'wilcoxon_p': 0.25, 'cohens_dz': -0.7302967433402223}
+paired val_hits@100: ssptgfm/full vs ssptgfm/no_gate: {'n': 5.0, 'wilcoxon_p': 0.8125, 'cohens_dz': -0.30860669992418577}
+paired val_hits@100: ssptgfm/full vs ssptgfm/no_theory_loss: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': -0.2390457218668806}
+paired val_hits@100: ssptgfm/full vs ssptgfm/random_fourier_time: {'n': 5.0, 'wilcoxon_p': 0.375, 'cohens_dz': -0.4965635331614213}
+paired val_hits@100: ssptgfm/full vs ssptgfm/random_negative: {'n': 5.0, 'wilcoxon_p': 0.875, 'cohens_dz': 0.14804664203952184}
+paired val_hits@100: ssptgfm/full vs ssptgfm/sem_only: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': -1.8467610337532805}
+paired val_hits@100: ssptgfm/full vs ssptgfm/struct_only: {'n': 5.0, 'wilcoxon_p': 0.375, 'cohens_dz': -0.4759712938469855}
+paired val_hits@100: ssptgfm/full vs ssptgfm/transformer_encoder: {'n': 5.0, 'wilcoxon_p': 0.5, 'cohens_dz': 0.35220822379863775}
+paired val_hits@100: ssptgfm/full vs ssptgfm/wavelet_time: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': -0.18257418583506044}
+paired val_hits@50: ssptgfm/full vs ssptgfm/identity_time: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': -2.1651339168856922}
+paired val_hits@50: ssptgfm/full vs ssptgfm/lstm_encoder: {'n': 5.0, 'wilcoxon_p': 0.25, 'cohens_dz': -0.6954006683576301}
+paired val_hits@50: ssptgfm/full vs ssptgfm/no_cross: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': -1.8877596148970779}
+paired val_hits@50: ssptgfm/full vs ssptgfm/no_gate: {'n': 5.0, 'wilcoxon_p': 0.25, 'cohens_dz': -0.6949955884209111}
+paired val_hits@50: ssptgfm/full vs ssptgfm/no_theory_loss: {'n': 5.0, 'wilcoxon_p': 0.25, 'cohens_dz': -0.7706746355884525}
+paired val_hits@50: ssptgfm/full vs ssptgfm/random_fourier_time: {'n': 5.0, 'wilcoxon_p': 0.5, 'cohens_dz': -0.2568645196271742}
+paired val_hits@50: ssptgfm/full vs ssptgfm/random_negative: {'n': 5.0, 'wilcoxon_p': 0.75, 'cohens_dz': -0.19289712886816485}
+paired val_hits@50: ssptgfm/full vs ssptgfm/sem_only: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': -1.602002563587357}
+paired val_hits@50: ssptgfm/full vs ssptgfm/struct_only: {'n': 5.0, 'wilcoxon_p': 0.125, 'cohens_dz': -1.1217185151295603}
+paired val_hits@50: ssptgfm/full vs ssptgfm/transformer_encoder: {'n': 5.0, 'wilcoxon_p': 0.625, 'cohens_dz': 0.3302891295379082}
+paired val_hits@50: ssptgfm/full vs ssptgfm/wavelet_time: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': 0.0}
+paired val_mrr: ssptgfm/full vs ssptgfm/identity_time: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': -1.6628231313467687}
+paired val_mrr: ssptgfm/full vs ssptgfm/lstm_encoder: {'n': 5.0, 'wilcoxon_p': 0.4375, 'cohens_dz': 0.45592125445697457}
+paired val_mrr: ssptgfm/full vs ssptgfm/no_cross: {'n': 5.0, 'wilcoxon_p': 0.625, 'cohens_dz': 0.3499552049179064}
+paired val_mrr: ssptgfm/full vs ssptgfm/no_gate: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': -0.1514301882773523}
+paired val_mrr: ssptgfm/full vs ssptgfm/no_theory_loss: {'n': 5.0, 'wilcoxon_p': 0.3125, 'cohens_dz': -0.4992173731615785}
+paired val_mrr: ssptgfm/full vs ssptgfm/random_fourier_time: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': 0.259072592159141}
+paired val_mrr: ssptgfm/full vs ssptgfm/random_negative: {'n': 5.0, 'wilcoxon_p': 0.625, 'cohens_dz': -0.11194254356610137}
+paired val_mrr: ssptgfm/full vs ssptgfm/sem_only: {'n': 5.0, 'wilcoxon_p': 0.4375, 'cohens_dz': -0.5254714077238}
+paired val_mrr: ssptgfm/full vs ssptgfm/struct_only: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': -2.158181764134859}
+paired val_mrr: ssptgfm/full vs ssptgfm/transformer_encoder: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': 0.26733732738781385}
+paired val_mrr: ssptgfm/full vs ssptgfm/wavelet_time: {'n': 5.0, 'wilcoxon_p': 0.4375, 'cohens_dz': 0.3496014284525481}
+paired val_ndcg: ssptgfm/full vs ssptgfm/identity_time: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': 2.5769972155814256}
+paired val_ndcg: ssptgfm/full vs ssptgfm/lstm_encoder: {'n': 5.0, 'wilcoxon_p': 0.3125, 'cohens_dz': 0.7694746902214878}
+paired val_ndcg: ssptgfm/full vs ssptgfm/no_cross: {'n': 5.0, 'wilcoxon_p': 0.8125, 'cohens_dz': 0.004467408184628203}
+paired val_ndcg: ssptgfm/full vs ssptgfm/no_gate: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': 1.0071769136010897}
+paired val_ndcg: ssptgfm/full vs ssptgfm/no_theory_loss: {'n': 5.0, 'wilcoxon_p': 0.4375, 'cohens_dz': -0.3855306475243746}
+paired val_ndcg: ssptgfm/full vs ssptgfm/random_fourier_time: {'n': 5.0, 'wilcoxon_p': 0.125, 'cohens_dz': 1.0361104087770665}
+paired val_ndcg: ssptgfm/full vs ssptgfm/random_negative: {'n': 5.0, 'wilcoxon_p': 0.8125, 'cohens_dz': 0.3262862862444819}
+paired val_ndcg: ssptgfm/full vs ssptgfm/sem_only: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': -0.05659306776868715}
+paired val_ndcg: ssptgfm/full vs ssptgfm/struct_only: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': 5.709959403881276}
+paired val_ndcg: ssptgfm/full vs ssptgfm/transformer_encoder: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': 0.10986973571484783}
+paired val_ndcg: ssptgfm/full vs ssptgfm/wavelet_time: {'n': 5.0, 'wilcoxon_p': 0.625, 'cohens_dz': 0.2514570027846178}

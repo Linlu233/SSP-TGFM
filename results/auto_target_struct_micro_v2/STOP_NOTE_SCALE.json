@@ -1,0 +1,8 @@
+{
+  "reason": "stop micro v2 to normalize struct residual inputs; raw Unix delta_t caused huge residual/rank/aux losses on ICEWS14",
+  "pids": [
+    792474,
+    792578,
+    792579
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "ablation": {
+    "enabled": false
+  },
+  "baselines": [],
+  "data": {
+    "format": "csv",
+    "name": "icews05-15",
+    "path": "data/raw/icews05-15"
+  },
+  "device": "cuda",
+  "eval": {
+    "filtered_rank_edges": 50
+  },
+  "few_shot_ratios": [
+    1.0
+  ],
+  "model": {
+    "adapter_rank": 12,
+    "hidden_dim": 96,
+    "prompt_heads": 4,
+    "prompt_tokens": 4,
+    "relation_rank": 12,
+    "temporal_encoder": "mlp",
+    "temporal_layers": 1,
+    "time_dim": 32,
+    "time_encoder": "fourier",
+    "use_cross": true,
+    "use_gate": true,
+    "use_sem": true,
+    "use_struct": true,
+    "use_variational": true
+  },
+  "output_dir": "results/ssptgfm_search_icews05_15_all_losses",
+  "require_cuda": true,
+  "seeds": [
+    1,
+    2
+  ],
+  "split": {
+    "mode": "time",
+    "test_ratio": 0.15,
+    "val_ratio": 0.15
+  },
+  "strict_full_formula": true,
+  "text": {
+    "backend": "hashing",
+    "cache_dir": "data/processed/text_cache",
+    "dim": 384
+  },
+  "train": {
+    "align_temperature": 0.2,
+    "batch_size": 4096,
+    "epochs": 8,
+    "filter_scope": "exact",
+    "grad_clip": 1.0,
+    "lambda_align": 0.05,
+    "lambda_kl": 0.0005,
+    "lambda_meta": 0.005,
+    "lambda_ood": 0.001,
+    "lr": 0.001,
+    "meta_lr": 0.01,
+    "meta_query_size": 4,
+    "meta_support_size": 4,
+    "negative_mode_eval": "filtered",
+    "negative_mode_train": "filtered",
+    "num_neg_eval": 10,
+    "num_neg_train": 1,
+    "patience": 3,
+    "weight_decay": 0.0001
+  }
+}

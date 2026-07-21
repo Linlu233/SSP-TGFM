@@ -1,0 +1,64 @@
+{
+  "config": "configs/optimization_attempts/ssptgfm_search_icews14_formula_rank.yaml",
+  "leakage_control": "history_pool is train for validation and train+validation for test, with strict per-query causal cutoff",
+  "num_neg": 25,
+  "rank_edges": 100,
+  "rows": [
+    {
+      "name": "exact",
+      "val_ap": 0.4246282560570859,
+      "val_auc": 0.7081886121022514,
+      "val_hits@1": 0.205,
+      "val_hits@10": 0.455,
+      "val_hits@100": 0.55,
+      "val_hits@50": 0.54,
+      "val_mrr": 0.28920379756969733,
+      "val_ndcg": 0.8795928988752482
+    },
+    {
+      "name": "pair",
+      "val_ap": 0.6065375930906509,
+      "val_auc": 0.8243647388048486,
+      "val_hits@1": 0.15,
+      "val_hits@10": 0.5,
+      "val_hits@100": 0.745,
+      "val_hits@50": 0.715,
+      "val_mrr": 0.2544516493901743,
+      "val_ndcg": 0.9271990102392064
+    },
+    {
+      "name": "rel_cond",
+      "val_ap": 0.49776593336204966,
+      "val_auc": 0.7665693410472454,
+      "val_hits@1": 0.255,
+      "val_hits@10": 0.53,
+      "val_hits@100": 0.785,
+      "val_hits@50": 0.73,
+      "val_mrr": 0.3464053534386018,
+      "val_ndcg": 0.8966239623902199
+    },
+    {
+      "name": "rank_heavy",
+      "val_ap": 0.6140432610778063,
+      "val_auc": 0.8220312250148484,
+      "val_hits@1": 0.25,
+      "val_hits@10": 0.575,
+      "val_hits@100": 0.81,
+      "val_hits@50": 0.765,
+      "val_mrr": 0.3506294680682069,
+      "val_ndcg": 0.9244587608553471
+    },
+    {
+      "name": "copy_heavy",
+      "val_ap": 0.6261429889223824,
+      "val_auc": 0.8263284248218202,
+      "val_hits@1": 0.245,
+      "val_hits@10": 0.55,
+      "val_hits@100": 0.81,
+      "val_hits@50": 0.78,
+      "val_mrr": 0.34308231899719593,
+      "val_ndcg": 0.9270393081750806
+    }
+  ],
+  "split": "val"
+}

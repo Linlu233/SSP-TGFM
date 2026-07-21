@@ -1,0 +1,41 @@
+{
+  "environment": {
+    "cuda_available": true,
+    "cuda_capability": [
+      7,
+      0
+    ],
+    "cuda_device": "Tesla V100-PCIE-32GB",
+    "python": "3.10.8",
+    "torch": "2.5.1+cu121"
+  },
+  "rows": [
+    {
+      "ablation": "full",
+      "allocated_mb": 17.06298828125,
+      "dataset": "synthetic",
+      "few_shot_ratio": 1.0,
+      "max_allocated_mb": 22.15283203125,
+      "params_total": 98256,
+      "params_trainable": 98256,
+      "reserved_mb": 26.0,
+      "rough_forward_flops": 3142656,
+      "seed": 1,
+      "test_ap": 0.2017646595909241,
+      "test_auc": 0.4777582908163266,
+      "test_edges": 56,
+      "test_hits@1": 0.0,
+      "test_hits@10": 0.05,
+      "test_hits@100": 1.0,
+      "test_hits@50": 0.85,
+      "test_mrr": 0.04459727148946427,
+      "test_ndcg": 0.6266541341147048,
+      "train_edges": 248,
+      "train_eval_time_sec": 5.34414155036211,
+      "val_ap": 0.19655900655892844,
+      "val_auc": 0.4936224489795918,
+      "val_edges": 56,
+      "val_ndcg": 0.6150528183147532
+    }
+  ]
+}

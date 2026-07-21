@@ -1,0 +1,5 @@
+{'event': 'auto_target_start', 'run_root': 'results/auto_target_tgb_yago_rankloss_micro', 'target_wins': 3, 'metrics': ('auc', 'ap', 'mrr', 'hits@10', 'ndcg')}
+{'event': 'dataset_start', 'dataset': 'tgb_yago', 'existing_wins': 0}
+{'event': 'search_start', 'dataset': 'tgb_yago', 'bank': 'rankloss_micro_fastscan', 'config': 'configs/auto_target/ssptgfm_search_tgb_yago_rankloss_micro_fastscan.yaml', 'max_parallel_searches': 1}
+{'event': 'search_done', 'bank': 'rankloss_micro_fastscan'}
+{'event': 'formal_start', 'dataset': 'tgb_yago', 'bank': 'rankloss_micro_fastscan', 'formal_config': 'configs/auto_target/ssptgfm_tgb_yago_rankloss_micro_fastscan_best.yaml'}

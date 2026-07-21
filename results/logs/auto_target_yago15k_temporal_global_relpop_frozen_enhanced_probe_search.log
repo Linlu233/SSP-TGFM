@@ -1,0 +1,14 @@
+
+$ /root/miniconda3/bin/python -u scripts/search_hparams.py --config configs/auto_target/ssptgfm_search_yago15k_temporal_global_relpop_frozen_enhanced_probe.yaml --output results/global_relpop_enhanced_phase1/search_yago15k_temporal_global_relpop_frozen_enhanced_probe --resume
+runtime_device=cuda
+cuda_device=Tesla V100-PCIE-32GB
+{'event': 'candidate_seed_start', 'candidate': 'global_relpop_frozen_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp1_relpopfix48_sr0p01_sa0p001_rl0p001_m0_bpr', 'seed': 1, 'device': 'cuda', 'node_text_device': 'cuda:0'}
+{'event': 'train_seed_start', 'seed': 1, 'train_edges': 3244, 'val_edges': 6738, 'test_edges': 26719, 'num_nodes': 4197, 'num_relations': 19}
+{'event': 'train_seed_tensors_ready', 'seed': 1, 'elapsed_sec': 0.10297619551420212, 'cuda_allocated_mb': 9, 'cuda_reserved_mb': 22, 'cuda_max_allocated_mb': 9}
+{'event': 'train_known_facts_ready', 'seed': 1, 'scope': 'train', 'edges': 3244, 'elapsed_sec': 0.10510161146521568}
+{'event': 'train_known_facts_ready', 'seed': 1, 'scope': 'train_val', 'edges': 9982, 'elapsed_sec': 0.10648277029395103}
+{'event': 'train_sampler_ready', 'seed': 1, 'elapsed_sec': 0.11058837920427322}
+{'event': 'val_sampler_ready', 'seed': 1, 'elapsed_sec': 0.11425644531846046}
+{'event': 'epoch_start', 'epoch': 1, 'epochs': 3, 'batches': 118, 'time_groups': 118}
+{'event': 'train_time_group', 'epoch': 1, 'time_group': 1, 'time_groups': 118, 'batch': 0, 'batches': 118, 'time_value': 600.0, 'group_batches': 1, 'history_edges': 0, 'elapsed_sec': 0.20877915993332863, 'cuda_allocated_mb': 9, 'cuda_reserved_mb': 24, 'cuda_max_allocated_mb': 9}
+{'event': 'train_progress', 'epoch': 1, 'batch': 1, 'batches': 118, 'time_group': 1, 'time_groups': 118, 'history_edges': 0, 'pos_edges': 1, 'neg_edges': 1, 'loss_recent': 0.6802196502685547, 'elapsed_sec': 1.4918335191905499, 'avg_sec_per_batch': 1.4918335191905499, 'cuda_allocated_mb': 44, 'cuda_reserved_mb': 90, 'cuda_max_allocated_mb': 80}

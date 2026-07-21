@@ -1,0 +1,44 @@
+{
+  "datasets": {
+    "icews14": {
+      "existing": {
+        "detail": {
+          "ap": {
+            "baseline": 0.6395419317158659,
+            "value": 0.44147111002253875,
+            "win": false
+          },
+          "auc": {
+            "baseline": 0.9098328388870797,
+            "value": 0.8898559839174086,
+            "win": false
+          },
+          "hits@10": {
+            "baseline": 0.5549999999999999,
+            "value": 0.23049999999999998,
+            "win": false
+          },
+          "mrr": {
+            "baseline": 0.3121606555171064,
+            "value": 0.13286738860028183,
+            "win": false
+          },
+          "ndcg": {
+            "baseline": 0.9302301758904522,
+            "value": 0.905249244966055,
+            "win": false
+          }
+        },
+        "path": "results/optimization_attempts/ssptgfm_icews14_formula_rank_best/all_results.json",
+        "wins": 0
+      },
+      "searches": {
+        "rankloss_micro_fastscan": {
+          "best_candidate": "rankloss_micro_fastscan_h96_r12_a12_p4x4_l1_neg1_lr0p001_rl0p2_m0p5",
+          "score": 0.2351550633443268,
+          "search_results": "results/auto_target_icews14_rankloss_micro/search_icews14_rankloss_micro_fastscan/search_results.json"
+        }
+      }
+    }
+  }
+}

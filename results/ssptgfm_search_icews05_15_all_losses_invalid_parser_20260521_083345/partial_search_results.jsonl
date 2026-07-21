@@ -1,0 +1,8 @@
+{"candidate": "h96_lr1e3_meta005_ood001", "error": "Input contains NaN.", "error_type": "ValueError", "seed": 1, "status": "failed", "val_auc": NaN}
+{"candidate": "h96_lr1e3_meta005_ood001", "error": "Input contains NaN.", "error_type": "ValueError", "seed": 2, "status": "failed", "val_auc": NaN}
+{"candidate": "h96_lr7e4_meta01_ood001", "error": "Input contains NaN.", "error_type": "ValueError", "seed": 1, "status": "failed", "val_auc": NaN}
+{"candidate": "h96_lr7e4_meta01_ood001", "error": "Input contains NaN.", "error_type": "ValueError", "seed": 2, "status": "failed", "val_auc": NaN}
+{"candidate": "h128_lr7e4_meta01_ood001", "error": "Input contains NaN.", "error_type": "ValueError", "seed": 1, "status": "failed", "val_auc": NaN}
+{"candidate": "h128_lr7e4_meta01_ood001", "error": "Input contains NaN.", "error_type": "ValueError", "seed": 2, "status": "failed", "val_auc": NaN}
+{"candidate": "h128_lr5e4_align01_meta005_ood005", "error": "Input contains NaN.", "error_type": "ValueError", "seed": 1, "status": "failed", "val_auc": NaN}
+{"candidate": "h128_lr5e4_align01_meta005_ood005", "error": "Input contains NaN.", "error_type": "ValueError", "seed": 2, "status": "failed", "val_auc": NaN}

@@ -1,0 +1,149 @@
+{
+  "best_candidate": {
+    "model": {
+      "adapter_rank": 12,
+      "hidden_dim": 96,
+      "prompt_heads": 4,
+      "prompt_tokens": 4,
+      "relation_rank": 12,
+      "temporal_encoder": "mlp",
+      "temporal_layers": 1,
+      "time_encoder": "fourier",
+      "use_cross": true,
+      "use_gate": true,
+      "use_sem": true,
+      "use_struct": true,
+      "use_variational": true
+    },
+    "name": "rankloss_micro_fastscan_h96_r12_a12_p4x4_l1_neg1_lr0p001_rl0p2_m0p5",
+    "train": {
+      "align_temperature": 0.2,
+      "lambda_align": 0.005,
+      "lambda_kl": 0.0001,
+      "lambda_meta": 0.005,
+      "lambda_ood": 0.001,
+      "lambda_rank": 0.2,
+      "lr": 0.001,
+      "num_neg_train": 1,
+      "rank_margin": 0.5
+    }
+  },
+  "best_candidate_passes_minima": true,
+  "best_validation_mean": 0.2351550633443268,
+  "candidate_summaries": [
+    {
+      "candidate": "rankloss_micro_fastscan_h96_r12_a12_p4x4_l1_neg1_lr0p001_rl0p1_m0p75",
+      "means": {
+        "val_ap": 0.6907183623452423,
+        "val_auc": 0.8204752604166666,
+        "val_hits@10": 0.16666666666666666,
+        "val_mrr": 0.05925766230603643,
+        "val_ndcg": 0.9216741651003679
+      },
+      "passes_metric_minima": true,
+      "score": 0.2258741279290244,
+      "seeds_completed": 1
+    },
+    {
+      "candidate": "rankloss_micro_fastscan_h96_r12_a12_p4x4_l1_neg1_lr0p001_rl0p2_m0p5",
+      "means": {
+        "val_ap": 0.6918685629625421,
+        "val_auc": 0.8201904296875,
+        "val_hits@10": 0.16666666666666666,
+        "val_mrr": 0.07292057187425706,
+        "val_ndcg": 0.9184104673317803
+      },
+      "passes_metric_minima": true,
+      "score": 0.2351550633443268,
+      "seeds_completed": 1
+    }
+  ],
+  "dataset": "icews14",
+  "environment": {
+    "cuda_available": true,
+    "cuda_capability": [
+      7,
+      0
+    ],
+    "cuda_device": "Tesla V100-PCIE-32GB",
+    "python": "3.10.8",
+    "torch": "2.5.1+cu121"
+  },
+  "formal_allowed": true,
+  "leakage_control": {
+    "selection_uses": "validation metrics only",
+    "temporal_split": "strict train < validation < test",
+    "test_usage": "not evaluated by this script"
+  },
+  "metric_minima": {},
+  "metric_weights": {
+    "val_ap": 0.05,
+    "val_auc": 0.05,
+    "val_hits@10": 0.1,
+    "val_mrr": 0.7,
+    "val_ndcg": 0.1
+  },
+  "rows": [
+    {
+      "candidate": "rankloss_micro_fastscan_h96_r12_a12_p4x4_l1_neg1_lr0p001_rl0p1_m0p75",
+      "composite": NaN,
+      "seed": 1,
+      "train_align": 2632.331277126736,
+      "train_kl": 6076.644813368055,
+      "train_loss": 14.371159744262695,
+      "train_lp": 0.5986252049605052,
+      "train_meta": 0.5964686638779111,
+      "train_ood_reg": 0.23145595424705082,
+      "train_rank": 0.47937400771511923,
+      "train_weighted_align": 13.161656188964844,
+      "train_weighted_kl": 0.6076644672287835,
+      "train_weighted_meta": 0.002982343234018319,
+      "train_weighted_ood_reg": 0.00023145596529098434,
+      "train_weighted_rank": 0.047937401880820595,
+      "val_ap": 0.6907183623452423,
+      "val_auc": 0.8204752604166666,
+      "val_hits@1": 0.0,
+      "val_hits@10": 0.16666666666666666,
+      "val_hits@100": 0.6666666666666666,
+      "val_hits@50": 0.3333333333333333,
+      "val_mrr": 0.05925766230603643,
+      "val_ndcg": 0.9216741651003679
+    },
+    {
+      "candidate": "rankloss_micro_fastscan_h96_r12_a12_p4x4_l1_neg1_lr0p001_rl0p2_m0p5",
+      "composite": NaN,
+      "seed": 1,
+      "train_align": 2632.3652180989584,
+      "train_kl": 6079.493785264757,
+      "train_loss": 14.373959657880995,
+      "train_lp": 0.6009553048345778,
+      "train_meta": 0.5995735539330377,
+      "train_ood_reg": 0.2314464592271381,
+      "train_rank": 0.30041749344931706,
+      "train_weighted_align": 13.1618257522583,
+      "train_weighted_kl": 0.6079493645164702,
+      "train_weighted_meta": 0.002997867695780264,
+      "train_weighted_ood_reg": 0.0002314464703279858,
+      "train_weighted_rank": 0.060083499509427284,
+      "val_ap": 0.6918685629625421,
+      "val_auc": 0.8201904296875,
+      "val_hits@1": 0.0,
+      "val_hits@10": 0.16666666666666666,
+      "val_hits@100": 0.5,
+      "val_hits@50": 0.3333333333333333,
+      "val_mrr": 0.07292057187425706,
+      "val_ndcg": 0.9184104673317803
+    }
+  ],
+  "scenario": {
+    "name": "standard"
+  },
+  "selection_metric": "composite",
+  "selection_metrics": [
+    "val_auc",
+    "val_ap",
+    "val_mrr",
+    "val_hits@10",
+    "val_ndcg"
+  ]
+}

@@ -1,0 +1,4 @@
+{'event': 'download_start', 'name': 'tkgl-yago'}
+0it [00:00, ?it/s]39587it [00:00, 395614.76it/s]80116it [00:00, 401288.48it/s]120245it [00:00, 387459.07it/s]159046it [00:00, 385581.99it/s]197658it [00:00, 385762.37it/s]201090it [00:00, 388037.19it/s]
+{'event': 'download_done', 'name': 'tkgl-yago', 'edges': 402178, 'has_edge_type': True}
+{'train': 323080, 'val': 39046, 'test': 40052}

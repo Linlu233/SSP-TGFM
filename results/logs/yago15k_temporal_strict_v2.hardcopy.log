@@ -1,0 +1,24 @@
+{'event': 'train_progress', 'epoch': 1, 'batch': 1, 'batches': 118, 'time_group'
+: 1, 'time_groups': 118, 'history_edges': 0, 'pos_edges': 1, 'neg_edges': 1, 'lo
+ss_recent': 0.8921039700508118, 'elapsed_sec': 1.1046007610857487, 'avg_sec_per_
+batch': 1.1046007610857487, 'cuda_allocated_mb': 44, 'cuda_reserved_mb': 90, 'cu
+da_max_allocated_mb': 80}
+epoch 1:  85%|ˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆŠ   | 100/118 [00:24<00:05,  3.02it/s, loss=24.4]
+{'event': 'train_progress', 'epoch': 1, 'batch': 100, 'batches': 118, 'time_grou
+p': 100, 'time_groups': 118, 'history_edges': 2144, 'pos_edges': 38, 'neg_edges'
+: 38, 'loss_recent': 12.630372809171677, 'elapsed_sec': 24.96425437554717, 'avg_
+sec_per_batch': 0.2496425437554717, 'cuda_allocated_mb': 46, 'cuda_reserved_mb':
+ 202, 'cuda_max_allocated_mb': 169}
+epoch 1:  99%|ˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆŠ| 117/118 [00:30<00:00,  4.01it/s, loss=32]
+{'event': 'train_time_group', 'epoch': 1, 'time_group': 118, 'time_groups': 118,
+ 'batch': 117, 'batches': 118, 'time_value': 1966.0, 'group_batches': 1, 'histor
+y_edges': 3153, 'elapsed_sec': 30.67373526468873, 'cuda_allocated_mb': 45, 'cuda
+_reserved_mb': 222, 'cuda_max_allocated_mb': 189}
+epoch 1: 100%|ˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆ| 118/118 [00:30<00:00,  4.08it/s, loss=33.5]
+{'event': 'train_progress', 'epoch': 1, 'batch': 118, 'batches': 118, 'time_grou
+p': 118, 'time_groups': 118, 'history_edges': 3153, 'pos_edges': 91, 'neg_edges'
+: 91, 'loss_recent': 18.611214191913604, 'elapsed_sec': 30.906971231102943, 'avg
+_sec_per_batch': 0.261923485009347, 'cuda_allocated_mb': 47, 'cuda_reserved_mb':
+ 222, 'cuda_max_allocated_mb': 192}
+{'event': 'validation_start', 'epoch': 1}
+

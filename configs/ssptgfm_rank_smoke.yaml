@@ -1,0 +1,68 @@
+device: cuda
+strict_full_formula: true
+output_dir: results/ssptgfm_rank_smoke
+seeds: [1]
+few_shot_ratios: [1.0]
+baselines: []
+
+data:
+  name: synthetic
+  seed: 7
+  num_nodes: 64
+  num_relations: 4
+  num_edges: 320
+  num_topics: 8
+
+split:
+  val_ratio: 0.15
+  test_ratio: 0.15
+
+text:
+  backend: hashing
+  dim: 128
+  cache_dir: data/processed/text_cache
+
+model:
+  hidden_dim: 32
+  time_dim: 16
+  prompt_tokens: 2
+  prompt_heads: 2
+  relation_rank: 4
+  adapter_rank: 4
+  temporal_layers: 1
+  temporal_encoder: mlp
+  time_encoder: fourier
+  use_struct: true
+  use_sem: true
+  use_cross: true
+  use_gate: true
+  use_variational: true
+
+train:
+  epochs: 1
+  batch_size: 64
+  lr: 0.001
+  weight_decay: 0.0001
+  num_neg_train: 2
+  num_neg_eval: 4
+  negative_mode_train: filtered
+  negative_mode_eval: filtered
+  filter_scope: exact
+  lambda_align: 1.0e-05
+  lambda_kl: 1.0e-06
+  lambda_meta: 0.001
+  meta_lr: 0.01
+  meta_support_size: 4
+  meta_query_size: 4
+  lambda_ood: 0.001
+  align_temperature: 0.2
+  patience: 1
+  early_stop_metric: val_mrr
+  val_rank_edges: 5
+  grad_clip: 1.0
+
+eval:
+  filtered_rank_edges: 5
+
+ablation:
+  enabled: false

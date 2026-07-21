@@ -1,0 +1,81 @@
+device: cuda
+require_cuda: true
+output_dir: results/ssptgfm_icews14_history_fixed_copy_probe
+seeds: [1]
+few_shot_ratios: [1.0]
+baselines: []
+strict_full_formula: true
+
+data:
+  name: icews14
+  format: csv
+  path: data/raw/icews14
+
+split:
+  mode: time
+  val_ratio: 0.15
+  test_ratio: 0.15
+
+text:
+  backend: hashing
+  dim: 384
+  cache_dir: data/processed/text_cache
+
+model:
+  hidden_dim: 128
+  time_dim: 32
+  prompt_tokens: 4
+  prompt_heads: 4
+  relation_rank: 16
+  adapter_rank: 16
+  temporal_layers: 1
+  temporal_encoder: mlp
+  time_encoder: fourier
+  use_struct: true
+  use_sem: true
+  use_cross: true
+  use_gate: true
+  use_variational: true
+  use_history_prior: true
+  history_prior_dim: 12
+  history_prior_mode: linear
+  history_prior_weights: [2.0, 0.5, 0.2, 0.1, 0.1, 0.0, 2.0, 2.0, 1.0, 1.0, 0.3, 0.2]
+  history_prior_init_scale: 1.0
+  freeze_history_prior: true
+
+train:
+  epochs: 2
+  batch_size: 512
+  lr: 0.001
+  weight_decay: 0.0001
+  num_neg_train: 5
+  num_neg_eval: 25
+  negative_mode_train: filtered
+  negative_mode_eval: filtered
+  filter_scope: exact
+  lambda_align: 0.005
+  lambda_kl: 0.0001
+  lambda_meta: 0.005
+  meta_lr: 0.01
+  meta_support_size: 16
+  meta_query_size: 16
+  lambda_ood: 0.001
+  align_temperature: 0.2
+  patience: 1
+  early_stop_metric: val_composite
+  early_stop_weights:
+    val_mrr: 0.35
+    val_hits@10: 0.2
+    val_auc: 0.15
+    val_ap: 0.25
+    val_ndcg: 0.05
+  val_rank_edges: 25
+  grad_clip: 1.0
+  progress_every_batches: 100
+  progress_every_seconds: 120.0
+
+eval:
+  filtered_rank_edges: 100
+
+ablation:
+  enabled: false

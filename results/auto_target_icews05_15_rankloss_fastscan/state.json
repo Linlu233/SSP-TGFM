@@ -1,0 +1,37 @@
+{
+  "datasets": {
+    "icews05_15": {
+      "existing": {
+        "detail": {
+          "ap": {
+            "baseline": 0.8371196732003561,
+            "value": 0.7864356950333944,
+            "win": false
+          },
+          "auc": {
+            "baseline": 0.9380577301948596,
+            "value": 0.9258579718357051,
+            "win": false
+          },
+          "hits@10": {
+            "baseline": 0.634,
+            "value": 0.412,
+            "win": false
+          },
+          "mrr": {
+            "baseline": 0.3679325888535817,
+            "value": 0.21431230048721953,
+            "win": false
+          },
+          "ndcg": {
+            "baseline": 0.9794725824770751,
+            "value": 0.9730121001652587,
+            "win": false
+          }
+        },
+        "path": "results/ssptgfm_icews05_15_best/all_results.json",
+        "wins": 0
+      }
+    }
+  }
+}

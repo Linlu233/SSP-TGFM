@@ -1,0 +1,221 @@
+{
+  "config": {
+    "ablation": {
+      "enabled": false
+    },
+    "baselines": [
+      "lm_mlp",
+      "structure_mlp"
+    ],
+    "data": {
+      "name": "synthetic",
+      "num_edges": 420,
+      "num_nodes": 64,
+      "num_relations": 4,
+      "num_topics": 8,
+      "seed": 2
+    },
+    "device": "cuda",
+    "eval": {
+      "filtered_rank_edges": 5
+    },
+    "few_shot_ratios": [
+      1.0
+    ],
+    "k_shot": {
+      "by": "relation",
+      "k": 3
+    },
+    "model": {
+      "adapter_rank": 8,
+      "hidden_dim": 48,
+      "prompt_heads": 2,
+      "prompt_tokens": 2,
+      "relation_rank": 8,
+      "temporal_encoder": "mlp",
+      "temporal_layers": 1,
+      "time_dim": 16,
+      "time_encoder": "fourier",
+      "use_cross": true,
+      "use_gate": true,
+      "use_sem": true,
+      "use_struct": true,
+      "use_variational": true
+    },
+    "output_dir": "results/ssptgfm_protocol_smoke",
+    "scenario": {
+      "name": "hallucination_stress"
+    },
+    "seeds": [
+      1
+    ],
+    "split": {
+      "test_ratio": 0.15,
+      "val_ratio": 0.15
+    },
+    "text": {
+      "backend": "hashing",
+      "cache_dir": "data/processed/text_cache",
+      "dim": 128
+    },
+    "train": {
+      "align_temperature": 0.2,
+      "batch_size": 64,
+      "epochs": 1,
+      "filter_scope": "exact",
+      "grad_clip": 1.0,
+      "lambda_align": 0.01,
+      "lambda_kl": 0.0001,
+      "lambda_meta": 0.0,
+      "lambda_ood": 0.0,
+      "lr": 0.002,
+      "meta_lr": 0.01,
+      "meta_support_size": 8,
+      "negative_mode_eval": "filtered",
+      "negative_mode_train": "filtered",
+      "num_neg_eval": 2,
+      "num_neg_train": 1,
+      "patience": 1,
+      "weight_decay": 0.0001
+    }
+  },
+  "environment": {
+    "cuda_available": true,
+    "cuda_capability": [
+      7,
+      0
+    ],
+    "cuda_device": "Tesla V100-PCIE-32GB",
+    "python": "3.10.8",
+    "torch": "2.5.1+cu121"
+  },
+  "leakage_control": {
+    "filtered_eval": true,
+    "history_for_test": "train+validation edges only, causally restricted by query time",
+    "history_for_train_batch": "edges with time strictly before batch min time",
+    "history_for_validation": "train edges only, causally restricted by query time",
+    "hyperparameter_selection": "training config only; early stopping uses validation binary AUC",
+    "test_labels_not_used_for_selection": true
+  },
+  "rows": [
+    {
+      "ablation": "trainable_baseline",
+      "allocated_mb": 0.05859375,
+      "dataset": "synthetic_hallucination_stress",
+      "few_shot_ratio": 1.0,
+      "max_allocated_mb": 0.11962890625,
+      "method": "distmult",
+      "params_total": 3264,
+      "params_trainable": 3264,
+      "reserved_mb": 2.0,
+      "scenario": "hallucination_stress",
+      "seed": 1,
+      "selected_params": {
+        "epochs": 1,
+        "hidden_dim": 48,
+        "lr": 0.002,
+        "patience": 1,
+        "weight_decay": 0.0001
+      },
+      "selection_metric": "val_auc",
+      "test_ap": 0.3005558195898805,
+      "test_auc": 0.4460355029585799,
+      "test_edges": 65,
+      "test_hits@1": 0.0,
+      "test_hits@10": 0.0,
+      "test_hits@100": 1.0,
+      "test_hits@50": 0.6,
+      "test_mrr": 0.04337502314124174,
+      "test_ndcg": 0.6778091477087527,
+      "train_edges": 12,
+      "train_eval_time_sec": 1.729197222739458,
+      "val_ap": 0.32762125211936477,
+      "val_auc": 0.48668639053254437,
+      "val_edges": 65,
+      "val_ndcg": 0.705745476615765,
+      "wall_time_sec": 1.7292159050703049
+    },
+    {
+      "ablation": "trainable_baseline",
+      "allocated_mb": 0.083984375,
+      "dataset": "synthetic_hallucination_stress",
+      "few_shot_ratio": 1.0,
+      "max_allocated_mb": 0.19189453125,
+      "method": "complex",
+      "params_total": 6528,
+      "params_trainable": 6528,
+      "reserved_mb": 2.0,
+      "scenario": "hallucination_stress",
+      "seed": 1,
+      "selected_params": {
+        "epochs": 1,
+        "hidden_dim": 48,
+        "lr": 0.002,
+        "patience": 1,
+        "weight_decay": 0.0001
+      },
+      "selection_metric": "val_auc",
+      "test_ap": 0.43843347350918527,
+      "test_auc": 0.5975739644970415,
+      "test_edges": 65,
+      "test_hits@1": 0.1,
+      "test_hits@10": 0.2,
+      "test_hits@100": 1.0,
+      "test_hits@50": 0.8,
+      "test_mrr": 0.15213661252944805,
+      "test_ndcg": 0.7937201634509293,
+      "train_edges": 12,
+      "train_eval_time_sec": 0.10480421781539917,
+      "val_ap": 0.40586348334423994,
+      "val_auc": 0.5840236686390533,
+      "val_edges": 65,
+      "val_ndcg": 0.7586891829015344,
+      "wall_time_sec": 0.10481078550219536
+    },
+    {
+      "ablation": "trainable_baseline",
+      "allocated_mb": 16.3310546875,
+      "dataset": "synthetic_hallucination_stress",
+      "few_shot_ratio": 1.0,
+      "max_allocated_mb": 17.3955078125,
+      "method": "temporal_distmult",
+      "params_total": 5952,
+      "params_trainable": 5952,
+      "reserved_mb": 22.0,
+      "scenario": "hallucination_stress",
+      "seed": 1,
+      "selected_params": {
+        "epochs": 1,
+        "hidden_dim": 48,
+        "lr": 0.002,
+        "patience": 1,
+        "weight_decay": 0.0001
+      },
+      "selection_metric": "val_auc",
+      "test_ap": 0.3343966110945823,
+      "test_auc": 0.46497041420118346,
+      "test_edges": 65,
+      "test_hits@1": 0.0,
+      "test_hits@10": 0.0,
+      "test_hits@100": 1.0,
+      "test_hits@50": 0.6,
+      "test_mrr": 0.025314824112867534,
+      "test_ndcg": 0.7342665087643535,
+      "train_edges": 12,
+      "train_eval_time_sec": 0.18445321545004845,
+      "val_ap": 0.29796989019516235,
+      "val_auc": 0.42887573964497044,
+      "val_edges": 65,
+      "val_ndcg": 0.6909755082533336,
+      "wall_time_sec": 0.18446112796664238
+    }
+  ],
+  "scenario": {
+    "name": "hallucination_stress",
+    "text_conflict": true
+  },
+  "temporal_split": {
+    "test_start_time": 71.0,
+    "val_start_time": 58.0
+  }
+}

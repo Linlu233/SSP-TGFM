@@ -1,0 +1,412 @@
+[
+  {
+    "edge": {
+      "dst": 11,
+      "rel": 0,
+      "relation_text": "relation 0 prefers topic 2 semantic",
+      "src": 60,
+      "time": 76.0
+    },
+    "semantic_terms": [
+      "node",
+      "topic",
+      "semantic",
+      "relation",
+      "prefers"
+    ],
+    "structural_path": [
+      60,
+      11
+    ]
+  },
+  {
+    "edge": {
+      "dst": 0,
+      "rel": 0,
+      "relation_text": "relation 0 prefers topic 2 semantic",
+      "src": 60,
+      "time": 76.0
+    },
+    "semantic_terms": [
+      "node",
+      "topic",
+      "semantic",
+      "relation",
+      "prefers"
+    ],
+    "structural_path": [
+      60,
+      0
+    ]
+  },
+  {
+    "edge": {
+      "dst": 1,
+      "rel": 1,
+      "relation_text": "relation 1 prefers topic 3 neural",
+      "src": 17,
+      "time": 76.0
+    },
+    "semantic_terms": [
+      "node",
+      "topic",
+      "neural",
+      "relation",
+      "prefers"
+    ],
+    "structural_path": [
+      17,
+      1
+    ]
+  },
+  {
+    "edge": {
+      "dst": 16,
+      "rel": 1,
+      "relation_text": "relation 1 prefers topic 3 neural",
+      "src": 1,
+      "time": 76.0
+    },
+    "semantic_terms": [
+      "node",
+      "topic",
+      "neural",
+      "relation",
+      "prefers"
+    ],
+    "structural_path": [
+      1,
+      16
+    ]
+  },
+  {
+    "edge": {
+      "dst": 47,
+      "rel": 1,
+      "relation_text": "relation 1 prefers topic 3 neural",
+      "src": 62,
+      "time": 77.0
+    },
+    "semantic_terms": [
+      "node",
+      "topic",
+      "temporal",
+      "product",
+      "relation",
+      "prefers",
+      "neural"
+    ],
+    "structural_path": []
+  },
+  {
+    "edge": {
+      "dst": 0,
+      "rel": 0,
+      "relation_text": "relation 0 prefers topic 2 semantic",
+      "src": 34,
+      "time": 77.0
+    },
+    "semantic_terms": [
+      "node",
+      "topic",
+      "semantic",
+      "relation",
+      "prefers"
+    ],
+    "structural_path": [
+      34,
+      0
+    ]
+  },
+  {
+    "edge": {
+      "dst": 29,
+      "rel": 1,
+      "relation_text": "relation 1 prefers topic 3 neural",
+      "src": 45,
+      "time": 77.0
+    },
+    "semantic_terms": [
+      "node",
+      "topic",
+      "semantic",
+      "temporal",
+      "relation",
+      "prefers",
+      "neural"
+    ],
+    "structural_path": [
+      45,
+      0,
+      58,
+      29
+    ]
+  },
+  {
+    "edge": {
+      "dst": 45,
+      "rel": 2,
+      "relation_text": "relation 2 prefers topic 2 semantic",
+      "src": 15,
+      "time": 77.0
+    },
+    "semantic_terms": [
+      "node",
+      "topic",
+      "semantic",
+      "relation",
+      "prefers"
+    ],
+    "structural_path": [
+      15,
+      45
+    ]
+  },
+  {
+    "edge": {
+      "dst": 13,
+      "rel": 1,
+      "relation_text": "relation 1 prefers topic 3 neural",
+      "src": 2,
+      "time": 78.0
+    },
+    "semantic_terms": [
+      "node",
+      "topic",
+      "citation",
+      "relation",
+      "prefers",
+      "neural"
+    ],
+    "structural_path": [
+      2,
+      31,
+      13
+    ]
+  },
+  {
+    "edge": {
+      "dst": 55,
+      "rel": 0,
+      "relation_text": "relation 0 prefers topic 2 semantic",
+      "src": 58,
+      "time": 78.0
+    },
+    "semantic_terms": [
+      "node",
+      "topic",
+      "temporal",
+      "relation",
+      "prefers",
+      "semantic"
+    ],
+    "structural_path": [
+      58,
+      0,
+      45,
+      55
+    ]
+  },
+  {
+    "edge": {
+      "dst": 45,
+      "rel": 0,
+      "relation_text": "relation 0 prefers topic 2 semantic",
+      "src": 11,
+      "time": 78.0
+    },
+    "semantic_terms": [
+      "node",
+      "topic",
+      "semantic",
+      "relation",
+      "prefers"
+    ],
+    "structural_path": [
+      11,
+      45
+    ]
+  },
+  {
+    "edge": {
+      "dst": 45,
+      "rel": 2,
+      "relation_text": "relation 2 prefers topic 2 semantic",
+      "src": 44,
+      "time": 78.0
+    },
+    "semantic_terms": [
+      "node",
+      "topic",
+      "semantic",
+      "relation",
+      "prefers"
+    ],
+    "structural_path": [
+      44,
+      45
+    ]
+  },
+  {
+    "edge": {
+      "dst": 43,
+      "rel": 2,
+      "relation_text": "relation 2 prefers topic 2 semantic",
+      "src": 41,
+      "time": 79.0
+    },
+    "semantic_terms": [
+      "node",
+      "topic",
+      "citation",
+      "temporal",
+      "relation",
+      "prefers",
+      "semantic"
+    ],
+    "structural_path": [
+      41,
+      53,
+      16,
+      43
+    ]
+  },
+  {
+    "edge": {
+      "dst": 34,
+      "rel": 2,
+      "relation_text": "relation 2 prefers topic 2 semantic",
+      "src": 31,
+      "time": 79.0
+    },
+    "semantic_terms": [
+      "node",
+      "topic",
+      "semantic",
+      "relation",
+      "prefers"
+    ],
+    "structural_path": [
+      31,
+      34
+    ]
+  },
+  {
+    "edge": {
+      "dst": 16,
+      "rel": 1,
+      "relation_text": "relation 1 prefers topic 3 neural",
+      "src": 38,
+      "time": 79.0
+    },
+    "semantic_terms": [
+      "node",
+      "topic",
+      "neural",
+      "relation",
+      "prefers"
+    ],
+    "structural_path": [
+      38,
+      16
+    ]
+  },
+  {
+    "edge": {
+      "dst": 44,
+      "rel": 2,
+      "relation_text": "relation 2 prefers topic 2 semantic",
+      "src": 34,
+      "time": 79.0
+    },
+    "semantic_terms": [
+      "node",
+      "topic",
+      "semantic",
+      "relation",
+      "prefers"
+    ],
+    "structural_path": [
+      34,
+      44
+    ]
+  },
+  {
+    "edge": {
+      "dst": 1,
+      "rel": 1,
+      "relation_text": "relation 1 prefers topic 3 neural",
+      "src": 16,
+      "time": 80.0
+    },
+    "semantic_terms": [
+      "node",
+      "topic",
+      "neural",
+      "relation",
+      "prefers"
+    ],
+    "structural_path": [
+      16,
+      1
+    ]
+  },
+  {
+    "edge": {
+      "dst": 15,
+      "rel": 2,
+      "relation_text": "relation 2 prefers topic 2 semantic",
+      "src": 31,
+      "time": 80.0
+    },
+    "semantic_terms": [
+      "node",
+      "topic",
+      "semantic",
+      "relation",
+      "prefers"
+    ],
+    "structural_path": [
+      31,
+      15
+    ]
+  },
+  {
+    "edge": {
+      "dst": 32,
+      "rel": 2,
+      "relation_text": "relation 2 prefers topic 2 semantic",
+      "src": 54,
+      "time": 80.0
+    },
+    "semantic_terms": [
+      "node",
+      "topic",
+      "product",
+      "relation",
+      "prefers",
+      "semantic"
+    ],
+    "structural_path": []
+  },
+  {
+    "edge": {
+      "dst": 53,
+      "rel": 1,
+      "relation_text": "relation 1 prefers topic 3 neural",
+      "src": 38,
+      "time": 80.0
+    },
+    "semantic_terms": [
+      "node",
+      "topic",
+      "neural",
+      "relation",
+      "prefers"
+    ],
+    "structural_path": [
+      38,
+      53
+    ]
+  }
+]

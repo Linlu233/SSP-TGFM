@@ -1,0 +1,85 @@
+device: cuda
+require_cuda: true
+output_dir: results/protocol_smoke_tgb_yago_official
+seeds:
+- 1
+few_shot_ratios:
+- 1.0
+baselines: []
+strict_full_formula: true
+data:
+  name: tkgl-yago
+  format: tgb
+  root: /root/autodl-tmp/data/data/raw/tgb
+  download: false
+split:
+  mode: labels
+text:
+  backend: hashing
+  dim: 384
+  cache_dir: data/processed/text_cache
+model:
+  hidden_dim: 128
+  time_dim: 32
+  prompt_tokens: 4
+  prompt_heads: 4
+  relation_rank: 16
+  adapter_rank: 16
+  temporal_layers: 1
+  temporal_encoder: mlp
+  time_encoder: fourier
+  use_struct: true
+  use_sem: true
+  use_cross: true
+  use_gate: true
+  use_variational: true
+train:
+  epochs: 1
+  batch_size: 256
+  lr: 0.0007
+  weight_decay: 0.0001
+  num_neg_train: 5
+  num_neg_eval: 3
+  negative_mode_train: filtered
+  negative_mode_eval: filtered
+  filter_scope: exact
+  lambda_align: 0.01
+  lambda_kl: 0.0001
+  lambda_meta: 0.005
+  meta_lr: 0.01
+  meta_support_size: 4
+  meta_query_size: 4
+  lambda_ood: 0.001
+  align_temperature: 0.2
+  patience: 1
+  early_stop_metric: val_tgb_mrr
+  early_stop_weights:
+    val_mrr: 0.7
+    val_hits@10: 0.1
+    val_ap: 0.05
+    val_auc: 0.05
+    val_ndcg: 0.1
+  val_rank_edges: 0
+  grad_clip: 1.0
+  progress_every_batches: 100
+  progress_every_seconds: 120.0
+  val_binary_edges: 32
+eval:
+  tgb_official: true
+  tgb_val_edges: 1
+  filtered_rank_edges: 1
+  tgb_eval_edges: 1
+ablation:
+  enabled: false
+search:
+  metric: val_tgb_mrr
+  metrics:
+  - val_tgb_mrr
+  - val_tgb_hits@10
+  seeds:
+  - 1
+  train_edge_limit: 512
+  candidates:
+  - name: smoke
+    model: {}
+    train: {}

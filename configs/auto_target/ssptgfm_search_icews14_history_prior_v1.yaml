@@ -1,0 +1,812 @@
+device: cuda
+require_cuda: true
+output_dir: results/auto_target_history_prior/search_icews14_history_prior_v1
+seeds:
+- 1
+- 2
+few_shot_ratios:
+- 1.0
+baselines: []
+strict_full_formula: true
+data:
+  name: icews14
+  format: csv
+  path: data/raw/icews14
+split:
+  mode: time
+  val_ratio: 0.15
+  test_ratio: 0.15
+text:
+  backend: hashing
+  dim: 384
+  cache_dir: data/processed/text_cache
+model:
+  hidden_dim: 96
+  time_dim: 32
+  prompt_tokens: 4
+  prompt_heads: 4
+  relation_rank: 12
+  adapter_rank: 12
+  temporal_layers: 1
+  temporal_encoder: mlp
+  time_encoder: fourier
+  use_struct: true
+  use_sem: true
+  use_cross: true
+  use_gate: true
+  use_variational: true
+  use_history_prior: true
+train:
+  epochs: 14
+  batch_size: 512
+  lr: 0.0007
+  weight_decay: 0.0001
+  num_neg_train: 5
+  num_neg_eval: 25
+  negative_mode_train: filtered
+  negative_mode_eval: filtered
+  filter_scope: exact
+  lambda_align: 0.01
+  lambda_kl: 0.0001
+  lambda_meta: 0.005
+  meta_lr: 0.01
+  meta_support_size: 16
+  meta_query_size: 16
+  lambda_ood: 0.001
+  align_temperature: 0.2
+  patience: 4
+  early_stop_metric: val_composite
+  early_stop_weights: &id001
+    val_mrr: 0.35
+    val_hits@10: 0.25
+    val_ap: 0.25
+    val_auc: 0.1
+    val_ndcg: 0.05
+  val_rank_edges: 100
+  grad_clip: 1.0
+  progress_every_batches: 100
+  progress_every_seconds: 120.0
+eval:
+  filtered_rank_edges: 250
+ablation:
+  enabled: false
+search:
+  metric: composite
+  metrics:
+  - val_auc
+  - val_ap
+  - val_mrr
+  - val_hits@10
+  - val_ndcg
+  metric_weights: *id001
+  strict_full_formula: true
+  candidates:
+  - name: history_prior_v1_h128_r16_a16_p4x4_l1_neg5_lr0p0007_hp0p1
+    model:
+      hidden_dim: 128
+      relation_rank: 16
+      adapter_rank: 16
+      prompt_tokens: 4
+      prompt_heads: 4
+      temporal_layers: 1
+      temporal_encoder: mlp
+      time_encoder: fourier
+      use_struct: true
+      use_sem: true
+      use_cross: true
+      use_gate: true
+      use_variational: true
+      use_history_prior: true
+      history_prior_dim: 12
+      history_prior_hidden_dim: 32
+      history_prior_init_scale: 0.1
+    train:
+      lr: 0.0007
+      num_neg_train: 5
+      lambda_align: 0.005
+      lambda_kl: 0.0001
+      lambda_meta: 0.005
+      lambda_ood: 0.001
+      align_temperature: 0.2
+  - name: history_prior_v1_h128_r16_a16_p4x4_l1_neg5_lr0p0007_hp0p3
+    model:
+      hidden_dim: 128
+      relation_rank: 16
+      adapter_rank: 16
+      prompt_tokens: 4
+      prompt_heads: 4
+      temporal_layers: 1
+      temporal_encoder: mlp
+      time_encoder: fourier
+      use_struct: true
+      use_sem: true
+      use_cross: true
+      use_gate: true
+      use_variational: true
+      use_history_prior: true
+      history_prior_dim: 12
+      history_prior_hidden_dim: 32
+      history_prior_init_scale: 0.3
+    train:
+      lr: 0.0007
+      num_neg_train: 5
+      lambda_align: 0.005
+      lambda_kl: 0.0001
+      lambda_meta: 0.005
+      lambda_ood: 0.001
+      align_temperature: 0.2
+  - name: history_prior_v1_h128_r16_a16_p4x4_l1_neg5_lr0p0007_hp0p7
+    model:
+      hidden_dim: 128
+      relation_rank: 16
+      adapter_rank: 16
+      prompt_tokens: 4
+      prompt_heads: 4
+      temporal_layers: 1
+      temporal_encoder: mlp
+      time_encoder: fourier
+      use_struct: true
+      use_sem: true
+      use_cross: true
+      use_gate: true
+      use_variational: true
+      use_history_prior: true
+      history_prior_dim: 12
+      history_prior_hidden_dim: 32
+      history_prior_init_scale: 0.7
+    train:
+      lr: 0.0007
+      num_neg_train: 5
+      lambda_align: 0.005
+      lambda_kl: 0.0001
+      lambda_meta: 0.005
+      lambda_ood: 0.001
+      align_temperature: 0.2
+  - name: history_prior_v1_h160_r24_a24_p6x4_l1_neg5_lr0p0007_hp0p1
+    model:
+      hidden_dim: 160
+      relation_rank: 24
+      adapter_rank: 24
+      prompt_tokens: 6
+      prompt_heads: 4
+      temporal_layers: 1
+      temporal_encoder: mlp
+      time_encoder: fourier
+      use_struct: true
+      use_sem: true
+      use_cross: true
+      use_gate: true
+      use_variational: true
+      use_history_prior: true
+      history_prior_dim: 12
+      history_prior_hidden_dim: 40
+      history_prior_init_scale: 0.1
+    train:
+      lr: 0.0007
+      num_neg_train: 5
+      lambda_align: 0.005
+      lambda_kl: 0.0001
+      lambda_meta: 0.005
+      lambda_ood: 0.001
+      align_temperature: 0.2
+  - name: history_prior_v1_h160_r24_a24_p6x4_l1_neg5_lr0p0007_hp0p3
+    model:
+      hidden_dim: 160
+      relation_rank: 24
+      adapter_rank: 24
+      prompt_tokens: 6
+      prompt_heads: 4
+      temporal_layers: 1
+      temporal_encoder: mlp
+      time_encoder: fourier
+      use_struct: true
+      use_sem: true
+      use_cross: true
+      use_gate: true
+      use_variational: true
+      use_history_prior: true
+      history_prior_dim: 12
+      history_prior_hidden_dim: 40
+      history_prior_init_scale: 0.3
+    train:
+      lr: 0.0007
+      num_neg_train: 5
+      lambda_align: 0.005
+      lambda_kl: 0.0001
+      lambda_meta: 0.005
+      lambda_ood: 0.001
+      align_temperature: 0.2
+  - name: history_prior_v1_h160_r24_a24_p6x4_l1_neg5_lr0p0007_hp0p7
+    model:
+      hidden_dim: 160
+      relation_rank: 24
+      adapter_rank: 24
+      prompt_tokens: 6
+      prompt_heads: 4
+      temporal_layers: 1
+      temporal_encoder: mlp
+      time_encoder: fourier
+      use_struct: true
+      use_sem: true
+      use_cross: true
+      use_gate: true
+      use_variational: true
+      use_history_prior: true
+      history_prior_dim: 12
+      history_prior_hidden_dim: 40
+      history_prior_init_scale: 0.7
+    train:
+      lr: 0.0007
+      num_neg_train: 5
+      lambda_align: 0.005
+      lambda_kl: 0.0001
+      lambda_meta: 0.005
+      lambda_ood: 0.001
+      align_temperature: 0.2
+  - name: history_prior_v1_h192_r24_a24_p6x8_l1_neg5_lr0p0005_hp0p1
+    model:
+      hidden_dim: 192
+      relation_rank: 24
+      adapter_rank: 24
+      prompt_tokens: 6
+      prompt_heads: 8
+      temporal_layers: 1
+      temporal_encoder: mlp
+      time_encoder: fourier
+      use_struct: true
+      use_sem: true
+      use_cross: true
+      use_gate: true
+      use_variational: true
+      use_history_prior: true
+      history_prior_dim: 12
+      history_prior_hidden_dim: 48
+      history_prior_init_scale: 0.1
+    train:
+      lr: 0.0005
+      num_neg_train: 5
+      lambda_align: 0.002
+      lambda_kl: 5.0e-05
+      lambda_meta: 0.01
+      lambda_ood: 0.001
+      align_temperature: 0.15
+  - name: history_prior_v1_h192_r24_a24_p6x8_l1_neg5_lr0p0005_hp0p3
+    model:
+      hidden_dim: 192
+      relation_rank: 24
+      adapter_rank: 24
+      prompt_tokens: 6
+      prompt_heads: 8
+      temporal_layers: 1
+      temporal_encoder: mlp
+      time_encoder: fourier
+      use_struct: true
+      use_sem: true
+      use_cross: true
+      use_gate: true
+      use_variational: true
+      use_history_prior: true
+      history_prior_dim: 12
+      history_prior_hidden_dim: 48
+      history_prior_init_scale: 0.3
+    train:
+      lr: 0.0005
+      num_neg_train: 5
+      lambda_align: 0.002
+      lambda_kl: 5.0e-05
+      lambda_meta: 0.01
+      lambda_ood: 0.001
+      align_temperature: 0.15
+  - name: history_prior_v1_h192_r24_a24_p6x8_l1_neg5_lr0p0005_hp0p7
+    model:
+      hidden_dim: 192
+      relation_rank: 24
+      adapter_rank: 24
+      prompt_tokens: 6
+      prompt_heads: 8
+      temporal_layers: 1
+      temporal_encoder: mlp
+      time_encoder: fourier
+      use_struct: true
+      use_sem: true
+      use_cross: true
+      use_gate: true
+      use_variational: true
+      use_history_prior: true
+      history_prior_dim: 12
+      history_prior_hidden_dim: 48
+      history_prior_init_scale: 0.7
+    train:
+      lr: 0.0005
+      num_neg_train: 5
+      lambda_align: 0.002
+      lambda_kl: 5.0e-05
+      lambda_meta: 0.01
+      lambda_ood: 0.001
+      align_temperature: 0.15
+  - name: history_prior_v1_h128_r16_a16_p4x4_l1_neg10_lr0p0007_hp0p1
+    model:
+      hidden_dim: 128
+      relation_rank: 16
+      adapter_rank: 16
+      prompt_tokens: 4
+      prompt_heads: 4
+      temporal_layers: 1
+      temporal_encoder: mlp
+      time_encoder: fourier
+      use_struct: true
+      use_sem: true
+      use_cross: true
+      use_gate: true
+      use_variational: true
+      use_history_prior: true
+      history_prior_dim: 12
+      history_prior_hidden_dim: 32
+      history_prior_init_scale: 0.1
+    train:
+      lr: 0.0007
+      num_neg_train: 10
+      lambda_align: 0.005
+      lambda_kl: 0.0001
+      lambda_meta: 0.005
+      lambda_ood: 0.001
+      align_temperature: 0.2
+  - name: history_prior_v1_h128_r16_a16_p4x4_l1_neg10_lr0p0007_hp0p3
+    model:
+      hidden_dim: 128
+      relation_rank: 16
+      adapter_rank: 16
+      prompt_tokens: 4
+      prompt_heads: 4
+      temporal_layers: 1
+      temporal_encoder: mlp
+      time_encoder: fourier
+      use_struct: true
+      use_sem: true
+      use_cross: true
+      use_gate: true
+      use_variational: true
+      use_history_prior: true
+      history_prior_dim: 12
+      history_prior_hidden_dim: 32
+      history_prior_init_scale: 0.3
+    train:
+      lr: 0.0007
+      num_neg_train: 10
+      lambda_align: 0.005
+      lambda_kl: 0.0001
+      lambda_meta: 0.005
+      lambda_ood: 0.001
+      align_temperature: 0.2
+  - name: history_prior_v1_h128_r16_a16_p4x4_l1_neg10_lr0p0007_hp0p7
+    model:
+      hidden_dim: 128
+      relation_rank: 16
+      adapter_rank: 16
+      prompt_tokens: 4
+      prompt_heads: 4
+      temporal_layers: 1
+      temporal_encoder: mlp
+      time_encoder: fourier
+      use_struct: true
+      use_sem: true
+      use_cross: true
+      use_gate: true
+      use_variational: true
+      use_history_prior: true
+      history_prior_dim: 12
+      history_prior_hidden_dim: 32
+      history_prior_init_scale: 0.7
+    train:
+      lr: 0.0007
+      num_neg_train: 10
+      lambda_align: 0.005
+      lambda_kl: 0.0001
+      lambda_meta: 0.005
+      lambda_ood: 0.001
+      align_temperature: 0.2
+  - name: history_prior_v1_h160_r24_a24_p6x4_l1_neg10_lr0p0007_hp0p1
+    model:
+      hidden_dim: 160
+      relation_rank: 24
+      adapter_rank: 24
+      prompt_tokens: 6
+      prompt_heads: 4
+      temporal_layers: 1
+      temporal_encoder: mlp
+      time_encoder: fourier
+      use_struct: true
+      use_sem: true
+      use_cross: true
+      use_gate: true
+      use_variational: true
+      use_history_prior: true
+      history_prior_dim: 12
+      history_prior_hidden_dim: 40
+      history_prior_init_scale: 0.1
+    train:
+      lr: 0.0007
+      num_neg_train: 10
+      lambda_align: 0.005
+      lambda_kl: 0.0001
+      lambda_meta: 0.005
+      lambda_ood: 0.001
+      align_temperature: 0.2
+  - name: history_prior_v1_h160_r24_a24_p6x4_l1_neg10_lr0p0007_hp0p3
+    model:
+      hidden_dim: 160
+      relation_rank: 24
+      adapter_rank: 24
+      prompt_tokens: 6
+      prompt_heads: 4
+      temporal_layers: 1
+      temporal_encoder: mlp
+      time_encoder: fourier
+      use_struct: true
+      use_sem: true
+      use_cross: true
+      use_gate: true
+      use_variational: true
+      use_history_prior: true
+      history_prior_dim: 12
+      history_prior_hidden_dim: 40
+      history_prior_init_scale: 0.3
+    train:
+      lr: 0.0007
+      num_neg_train: 10
+      lambda_align: 0.005
+      lambda_kl: 0.0001
+      lambda_meta: 0.005
+      lambda_ood: 0.001
+      align_temperature: 0.2
+  - name: history_prior_v1_h160_r24_a24_p6x4_l1_neg10_lr0p0007_hp0p7
+    model:
+      hidden_dim: 160
+      relation_rank: 24
+      adapter_rank: 24
+      prompt_tokens: 6
+      prompt_heads: 4
+      temporal_layers: 1
+      temporal_encoder: mlp
+      time_encoder: fourier
+      use_struct: true
+      use_sem: true
+      use_cross: true
+      use_gate: true
+      use_variational: true
+      use_history_prior: true
+      history_prior_dim: 12
+      history_prior_hidden_dim: 40
+      history_prior_init_scale: 0.7
+    train:
+      lr: 0.0007
+      num_neg_train: 10
+      lambda_align: 0.005
+      lambda_kl: 0.0001
+      lambda_meta: 0.005
+      lambda_ood: 0.001
+      align_temperature: 0.2
+  - name: history_prior_v1_h192_r24_a24_p6x8_l1_neg10_lr0p0005_hp0p1
+    model:
+      hidden_dim: 192
+      relation_rank: 24
+      adapter_rank: 24
+      prompt_tokens: 6
+      prompt_heads: 8
+      temporal_layers: 1
+      temporal_encoder: mlp
+      time_encoder: fourier
+      use_struct: true
+      use_sem: true
+      use_cross: true
+      use_gate: true
+      use_variational: true
+      use_history_prior: true
+      history_prior_dim: 12
+      history_prior_hidden_dim: 48
+      history_prior_init_scale: 0.1
+    train:
+      lr: 0.0005
+      num_neg_train: 10
+      lambda_align: 0.002
+      lambda_kl: 5.0e-05
+      lambda_meta: 0.01
+      lambda_ood: 0.001
+      align_temperature: 0.15
+  - name: history_prior_v1_h192_r24_a24_p6x8_l1_neg10_lr0p0005_hp0p3
+    model:
+      hidden_dim: 192
+      relation_rank: 24
+      adapter_rank: 24
+      prompt_tokens: 6
+      prompt_heads: 8
+      temporal_layers: 1
+      temporal_encoder: mlp
+      time_encoder: fourier
+      use_struct: true
+      use_sem: true
+      use_cross: true
+      use_gate: true
+      use_variational: true
+      use_history_prior: true
+      history_prior_dim: 12
+      history_prior_hidden_dim: 48
+      history_prior_init_scale: 0.3
+    train:
+      lr: 0.0005
+      num_neg_train: 10
+      lambda_align: 0.002
+      lambda_kl: 5.0e-05
+      lambda_meta: 0.01
+      lambda_ood: 0.001
+      align_temperature: 0.15
+  - name: history_prior_v1_h192_r24_a24_p6x8_l1_neg10_lr0p0005_hp0p7
+    model:
+      hidden_dim: 192
+      relation_rank: 24
+      adapter_rank: 24
+      prompt_tokens: 6
+      prompt_heads: 8
+      temporal_layers: 1
+      temporal_encoder: mlp
+      time_encoder: fourier
+      use_struct: true
+      use_sem: true
+      use_cross: true
+      use_gate: true
+      use_variational: true
+      use_history_prior: true
+      history_prior_dim: 12
+      history_prior_hidden_dim: 48
+      history_prior_init_scale: 0.7
+    train:
+      lr: 0.0005
+      num_neg_train: 10
+      lambda_align: 0.002
+      lambda_kl: 5.0e-05
+      lambda_meta: 0.01
+      lambda_ood: 0.001
+      align_temperature: 0.15
+  - name: history_prior_v1_h128_r16_a16_p4x4_l1_neg15_lr0p0007_hp0p1
+    model:
+      hidden_dim: 128
+      relation_rank: 16
+      adapter_rank: 16
+      prompt_tokens: 4
+      prompt_heads: 4
+      temporal_layers: 1
+      temporal_encoder: mlp
+      time_encoder: fourier
+      use_struct: true
+      use_sem: true
+      use_cross: true
+      use_gate: true
+      use_variational: true
+      use_history_prior: true
+      history_prior_dim: 12
+      history_prior_hidden_dim: 32
+      history_prior_init_scale: 0.1
+    train:
+      lr: 0.0007
+      num_neg_train: 15
+      lambda_align: 0.005
+      lambda_kl: 0.0001
+      lambda_meta: 0.005
+      lambda_ood: 0.001
+      align_temperature: 0.2
+  - name: history_prior_v1_h128_r16_a16_p4x4_l1_neg15_lr0p0007_hp0p3
+    model:
+      hidden_dim: 128
+      relation_rank: 16
+      adapter_rank: 16
+      prompt_tokens: 4
+      prompt_heads: 4
+      temporal_layers: 1
+      temporal_encoder: mlp
+      time_encoder: fourier
+      use_struct: true
+      use_sem: true
+      use_cross: true
+      use_gate: true
+      use_variational: true
+      use_history_prior: true
+      history_prior_dim: 12
+      history_prior_hidden_dim: 32
+      history_prior_init_scale: 0.3
+    train:
+      lr: 0.0007
+      num_neg_train: 15
+      lambda_align: 0.005
+      lambda_kl: 0.0001
+      lambda_meta: 0.005
+      lambda_ood: 0.001
+      align_temperature: 0.2
+  - name: history_prior_v1_h128_r16_a16_p4x4_l1_neg15_lr0p0007_hp0p7
+    model:
+      hidden_dim: 128
+      relation_rank: 16
+      adapter_rank: 16
+      prompt_tokens: 4
+      prompt_heads: 4
+      temporal_layers: 1
+      temporal_encoder: mlp
+      time_encoder: fourier
+      use_struct: true
+      use_sem: true
+      use_cross: true
+      use_gate: true
+      use_variational: true
+      use_history_prior: true
+      history_prior_dim: 12
+      history_prior_hidden_dim: 32
+      history_prior_init_scale: 0.7
+    train:
+      lr: 0.0007
+      num_neg_train: 15
+      lambda_align: 0.005
+      lambda_kl: 0.0001
+      lambda_meta: 0.005
+      lambda_ood: 0.001
+      align_temperature: 0.2
+  - name: history_prior_v1_h160_r24_a24_p6x4_l1_neg15_lr0p0007_hp0p1
+    model:
+      hidden_dim: 160
+      relation_rank: 24
+      adapter_rank: 24
+      prompt_tokens: 6
+      prompt_heads: 4
+      temporal_layers: 1
+      temporal_encoder: mlp
+      time_encoder: fourier
+      use_struct: true
+      use_sem: true
+      use_cross: true
+      use_gate: true
+      use_variational: true
+      use_history_prior: true
+      history_prior_dim: 12
+      history_prior_hidden_dim: 40
+      history_prior_init_scale: 0.1
+    train:
+      lr: 0.0007
+      num_neg_train: 15
+      lambda_align: 0.005
+      lambda_kl: 0.0001
+      lambda_meta: 0.005
+      lambda_ood: 0.001
+      align_temperature: 0.2
+  - name: history_prior_v1_h160_r24_a24_p6x4_l1_neg15_lr0p0007_hp0p3
+    model:
+      hidden_dim: 160
+      relation_rank: 24
+      adapter_rank: 24
+      prompt_tokens: 6
+      prompt_heads: 4
+      temporal_layers: 1
+      temporal_encoder: mlp
+      time_encoder: fourier
+      use_struct: true
+      use_sem: true
+      use_cross: true
+      use_gate: true
+      use_variational: true
+      use_history_prior: true
+      history_prior_dim: 12
+      history_prior_hidden_dim: 40
+      history_prior_init_scale: 0.3
+    train:
+      lr: 0.0007
+      num_neg_train: 15
+      lambda_align: 0.005
+      lambda_kl: 0.0001
+      lambda_meta: 0.005
+      lambda_ood: 0.001
+      align_temperature: 0.2
+  - name: history_prior_v1_h160_r24_a24_p6x4_l1_neg15_lr0p0007_hp0p7
+    model:
+      hidden_dim: 160
+      relation_rank: 24
+      adapter_rank: 24
+      prompt_tokens: 6
+      prompt_heads: 4
+      temporal_layers: 1
+      temporal_encoder: mlp
+      time_encoder: fourier
+      use_struct: true
+      use_sem: true
+      use_cross: true
+      use_gate: true
+      use_variational: true
+      use_history_prior: true
+      history_prior_dim: 12
+      history_prior_hidden_dim: 40
+      history_prior_init_scale: 0.7
+    train:
+      lr: 0.0007
+      num_neg_train: 15
+      lambda_align: 0.005
+      lambda_kl: 0.0001
+      lambda_meta: 0.005
+      lambda_ood: 0.001
+      align_temperature: 0.2
+  - name: history_prior_v1_h192_r24_a24_p6x8_l1_neg15_lr0p0005_hp0p1
+    model:
+      hidden_dim: 192
+      relation_rank: 24
+      adapter_rank: 24
+      prompt_tokens: 6
+      prompt_heads: 8
+      temporal_layers: 1
+      temporal_encoder: mlp
+      time_encoder: fourier
+      use_struct: true
+      use_sem: true
+      use_cross: true
+      use_gate: true
+      use_variational: true
+      use_history_prior: true
+      history_prior_dim: 12
+      history_prior_hidden_dim: 48
+      history_prior_init_scale: 0.1
+    train:
+      lr: 0.0005
+      num_neg_train: 15
+      lambda_align: 0.002
+      lambda_kl: 5.0e-05
+      lambda_meta: 0.01
+      lambda_ood: 0.001
+      align_temperature: 0.15
+  - name: history_prior_v1_h192_r24_a24_p6x8_l1_neg15_lr0p0005_hp0p3
+    model:
+      hidden_dim: 192
+      relation_rank: 24
+      adapter_rank: 24
+      prompt_tokens: 6
+      prompt_heads: 8
+      temporal_layers: 1
+      temporal_encoder: mlp
+      time_encoder: fourier
+      use_struct: true
+      use_sem: true
+      use_cross: true
+      use_gate: true
+      use_variational: true
+      use_history_prior: true
+      history_prior_dim: 12
+      history_prior_hidden_dim: 48
+      history_prior_init_scale: 0.3
+    train:
+      lr: 0.0005
+      num_neg_train: 15
+      lambda_align: 0.002
+      lambda_kl: 5.0e-05
+      lambda_meta: 0.01
+      lambda_ood: 0.001
+      align_temperature: 0.15
+  - name: history_prior_v1_h192_r24_a24_p6x8_l1_neg15_lr0p0005_hp0p7
+    model:
+      hidden_dim: 192
+      relation_rank: 24
+      adapter_rank: 24
+      prompt_tokens: 6
+      prompt_heads: 8
+      temporal_layers: 1
+      temporal_encoder: mlp
+      time_encoder: fourier
+      use_struct: true
+      use_sem: true
+      use_cross: true
+      use_gate: true
+      use_variational: true
+      use_history_prior: true
+      history_prior_dim: 12
+      history_prior_hidden_dim: 48
+      history_prior_init_scale: 0.7
+    train:
+      lr: 0.0005
+      num_neg_train: 15
+      lambda_align: 0.002
+      lambda_kl: 5.0e-05
+      lambda_meta: 0.01
+      lambda_ood: 0.001
+      align_temperature: 0.15

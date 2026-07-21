@@ -1,0 +1,102 @@
+{
+  "best_candidate": {
+    "model": {
+      "adapter_rank": 24,
+      "hidden_dim": 192,
+      "relation_rank": 24,
+      "temporal_layers": 2
+    },
+    "name": "wider",
+    "train": {
+      "lambda_align": 0.05,
+      "lambda_kl": 0.0005,
+      "lr": 0.0007
+    }
+  },
+  "best_validation_mean": 0.7799650462962963,
+  "dataset": "synthetic",
+  "environment": {
+    "cuda_available": true,
+    "cuda_capability": [
+      7,
+      0
+    ],
+    "cuda_device": "Tesla V100-PCIE-32GB",
+    "python": "3.10.8",
+    "torch": "2.5.1+cu121"
+  },
+  "leakage_control": {
+    "selection_uses": "validation metrics only",
+    "temporal_split": "strict train < validation < test",
+    "test_usage": "not evaluated by this script"
+  },
+  "rows": [
+    {
+      "candidate": "base",
+      "seed": 1,
+      "val_ap": 0.1593104486485784,
+      "val_auc": 0.7838798611111112,
+      "val_ndcg": 0.6851521011270989
+    },
+    {
+      "candidate": "base",
+      "seed": 2,
+      "val_ap": 0.11828323858471149,
+      "val_auc": 0.7329368055555554,
+      "val_ndcg": 0.658635522369046
+    },
+    {
+      "candidate": "base",
+      "seed": 3,
+      "val_ap": 0.13836597263201794,
+      "val_auc": 0.72289375,
+      "val_ndcg": 0.6788818427097194
+    },
+    {
+      "candidate": "stronger_align",
+      "seed": 1,
+      "val_ap": 0.15184521360582928,
+      "val_auc": 0.7748166666666666,
+      "val_ndcg": 0.6799829837649469
+    },
+    {
+      "candidate": "stronger_align",
+      "seed": 2,
+      "val_ap": 0.1131728478976373,
+      "val_auc": 0.7202611111111111,
+      "val_ndcg": 0.6519604312581296
+    },
+    {
+      "candidate": "stronger_align",
+      "seed": 3,
+      "val_ap": 0.13266718628089014,
+      "val_auc": 0.7137729166666666,
+      "val_ndcg": 0.6756783120181099
+    },
+    {
+      "candidate": "wider",
+      "seed": 1,
+      "val_ap": 0.1801100990793023,
+      "val_auc": 0.7968152777777778,
+      "val_ndcg": 0.7008905509738868
+    },
+    {
+      "candidate": "wider",
+      "seed": 2,
+      "val_ap": 0.1708920334416855,
+      "val_auc": 0.8034951388888888,
+      "val_ndcg": 0.695641980802637
+    },
+    {
+      "candidate": "wider",
+      "seed": 3,
+      "val_ap": 0.1655468548526093,
+      "val_auc": 0.7395847222222222,
+      "val_ndcg": 0.7085351548038007
+    }
+  ],
+  "scenario": {
+    "name": "standard"
+  },
+  "selection_metric": "val_auc"
+}

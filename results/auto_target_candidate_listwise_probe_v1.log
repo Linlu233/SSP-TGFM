@@ -1,0 +1,3 @@
+{'event': 'auto_target_start', 'run_root': 'results/auto_target_candidate_listwise_probe_v1', 'target_wins': 3, 'metrics': ('auc', 'ap', 'mrr', 'hits@10', 'ndcg')}
+{'event': 'dataset_start', 'dataset': 'tgb_smallpedia', 'existing_wins': 0}
+{'event': 'search_start', 'dataset': 'tgb_smallpedia', 'bank': 'candidate_listwise_unified_probe', 'config': 'configs/auto_target/ssptgfm_search_tgb_smallpedia_candidate_listwise_unified_probe.yaml', 'max_parallel_searches': 1}

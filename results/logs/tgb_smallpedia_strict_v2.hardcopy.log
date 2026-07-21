@@ -1,0 +1,24 @@
+066, 'test_edges': 163172, 'num_nodes': 47433, 'num_relations': 566}
+{'event': 'train_seed_tensors_ready', 'seed': 1, 'elapsed_sec': 0.04608646035194
+397, 'cuda_allocated_mb': 105, 'cuda_reserved_mb': 126, 'cuda_max_allocated_mb':
+ 105}
+{'event': 'train_known_facts_ready', 'seed': 1, 'scope': 'train', 'edges': 77551
+4, 'elapsed_sec': 0.10935717448592186}
+{'event': 'train_known_facts_ready', 'seed': 1, 'scope': 'train_val', 'edges': 9
+37580, 'elapsed_sec': 0.21329059451818466}
+{'event': 'train_sampler_ready', 'seed': 1, 'elapsed_sec': 0.3040741831064224}
+{'event': 'val_sampler_ready', 'seed': 1, 'elapsed_sec': 0.3966073840856552}
+{'event': 'epoch_start', 'epoch': 1, 'epochs': 8, 'batches': 251, 'time_groups':
+ 98}
+epoch 1:   0%|                                          | 0/251 [00:00<?, ?it/s]
+{'event': 'train_time_group', 'epoch': 1, 'time_group': 1, 'time_groups': 98, 'b
+atch': 0, 'batches': 251, 'time_value': 1900.0, 'group_batches': 1, 'history_edg
+es': 0, 'elapsed_sec': 0.07703954726457596, 'cuda_allocated_mb': 126, 'cuda_rese
+rved_mb': 146, 'cuda_max_allocated_mb': 126}
+epoch 1:   0%|                     | 1/251 [00:08<34:08,  8.19s/it, loss=2.7e+3]
+{'event': 'train_progress', 'epoch': 1, 'batch': 1, 'batches': 251, 'time_group'
+: 1, 'time_groups': 98, 'history_edges': 0, 'pos_edges': 3904, 'neg_edges': 3904
+, 'loss_recent': 2696.73974609375, 'elapsed_sec': 8.232200928032398, 'avg_sec_pe
+r_batch': 8.232200928032398, 'cuda_allocated_mb': 481, 'cuda_reserved_mb': 1772,
+ 'cuda_max_allocated_mb': 1708}
+epoch 1:   2%|Ž                   | 4/251 [00:24<20:37,  5.01s/it, loss=2.07e+3]

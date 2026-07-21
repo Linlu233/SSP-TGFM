@@ -1,0 +1,33 @@
+{
+  "dataset": "icews05_15",
+  "detail": {
+    "ap": {
+      "baseline": 0.8371196732003561,
+      "value": 0.8348600647380504,
+      "win": false
+    },
+    "auc": {
+      "baseline": 0.9380577301948596,
+      "value": 0.935109945271641,
+      "win": false
+    },
+    "hits@10": {
+      "baseline": 0.634,
+      "value": 0.676,
+      "win": true
+    },
+    "mrr": {
+      "baseline": 0.3679325888535817,
+      "value": 0.42396446880314376,
+      "win": true
+    },
+    "ndcg": {
+      "baseline": 0.9794725824770751,
+      "value": 0.9789236236411241,
+      "win": false
+    }
+  },
+  "passed": false,
+  "target_wins": 3,
+  "wins": 2
+}

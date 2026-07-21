@@ -1,0 +1,62 @@
+{
+  "environment": {
+    "cuda_available": true,
+    "cuda_capability": [
+      7,
+      0
+    ],
+    "cuda_device": "Tesla V100-PCIE-32GB",
+    "python": "3.10.8",
+    "torch": "2.5.1+cu121"
+  },
+  "rows": [
+    {
+      "ablation": "full",
+      "allocated_mb": 44.76611328125,
+      "dataset": "tkgl-yago",
+      "few_shot_ratio": 1.0,
+      "max_allocated_mb": 6392.03271484375,
+      "method": "ssptgfm",
+      "params_total": 1698164,
+      "params_trainable": 1698115,
+      "reserved_mb": 6564.0,
+      "rough_forward_flops": 14125910016,
+      "scenario": "label_split",
+      "seed": 5,
+      "test_ap": 0.9231135869633277,
+      "test_auc": 0.9603465959896796,
+      "test_edges": 40052,
+      "test_hits@1": 0.8733333333333333,
+      "test_hits@10": 0.8966666666666666,
+      "test_hits@100": 0.9133333333333333,
+      "test_hits@50": 0.9066666666666666,
+      "test_mrr": 0.8845143369571212,
+      "test_ndcg": 0.9891129081706584,
+      "train_align": 10650.691584190956,
+      "train_edges": 323080,
+      "train_eval_time_sec": 8546.437555499375,
+      "train_kl": 14300.331730104104,
+      "train_loss": 54.75224354817317,
+      "train_lp": 0.06767322396477446,
+      "train_meta": 0.0669984219518273,
+      "train_ood_reg": 0.21414349377155303,
+      "train_rank": 0.023395755669573703,
+      "train_struct_aux": 0.530921907340869,
+      "train_weighted_align": 53.25345659745045,
+      "train_weighted_kl": 1.4300331700640994,
+      "train_weighted_meta": 0.00033499210252209915,
+      "train_weighted_ood_reg": 0.0002141435037349136,
+      "train_weighted_rank": 2.3395756875142745e-05,
+      "train_weighted_struct_aux": 0.0005309219314651087,
+      "val_ap": 0.9011045320840835,
+      "val_auc": 0.958215361964212,
+      "val_edges": 39046,
+      "val_hits@1": 0.8933333333333333,
+      "val_hits@10": 0.9133333333333333,
+      "val_hits@100": 0.9133333333333333,
+      "val_hits@50": 0.9133333333333333,
+      "val_mrr": 0.9011818430816864,
+      "val_ndcg": 0.9868053566383355
+    }
+  ]
+}

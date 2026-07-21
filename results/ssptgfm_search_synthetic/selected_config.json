@@ -1,0 +1,76 @@
+{
+  "ablation": {
+    "enabled": false
+  },
+  "baselines": [],
+  "data": {
+    "name": "synthetic",
+    "num_edges": 1600,
+    "num_nodes": 256,
+    "num_relations": 4,
+    "num_topics": 8,
+    "seed": 1
+  },
+  "device": "cuda",
+  "eval": {
+    "filtered_rank_edges": 100
+  },
+  "few_shot_ratios": [
+    1.0
+  ],
+  "model": {
+    "adapter_rank": 24,
+    "hidden_dim": 192,
+    "prompt_heads": 4,
+    "prompt_tokens": 4,
+    "relation_rank": 24,
+    "temporal_encoder": "mlp",
+    "temporal_layers": 2,
+    "time_dim": 32,
+    "time_encoder": "fourier",
+    "use_cross": true,
+    "use_gate": true,
+    "use_sem": true,
+    "use_struct": true,
+    "use_variational": true
+  },
+  "output_dir": "results/ssptgfm_search_synthetic",
+  "require_cuda": true,
+  "scenario": {
+    "name": "standard"
+  },
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "split": {
+    "test_ratio": 0.15,
+    "val_ratio": 0.15
+  },
+  "text": {
+    "backend": "hashing",
+    "cache_dir": "data/processed/text_cache",
+    "dim": 384
+  },
+  "train": {
+    "align_temperature": 0.2,
+    "batch_size": 256,
+    "epochs": 20,
+    "filter_scope": "exact",
+    "grad_clip": 1.0,
+    "lambda_align": 0.05,
+    "lambda_kl": 0.0005,
+    "lambda_meta": 0.0,
+    "lambda_ood": 0.0,
+    "lr": 0.0007,
+    "meta_lr": 0.01,
+    "meta_support_size": 16,
+    "negative_mode_eval": "filtered",
+    "negative_mode_train": "filtered",
+    "num_neg_eval": 25,
+    "num_neg_train": 1,
+    "patience": 5,
+    "weight_decay": 0.0001
+  }
+}

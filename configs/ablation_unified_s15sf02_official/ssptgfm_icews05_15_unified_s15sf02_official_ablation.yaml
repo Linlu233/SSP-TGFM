@@ -1,0 +1,140 @@
+device: cuda
+require_cuda: true
+output_dir: results/ablation_unified_s15sf02_official/ssptgfm_icews05_15_unified_s15sf02_official
+seeds:
+- 1
+- 2
+- 3
+- 4
+- 5
+few_shot_ratios:
+- 1.0
+baselines: []
+strict_full_formula: true
+data:
+  name: icews05-15
+  format: csv
+  path: data/raw/icews05-15
+split:
+  mode: time
+  val_ratio: 0.15
+  test_ratio: 0.15
+text:
+  backend: hashing
+  dim: 384
+  cache_dir: data/processed/text_cache
+model:
+  hidden_dim: 128
+  time_dim: 32
+  prompt_tokens: 4
+  prompt_heads: 4
+  relation_rank: 16
+  adapter_rank: 16
+  temporal_layers: 1
+  temporal_encoder: mlp
+  time_encoder: fourier
+  use_struct: true
+  use_sem: true
+  use_cross: true
+  use_gate: true
+  use_variational: true
+  use_history_prior: true
+  history_prior_dim: 12
+  history_prior_init_scale: 1.5
+  history_prior_mode: linear
+  history_prior_layer_norm: false
+  freeze_history_prior: true
+  use_history_prior_gate: false
+  use_struct_feature_residual: true
+  struct_feature_init_scale: 0.2
+  use_relation_entity_prior: false
+train:
+  epochs: 20
+  batch_size: 4096
+  lr: 0.001
+  weight_decay: 0.0001
+  num_neg_train: 1
+  num_neg_eval: 10
+  negative_mode_train: filtered
+  negative_mode_eval: filtered
+  filter_scope: exact
+  lambda_align: 0.05
+  lambda_kl: 0.0005
+  lambda_meta: 0.005
+  meta_lr: 0.01
+  meta_support_size: 4
+  meta_query_size: 4
+  lambda_ood: 0.001
+  align_temperature: 0.2
+  patience: 5
+  grad_clip: 1.0
+  lambda_struct_aux: 0.001
+  lambda_rank: 0.001
+  rank_margin: 0.0
+  rank_loss_type: bpr
+  early_stop_metric: val_composite
+  early_stop_weights:
+    val_mrr: 0.5
+    val_hits@10: 0.2
+    val_ap: 0.15
+    val_ndcg: 0.1
+    val_auc: 0.05
+  val_rank_edges: 75
+  progress_every_batches: 100
+  progress_every_seconds: 120.0
+  eval_batch_size_candidates: 4096
+eval:
+  filtered_rank_edges: 150
+ablation:
+  enabled: true
+  exclude:
+  - mamba_encoder
+  blocked:
+    mamba_encoder: mamba_ssm is unavailable in the verified base conda environment;
+      installation was not completed to avoid changing torch/CUDA dependencies.
+global_model_selection:
+  model_signature: 99f5ead1c915
+  shared_model: same model config across all datasets
+  train_selection: dataset-specific train hyperparameters selected on validation only
+  candidate: global_relpop_rep_enhanced_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp1_relpopfix48_sr0p01_sa0p001_rep8s0p02_rl0p001_m0_bpr
+  search_results: results/global_relpop_rep_enhanced_phase1/search_icews05_15_global_relpop_rep_enhanced_probe/search_results.json
+  validation_means:
+    val_ap: 0.857855574709465
+    val_auc: 0.9448417663574218
+    val_hits@10: 0.5333333333333333
+    val_mrr: 0.35165635333374934
+    val_ndcg: 0.973485960396037
+  test_usage: not used for selection
+final_model_selection:
+  model_name: unified_s15sf02_official
+  shared_model_structure: same SSP-TGFM model config across all final datasets
+  selection_uses: validation metrics only
+  test_usage: not used for model or hyperparameter selection
+  excluded_dataset: TGB-ICEWS
+  smallpedia_crosscheck: results/official_tgb_smallpedia_unified_crosscheck/search/search_results.json
+  tgb_yago_validation: results/official_tgb_yago_prior_scale_sweep/search/search_results.json
+  frozen_model:
+    hidden_dim: 128
+    time_dim: 32
+    prompt_tokens: 4
+    prompt_heads: 4
+    relation_rank: 16
+    adapter_rank: 16
+    temporal_layers: 1
+    temporal_encoder: mlp
+    time_encoder: fourier
+    use_struct: true
+    use_sem: true
+    use_cross: true
+    use_gate: true
+    use_variational: true
+    use_history_prior: true
+    history_prior_dim: 12
+    history_prior_init_scale: 1.5
+    history_prior_mode: linear
+    history_prior_layer_norm: false
+    freeze_history_prior: true
+    use_history_prior_gate: false
+    use_struct_feature_residual: true
+    struct_feature_init_scale: 0.2
+    use_relation_entity_prior: false

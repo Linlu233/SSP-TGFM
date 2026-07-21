@@ -1,0 +1,5 @@
+{'event': 'auto_target_start', 'run_root': 'results/auto_target_candidate_listwise_yago_diag_v1', 'target_wins': 3, 'metrics': ('auc', 'ap', 'mrr', 'hits@10', 'ndcg')}
+{'event': 'dataset_start', 'dataset': 'yago15k_temporal', 'existing_wins': 0}
+{'event': 'search_start', 'dataset': 'yago15k_temporal', 'bank': 'candidate_listwise_yago_diag_probe', 'config': 'configs/auto_target/ssptgfm_search_yago15k_temporal_candidate_listwise_yago_diag_probe.yaml', 'max_parallel_searches': 1}
+{'event': 'search_done', 'bank': 'candidate_listwise_yago_diag_probe'}
+{'event': 'auto_target_done', 'state': 'results/auto_target_candidate_listwise_yago_diag_v1/state.json'}

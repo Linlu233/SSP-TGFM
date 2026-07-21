@@ -1,0 +1,6 @@
+runtime_device=cuda
+cuda_device=Tesla V100-PCIE-32GB
+{'event': 'candidate_seed_start', 'candidate': 'compact_lr1e3_meta005_ood001', 'seed': 1, 'device': 'cuda', 'node_text_device': 'cuda:0'}
+{'event': 'epoch_start', 'epoch': 1, 'epochs': 4, 'batches': 88381}
+{'candidate': 'compact_lr1e3_meta005_ood001', 'seed': 1, 'val_auc': nan, 'status': 'failed', 'error_type': 'OutOfMemoryError', 'error': 'CUDA out of memory. Tried to allocate 22.00 MiB. GPU 0 has a total capacity of 31.73 GiB of which 14.25 MiB is free. Process 719376 has 31.71 GiB memory in use. Of the allocated memory 30.30 GiB is allocated by PyTorch, and 1.04 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)'}
+no finite validation score found

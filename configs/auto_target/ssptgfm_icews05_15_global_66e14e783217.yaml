@@ -1,0 +1,141 @@
+device: cuda
+require_cuda: true
+output_dir: results/global_model_formal_dryrun/ssptgfm_icews05_15_global_66e14e783217
+seeds:
+- 1
+- 2
+- 3
+- 4
+- 5
+few_shot_ratios:
+- 1.0
+baselines: []
+strict_full_formula: true
+data:
+  name: icews05-15
+  format: csv
+  path: data/raw/icews05-15
+split:
+  mode: time
+  val_ratio: 0.15
+  test_ratio: 0.15
+text:
+  backend: hashing
+  dim: 384
+  cache_dir: data/processed/text_cache
+model:
+  hidden_dim: 96
+  time_dim: 32
+  prompt_tokens: 4
+  prompt_heads: 4
+  relation_rank: 12
+  adapter_rank: 12
+  temporal_layers: 1
+  temporal_encoder: mlp
+  time_encoder: fourier
+  use_struct: true
+  use_sem: true
+  use_cross: true
+  use_gate: true
+  use_variational: true
+  use_history_prior: true
+  history_prior_dim: 40
+  history_prior_hidden_dim: 24
+  history_prior_init_scale: 0.35
+  history_prior_mode: linear
+  history_prior_weights:
+  - 2.0
+  - 0.5
+  - 0.1
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.01
+  - 0.01
+  - 0.01
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  freeze_history_prior: true
+  use_struct_feature_residual: true
+  struct_feature_hidden_dim: 96
+  struct_feature_init_scale: 0.5
+train:
+  epochs: 18
+  batch_size: 4096
+  lr: 0.001
+  weight_decay: 0.0001
+  num_neg_train: 1
+  num_neg_eval: 10
+  negative_mode_train: filtered
+  negative_mode_eval: filtered
+  filter_scope: exact
+  lambda_align: 0.005
+  lambda_kl: 0.0001
+  lambda_meta: 0.005
+  meta_lr: 0.01
+  meta_support_size: 4
+  meta_query_size: 4
+  lambda_ood: 0.001
+  align_temperature: 0.2
+  patience: 5
+  grad_clip: 1.0
+  lambda_struct_aux: 0.1
+  lambda_rank: 0.05
+  rank_margin: 0.0
+  rank_loss_type: bpr
+  early_stop_metric: val_composite
+  early_stop_weights:
+    val_mrr: 0.55
+    val_hits@10: 0.15
+    val_ap: 0.15
+    val_auc: 0.05
+    val_ndcg: 0.1
+  val_rank_edges: 75
+  progress_every_batches: 100
+  progress_every_seconds: 120.0
+eval:
+  filtered_rank_edges: 150
+ablation:
+  enabled: false
+global_model_selection:
+  model_signature: 66e14e783217
+  shared_model: same model config across all datasets
+  train_selection: dataset-specific train hyperparameters selected on validation only
+  candidate: struct_history_fastscan_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp0p35_freq40_sr0p5_sa0p1_rl0p05_m0_bpr
+  search_results: results/auto_target_struct_micro_v3/search_icews05_15_struct_history_fastscan/search_results.json
+  validation_means:
+    val_ap: 0.6541918699001251
+    val_auc: 0.7514851888020833
+    val_hits@10: 0.0
+    val_mrr: 0.006976965794477561
+    val_ndcg: 0.92362590572935
+  test_usage: not used for selection

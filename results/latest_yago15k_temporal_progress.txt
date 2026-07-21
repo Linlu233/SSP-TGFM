@@ -1,0 +1,78 @@
+===== 2026-07-06_09:28:30 yago15k_temporal_progress =====
+[gpu]
+0, Tesla V100-PCIE-32GB, 100, 30882, 32768, 37
+[processes]
+[search_rows]
+6 results/ssptgfm_search_yago15k_temporal_all_losses/partial_search_results.jsonl
+[formal_rows]
+3 results/ssptgfm_yago15k_temporal_best_seed1/partial_results.jsonl
+3 results/ssptgfm_yago15k_temporal_best_seed2/partial_results.jsonl
+3 results/ssptgfm_yago15k_temporal_best_seed3/partial_results.jsonl
+3 results/ssptgfm_yago15k_temporal_best_seed4/partial_results.jsonl
+3 results/ssptgfm_yago15k_temporal_best_seed5/partial_results.jsonl
+15 results/ssptgfm_yago15k_temporal_best/partial_results.jsonl
+[pipeline_tail]
+{'event': 'epoch_start', 'epoch': 2, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 2, 'val_auc': 0.6633608776562729, 'elapsed_sec': 29.556207552552223}
+{'event': 'epoch_start', 'epoch': 3, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 3, 'val_auc': 0.6632366976997066, 'elapsed_sec': 30.033409144729376}
+{'event': 'epoch_start', 'epoch': 4, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 4, 'val_auc': 0.7041881916917302, 'elapsed_sec': 29.93997011333704}
+{'event': 'epoch_start', 'epoch': 5, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 5, 'val_auc': 0.6840080220007452, 'elapsed_sec': 29.690248992294073}
+{'event': 'epoch_start', 'epoch': 6, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 6, 'val_auc': 0.6519170851409068, 'elapsed_sec': 30.11238883435726}
+{'event': 'epoch_start', 'epoch': 7, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 7, 'val_auc': 0.6511328826084493, 'elapsed_sec': 29.46837940067053}
+{'event': 'epoch_start', 'epoch': 8, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 8, 'val_auc': 0.5950291443002438, 'elapsed_sec': 28.94595555588603}
+{'candidate': 'h128_lr7e4_meta01_ood001', 'seed': 1, 'val_auc': 0.7022358680638979, 'val_ap': 0.17458457593129154, 'val_ndcg': 0.8128343364822658, 'train_loss': 12.20730804841397, 'train_lp': 0.38600216003458443, 'train_align': 218.01926872639334, 'train_kl': 1834.7434728266828, 'train_ood_reg': 0.23616412938651393, 'train_meta': 0.2734482476223355}
+{'event': 'candidate_seed_start', 'candidate': 'h128_lr7e4_meta01_ood001', 'seed': 2, 'device': 'cuda', 'node_text_device': 'cuda:0'}
+{'event': 'epoch_start', 'epoch': 1, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 1, 'val_auc': 0.6693801094539539, 'elapsed_sec': 28.49409396573901}
+{'event': 'epoch_start', 'epoch': 2, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 2, 'val_auc': 0.67763987334629, 'elapsed_sec': 29.68709648400545}
+{'event': 'epoch_start', 'epoch': 3, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 3, 'val_auc': 0.7069992465305117, 'elapsed_sec': 29.650703359395266}
+{'event': 'epoch_start', 'epoch': 4, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 4, 'val_auc': 0.6802283355275753, 'elapsed_sec': 29.351313542574644}
+{'event': 'epoch_start', 'epoch': 5, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 5, 'val_auc': 0.6499609311709323, 'elapsed_sec': 28.757461220026016}
+{'event': 'epoch_start', 'epoch': 6, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 6, 'val_auc': 0.6368185349969926, 'elapsed_sec': 28.669181779026985}
+{'event': 'epoch_start', 'epoch': 7, 'epochs': 12, 'batches': 118}
+{'event': 'epoch_end', 'epoch': 7, 'val_auc': 0.6338975808360781, 'elapsed_sec': 28.786581702530384}
+{'candidate': 'h128_lr7e4_meta01_ood001', 'seed': 2, 'val_auc': 0.7096427486799527, 'val_ap': 0.184151083197614, 'val_ndcg': 0.8205998068648402, 'train_loss': 12.877203782988808, 'train_lp': 0.375014532100946, 'train_align': 232.45449644125114, 'train_kl': 1751.5721504082114, 'train_ood_reg': 0.2343331361978741, 'train_meta': 0.3443785111885518}
+2026-05-27_13:46:34 yago15k_temporal_search_exit rc=0
+updated configs/ssptgfm_yago15k_temporal_best.yaml from results/ssptgfm_search_yago15k_temporal_all_losses/search_results.json: h128_lr7e4_meta01_ood001
+2026-05-27_13:46:38 yago15k_temporal_apply_exit rc=0
+2026-05-27_13:46:38 launched_yago15k_temporal_seed seed=1 pid=866535 out=results/ssptgfm_yago15k_temporal_best_seed1 log=results/logs/yago15k_temporal_seed1.log
+2026-05-27_13:46:38 launched_yago15k_temporal_seed seed=2 pid=866537 out=results/ssptgfm_yago15k_temporal_best_seed2 log=results/logs/yago15k_temporal_seed2.log
+2026-05-27_13:46:38 launched_yago15k_temporal_seed seed=3 pid=866540 out=results/ssptgfm_yago15k_temporal_best_seed3 log=results/logs/yago15k_temporal_seed3.log
+2026-05-27_13:46:38 launched_yago15k_temporal_seed seed=4 pid=866544 out=results/ssptgfm_yago15k_temporal_best_seed4 log=results/logs/yago15k_temporal_seed4.log
+2026-05-27_13:46:38 launched_yago15k_temporal_seed seed=5 pid=866548 out=results/ssptgfm_yago15k_temporal_best_seed5 log=results/logs/yago15k_temporal_seed5.log
+2026-05-27_13:46:38 launched_yago15k_temporal_merge_watchdog pid=866552
+[merge_tail]
+paired test_hits@1: ssptgfm/full vs lm_mlp/baseline: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': 1.1983627319146388}
+paired test_hits@1: ssptgfm/full vs structure_mlp/baseline: {'n': 5.0, 'wilcoxon_p': 0.3125, 'cohens_dz': -0.6326348757299033}
+paired test_hits@10: ssptgfm/full vs lm_mlp/baseline: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': 1.3427831538684514}
+paired test_hits@10: ssptgfm/full vs structure_mlp/baseline: {'n': 5.0, 'wilcoxon_p': 0.4375, 'cohens_dz': -0.42733192303830375}
+paired test_hits@100: ssptgfm/full vs lm_mlp/baseline: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': 4.981926689374422}
+paired test_hits@100: ssptgfm/full vs structure_mlp/baseline: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': -2.0041772386251613}
+paired test_hits@50: ssptgfm/full vs lm_mlp/baseline: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': 2.1466653749445768}
+paired test_hits@50: ssptgfm/full vs structure_mlp/baseline: {'n': 5.0, 'wilcoxon_p': 0.4375, 'cohens_dz': -0.48994638855760003}
+paired test_mrr: ssptgfm/full vs lm_mlp/baseline: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': 1.3076669792598254}
+paired test_mrr: ssptgfm/full vs structure_mlp/baseline: {'n': 5.0, 'wilcoxon_p': 0.3125, 'cohens_dz': -0.6280409419968}
+paired test_ndcg: ssptgfm/full vs lm_mlp/baseline: {'n': 5.0, 'wilcoxon_p': 0.1875, 'cohens_dz': 0.767414459805519}
+paired test_ndcg: ssptgfm/full vs structure_mlp/baseline: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': 1.5287613490069107}
+paired val_ap: ssptgfm/full vs lm_mlp/baseline: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': -1.709746176684915}
+paired val_ap: ssptgfm/full vs structure_mlp/baseline: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': 1.8796265772823273}
+paired val_auc: ssptgfm/full vs lm_mlp/baseline: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': -2.152569986318207}
+paired val_auc: ssptgfm/full vs structure_mlp/baseline: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': 1.482632107047409}
+paired val_edges: ssptgfm/full vs lm_mlp/baseline: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': 0.0}
+paired val_edges: ssptgfm/full vs structure_mlp/baseline: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': 0.0}
+paired val_ndcg: ssptgfm/full vs lm_mlp/baseline: {'n': 5.0, 'wilcoxon_p': 0.125, 'cohens_dz': -1.3125010225900466}
+paired val_ndcg: ssptgfm/full vs structure_mlp/baseline: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': 2.30628483098424}
+[disk]
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/vdb         87G   42G   46G  49% /root/autodl-tmp

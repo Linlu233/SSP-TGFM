@@ -1,0 +1,12 @@
+2026-06-10_13:48:32 fast_strong_queue_start max_parallel=2
+2026-06-10_13:48:32 yago15k_temporal_start config=configs/ssptgfm_yago15k_temporal_best.yaml
+2026-06-10_13:48:32 tgb_smallpedia_start config=configs/ssptgfm_tgb_smallpedia_best.yaml
+2026-06-10_13:55:34 yago15k_temporal_done rows=20
+2026-06-10_13:55:34 icews14_start config=configs/ssptgfm_icews14_best.yaml
+2026-06-10_14:16:22 icews14_done rows=20
+2026-06-10_14:16:22 icews05_15_start config=configs/ssptgfm_icews05_15_best.yaml
+2026-06-10_15:06:21 icews05_15_done rows=20
+2026-06-10_15:06:21 tgb_yago_start config=configs/ssptgfm_tgb_yago_best.yaml
+2026-06-10_15:39:19 tgb_yago_done rows=20
+2026-06-10_17:42:47 tgb_smallpedia_done rows=20
+2026-06-10_17:42:47 fast_strong_queue_done

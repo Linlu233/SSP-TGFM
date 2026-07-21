@@ -1,0 +1,83 @@
+{
+  "ablation": {
+    "enabled": false
+  },
+  "baselines": [],
+  "data": {
+    "format": "csv",
+    "name": "icews14",
+    "path": "data/raw/icews14"
+  },
+  "device": "cuda",
+  "eval": {
+    "filtered_rank_edges": 250
+  },
+  "few_shot_ratios": [
+    1.0
+  ],
+  "model": {
+    "adapter_rank": 16,
+    "hidden_dim": 128,
+    "prompt_heads": 4,
+    "prompt_tokens": 4,
+    "relation_rank": 16,
+    "temporal_encoder": "mlp",
+    "temporal_layers": 1,
+    "time_dim": 32,
+    "time_encoder": "fourier",
+    "use_cross": true,
+    "use_gate": true,
+    "use_sem": true,
+    "use_struct": true,
+    "use_variational": true
+  },
+  "output_dir": "results/auto_target_optimization/search_icews14_balanced_rank_v1",
+  "require_cuda": true,
+  "seeds": [
+    1,
+    2
+  ],
+  "split": {
+    "mode": "time",
+    "test_ratio": 0.15,
+    "val_ratio": 0.15
+  },
+  "strict_full_formula": true,
+  "text": {
+    "backend": "hashing",
+    "cache_dir": "data/processed/text_cache",
+    "dim": 384
+  },
+  "train": {
+    "align_temperature": 0.2,
+    "batch_size": 512,
+    "early_stop_metric": "val_composite",
+    "early_stop_weights": {
+      "val_ap": 0.2,
+      "val_auc": 0.1,
+      "val_hits@10": 0.25,
+      "val_mrr": 0.4,
+      "val_ndcg": 0.05
+    },
+    "epochs": 14,
+    "filter_scope": "exact",
+    "grad_clip": 1.0,
+    "lambda_align": 0.005,
+    "lambda_kl": 0.0001,
+    "lambda_meta": 0.005,
+    "lambda_ood": 0.001,
+    "lr": 0.0007,
+    "meta_lr": 0.01,
+    "meta_query_size": 16,
+    "meta_support_size": 16,
+    "negative_mode_eval": "filtered",
+    "negative_mode_train": "filtered",
+    "num_neg_eval": 25,
+    "num_neg_train": 15,
+    "patience": 4,
+    "progress_every_batches": 100,
+    "progress_every_seconds": 120.0,
+    "val_rank_edges": 100,
+    "weight_decay": 0.0001
+  }
+}

@@ -1,0 +1,214 @@
+device: cuda
+require_cuda: true
+output_dir: results/auto_target_relpop_probe_v2/search_tgb_smallpedia_struct_history_relpop_fixed_probe_rank5
+seeds:
+- 1
+- 2
+few_shot_ratios:
+- 1.0
+baselines: []
+strict_full_formula: true
+data:
+  name: tkgl-smallpedia
+  format: tgb
+  root: /root/autodl-tmp/data/data/raw/tgb
+  download: true
+split:
+  mode: labels
+text:
+  backend: hashing
+  dim: 384
+  cache_dir: data/processed/text_cache
+model:
+  hidden_dim: 96
+  time_dim: 32
+  prompt_tokens: 4
+  prompt_heads: 4
+  relation_rank: 12
+  adapter_rank: 12
+  temporal_layers: 1
+  temporal_encoder: mlp
+  time_encoder: fourier
+  use_struct: true
+  use_sem: true
+  use_cross: true
+  use_gate: true
+  use_variational: true
+  use_history_prior: true
+train:
+  epochs: 1
+  batch_size: 512
+  lr: 0.001
+  weight_decay: 0.0001
+  num_neg_train: 1
+  num_neg_eval: 5
+  negative_mode_train: filtered
+  negative_mode_eval: filtered
+  filter_scope: exact
+  lambda_align: 0.05
+  lambda_kl: 0.0005
+  lambda_meta: 0.005
+  meta_lr: 0.01
+  meta_support_size: 4
+  meta_query_size: 4
+  lambda_ood: 0.001
+  align_temperature: 0.2
+  patience: 1
+  grad_clip: 1.0
+  early_stop_metric: val_composite
+  early_stop_weights: &id001
+    val_mrr: 0.45
+    val_hits@10: 0.2
+    val_ap: 0.2
+    val_auc: 0.05
+    val_ndcg: 0.1
+  val_rank_edges: 5
+  progress_every_batches: 100
+  progress_every_seconds: 120.0
+  val_binary_edges: 512
+  val_eval_sample: temporal_uniform
+eval:
+  filtered_rank_edges: 250
+ablation:
+  enabled: false
+search:
+  metric: composite
+  metrics:
+  - val_auc
+  - val_ap
+  - val_mrr
+  - val_hits@10
+  - val_ndcg
+  metric_weights: *id001
+  strict_full_formula: true
+  candidates:
+  - name: struct_history_relpop_fixed_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp1_relpopfix48_sr0_sa0_rl0_m0_bpr
+    model:
+      hidden_dim: 96
+      relation_rank: 12
+      adapter_rank: 12
+      prompt_tokens: 4
+      prompt_heads: 4
+      temporal_layers: 1
+      temporal_encoder: mlp
+      time_encoder: fourier
+      use_struct: true
+      use_sem: true
+      use_cross: true
+      use_gate: true
+      use_variational: true
+      use_history_prior: true
+      history_prior_dim: 48
+      history_prior_hidden_dim: 24
+      history_prior_init_scale: 1.0
+      history_prior_mode: linear
+      history_prior_layer_norm: false
+      history_prior_weights: &id002
+      - 2.0
+      - 0.5
+      - 0.1
+      - 0.1
+      - 0.1
+      - 0.0
+      - 0.6
+      - 0.6
+      - 0.1
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.5
+      - 0.15
+      - 0.0
+      - 0.0
+      - 0.4
+      - 0.4
+      - 0.1
+      - 0.1
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.15
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.03
+      - 0.03
+      - 0.03
+      - 0.0
+      - 0.0
+      - 0.04
+      - 0.04
+      - 0.0
+      - 0.02
+      - 0.02
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 2.0
+      - 2.0
+      - 0.1
+      - 0.1
+      - 0.5
+      - 0.5
+      freeze_history_prior: true
+      use_struct_feature_residual: true
+      struct_feature_hidden_dim: 96
+      struct_feature_init_scale: 0.0
+    train:
+      lr: 0.001
+      num_neg_train: 1
+      lambda_align: 0.005
+      lambda_kl: 0.0001
+      lambda_meta: 0.005
+      lambda_ood: 0.001
+      align_temperature: 0.2
+      lambda_struct_aux: 0.0
+      lambda_rank: 0.0
+      rank_margin: 0.0
+      rank_loss_type: bpr
+  - name: struct_history_relpop_fixed_probe_h96_r12_a12_p4x4_l1_neg1_lr0p001_hp1_relpopfix48_sr0p1_sa0_rl0_m0_bpr
+    model:
+      hidden_dim: 96
+      relation_rank: 12
+      adapter_rank: 12
+      prompt_tokens: 4
+      prompt_heads: 4
+      temporal_layers: 1
+      temporal_encoder: mlp
+      time_encoder: fourier
+      use_struct: true
+      use_sem: true
+      use_cross: true
+      use_gate: true
+      use_variational: true
+      use_history_prior: true
+      history_prior_dim: 48
+      history_prior_hidden_dim: 24
+      history_prior_init_scale: 1.0
+      history_prior_mode: linear
+      history_prior_layer_norm: false
+      history_prior_weights: *id002
+      freeze_history_prior: true
+      use_struct_feature_residual: true
+      struct_feature_hidden_dim: 96
+      struct_feature_init_scale: 0.1
+    train:
+      lr: 0.001
+      num_neg_train: 1
+      lambda_align: 0.005
+      lambda_kl: 0.0001
+      lambda_meta: 0.005
+      lambda_ood: 0.001
+      align_temperature: 0.2
+      lambda_struct_aux: 0.0
+      lambda_rank: 0.0
+      rank_margin: 0.0
+      rank_loss_type: bpr
+  seeds:
+  - 1
+  train_edge_limit: 20000
+  train_edge_sample: temporal_uniform
+  val_rank_edges: 5
+  val_binary_edges: 512

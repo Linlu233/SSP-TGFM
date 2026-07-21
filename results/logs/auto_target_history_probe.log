@@ -1,0 +1,5 @@
+{'event': 'auto_target_start', 'run_root': 'results/auto_target_history_probe', 'target_wins': 3, 'metrics': ('auc', 'ap', 'mrr', 'hits@10', 'ndcg')}
+{'event': 'dataset_start', 'dataset': 'icews14', 'existing_wins': 0}
+{'event': 'search_start', 'dataset': 'icews14', 'bank': 'history_prior_probe', 'config': 'configs/auto_target/ssptgfm_search_icews14_history_prior_probe.yaml', 'max_parallel_searches': 3}
+{'event': 'search_start', 'dataset': 'icews14', 'bank': 'history_rank_probe', 'config': 'configs/auto_target/ssptgfm_search_icews14_history_rank_probe.yaml', 'max_parallel_searches': 3}
+{'event': 'search_start', 'dataset': 'icews14', 'bank': 'history_ap_auc_probe', 'config': 'configs/auto_target/ssptgfm_search_icews14_history_ap_auc_probe.yaml', 'max_parallel_searches': 3}

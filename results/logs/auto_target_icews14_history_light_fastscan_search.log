@@ -1,0 +1,15 @@
+
+$ /root/miniconda3/bin/python -u scripts/search_hparams.py --config configs/auto_target/ssptgfm_search_icews14_history_light_fastscan.yaml --output results/auto_target_icews14_history_light_fastscan/search_icews14_history_light_fastscan --resume
+runtime_device=cuda
+cuda_device=Tesla V100-PCIE-32GB
+{'event': 'candidate_seed_start', 'candidate': 'history_light_fastscan_h96_r12_a12_p4x4_l1_neg5_lr0p001_hp0p1_light12_rl0_m1', 'seed': 1, 'device': 'cuda', 'node_text_device': 'cuda:0'}
+{'event': 'train_seed_start', 'seed': 1, 'train_edges': 50000, 'val_edges': 14592, 'test_edges': 14378, 'num_nodes': 7128, 'num_relations': 230}
+{'event': 'train_seed_tensors_ready', 'seed': 1, 'elapsed_sec': 0.07292556762695312, 'cuda_allocated_mb': 21, 'cuda_reserved_mb': 24, 'cuda_max_allocated_mb': 21}
+{'event': 'train_known_facts_ready', 'seed': 1, 'scope': 'train', 'edges': 50000, 'elapsed_sec': 0.07888970151543617}
+{'event': 'train_known_facts_ready', 'seed': 1, 'scope': 'train_val', 'edges': 64592, 'elapsed_sec': 0.08451955765485764}
+{'event': 'train_sampler_ready', 'seed': 1, 'elapsed_sec': 0.09003975987434387}
+{'event': 'val_sampler_ready', 'seed': 1, 'elapsed_sec': 0.09624361619353294}
+{'event': 'epoch_start', 'epoch': 1, 'epochs': 1, 'batches': 205, 'time_groups': 205}
+{'event': 'train_time_group', 'epoch': 1, 'time_group': 1, 'time_groups': 205, 'batch': 0, 'batches': 205, 'time_value': 1388534400.0, 'group_batches': 1, 'history_edges': 0, 'elapsed_sec': 0.09481862187385559, 'cuda_allocated_mb': 22, 'cuda_reserved_mb': 24, 'cuda_max_allocated_mb': 22}
+{'event': 'train_progress', 'epoch': 1, 'batch': 1, 'batches': 205, 'time_group': 1, 'time_groups': 205, 'history_edges': 0, 'pos_edges': 113, 'neg_edges': 565, 'loss_recent': 24.405025482177734, 'elapsed_sec': 6.301974944770336, 'avg_sec_per_batch': 6.301974944770336, 'cuda_allocated_mb': 96, 'cuda_reserved_mb': 214, 'cuda_max_allocated_mb': 195}
+{'event': 'train_progress', 'epoch': 1, 'batch': 18, 'batches': 205, 'time_group': 18, 'time_groups': 205, 'history_edges': 3548, 'pos_edges': 138, 'neg_edges': 690, 'loss_recent': 42.84208573235406, 'elapsed_sec': 129.49912744015455, 'avg_sec_per_batch': 7.194395968897475, 'cuda_allocated_mb': 100, 'cuda_reserved_mb': 490, 'cuda_max_allocated_mb': 433}

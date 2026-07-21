@@ -1,0 +1,1 @@
+{"candidate": "compact_lr1e3_meta005_ood001", "error": "\"addmm_sparse_cuda\" not implemented for 'Half'", "error_type": "RuntimeError", "seed": 1, "status": "failed", "val_auc": NaN}

@@ -1,0 +1,3 @@
+{'event': 'auto_target_start', 'run_root': 'results/auto_target_yago15k_rankloss_fastscan', 'target_wins': 3, 'metrics': ('auc', 'ap', 'mrr', 'hits@10', 'ndcg')}
+{'event': 'dataset_start', 'dataset': 'yago15k_temporal', 'existing_wins': 0}
+{'event': 'search_start', 'dataset': 'yago15k_temporal', 'bank': 'rankloss_fastscan', 'config': 'configs/auto_target/ssptgfm_search_yago15k_temporal_rankloss_fastscan.yaml', 'max_parallel_searches': 3}

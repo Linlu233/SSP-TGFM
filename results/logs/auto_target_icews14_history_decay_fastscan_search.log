@@ -1,0 +1,31 @@
+
+$ /root/miniconda3/bin/python -u scripts/search_hparams.py --config configs/auto_target/ssptgfm_search_icews14_history_decay_fastscan.yaml --output results/auto_target_fastscan_icews14/search_icews14_history_decay_fastscan --resume
+runtime_device=cuda
+cuda_device=Tesla V100-PCIE-32GB
+{'event': 'candidate_seed_start', 'candidate': 'history_decay_fastscan_h128_r16_a16_p4x4_l1_neg5_lr0p001_hp0p25_decay_rank28_rl0_m1', 'seed': 1, 'device': 'cuda', 'node_text_device': 'cuda:0'}
+{'event': 'train_seed_start', 'seed': 1, 'train_edges': 61760, 'val_edges': 14592, 'test_edges': 14378, 'num_nodes': 7128, 'num_relations': 230}
+{'event': 'train_seed_tensors_ready', 'seed': 1, 'elapsed_sec': 0.010211043059825897, 'cuda_allocated_mb': 28, 'cuda_reserved_mb': 44, 'cuda_max_allocated_mb': 28}
+{'event': 'train_known_facts_ready', 'seed': 1, 'scope': 'train', 'edges': 61760, 'elapsed_sec': 0.016752883791923523}
+{'event': 'train_known_facts_ready', 'seed': 1, 'scope': 'train_val', 'edges': 76352, 'elapsed_sec': 0.023230668157339096}
+{'event': 'train_sampler_ready', 'seed': 1, 'elapsed_sec': 0.029409054666757584}
+{'event': 'val_sampler_ready', 'seed': 1, 'elapsed_sec': 0.03594949096441269}
+{'event': 'epoch_start', 'epoch': 1, 'epochs': 1, 'batches': 255, 'time_groups': 255}
+{'event': 'train_time_group', 'epoch': 1, 'time_group': 1, 'time_groups': 255, 'batch': 0, 'batches': 255, 'time_value': 1388534400.0, 'group_batches': 1, 'history_edges': 0, 'elapsed_sec': 0.02882465347647667, 'cuda_allocated_mb': 30, 'cuda_reserved_mb': 46, 'cuda_max_allocated_mb': 30}
+{'event': 'train_progress', 'epoch': 1, 'batch': 1, 'batches': 255, 'time_group': 1, 'time_groups': 255, 'history_edges': 0, 'pos_edges': 113, 'neg_edges': 565, 'loss_recent': 24.87322425842285, 'elapsed_sec': 1.2991351038217545, 'avg_sec_per_batch': 1.2991351038217545, 'cuda_allocated_mb': 128, 'cuda_reserved_mb': 292, 'cuda_max_allocated_mb': 262}
+{'event': 'train_progress', 'epoch': 1, 'batch': 57, 'batches': 255, 'time_group': 57, 'time_groups': 255, 'history_edges': 12949, 'pos_edges': 293, 'neg_edges': 1465, 'loss_recent': 46.832231956615786, 'elapsed_sec': 122.42033100873232, 'avg_sec_per_batch': 2.1477251054163564, 'cuda_allocated_mb': 145, 'cuda_reserved_mb': 866, 'cuda_max_allocated_mb': 793}
+{'event': 'train_progress', 'epoch': 1, 'batch': 100, 'batches': 255, 'time_group': 100, 'time_groups': 255, 'history_edges': 23816, 'pos_edges': 259, 'neg_edges': 1295, 'loss_recent': 47.46067180633545, 'elapsed_sec': 226.81304473429918, 'avg_sec_per_batch': 2.2681304473429917, 'cuda_allocated_mb': 142, 'cuda_reserved_mb': 1108, 'cuda_max_allocated_mb': 1035}
+
+$ /root/miniconda3/bin/python -u scripts/search_hparams.py --config configs/auto_target/ssptgfm_search_icews14_history_decay_fastscan.yaml --output results/auto_target_fastscan_icews14_v2/search_icews14_history_decay_fastscan --resume
+runtime_device=cuda
+cuda_device=Tesla V100-PCIE-32GB
+{'event': 'candidate_seed_start', 'candidate': 'history_decay_fastscan_h128_r16_a16_p4x4_l1_neg5_lr0p001_hp0p25_decay_rank28_rl0_m1', 'seed': 1, 'device': 'cuda', 'node_text_device': 'cuda:0'}
+{'event': 'train_seed_start', 'seed': 1, 'train_edges': 61760, 'val_edges': 14592, 'test_edges': 14378, 'num_nodes': 7128, 'num_relations': 230}
+{'event': 'train_seed_tensors_ready', 'seed': 1, 'elapsed_sec': 0.009882181882858276, 'cuda_allocated_mb': 28, 'cuda_reserved_mb': 44, 'cuda_max_allocated_mb': 28}
+{'event': 'train_known_facts_ready', 'seed': 1, 'scope': 'train', 'edges': 61760, 'elapsed_sec': 0.016567546874284744}
+{'event': 'train_known_facts_ready', 'seed': 1, 'scope': 'train_val', 'edges': 76352, 'elapsed_sec': 0.0227595716714859}
+{'event': 'train_sampler_ready', 'seed': 1, 'elapsed_sec': 0.028643887490034103}
+{'event': 'val_sampler_ready', 'seed': 1, 'elapsed_sec': 0.03397389128804207}
+{'event': 'epoch_start', 'epoch': 1, 'epochs': 1, 'batches': 255, 'time_groups': 255}
+{'event': 'train_time_group', 'epoch': 1, 'time_group': 1, 'time_groups': 255, 'batch': 0, 'batches': 255, 'time_value': 1388534400.0, 'group_batches': 1, 'history_edges': 0, 'elapsed_sec': 0.029809147119522095, 'cuda_allocated_mb': 30, 'cuda_reserved_mb': 46, 'cuda_max_allocated_mb': 30}
+{'event': 'train_progress', 'epoch': 1, 'batch': 1, 'batches': 255, 'time_group': 1, 'time_groups': 255, 'history_edges': 0, 'pos_edges': 113, 'neg_edges': 565, 'loss_recent': 24.87322425842285, 'elapsed_sec': 1.73317776247859, 'avg_sec_per_batch': 1.73317776247859, 'cuda_allocated_mb': 128, 'cuda_reserved_mb': 292, 'cuda_max_allocated_mb': 262}
+{'event': 'train_progress', 'epoch': 1, 'batch': 57, 'batches': 255, 'time_group': 57, 'time_groups': 255, 'history_edges': 12949, 'pos_edges': 293, 'neg_edges': 1465, 'loss_recent': 46.8322315550687, 'elapsed_sec': 124.45666439086199, 'avg_sec_per_batch': 2.183450252471263, 'cuda_allocated_mb': 145, 'cuda_reserved_mb': 866, 'cuda_max_allocated_mb': 793}

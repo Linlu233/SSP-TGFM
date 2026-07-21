@@ -1,0 +1,20 @@
+
+$ /root/miniconda3/bin/python -u scripts/search_hparams.py --config configs/auto_target/ssptgfm_search_icews05_15_history_decay_rankloss.yaml --output results/auto_target_decay_icews05_15/search_icews05_15_history_decay_rankloss --resume
+runtime_device=cuda
+cuda_device=Tesla V100-PCIE-32GB
+{'event': 'candidate_seed_start', 'candidate': 'history_decay_rankloss_h128_r16_a16_p4x4_l1_neg1_lr0p001_hp0p35_decay_rank28_rl0_m1', 'seed': 1, 'device': 'cuda', 'node_text_device': 'cuda:0'}
+{'event': 'train_seed_start', 'seed': 1, 'train_edges': 326918, 'val_edges': 60324, 'test_edges': 74087, 'num_nodes': 10488, 'num_relations': 251}
+{'event': 'train_seed_tensors_ready', 'seed': 1, 'elapsed_sec': 0.0113297700881958, 'cuda_allocated_mb': 36, 'cuda_reserved_mb': 44, 'cuda_max_allocated_mb': 36}
+{'event': 'train_known_facts_ready', 'seed': 1, 'scope': 'train', 'edges': 326918, 'elapsed_sec': 0.05342407152056694}
+{'event': 'train_known_facts_ready', 'seed': 1, 'scope': 'train_val', 'edges': 387242, 'elapsed_sec': 0.12137214839458466}
+{'event': 'train_sampler_ready', 'seed': 1, 'elapsed_sec': 0.16496000066399574}
+{'event': 'val_sampler_ready', 'seed': 1, 'elapsed_sec': 0.1990259289741516}
+{'event': 'epoch_start', 'epoch': 1, 'epochs': 2, 'batches': 2811, 'time_groups': 2811}
+{'event': 'train_time_group', 'epoch': 1, 'time_group': 1, 'time_groups': 2811, 'batch': 0, 'batches': 2811, 'time_value': 0.0, 'group_batches': 1, 'history_edges': 0, 'elapsed_sec': 0.10406913980841637, 'cuda_allocated_mb': 44, 'cuda_reserved_mb': 64, 'cuda_max_allocated_mb': 44}
+{'event': 'train_progress', 'epoch': 1, 'batch': 1, 'batches': 2811, 'time_group': 1, 'time_groups': 2811, 'history_edges': 0, 'pos_edges': 41, 'neg_edges': 41, 'loss_recent': 3.2205810546875, 'elapsed_sec': 1.6870434619486332, 'avg_sec_per_batch': 1.6870434619486332, 'cuda_allocated_mb': 152, 'cuda_reserved_mb': 286, 'cuda_max_allocated_mb': 264}
+{'event': 'train_progress', 'epoch': 1, 'batch': 100, 'batches': 2811, 'time_group': 100, 'time_groups': 2811, 'history_edges': 10987, 'pos_edges': 87, 'neg_edges': 87, 'loss_recent': 6.4557885074615475, 'elapsed_sec': 34.05475568398833, 'avg_sec_per_batch': 0.3405475568398833, 'cuda_allocated_mb': 157, 'cuda_reserved_mb': 742, 'cuda_max_allocated_mb': 688}
+{'event': 'train_progress', 'epoch': 1, 'batch': 200, 'batches': 2811, 'time_group': 200, 'time_groups': 2811, 'history_edges': 23657, 'pos_edges': 155, 'neg_edges': 155, 'loss_recent': 6.279975156784058, 'elapsed_sec': 75.13272510096431, 'avg_sec_per_batch': 0.3756636255048215, 'cuda_allocated_mb': 160, 'cuda_reserved_mb': 1022, 'cuda_max_allocated_mb': 961}
+{'event': 'train_progress', 'epoch': 1, 'batch': 300, 'batches': 2811, 'time_group': 300, 'time_groups': 2811, 'history_edges': 35272, 'pos_edges': 144, 'neg_edges': 144, 'loss_recent': 5.445368367433548, 'elapsed_sec': 131.22386590391397, 'avg_sec_per_batch': 0.4374128863463799, 'cuda_allocated_mb': 160, 'cuda_reserved_mb': 1322, 'cuda_max_allocated_mb': 1210}
+{'event': 'train_progress', 'epoch': 1, 'batch': 400, 'batches': 2811, 'time_group': 400, 'time_groups': 2811, 'history_edges': 47880, 'pos_edges': 85, 'neg_edges': 85, 'loss_recent': 5.545309029817581, 'elapsed_sec': 190.2791705429554, 'avg_sec_per_batch': 0.4756979263573885, 'cuda_allocated_mb': 158, 'cuda_reserved_mb': 1642, 'cuda_max_allocated_mb': 1484}
+{'event': 'train_progress', 'epoch': 1, 'batch': 500, 'batches': 2811, 'time_group': 500, 'time_groups': 2811, 'history_edges': 60762, 'pos_edges': 156, 'neg_edges': 156, 'loss_recent': 5.615122370719909, 'elapsed_sec': 253.48203605413437, 'avg_sec_per_batch': 0.5069640721082688, 'cuda_allocated_mb': 161, 'cuda_reserved_mb': 1902, 'cuda_max_allocated_mb': 1794}
+{'event': 'train_progress', 'epoch': 1, 'batch': 600, 'batches': 2811, 'time_group': 600, 'time_groups': 2811, 'history_edges': 73435, 'pos_edges': 163, 'neg_edges': 163, 'loss_recent': 5.238725996017456, 'elapsed_sec': 318.513171851635, 'avg_sec_per_batch': 0.5308552864193916, 'cuda_allocated_mb': 161, 'cuda_reserved_mb': 2222, 'cuda_max_allocated_mb': 2089}

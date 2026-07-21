@@ -1,0 +1,66 @@
+device: cuda
+require_cuda: true
+output_dir: results/ssptgfm_icews14_best
+seeds:
+- 1
+- 2
+- 3
+- 4
+- 5
+few_shot_ratios:
+- 1.0
+baselines:
+- lm_mlp
+- structure_mlp
+strict_full_formula: true
+data:
+  name: icews14
+  format: csv
+  path: data/raw/icews14
+split:
+  mode: time
+  val_ratio: 0.15
+  test_ratio: 0.15
+text:
+  backend: hashing
+  dim: 384
+  cache_dir: data/processed/text_cache
+model:
+  hidden_dim: 96
+  time_dim: 32
+  prompt_tokens: 4
+  prompt_heads: 4
+  relation_rank: 12
+  adapter_rank: 12
+  temporal_layers: 1
+  temporal_encoder: mlp
+  time_encoder: fourier
+  use_struct: true
+  use_sem: true
+  use_cross: true
+  use_gate: true
+  use_variational: true
+train:
+  epochs: 20
+  batch_size: 512
+  lr: 0.0007
+  weight_decay: 0.0001
+  num_neg_train: 1
+  num_neg_eval: 25
+  negative_mode_train: filtered
+  negative_mode_eval: filtered
+  filter_scope: exact
+  lambda_align: 0.05
+  lambda_kl: 0.0005
+  lambda_meta: 0.01
+  meta_lr: 0.01
+  meta_support_size: 16
+  meta_query_size: 16
+  lambda_ood: 0.001
+  align_temperature: 0.2
+  patience: 5
+  grad_clip: 1.0
+eval:
+  filtered_rank_edges: 200
+ablation:
+  enabled: false

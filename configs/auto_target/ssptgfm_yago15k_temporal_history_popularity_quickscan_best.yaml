@@ -1,0 +1,121 @@
+ablation:
+  enabled: false
+baselines: []
+data:
+  format: csv
+  name: yago15k-temporal
+  path: data/raw/yago15k_temporal
+device: cuda
+eval:
+  filtered_rank_edges: 300
+few_shot_ratios:
+- 1.0
+model:
+  adapter_rank: 12
+  freeze_history_prior: true
+  hidden_dim: 96
+  history_prior_dim: 40
+  history_prior_hidden_dim: 24
+  history_prior_init_scale: 0.5
+  history_prior_mode: linear
+  history_prior_weights:
+  - 2.0
+  - 0.5
+  - 0.1
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.01
+  - 0.01
+  - 0.01
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  prompt_heads: 4
+  prompt_tokens: 4
+  relation_rank: 12
+  temporal_encoder: mlp
+  temporal_layers: 1
+  time_dim: 32
+  time_encoder: fourier
+  use_cross: true
+  use_gate: true
+  use_history_prior: true
+  use_sem: true
+  use_struct: true
+  use_variational: true
+output_dir: results/auto_target_quick_yago15k/ssptgfm_yago15k_temporal_history_popularity_quickscan_best
+require_cuda: true
+seeds:
+- 1
+split:
+  mode: time
+  test_ratio: 0.15
+  val_ratio: 0.15
+strict_full_formula: true
+text:
+  backend: hashing
+  cache_dir: data/processed/text_cache
+  dim: 384
+train:
+  align_temperature: 0.2
+  batch_size: 512
+  early_stop_metric: val_composite
+  early_stop_weights:
+    val_ap: 0.15
+    val_auc: 0.05
+    val_hits@10: 0.2
+    val_mrr: 0.5
+    val_ndcg: 0.1
+  epochs: 14
+  filter_scope: exact
+  grad_clip: 1.0
+  lambda_align: 0.005
+  lambda_kl: 0.0001
+  lambda_meta: 0.005
+  lambda_ood: 0.001
+  lambda_rank: 0.0
+  lr: 0.001
+  meta_lr: 0.01
+  meta_query_size: 8
+  meta_support_size: 8
+  negative_mode_eval: filtered
+  negative_mode_train: filtered
+  num_neg_eval: 5
+  num_neg_train: 1
+  patience: 5
+  progress_every_batches: 100
+  progress_every_seconds: 120.0
+  rank_loss_type: hinge
+  rank_margin: 1.0
+  val_binary_edges: 256
+  val_rank_edges: 150
+  weight_decay: 0.0001

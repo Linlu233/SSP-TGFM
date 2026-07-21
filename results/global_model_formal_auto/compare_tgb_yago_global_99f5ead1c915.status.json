@@ -1,0 +1,33 @@
+{
+  "dataset": "tgb_yago",
+  "detail": {
+    "ap": {
+      "baseline": 0.8992711734548288,
+      "value": 0.9229766182664388,
+      "win": true
+    },
+    "auc": {
+      "baseline": 0.9553957891667827,
+      "value": 0.9617806291923365,
+      "win": true
+    },
+    "hits@10": {
+      "baseline": 0.92,
+      "value": 0.8973333333333333,
+      "win": false
+    },
+    "mrr": {
+      "baseline": 0.8981460575356689,
+      "value": 0.8830731313931565,
+      "win": false
+    },
+    "ndcg": {
+      "baseline": 0.9855335690473936,
+      "value": 0.9891731341490833,
+      "win": true
+    }
+  },
+  "passed": true,
+  "target_wins": 3,
+  "wins": 3
+}

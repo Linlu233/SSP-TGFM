@@ -1,0 +1,97 @@
+===== 2026-07-06_10:40:46 four_hour_progress_monitor_parallel =====
+[gpu]
+0, Tesla V100-PCIE-32GB, 100, 31008, 32768, 41
+[processes]
+[rows]
+3 results/ssptgfm_icews05_15_best_seed1/partial_results.jsonl
+3 results/ssptgfm_icews05_15_best_seed2/partial_results.jsonl
+3 results/ssptgfm_icews05_15_best_seed3/partial_results.jsonl
+3 results/ssptgfm_icews05_15_best_seed4/partial_results.jsonl
+3 results/ssptgfm_icews05_15_best_seed5/partial_results.jsonl
+15 results/ssptgfm_icews05_15_best/partial_results.jsonl
+[log tails]
+--- seed1 ---
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 20, 'time_group': 2760, 'time_groups': 2811, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 20, 'time_group': 2770, 'time_groups': 2811, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 20, 'time_group': 2780, 'time_groups': 2811, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 20, 'time_group': 2790, 'time_groups': 2811, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 20, 'time_group': 2800, 'time_groups': 2811, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 20, 'time_group': 2810, 'time_groups': 2811, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 20, 'time_group': 2811, 'time_groups': 2811, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'StructureMLPBaseline', 'epoch': 20}
+{'event': 'baseline_epoch_end', 'model': 'StructureMLPBaseline', 'epoch': 20, 'val_auc': 0.9494328858421756, 'elapsed_sec': 619.7178347371519}
+{'event': 'baseline_test_binary_start', 'method': 'structure_mlp', 'seed': 1}
+{'event': 'baseline_test_ranking_start', 'method': 'structure_mlp', 'seed': 1}
+{'dataset': 'icews05-15', 'method': 'structure_mlp', 'scenario': 'standard', 'ablation': 'baseline', 'few_shot_ratio': 1.0, 'seed': 1, 'train_edges': 326918, 'val_edges': 60324, 'test_edges': 74087, 'params_trainable': 33985, 'params_total': 33985, 'train_eval_time_sec': 16599.70198192075, 'val_auc': 0.9504301071480981, 'val_ap': 0.8650629942955155, 'val_ndcg': 0.9831210976594035, 'test_auc': 0.9388643131737741, 'test_ap': 0.8394515861258149, 'test_ndcg': 0.9797431860161431, 'test_mrr': 0.35303535492845584, 'test_hits@1': 0.21, 'test_hits@10': 0.645, 'test_hits@50': 0.825, 'test_hits@100': 0.85}
+--- seed2 ---
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 20, 'time_group': 2760, 'time_groups': 2811, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 20, 'time_group': 2770, 'time_groups': 2811, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 20, 'time_group': 2780, 'time_groups': 2811, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 20, 'time_group': 2790, 'time_groups': 2811, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 20, 'time_group': 2800, 'time_groups': 2811, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 20, 'time_group': 2810, 'time_groups': 2811, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 20, 'time_group': 2811, 'time_groups': 2811, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'StructureMLPBaseline', 'epoch': 20}
+{'event': 'baseline_epoch_end', 'model': 'StructureMLPBaseline', 'epoch': 20, 'val_auc': 0.9468037614398768, 'elapsed_sec': 351.2616901099682}
+{'event': 'baseline_test_binary_start', 'method': 'structure_mlp', 'seed': 2}
+{'event': 'baseline_test_ranking_start', 'method': 'structure_mlp', 'seed': 2}
+{'dataset': 'icews05-15', 'method': 'structure_mlp', 'scenario': 'standard', 'ablation': 'baseline', 'few_shot_ratio': 1.0, 'seed': 2, 'train_edges': 326918, 'val_edges': 60324, 'test_edges': 74087, 'params_trainable': 33985, 'params_total': 33985, 'train_eval_time_sec': 7941.174092989415, 'val_auc': 0.9499151676766913, 'val_ap': 0.8642049775657545, 'val_ndcg': 0.9829803074158849, 'test_auc': 0.9391072416825024, 'test_ap': 0.8414771598243378, 'test_ndcg': 0.979967807889943, 'test_mrr': 0.3670358598380954, 'test_hits@1': 0.25, 'test_hits@10': 0.63, 'test_hits@50': 0.835, 'test_hits@100': 0.855}
+--- seed3 ---
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 16, 'time_group': 2760, 'time_groups': 2811, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 16, 'time_group': 2770, 'time_groups': 2811, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 16, 'time_group': 2780, 'time_groups': 2811, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 16, 'time_group': 2790, 'time_groups': 2811, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 16, 'time_group': 2800, 'time_groups': 2811, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 16, 'time_group': 2810, 'time_groups': 2811, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 16, 'time_group': 2811, 'time_groups': 2811, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'StructureMLPBaseline', 'epoch': 16}
+{'event': 'baseline_epoch_end', 'model': 'StructureMLPBaseline', 'epoch': 16, 'val_auc': 0.9482879018074848, 'elapsed_sec': 544.5305015295744}
+{'event': 'baseline_test_binary_start', 'method': 'structure_mlp', 'seed': 3}
+{'event': 'baseline_test_ranking_start', 'method': 'structure_mlp', 'seed': 3}
+{'dataset': 'icews05-15', 'method': 'structure_mlp', 'scenario': 'standard', 'ablation': 'baseline', 'few_shot_ratio': 1.0, 'seed': 3, 'train_edges': 326918, 'val_edges': 60324, 'test_edges': 74087, 'params_trainable': 33985, 'params_total': 33985, 'train_eval_time_sec': 14493.060406766832, 'val_auc': 0.9501410855234045, 'val_ap': 0.8638442762363492, 'val_ndcg': 0.982985357524896, 'test_auc': 0.938306471608817, 'test_ap': 0.8399678755042236, 'test_ndcg': 0.9797630384220327, 'test_mrr': 0.37246178939256763, 'test_hits@1': 0.245, 'test_hits@10': 0.65, 'test_hits@50': 0.835, 'test_hits@100': 0.865}
+--- seed4 ---
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 11, 'time_group': 2760, 'time_groups': 2811, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 11, 'time_group': 2770, 'time_groups': 2811, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 11, 'time_group': 2780, 'time_groups': 2811, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 11, 'time_group': 2790, 'time_groups': 2811, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 11, 'time_group': 2800, 'time_groups': 2811, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 11, 'time_group': 2810, 'time_groups': 2811, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 11, 'time_group': 2811, 'time_groups': 2811, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'StructureMLPBaseline', 'epoch': 11}
+{'event': 'baseline_epoch_end', 'model': 'StructureMLPBaseline', 'epoch': 11, 'val_auc': 0.9485460132468545, 'elapsed_sec': 840.3125294819474}
+{'event': 'baseline_test_binary_start', 'method': 'structure_mlp', 'seed': 4}
+{'event': 'baseline_test_ranking_start', 'method': 'structure_mlp', 'seed': 4}
+{'dataset': 'icews05-15', 'method': 'structure_mlp', 'scenario': 'standard', 'ablation': 'baseline', 'few_shot_ratio': 1.0, 'seed': 4, 'train_edges': 326918, 'val_edges': 60324, 'test_edges': 74087, 'params_trainable': 33985, 'params_total': 33985, 'train_eval_time_sec': 10495.0856430009, 'val_auc': 0.9488049880313657, 'val_ap': 0.8568221675791614, 'val_ndcg': 0.9821933366701986, 'test_auc': 0.9374352572188801, 'test_ap': 0.8331279068697672, 'test_ndcg': 0.9790548986552422, 'test_mrr': 0.3788181700240456, 'test_hits@1': 0.275, 'test_hits@10': 0.63, 'test_hits@50': 0.845, 'test_hits@100': 0.86}
+--- seed5 ---
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 18, 'time_group': 2760, 'time_groups': 2811, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 18, 'time_group': 2770, 'time_groups': 2811, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 18, 'time_group': 2780, 'time_groups': 2811, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 18, 'time_group': 2790, 'time_groups': 2811, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 18, 'time_group': 2800, 'time_groups': 2811, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 18, 'time_group': 2810, 'time_groups': 2811, 'batches': 1}
+{'event': 'baseline_epoch_time_group', 'model': 'StructureMLPBaseline', 'epoch': 18, 'time_group': 2811, 'time_groups': 2811, 'batches': 1}
+{'event': 'baseline_validation_start', 'model': 'StructureMLPBaseline', 'epoch': 18}
+{'event': 'baseline_epoch_end', 'model': 'StructureMLPBaseline', 'epoch': 18, 'val_auc': 0.9470149590416995, 'elapsed_sec': 299.7754994928837}
+{'event': 'baseline_test_binary_start', 'method': 'structure_mlp', 'seed': 5}
+{'event': 'baseline_test_ranking_start', 'method': 'structure_mlp', 'seed': 5}
+{'dataset': 'icews05-15', 'method': 'structure_mlp', 'scenario': 'standard', 'ablation': 'baseline', 'few_shot_ratio': 1.0, 'seed': 5, 'train_edges': 326918, 'val_edges': 60324, 'test_edges': 74087, 'params_trainable': 33985, 'params_total': 33985, 'train_eval_time_sec': 5781.978345733136, 'val_auc': 0.949538550169601, 'val_ap': 0.8626975176436678, 'val_ndcg': 0.9828215090439, 'test_auc': 0.9381606358136251, 'test_ap': 0.8400367209272044, 'test_ndcg': 0.9797561467213075, 'test_mrr': 0.3633971890510635, 'test_hits@1': 0.235, 'test_hits@10': 0.66, 'test_hits@50': 0.815, 'test_hits@100': 0.855}
+[watchdogs]
+2026-05-27_12:05:33 used_mb=0 total_mb=32768
+2026-05-27_12:06:03 used_mb=0 total_mb=32768
+2026-05-27_12:06:33 used_mb=0 total_mb=32768
+2026-05-27_12:07:03 used_mb=0 total_mb=32768
+2026-05-27_12:07:33 used_mb=0 total_mb=32768
+2026-05-27_12:08:03 used_mb=0 total_mb=32768
+2026-05-27_12:08:33 used_mb=0 total_mb=32768
+2026-05-27_12:09:03 used_mb=0 total_mb=32768
+paired val_ap: ssptgfm/full vs lm_mlp/baseline: {'n': 5.0, 'wilcoxon_p': 0.625, 'cohens_dz': -0.5908411708562894}
+paired val_ap: ssptgfm/full vs structure_mlp/baseline: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': -1.621181401650032}
+paired val_auc: ssptgfm/full vs lm_mlp/baseline: {'n': 5.0, 'wilcoxon_p': 0.125, 'cohens_dz': -0.8354535614610434}
+paired val_auc: ssptgfm/full vs structure_mlp/baseline: {'n': 5.0, 'wilcoxon_p': 0.125, 'cohens_dz': -0.9424312904606106}
+paired val_edges: ssptgfm/full vs lm_mlp/baseline: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': 0.0}
+paired val_edges: ssptgfm/full vs structure_mlp/baseline: {'n': 5.0, 'wilcoxon_p': 1.0, 'cohens_dz': 0.0}
+paired val_ndcg: ssptgfm/full vs lm_mlp/baseline: {'n': 5.0, 'wilcoxon_p': 0.625, 'cohens_dz': -0.613496791381261}
+paired val_ndcg: ssptgfm/full vs structure_mlp/baseline: {'n': 5.0, 'wilcoxon_p': 0.0625, 'cohens_dz': -1.5183006543553446}
+[disk]
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/vdb         87G   42G   46G  49% /root/autodl-tmp
